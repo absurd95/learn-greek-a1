@@ -74,7 +74,7 @@ function renderCard() {
   $("flashcard").classList.toggle("hidden", !card); $("study-actions").classList.toggle("hidden", !card);
   if (!card) return;
   $("card-counter").textContent = `${state.index + 1} / ${state.deck.length}`;
-  $("card-kind").textContent = card.typeLabel; $("card-front").textContent = card.greek; $("card-back").textContent = card.russian;
+  $("card-kind").textContent = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel; $("card-front").textContent = card.greek; $("card-back").textContent = card.russian;
   $("card-back").classList.toggle("hidden", !state.revealed); $("card-hint").classList.toggle("hidden", state.revealed);
   $("favorite-button").textContent = progress.favorites.includes(card.id) ? "★" : "☆";
   const table = $("conjugation-table");
@@ -107,11 +107,11 @@ function renderQuestion() {
   $("quiz-counter").textContent = `${state.quizIndex + 1} / ${state.quizDeck.length}`;
   if (item.form) {
     $("quiz-title").textContent = "Переведите форму глагола";
-    $("quiz-question").textContent = `${item.pronoun} — ${item.form}`;
+    $("quiz-question").textContent = item.form;
     state.quizSpokenText = item.form;
     state.quizAnswer = item.russian;
-    const alternatives = Object.values(card.russianForms).filter(text => text !== item.russian);
-    const options = shuffle([item.russian, ...shuffle(alternatives).slice(0, 3)]);
+    const alternatives = state.quizDeck.filter(candidate => candidate.card.id !== card.id && candidate.pronoun !== item.pronoun && candidate.russian !== item.russian).map(candidate => candidate.russian);
+    const options = shuffle([item.russian, ...shuffle([...new Set(alternatives)]).slice(0, 3)]);
     $("quiz-options").innerHTML = options.map(text => `<button class="quiz-option" data-correct="${text === item.russian}">${text}</button>`).join("");
     return;
   }
