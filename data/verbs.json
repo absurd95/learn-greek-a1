@@ -1,0 +1,6 @@
+[
+  {"id":"verb-listen","greek":"Ακούω","russian":"Слушать","new":true},
+  {"id":"verb-speak","greek":"Μιλάω","russian":"Говорить","new":true},
+  {"id":"verb-write","greek":"Γράφω","russian":"Писать","new":false},
+  {"id":"verb-read","greek":"Διαβάζω","russian":"Читать / учиться","new":false}
+]

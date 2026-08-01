@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#315b52">
+  <meta name="description" content="Персональный тренажёр греческого языка уровня A1">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Ελληνικά · A1</title>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Мой греческий</p>
+      <h1>Ελληνικά <span>A1</span></h1>
+    </div>
+    <button id="install-button" class="icon-button hidden" type="button">Установить</button>
+  </header>
+
+  <main>
+    <section id="dashboard" class="screen active" aria-labelledby="dashboard-title">
+      <div class="hero">
+        <p class="eyebrow">Сегодня</p>
+        <h2 id="dashboard-title">Немного каждый день</h2>
+        <p id="progress-copy">Выберите набор и начните тренировку.</p>
+        <div class="progress"><span id="progress-bar"></span></div>
+      </div>
+      <div id="category-grid" class="category-grid"></div>
+    </section>
+
+    <section id="study" class="screen" aria-labelledby="study-title">
+      <div class="section-heading">
+        <button class="back-button" type="button" data-go="dashboard">← Назад</button>
+        <div>
+          <p id="study-kicker" class="eyebrow">Карточки</p>
+          <h2 id="study-title">Новые</h2>
+        </div>
+      </div>
+      <div id="empty-state" class="empty hidden">В этом разделе пока нет карточек.</div>
+      <article id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Показать перевод">
+        <p id="card-counter" class="counter"></p>
+        <button id="favorite-button" class="favorite" type="button" aria-label="Добавить в избранное">☆</button>
+        <div class="card-content">
+          <p id="card-kind" class="eyebrow"></p>
+          <h3 id="card-front"></h3>
+          <p id="card-hint">Нажмите, чтобы увидеть перевод</p>
+          <p id="card-back" class="answer hidden"></p>
+          <div id="conjugation-table" class="conjugation-table hidden"></div>
+        </div>
+      </article>
+      <div id="study-actions" class="study-actions">
+        <button id="previous-button" class="secondary" type="button">←</button>
+        <button id="quiz-button" type="button">Тест</button>
+        <button id="next-button" class="secondary" type="button">→</button>
+      </div>
+    </section>
+
+    <section id="quiz" class="screen" aria-labelledby="quiz-title">
+      <div class="section-heading">
+        <button class="back-button" type="button" data-go="study">← Карточки</button>
+        <div><p class="eyebrow">Тест</p><h2 id="quiz-title">Выберите перевод</h2></div>
+      </div>
+      <div class="quiz-panel">
+        <p id="quiz-counter" class="counter"></p>
+        <h3 id="quiz-question"></h3>
+        <div id="quiz-options" class="quiz-options"></div>
+        <p id="quiz-feedback" class="feedback" aria-live="polite"></p>
+        <button id="quiz-next" class="hidden" type="button">Следующий вопрос</button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Основная навигация">
+    <button type="button" data-category="new"><span>＋</span>Новые</button>
+    <button type="button" data-category="all"><span>ΑΩ</span>Все</button>
+    <button type="button" data-category="favorites"><span>☆</span>Избранное</button>
+    <button type="button" data-category="mistakes"><span>↺</span>Ошибки</button>
+  </nav>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

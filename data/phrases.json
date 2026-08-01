@@ -1,0 +1,6 @@
+[
+  {"id":"phrase-how-are-you","greek":"Τι κάνεις;","russian":"Как дела?","new":true},
+  {"id":"phrase-name","greek":"Πώς σε λένε;","russian":"Как тебя зовут?","new":false},
+  {"id":"phrase-dont-understand","greek":"Δεν καταλαβαίνω","russian":"Я не понимаю","new":false},
+  {"id":"phrase-how-much","greek":"Πόσο κάνει;","russian":"Сколько это стоит?","new":false}
+]

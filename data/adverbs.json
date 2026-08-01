@@ -1,0 +1,6 @@
+[
+  {"id":"adverb-today","greek":"Σήμερα","russian":"Сегодня","new":true},
+  {"id":"adverb-tomorrow","greek":"Αύριο","russian":"Завтра","new":false},
+  {"id":"adverb-always","greek":"Πάντα","russian":"Всегда","new":false},
+  {"id":"adverb-often","greek":"Συχνά","russian":"Часто","new":false}
+]

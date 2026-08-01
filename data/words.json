@@ -1,0 +1,8 @@
+[
+  {"id":"word-hello","greek":"Γεια σου","russian":"Привет","new":true},
+  {"id":"word-thanks","greek":"Ευχαριστώ","russian":"Спасибо","new":true},
+  {"id":"word-water","greek":"Το νερό","russian":"Вода","new":false},
+  {"id":"word-bread","greek":"Το ψωμί","russian":"Хлеб","new":false},
+  {"id":"word-house","greek":"Το σπίτι","russian":"Дом","new":false},
+  {"id":"word-friend","greek":"Ο φίλος / Η φίλη","russian":"Друг / подруга","new":false}
+]
