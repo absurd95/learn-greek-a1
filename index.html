@@ -46,6 +46,8 @@
         <div class="card-content">
           <p id="card-kind" class="eyebrow"></p>
           <h3 id="card-front"></h3>
+          <button id="speak-button" class="speak-button" type="button" aria-label="Произнести по-гречески" title="Произнести по-гречески">🔊 <span>Послушать</span></button>
+          <p id="speech-status" class="speech-status" aria-live="polite"></p>
           <p id="card-hint">Нажмите, чтобы увидеть перевод</p>
           <p id="card-back" class="answer hidden"></p>
           <div id="conjugation-table" class="conjugation-table hidden"></div>
@@ -65,7 +67,10 @@
       </div>
       <div class="quiz-panel">
         <p id="quiz-counter" class="counter"></p>
-        <h3 id="quiz-question"></h3>
+        <div class="quiz-question-row">
+          <h3 id="quiz-question"></h3>
+          <button id="quiz-speak-button" class="speak-button compact" type="button" aria-label="Произнести вопрос по-гречески" title="Произнести по-гречески">🔊</button>
+        </div>
         <div id="quiz-options" class="quiz-options"></div>
         <p id="quiz-feedback" class="feedback" aria-live="polite"></p>
         <button id="quiz-next" class="hidden" type="button">Следующий вопрос</button>
