@@ -1,6 +1,62 @@
 [
-  {"id":"phrase-how-are-you","greek":"Τι κάνεις;","russian":"Как дела?","new":true},
-  {"id":"phrase-name","greek":"Πώς σε λένε;","russian":"Как тебя зовут?","new":false},
-  {"id":"phrase-dont-understand","greek":"Δεν καταλαβαίνω","russian":"Я не понимаю","new":false},
-  {"id":"phrase-how-much","greek":"Πόσο κάνει;","russian":"Сколько это стоит?","new":false}
+  {
+    "id": "phrase-14f6b9d27f",
+    "greek": "Κάνει ζέστη",
+    "russian": "жарко",
+    "new": true
+  },
+  {
+    "id": "phrase-539a2757ae",
+    "greek": "Κάνει κρύο",
+    "russian": "холодно",
+    "new": true
+  },
+  {
+    "id": "phrase-4cd6dd49e3",
+    "greek": "Πάω για ύπνο",
+    "russian": "иду спать / ложусь спать",
+    "new": true
+  },
+  {
+    "id": "phrase-cf0d02152a",
+    "greek": "Τι καιρό κάνει;",
+    "russian": "Какая погода?",
+    "new": true
+  },
+  {
+    "id": "phrase-46bed95dc5",
+    "greek": "Κάνω παρέα με τον Νίκο και τον Κώστα",
+    "russian": "дружу с Никосом и Костасом / общаюсь с Никосом и Костасом",
+    "new": true
+  },
+  {
+    "id": "phrase-1f3999a362",
+    "greek": "Τα ίδια παιδιά / το ίδιο παιδί",
+    "russian": "те же дети / тот же ребёнок",
+    "new": true
+  },
+  {
+    "id": "phrase-9ac249112b",
+    "greek": "Τι κάνεις; — Τα ίδια",
+    "russian": "Как дела? — Всё так же",
+    "new": true
+  },
+  {
+    "id": "phrase-d1954f9d6f",
+    "greek": "Ποιον βλέπει η Αρλέτα συχνά;",
+    "russian": "Кого Арлета часто видит?",
+    "new": true
+  },
+  {
+    "id": "phrase-436848eb7b",
+    "greek": "Τι κάνουν μαζί;",
+    "russian": "Что они делают вместе?",
+    "new": true
+  },
+  {
+    "id": "phrase-59b6991108",
+    "greek": "Κάνουν παρέα",
+    "russian": "они дружат / они общаются",
+    "new": true
+  }
 ]

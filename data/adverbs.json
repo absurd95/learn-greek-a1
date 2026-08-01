@@ -1,6 +1,104 @@
 [
-  {"id":"adverb-today","greek":"Σήμερα","russian":"Сегодня","new":true},
-  {"id":"adverb-tomorrow","greek":"Αύριο","russian":"Завтра","new":false},
-  {"id":"adverb-always","greek":"Πάντα","russian":"Всегда","new":false},
-  {"id":"adverb-often","greek":"Συχνά","russian":"Часто","new":false}
+  {
+    "id": "adverb-abb59e6dfc",
+    "greek": "Ακόμα",
+    "russian": "ещё",
+    "new": true
+  },
+  {
+    "id": "adverb-87cd9839fd",
+    "greek": "Αργά",
+    "russian": "поздно",
+    "new": true
+  },
+  {
+    "id": "adverb-efededaded",
+    "greek": "Κάθε μέρα",
+    "russian": "каждый день",
+    "new": true
+  },
+  {
+    "id": "adverb-eb1a41b11a",
+    "greek": "Κάπου κάπου",
+    "russian": "время от времени / иногда",
+    "new": true
+  },
+  {
+    "id": "adverb-b47bd7fd69",
+    "greek": "Καμιά φορά",
+    "russian": "иногда",
+    "new": true
+  },
+  {
+    "id": "adverb-e566258347",
+    "greek": "Μερικές φορές",
+    "russian": "иногда / несколько раз",
+    "new": true
+  },
+  {
+    "id": "adverb-6b03193fd1",
+    "greek": "Νωρίς",
+    "russian": "рано",
+    "new": true
+  },
+  {
+    "id": "adverb-3f2a58bd58",
+    "greek": "Πάντα",
+    "russian": "всегда",
+    "new": true
+  },
+  {
+    "id": "adverb-694cf3be77",
+    "greek": "Περίπου",
+    "russian": "примерно / около",
+    "new": true
+  },
+  {
+    "id": "adverb-4a7d127ce4",
+    "greek": "Πολλές φορές",
+    "russian": "много раз / часто",
+    "new": true
+  },
+  {
+    "id": "adverb-2258f5dee7",
+    "greek": "Ποτέ δεν",
+    "russian": "никогда не",
+    "new": true
+  },
+  {
+    "id": "adverb-016463691a",
+    "greek": "Πότε πότε",
+    "russian": "время от времени / иногда",
+    "new": true
+  },
+  {
+    "id": "adverb-a127fce38d",
+    "greek": "Σπάνια",
+    "russian": "редко",
+    "new": true
+  },
+  {
+    "id": "adverb-79f976d763",
+    "greek": "Συνήθως",
+    "russian": "обычно",
+    "new": true
+  },
+  {
+    "id": "adverb-5808f4da95",
+    "greek": "Συχνά",
+    "russian": "часто",
+    "new": true
+  },
+  {
+    "id": "adverb-9d947fc619",
+    "greek": "Σχεδόν πάντα",
+    "russian": "почти всегда",
+    "new": true
+  },
+  {
+    "id": "adverb-ddcfe46ae7",
+    "greek": "Πάλι / ξανά",
+    "russian": "опять / снова",
+    "new": true
+  }
 ]

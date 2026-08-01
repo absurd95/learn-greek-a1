@@ -1,6 +1,284 @@
 [
-  {"id":"verb-listen","greek":"Ακούω","russian":"Слушать","new":true},
-  {"id":"verb-speak","greek":"Μιλάω","russian":"Говорить","new":true},
-  {"id":"verb-write","greek":"Γράφω","russian":"Писать","new":false},
-  {"id":"verb-read","greek":"Διαβάζω","russian":"Читать / учиться","new":false}
+  {
+    "id": "verb-4efff4a56f",
+    "greek": "Αγαπάω",
+    "russian": "любить",
+    "new": false
+  },
+  {
+    "id": "verb-bb495227ba",
+    "greek": "Ακούω",
+    "russian": "слушать / слышать",
+    "new": true
+  },
+  {
+    "id": "verb-b494c10f5d",
+    "greek": "Ανεβαίνω",
+    "russian": "подниматься / восходить / садиться в транспорт",
+    "new": false
+  },
+  {
+    "id": "verb-b3df5b798c",
+    "greek": "Αργώ",
+    "russian": "опаздывать / задерживаться",
+    "new": false
+  },
+  {
+    "id": "verb-835d6e851a",
+    "greek": "Βγαίνω",
+    "russian": "выходить",
+    "new": true
+  },
+  {
+    "id": "verb-8d84ba6d0b",
+    "greek": "Βλέπω",
+    "russian": "видеть / смотреть",
+    "new": true
+  },
+  {
+    "id": "verb-aac2588853",
+    "greek": "Γράφω",
+    "russian": "писать / записывать",
+    "new": false
+  },
+  {
+    "id": "verb-c9b23088ae",
+    "greek": "Γυρίζω",
+    "russian": "возвращаться / возвращать",
+    "new": true
+  },
+  {
+    "id": "verb-eac478ddd1",
+    "greek": "Ζητάω",
+    "russian": "просить / искать / запрашивать",
+    "new": false
+  },
+  {
+    "id": "verb-19d30e9e11",
+    "greek": "Ζω",
+    "russian": "жить",
+    "new": false
+  },
+  {
+    "id": "verb-bc5a625745",
+    "greek": "Κάνω παρέα",
+    "russian": "дружить / проводить время вместе",
+    "new": true
+  },
+  {
+    "id": "verb-fc33c1d5ed",
+    "greek": "Κανονίζω",
+    "russian": "организовывать / договариваться",
+    "new": true
+  },
+  {
+    "id": "verb-ae5b7f0cfd",
+    "greek": "Καπνίζω",
+    "russian": "курить",
+    "new": true
+  },
+  {
+    "id": "verb-fc9816a158",
+    "greek": "Καταλαβαίνω",
+    "russian": "понимать / осознавать",
+    "new": false
+  },
+  {
+    "id": "verb-08bf5868bb",
+    "greek": "Κατεβαίνω",
+    "russian": "спускаться / сходить / выходить из транспорта",
+    "new": false
+  },
+  {
+    "id": "verb-75709cde5c",
+    "greek": "Κλαίω",
+    "russian": "плакать",
+    "new": true
+  },
+  {
+    "id": "verb-54046e9b32",
+    "greek": "Κοστίζει",
+    "russian": "стоить",
+    "new": false
+  },
+  {
+    "id": "verb-9c1657e98c",
+    "greek": "Μιλάω",
+    "russian": "говорить / разговаривать",
+    "new": false
+  },
+  {
+    "id": "verb-6cb18250b3",
+    "greek": "Μπορώ",
+    "russian": "мочь / уметь",
+    "new": false
+  },
+  {
+    "id": "verb-fa634472b1",
+    "greek": "Ξέρω",
+    "russian": "знать / уметь",
+    "new": false
+  },
+  {
+    "id": "verb-d3e7c0a645",
+    "greek": "Ξεκινάω",
+    "russian": "начинать / отправляться",
+    "new": false
+  },
+  {
+    "id": "verb-c2bfe129c9",
+    "greek": "Ξυπνάω",
+    "russian": "просыпаться / будить",
+    "new": false
+  },
+  {
+    "id": "verb-bae58f5d24",
+    "greek": "Οδηγώ",
+    "russian": "водить / управлять машиной",
+    "new": false
+  },
+  {
+    "id": "verb-4a49a34376",
+    "greek": "Πίνω",
+    "russian": "пить",
+    "new": true
+  },
+  {
+    "id": "verb-658b4930ed",
+    "greek": "Παίρνω",
+    "russian": "брать / получать / садиться на транспорт",
+    "new": false
+  },
+  {
+    "id": "verb-42ab750c67",
+    "greek": "Περιμένω",
+    "russian": "ждать / ожидать",
+    "new": false
+  },
+  {
+    "id": "verb-e180a75e32",
+    "greek": "Περνάω",
+    "russian": "проходить / проезжать / проводить время",
+    "new": false
+  },
+  {
+    "id": "verb-702657f583",
+    "greek": "Περπατάω",
+    "russian": "ходить пешком / гулять",
+    "new": false
+  },
+  {
+    "id": "verb-e00bb71422",
+    "greek": "Πηγαίνω",
+    "russian": "идти / ехать / направляться",
+    "new": false
+  },
+  {
+    "id": "verb-3c69f7830d",
+    "greek": "Πηγαίνω / πάω",
+    "russian": "идти / ехать",
+    "new": true
+  },
+  {
+    "id": "verb-5a5c88adc9",
+    "greek": "Πιστεύω",
+    "russian": "верить",
+    "new": true
+  },
+  {
+    "id": "verb-76dd06ab7e",
+    "greek": "Προτιμάω / Προτιμώ",
+    "russian": "предпочитать",
+    "new": false
+  },
+  {
+    "id": "verb-27703c85ea",
+    "greek": "Σβήνω",
+    "russian": "тушить / выключать / стирать",
+    "new": true
+  },
+  {
+    "id": "verb-cb8fb2d198",
+    "greek": "Στέλνω",
+    "russian": "отправлять",
+    "new": true
+  },
+  {
+    "id": "verb-e2054658de",
+    "greek": "Σταματάω",
+    "russian": "останавливаться / останавливать",
+    "new": false
+  },
+  {
+    "id": "verb-30130257fc",
+    "greek": "Συγχωρώ",
+    "russian": "прощать / извинять",
+    "new": false
+  },
+  {
+    "id": "verb-269caf4852",
+    "greek": "Τελειώνω",
+    "russian": "заканчивать / заканчиваться",
+    "new": true
+  },
+  {
+    "id": "verb-7b44400398",
+    "greek": "Τηλεφωνώ",
+    "russian": "звонить по телефону",
+    "new": false
+  },
+  {
+    "id": "verb-0dba650b6f",
+    "greek": "Τρώω",
+    "russian": "есть / кушать",
+    "new": true
+  },
+  {
+    "id": "verb-e3987bc0ad",
+    "greek": "Φεύγω",
+    "russian": "уходить / уезжать / улетать",
+    "new": false
+  },
+  {
+    "id": "verb-6d65aee237",
+    "greek": "Φτάνω",
+    "russian": "прибывать / доходить / доезжать",
+    "new": false
+  },
+  {
+    "id": "verb-54e2537007",
+    "greek": "Φωνάζω",
+    "russian": "кричать / звать",
+    "new": false
+  },
+  {
+    "id": "verb-6f8d168e2a",
+    "greek": "Χορεύω",
+    "russian": "танцевать",
+    "new": true
+  },
+  {
+    "id": "verb-69b2a8f989",
+    "greek": "Ψάχνω",
+    "russian": "искать / разыскивать",
+    "new": false
+  },
+  {
+    "id": "verb-db4c26147f",
+    "greek": "Ειδοποιώ",
+    "russian": "оповещать / уведомлять",
+    "new": true
+  },
+  {
+    "id": "verb-54758e0220",
+    "greek": "Ξαναγράφω",
+    "russian": "писать снова / переписывать",
+    "new": true
+  },
+  {
+    "id": "verb-1179164218",
+    "greek": "Ξαναλέω",
+    "russian": "говорить снова / повторять",
+    "new": true
+  }
 ]

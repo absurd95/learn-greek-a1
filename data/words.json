@@ -1,8 +1,362 @@
 [
-  {"id":"word-hello","greek":"Γεια σου","russian":"Привет","new":true},
-  {"id":"word-thanks","greek":"Ευχαριστώ","russian":"Спасибо","new":true},
-  {"id":"word-water","greek":"Το νερό","russian":"Вода","new":false},
-  {"id":"word-bread","greek":"Το ψωμί","russian":"Хлеб","new":false},
-  {"id":"word-house","greek":"Το σπίτι","russian":"Дом","new":false},
-  {"id":"word-friend","greek":"Ο φίλος / Η φίλη","russian":"Друг / подруга","new":false}
+  {
+    "id": "word-1325bc6756",
+    "greek": "Η άνοιξη",
+    "russian": "весна",
+    "new": true
+  },
+  {
+    "id": "word-629a3891b1",
+    "greek": "η αμοιβή",
+    "russian": "вознаграждение / оплата",
+    "new": false
+  },
+  {
+    "id": "word-574156ffc8",
+    "greek": "η γλώσσα",
+    "russian": "язык",
+    "new": false
+  },
+  {
+    "id": "word-6a89ae63d6",
+    "greek": "η διεύθυνση",
+    "russian": "адрес / направление",
+    "new": false
+  },
+  {
+    "id": "word-94a7b7eef6",
+    "greek": "η εθνικότητα",
+    "russian": "национальность",
+    "new": false
+  },
+  {
+    "id": "word-bf0e5efe33",
+    "greek": "η εταιρία",
+    "russian": "компания / фирма",
+    "new": false
+  },
+  {
+    "id": "word-b66e03a4ad",
+    "greek": "η ζωή",
+    "russian": "жизнь",
+    "new": false
+  },
+  {
+    "id": "word-382c6a37f0",
+    "greek": "η κομμώτρια",
+    "russian": "парикмахер",
+    "new": false
+  },
+  {
+    "id": "word-ab322e2471",
+    "greek": "Η Κυριακή",
+    "russian": "воскресенье",
+    "new": true
+  },
+  {
+    "id": "word-9b7fdc80bd",
+    "greek": "η λαϊκή",
+    "russian": "рынок / овощной базар / овощной и фруктовый рынок / уличный рынок",
+    "new": true
+  },
+  {
+    "id": "word-0502a43229",
+    "greek": "η στάση",
+    "russian": "остановка",
+    "new": false
+  },
+  {
+    "id": "word-ccb23378ed",
+    "greek": "η τράπεζα",
+    "russian": "банк",
+    "new": false
+  },
+  {
+    "id": "word-4e5db0f355",
+    "greek": "Η χώρα",
+    "russian": "страна",
+    "new": true
+  },
+  {
+    "id": "word-5972cd42f9",
+    "greek": "Κουρασμένος / κουρασμένη",
+    "russian": "усталый / усталая",
+    "new": true
+  },
+  {
+    "id": "word-829b42a6e1",
+    "greek": "ο / η κτηνίατρος",
+    "russian": "ветеринар / ветеринарный врач",
+    "new": false
+  },
+  {
+    "id": "word-98130dfa16",
+    "greek": "ο / η υπάλληλος",
+    "russian": "сотрудник / служащий",
+    "new": false
+  },
+  {
+    "id": "word-d9a30777ae",
+    "greek": "ο αριθμός",
+    "russian": "число / номер / цифра",
+    "new": false
+  },
+  {
+    "id": "word-d5b88f4cef",
+    "greek": "ο καθηγητής",
+    "russian": "преподаватель / профессор",
+    "new": false
+  },
+  {
+    "id": "word-08ff41980e",
+    "greek": "ο ξυλουργός",
+    "russian": "плотник / столяр",
+    "new": false
+  },
+  {
+    "id": "word-4c50d8f254",
+    "greek": "ο πελάτης",
+    "russian": "клиент / покупатель",
+    "new": false
+  },
+  {
+    "id": "word-13b5621ee5",
+    "greek": "ο προαστιακός",
+    "russian": "пригородная электричка / пригородный поезд",
+    "new": false
+  },
+  {
+    "id": "word-7eb7771f88",
+    "greek": "ο σταθμός",
+    "russian": "станция / вокзал",
+    "new": false
+  },
+  {
+    "id": "word-493952c313",
+    "greek": "ο ταξιτζής",
+    "russian": "таксист",
+    "new": false
+  },
+  {
+    "id": "word-47723b82a4",
+    "greek": "ο φοιτητής / η φοιτήτρια",
+    "russian": "студент / студентка",
+    "new": false
+  },
+  {
+    "id": "word-4099f5b6d6",
+    "greek": "Ο χειμώνας",
+    "russian": "зима",
+    "new": true
+  },
+  {
+    "id": "word-3526a49535",
+    "greek": "ο χώρος",
+    "russian": "место / пространство / помещение",
+    "new": false
+  },
+  {
+    "id": "word-81fc814dfe",
+    "greek": "Ο ύπνος / ο υπνάκος",
+    "russian": "сон / короткий сон",
+    "new": true
+  },
+  {
+    "id": "word-2e525d77af",
+    "greek": "Τα ψώνια",
+    "russian": "покупки",
+    "new": true
+  },
+  {
+    "id": "word-1b40318dcd",
+    "greek": "το αεροπλάνο",
+    "russian": "самолёт",
+    "new": false
+  },
+  {
+    "id": "word-b1d42d3648",
+    "greek": "το απόγευμα",
+    "russian": "вторая половина дня / после полудня",
+    "new": false
+  },
+  {
+    "id": "word-851840aebf",
+    "greek": "Το βραδινό",
+    "russian": "ужин",
+    "new": true
+  },
+  {
+    "id": "word-63c01169a4",
+    "greek": "το εισιτήριο",
+    "russian": "билет",
+    "new": false
+  },
+  {
+    "id": "word-106cd752ba",
+    "greek": "το επάγγελμα",
+    "russian": "профессия",
+    "new": false
+  },
+  {
+    "id": "word-11b5afba38",
+    "greek": "το επώνυμο",
+    "russian": "фамилия",
+    "new": false
+  },
+  {
+    "id": "word-f2044a1a78",
+    "greek": "το εργαστήριο",
+    "russian": "лаборатория / мастерская",
+    "new": false
+  },
+  {
+    "id": "word-3c1440c25f",
+    "greek": "το κέντρο",
+    "russian": "центр",
+    "new": false
+  },
+  {
+    "id": "word-92ff5fd84a",
+    "greek": "Το καλοκαίρι",
+    "russian": "лето",
+    "new": true
+  },
+  {
+    "id": "word-fc155c3490",
+    "greek": "το λεωφορείο",
+    "russian": "автобус",
+    "new": false
+  },
+  {
+    "id": "word-7a69bcc39d",
+    "greek": "το μεσημέρι",
+    "russian": "полдень",
+    "new": false
+  },
+  {
+    "id": "word-76c81c6f93",
+    "greek": "Το μεσημεριανό",
+    "russian": "обед",
+    "new": true
+  },
+  {
+    "id": "word-ebd89f3823",
+    "greek": "το ξενοδοχείο",
+    "russian": "отель / гостиница",
+    "new": false
+  },
+  {
+    "id": "word-650992d1db",
+    "greek": "Το παγωτό",
+    "russian": "мороженое",
+    "new": true
+  },
+  {
+    "id": "word-65a8e5f7ee",
+    "greek": "το ποδήλατο",
+    "russian": "велосипед",
+    "new": false
+  },
+  {
+    "id": "word-76469173e9",
+    "greek": "Το ποτό",
+    "russian": "напиток (обычно алкогольный)",
+    "new": true
+  },
+  {
+    "id": "word-64d354f926",
+    "greek": "Το πρωινό",
+    "russian": "завтрак",
+    "new": true
+  },
+  {
+    "id": "word-5ca34d9848",
+    "greek": "Το ραδιόφωνο",
+    "russian": "радио",
+    "new": true
+  },
+  {
+    "id": "word-cf9ea03d9f",
+    "greek": "Το Σάββατο",
+    "russian": "суббота",
+    "new": true
+  },
+  {
+    "id": "word-589a19ed48",
+    "greek": "το ταξιδιωτικό γραφείο",
+    "russian": "туристическое агентство / туристический офис",
+    "new": false
+  },
+  {
+    "id": "word-49123c7c62",
+    "greek": "το τρένο",
+    "russian": "поезд",
+    "new": false
+  },
+  {
+    "id": "word-9e7951fd34",
+    "greek": "το τραμ",
+    "russian": "трамвай",
+    "new": false
+  },
+  {
+    "id": "word-b8a70f8318",
+    "greek": "το τρόλεϊ",
+    "russian": "троллейбус",
+    "new": false
+  },
+  {
+    "id": "word-a05766aeab",
+    "greek": "Το φαγητό",
+    "russian": "еда",
+    "new": true
+  },
+  {
+    "id": "word-df84c0dffa",
+    "greek": "Το φθινόπωρο",
+    "russian": "осень",
+    "new": true
+  },
+  {
+    "id": "word-70cbe4c279",
+    "greek": "το ωράριο",
+    "russian": "рабочие часы / график работы",
+    "new": false
+  },
+  {
+    "id": "word-3068be08d3",
+    "greek": "Οι ειδήσεις / τα νέα",
+    "russian": "новости",
+    "new": true
+  },
+  {
+    "id": "word-f25b5a9019",
+    "greek": "η ειδοποίηση",
+    "russian": "оповещение / уведомление",
+    "new": true
+  },
+  {
+    "id": "word-1334c5246f",
+    "greek": "η είδηση",
+    "russian": "новость",
+    "new": true
+  },
+  {
+    "id": "word-201268a160",
+    "greek": "Άλλος / άλλη / άλλο",
+    "russian": "другой / другая / другое",
+    "new": true
+  },
+  {
+    "id": "word-7f8eba5593",
+    "greek": "Η παρέα",
+    "russian": "компания друзей / круг друзей",
+    "new": true
+  },
+  {
+    "id": "word-66ef255634",
+    "greek": "Ο ίδιος / η ίδια / το ίδιο",
+    "russian": "тот же / та же / то же / одинаковый / одинаковая / одинаковое",
+    "new": true
+  }
 ]
