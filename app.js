@@ -5,7 +5,7 @@ const SOURCES = [
   ["phrases", "Фразы", "…", "./data/phrases.json"],
   ["conjugations", "Спряжения", "εγώ", "./data/conjugations.json"]
 ];
-const state = { data: {}, deck: [], category: "new", index: 0, revealed: false, quizIndex: 0, answered: false };
+const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
 const saved = JSON.parse(localStorage.getItem("greek-a1-progress") || "{}");
 const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [] };
 const $ = (id) => document.getElementById(id);
@@ -90,23 +90,47 @@ function reveal() {
   saveProgress(); renderCard(); renderDashboard();
 }
 
-function beginQuiz() { stopSpeaking(); state.quizIndex = 0; state.answered = false; state.deck = shuffle(state.deck); showScreen("quiz"); renderQuestion(); }
+function beginQuiz() {
+  stopSpeaking();
+  state.quizIndex = 0;
+  state.answered = false;
+  state.quizDeck = state.category === "conjugations"
+    ? shuffle(state.deck.flatMap(card => Object.entries(card.forms).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] }))).filter(item => item.russian))
+    : shuffle(state.deck.map(card => ({ card })));
+  showScreen("quiz");
+  renderQuestion();
+}
 function renderQuestion() {
-  const card = state.deck[state.quizIndex]; if (!card) return;
+  const item = state.quizDeck[state.quizIndex]; if (!item) return;
+  const card = item.card;
   state.answered = false; $("quiz-next").classList.add("hidden"); $("quiz-feedback").textContent = "";
-  $("quiz-counter").textContent = `${state.quizIndex + 1} / ${state.deck.length}`; $("quiz-question").textContent = card.greek;
-  const distractors = shuffle(allCards().filter(item => item.id !== card.id && item.russian !== card.russian)).slice(0, 3);
+  $("quiz-counter").textContent = `${state.quizIndex + 1} / ${state.quizDeck.length}`;
+  if (item.form) {
+    $("quiz-title").textContent = "Переведите форму глагола";
+    $("quiz-question").textContent = `${item.pronoun} — ${item.form}`;
+    state.quizSpokenText = item.form;
+    state.quizAnswer = item.russian;
+    const alternatives = Object.values(card.russianForms).filter(text => text !== item.russian);
+    const options = shuffle([item.russian, ...shuffle(alternatives).slice(0, 3)]);
+    $("quiz-options").innerHTML = options.map(text => `<button class="quiz-option" data-correct="${text === item.russian}">${text}</button>`).join("");
+    return;
+  }
+  $("quiz-title").textContent = "Выберите перевод";
+  $("quiz-question").textContent = card.greek;
+  state.quizSpokenText = card.greek;
+  state.quizAnswer = card.russian;
+  const distractors = shuffle(allCards().filter(candidate => candidate.type === card.type && candidate.id !== card.id && candidate.russian !== card.russian)).slice(0, 3);
   const options = shuffle([card, ...distractors]);
-  $("quiz-options").innerHTML = options.map(item => `<button class="quiz-option" data-answer="${item.id}">${item.russian}</button>`).join("");
+  $("quiz-options").innerHTML = options.map(option => `<button class="quiz-option" data-correct="${option.id === card.id}">${option.russian}</button>`).join("");
 }
 function answerQuiz(button) {
   if (state.answered) return; state.answered = true;
-  const card = state.deck[state.quizIndex], correct = button.dataset.answer === card.id;
+  const card = state.quizDeck[state.quizIndex].card, correct = button.dataset.correct === "true";
   button.classList.add(correct ? "correct" : "wrong");
-  document.querySelectorAll(".quiz-option").forEach(option => { option.disabled = true; if (option.dataset.answer === card.id) option.classList.add("correct"); });
+  document.querySelectorAll(".quiz-option").forEach(option => { option.disabled = true; if (option.dataset.correct === "true") option.classList.add("correct"); });
   if (correct) progress.mistakes = progress.mistakes.filter(id => id !== card.id); else if (!progress.mistakes.includes(card.id)) progress.mistakes.push(card.id);
   if (!progress.learned.includes(card.id)) progress.learned.push(card.id);
-  saveProgress(); $("quiz-feedback").textContent = correct ? "Верно! Μπράβο!" : `Правильный ответ: ${card.russian}`; $("quiz-next").classList.remove("hidden"); renderDashboard();
+  saveProgress(); $("quiz-feedback").textContent = correct ? "Верно! Μπράβο!" : `Правильный ответ: ${state.quizAnswer}`; $("quiz-next").classList.remove("hidden"); renderDashboard();
 }
 
 document.addEventListener("click", event => {
@@ -124,9 +148,9 @@ $("flashcard").addEventListener("click", event => { if (!event.target.closest("b
 $("flashcard").addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); reveal(); } });
 $("favorite-button").addEventListener("click", () => { const id = state.deck[state.index]?.id; if (!id) return; progress.favorites = progress.favorites.includes(id) ? progress.favorites.filter(item => item !== id) : [...progress.favorites, id]; saveProgress(); renderCard(); });
 $("speak-button").addEventListener("click", () => { const text = state.deck[state.index]?.greek; if (text) speakGreek(text); });
-$("quiz-speak-button").addEventListener("click", () => { const text = state.deck[state.quizIndex]?.greek; if (text) speakGreek(text); });
+$("quiz-speak-button").addEventListener("click", () => { if (state.quizSpokenText) speakGreek(state.quizSpokenText); });
 $("previous-button").addEventListener("click", () => move(-1)); $("next-button").addEventListener("click", () => move(1));
-$("quiz-button").addEventListener("click", beginQuiz); $("quiz-next").addEventListener("click", () => { stopSpeaking(); state.quizIndex = (state.quizIndex + 1) % state.deck.length; renderQuestion(); });
+$("quiz-button").addEventListener("click", beginQuiz); $("quiz-next").addEventListener("click", () => { stopSpeaking(); state.quizIndex = (state.quizIndex + 1) % state.quizDeck.length; renderQuestion(); });
 
 let installPrompt;
 window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); installPrompt = event; $("install-button").classList.remove("hidden"); });
