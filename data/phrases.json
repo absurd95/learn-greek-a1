@@ -58,5 +58,137 @@
     "greek": "Κάνουν παρέα",
     "russian": "они дружат / они общаются",
     "new": true
+  },
+  {
+    "id": "phrase-72af7a54a5",
+    "greek": "Τι κάνεις;",
+    "russian": "Как дела?",
+    "new": true
+  },
+  {
+    "id": "phrase-01e34a099b",
+    "greek": "Πώς είσαι;",
+    "russian": "Как ты себя чувствуешь?",
+    "new": true
+  },
+  {
+    "id": "phrase-5db46833f4",
+    "greek": "Πώς πάει;",
+    "russian": "Как идут дела?",
+    "new": true
+  },
+  {
+    "id": "phrase-9054cd06c7",
+    "greek": "Τι γίνεται;",
+    "russian": "Что происходит? / Как дела?",
+    "new": true
+  },
+  {
+    "id": "phrase-0563dec29b",
+    "greek": "Τι νέα;",
+    "russian": "Что нового?",
+    "new": true
+  },
+  {
+    "id": "phrase-cc18404efa",
+    "greek": "Μια χαρά.",
+    "russian": "Отлично.",
+    "new": true
+  },
+  {
+    "id": "phrase-42ae8a7a56",
+    "greek": "Πολύ καλά.",
+    "russian": "Очень хорошо.",
+    "new": true
+  },
+  {
+    "id": "phrase-cbb391f1d9",
+    "greek": "Καλά.",
+    "russian": "Хорошо.",
+    "new": true
+  },
+  {
+    "id": "phrase-dec9c906c6",
+    "greek": "Έτσι κι έτσι.",
+    "russian": "Так себе.",
+    "new": true
+  },
+  {
+    "id": "phrase-909bc2d871",
+    "greek": "Τα ίδια.",
+    "russian": "Всё по-старому.",
+    "new": true
+  },
+  {
+    "id": "phrase-1811851680",
+    "greek": "Όχι και τόσο καλά.",
+    "russian": "Не очень хорошо.",
+    "new": true
+  },
+  {
+    "id": "phrase-1d74c8a1cd",
+    "greek": "Καλούτσικα.",
+    "russian": "Более-менее.",
+    "new": true
+  },
+  {
+    "id": "phrase-04ff9b1591",
+    "greek": "Χάλια.",
+    "russian": "Ужасно.",
+    "new": true
+  },
+  {
+    "id": "phrase-b8f24261ee",
+    "greek": "Τι δουλειά κάνεις;",
+    "russian": "Кем ты работаешь?",
+    "new": true
+  },
+  {
+    "id": "phrase-b78c4f6ff0",
+    "greek": "Τι δουλειά κάνετε;",
+    "russian": "Кем вы работаете?",
+    "new": true
+  },
+  {
+    "id": "phrase-c31156bbaf",
+    "greek": "Είμαι καθηγητής / καθηγήτρια.",
+    "russian": "Я преподаватель / преподавательница.",
+    "new": true
+  },
+  {
+    "id": "phrase-0eb25d3ae6",
+    "greek": "Από πού είσαι;",
+    "russian": "Откуда ты?",
+    "new": true
+  },
+  {
+    "id": "phrase-36b5b6d15c",
+    "greek": "Είμαι από τη Ρωσία.",
+    "russian": "Я из России.",
+    "new": true
+  },
+  {
+    "id": "phrase-c9180f8557",
+    "greek": "Τι γλώσσες μιλάς;",
+    "russian": "На каких языках ты говоришь?",
+    "new": true
+  },
+  {
+    "id": "phrase-87a9605437",
+    "greek": "Μιλάω ελληνικά.",
+    "russian": "Я говорю по-гречески.",
+    "new": true
+  },
+  {
+    "id": "phrase-ba73aa95e4",
+    "greek": "Πώς σε λένε;",
+    "russian": "Как тебя зовут?",
+    "new": true
+  },
+  {
+    "id": "phrase-02aca0e6a4",
+    "greek": "Με λένε Μαρία.",
+    "russian": "Меня зовут Мария.",
+    "new": true
   }
 ]

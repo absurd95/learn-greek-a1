@@ -3,6 +3,8 @@ const SOURCES = [
   ["verbs", "Глаголы", "ρήμα", "./data/verbs.json"],
   ["adverbs", "Наречия", "τώρα", "./data/adverbs.json"],
   ["phrases", "Фразы", "…", "./data/phrases.json"],
+  ["professions", "Профессии", "⚒", "./data/professions.json"],
+  ["nationalities", "Национальности", "◎", "./data/nationalities.json"],
   ["conjugations", "Спряжения", "εγώ", "./data/conjugations.json"]
 ];
 const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
@@ -55,15 +57,16 @@ function renderDashboard() {
   $("progress-bar").style.width = `${all.length ? learnedCount / all.length * 100 : 0}%`;
   const sections = [
     ["new", "Новые", "＋", getDeck("new").length],
-    ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, getDeck(key).length])
+    ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, getDeck(key).length]),
+    ["grammar", "Грамматика", "§", "12 тем"]
   ];
-  $("category-grid").innerHTML = sections.map(([key, label, symbol, count]) => `<button class="category" data-category="${key}"><span class="symbol">${symbol}</span><strong>${label}</strong><small>${count} карточек</small></button>`).join("");
+  $("category-grid").innerHTML = sections.map(([key, label, symbol, count]) => `<button class="category" data-category="${key}"><span class="symbol">${symbol}</span><strong>${label}</strong><small>${typeof count === "number" ? `${count} карточек` : count}</small></button>`).join("");
 }
 
 function openCategory(category) {
   stopSpeaking();
   state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false;
-  const title = { new: "Новые", all: "Все слова", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", conjugations: "Спряжения" }[category];
+  const title = { new: "Новые", all: "Все слова", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", conjugations: "Спряжения" }[category];
   $("study-title").textContent = title; $("study-kicker").textContent = category === "conjugations" ? "Таблицы форм" : "Карточки";
   showScreen("study"); renderCard();
 }
@@ -134,7 +137,7 @@ function answerQuiz(button) {
 }
 
 document.addEventListener("click", event => {
-  const category = event.target.closest("[data-category]")?.dataset.category; if (category) openCategory(category);
+  const category = event.target.closest("[data-category]")?.dataset.category; if (category) category === "grammar" ? showScreen("grammar") : openCategory(category);
   const go = event.target.closest("[data-go]")?.dataset.go; if (go) showScreen(go);
   if (event.target.closest(".quiz-option")) answerQuiz(event.target.closest(".quiz-option"));
   const formButton = event.target.closest(".speak-form");
@@ -143,6 +146,8 @@ document.addEventListener("click", event => {
     const form = forms[Number(formButton.dataset.formIndex)];
     if (form) speakGreek(form);
   }
+  const grammarSpeak = event.target.closest("[data-speak]");
+  if (grammarSpeak) speakGreek(grammarSpeak.dataset.speak);
 });
 $("flashcard").addEventListener("click", event => { if (!event.target.closest("button")) reveal(); });
 $("flashcard").addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); reveal(); } });
@@ -151,6 +156,16 @@ $("speak-button").addEventListener("click", () => { const text = state.deck[stat
 $("quiz-speak-button").addEventListener("click", () => { if (state.quizSpokenText) speakGreek(state.quizSpokenText); });
 $("previous-button").addEventListener("click", () => move(-1)); $("next-button").addEventListener("click", () => move(1));
 $("quiz-button").addEventListener("click", beginQuiz); $("quiz-next").addEventListener("click", () => { stopSpeaking(); state.quizIndex = (state.quizIndex + 1) % state.quizDeck.length; renderQuestion(); });
+$("grammar-search").addEventListener("input", event => {
+  const query = event.target.value.trim().toLocaleLowerCase("ru");
+  let visible = 0;
+  document.querySelectorAll("[data-grammar-card]").forEach(card => {
+    const matches = !query || card.textContent.toLocaleLowerCase("ru").includes(query);
+    card.classList.toggle("hidden", !matches);
+    if (matches) visible += 1;
+  });
+  $("grammar-no-results").classList.toggle("hidden", visible > 0);
+});
 
 let installPrompt;
 window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); installPrompt = event; $("install-button").classList.remove("hidden"); });

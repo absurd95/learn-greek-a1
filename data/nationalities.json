@@ -1,0 +1,92 @@
+[
+  {
+    "id": "nationality-784686ebf1",
+    "greek": "Έλληνας / Ελληνίδα",
+    "russian": "грек / гречанка",
+    "new": true
+  },
+  {
+    "id": "nationality-63892fd9f3",
+    "greek": "Ισπανός / Ισπανίδα",
+    "russian": "испанец / испанка",
+    "new": true
+  },
+  {
+    "id": "nationality-2a57ff5cc3",
+    "greek": "Ρώσος / Ρωσίδα",
+    "russian": "русский / русская",
+    "new": true
+  },
+  {
+    "id": "nationality-f593327c16",
+    "greek": "Ελβετός / Ελβετίδα",
+    "russian": "швейцарец / швейцарка",
+    "new": true
+  },
+  {
+    "id": "nationality-60a8c95a1a",
+    "greek": "Αυστραλός / Αυστραλέζα",
+    "russian": "австралиец / австралийка",
+    "new": true
+  },
+  {
+    "id": "nationality-34e36bd259",
+    "greek": "Πολωνός / Πολωνή / Πολωνέζα",
+    "russian": "поляк / полька",
+    "new": true
+  },
+  {
+    "id": "nationality-017039052b",
+    "greek": "Σουηδός / Σουηδέζα",
+    "russian": "швед / шведка",
+    "new": true
+  },
+  {
+    "id": "nationality-993180dedc",
+    "greek": "Κινέζος / Κινέζα",
+    "russian": "китаец / китаянка",
+    "new": true
+  },
+  {
+    "id": "nationality-1740875b4d",
+    "greek": "Γιαπωνέζος / Γιαπωνέζα",
+    "russian": "японец / японка",
+    "new": true
+  },
+  {
+    "id": "nationality-e418ca0160",
+    "greek": "Αλβανός / Αλβανή / Αλβανίδα",
+    "russian": "албанец / албанка",
+    "new": true
+  },
+  {
+    "id": "nationality-83f07d2b16",
+    "greek": "Ουκρανός / Ουκρανή",
+    "russian": "украинец / украинка",
+    "new": true
+  },
+  {
+    "id": "nationality-4ad55d7caa",
+    "greek": "Ιρακινός / Ιρακινή",
+    "russian": "иракец / иракчанка",
+    "new": true
+  },
+  {
+    "id": "nationality-a98ee7313c",
+    "greek": "Αιγύπτιος / Αιγύπτια",
+    "russian": "египтянин / египтянка",
+    "new": true
+  },
+  {
+    "id": "nationality-a4c55d669f",
+    "greek": "Βούλγαρος / Βουλγάρα",
+    "russian": "болгарин / болгарка",
+    "new": true
+  },
+  {
+    "id": "nationality-2598fa3409",
+    "greek": "Τούρκος / Τουρκάλα",
+    "russian": "турок / турчанка",
+    "new": true
+  }
+]

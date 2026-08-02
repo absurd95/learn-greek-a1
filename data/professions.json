@@ -1,0 +1,128 @@
+[
+  {
+    "id": "profession-dd070caf5d",
+    "greek": "καθηγητής / καθηγήτρια",
+    "russian": "преподаватель / преподавательница",
+    "new": true
+  },
+  {
+    "id": "profession-e86ba4bf85",
+    "greek": "κομμωτής / κομμώτρια",
+    "russian": "парикмахер (м. / ж.)",
+    "new": true
+  },
+  {
+    "id": "profession-d527922bba",
+    "greek": "φοιτητής / φοιτήτρια",
+    "russian": "студент / студентка",
+    "new": true
+  },
+  {
+    "id": "profession-280986db7b",
+    "greek": "εργάτης / εργάτρια",
+    "russian": "рабочий / работница",
+    "new": true
+  },
+  {
+    "id": "profession-8c0c9d137a",
+    "greek": "πωλητής / πωλήτρια",
+    "russian": "продавец / продавщица",
+    "new": true
+  },
+  {
+    "id": "profession-02a3a6de96",
+    "greek": "αθλητής / αθλήτρια",
+    "russian": "спортсмен / спортсменка",
+    "new": true
+  },
+  {
+    "id": "profession-a34ac051ff",
+    "greek": "δικηγόρος",
+    "russian": "адвокат",
+    "new": true
+  },
+  {
+    "id": "profession-e80a78cc2a",
+    "greek": "ηλεκτρολόγος",
+    "russian": "электрик",
+    "new": true
+  },
+  {
+    "id": "profession-5e71a94bd7",
+    "greek": "οδηγός",
+    "russian": "водитель",
+    "new": true
+  },
+  {
+    "id": "profession-e92ba1f8d5",
+    "greek": "μηχανικός",
+    "russian": "инженер / механик",
+    "new": true
+  },
+  {
+    "id": "profession-6fcfa09f44",
+    "greek": "γιατρός",
+    "russian": "врач",
+    "new": true
+  },
+  {
+    "id": "profession-16fe55d0c2",
+    "greek": "σερβιτόρος / σερβιτόρα",
+    "russian": "официант / официантка",
+    "new": true
+  },
+  {
+    "id": "profession-0b5e5e6ff9",
+    "greek": "νοσοκόμος / νοσοκόμα",
+    "russian": "медбрат / медсестра",
+    "new": true
+  },
+  {
+    "id": "profession-c9678ccaaa",
+    "greek": "δάσκαλος / δασκάλα",
+    "russian": "учитель / учительница",
+    "new": true
+  },
+  {
+    "id": "profession-b744cc115b",
+    "greek": "άνεργος / άνεργη",
+    "russian": "безработный / безработная",
+    "new": true
+  },
+  {
+    "id": "profession-acc4473b18",
+    "greek": "μάγειρας / μαγείρισσα",
+    "russian": "повар (м. / ж.)",
+    "new": true
+  },
+  {
+    "id": "profession-ceac4ff5b6",
+    "greek": "υπάλληλος",
+    "russian": "служащий / сотрудник",
+    "new": true
+  },
+  {
+    "id": "profession-e572c3852b",
+    "greek": "ηθοποιός",
+    "russian": "актёр / актриса",
+    "new": true
+  },
+  {
+    "id": "profession-ab7f3f56df",
+    "greek": "ταμίας",
+    "russian": "кассир",
+    "new": true
+  },
+  {
+    "id": "profession-fca5b44867",
+    "greek": "αρχιτέκτονας",
+    "russian": "архитектор",
+    "new": true
+  },
+  {
+    "id": "profession-ee72445ff4",
+    "greek": "γραμματέας",
+    "russian": "секретарь",
+    "new": true
+  }
+]

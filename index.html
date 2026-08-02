@@ -76,6 +76,118 @@
         <button id="quiz-next" class="hidden" type="button">Следующий вопрос</button>
       </div>
     </section>
+
+    <section id="grammar" class="screen grammar-screen" aria-labelledby="grammar-title">
+      <div class="section-heading">
+        <button class="back-button" type="button" data-go="dashboard">← Назад</button>
+        <div><p class="eyebrow">Быстрый справочник</p><h2 id="grammar-title">Грамматика A1</h2></div>
+      </div>
+      <div class="grammar-hero">
+        <img src="./assets/grammar/grammar-hero.webp" alt="Тетрадь, карточки с греческими буквами и колонна">
+        <div><h3>Все правила под рукой</h3><p>Ищите по-русски или по-гречески. Темы расположены от основы к практическим ситуациям.</p></div>
+      </div>
+      <label class="grammar-search"><span>Найти правило или пример</span><input id="grammar-search" type="search" placeholder="Например: артикли, από, профессии…" autocomplete="off"></label>
+      <nav class="grammar-toc" aria-label="Темы грамматики">
+        <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a>
+      </nav>
+      <p id="grammar-no-results" class="empty hidden">Ничего не найдено. Попробуйте другое слово.</p>
+
+      <div id="grammar-list" class="grammar-list">
+        <article id="grammar-gender" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">01</div><p class="eyebrow">Основа</p><h3>Род и артикли</h3>
+          <p>У существительного в греческом есть род. Учите слово сразу с артиклем: он помогает выбрать окончания прилагательных и местоимений.</p>
+          <div class="rule-grid"><div><strong>Мужской</strong><code>ο</code><p>часто <b>-ος, -ας, -ης</b></p><span>ο φίλος — друг</span></div><div><strong>Женский</strong><code>η</code><p>часто <b>-α, -η</b></p><span>η χώρα — страна</span></div><div><strong>Средний</strong><code>το</code><p>часто <b>-ο, -ι, -μα</b></p><span>το παιδί — ребёнок</span></div></div>
+          <div class="example"><span>Пример</span><b>Ο Γιώργος, η Μαρία, το γράμμα.</b><button class="grammar-speak" data-speak="Ο Γιώργος, η Μαρία, το γράμμα." type="button" aria-label="Произнести пример">🔊</button></div>
+          <figure><img loading="lazy" src="./assets/grammar/02-gender-endings.webp" alt="Схема окончаний существительных трёх родов"><figcaption>Типичные окончания помогают определить род, но бывают исключения.</figcaption></figure>
+        </article>
+
+        <article id="grammar-pronouns" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">02</div><p class="eyebrow">Кто и чей</p><h3>Личные и притяжательные местоимения</h3>
+          <p>Личное местоимение часто опускается: окончание глагола уже показывает лицо. Притяжательное ставится после существительного с артиклем.</p>
+          <div class="mini-table"><b>εγώ — я</b><span>μου — мой / моя / моё</span><b>εσύ — ты</b><span>σου — твой</span><b>αυτός / αυτή / αυτό</b><span>του / της / του — его / её</span><b>εμείς — мы</b><span>μας — наш</span><b>εσείς — вы</b><span>σας — ваш</span><b>αυτοί / αυτές / αυτά</b><span>τους — их</span></div>
+          <div class="example"><span>Пример</span><b>Αυτό είναι το σπίτι μου.</b><i>Это мой дом.</i><button class="grammar-speak" data-speak="Αυτό είναι το σπίτι μου." type="button" aria-label="Произнести пример">🔊</button></div>
+          <figure><img loading="lazy" src="./assets/grammar/04-pronouns.webp" alt="Личные и притяжательные местоимения"><figcaption>Соответствие личных и притяжательных форм.</figcaption></figure>
+        </article>
+
+        <article id="grammar-eimai" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">03</div><p class="eyebrow">Главный глагол</p><h3>Είμαι — быть</h3>
+          <p>Используется, чтобы назвать себя, профессию, национальность, состояние или происхождение. В русском настоящего времени «есть» обычно нет, а в греческом форма обязательна.</p>
+          <div class="forms-grid"><span>εγώ <b>είμαι</b></span><span>εσύ <b>είσαι</b></span><span>αυτός / αυτή / αυτό <b>είναι</b></span><span>εμείς <b>είμαστε</b></span><span>εσείς <b>είστε</b></span><span>αυτοί / αυτές / αυτά <b>είναι</b></span></div>
+          <div class="example"><span>Примеры</span><b>Είμαι από τη Ρωσία. Είμαι γιατρός.</b><i>Я из России. Я врач.</i><button class="grammar-speak" data-speak="Είμαι από τη Ρωσία. Είμαι γιατρός." type="button" aria-label="Произнести пример">🔊</button></div>
+          <figure><img loading="lazy" src="./assets/grammar/10-eimai.webp" alt="Спряжение είμαι и конструкция είμαι από"><figcaption><b>από + артикль</b>: από τον Καναδά, από την Ισπανία, από το Μεξικό.</figcaption></figure>
+        </article>
+
+        <article id="grammar-names" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">04</div><p class="eyebrow">Знакомство</p><h3>Как спросить имя</h3>
+          <p>Форма вопросительного слова зависит от рода человека или предмета. В разговоре имя спрашивают конструкцией <b>Πώς σε λένε;</b>.</p>
+          <div class="phrase-list"><p><b>Ποιος είναι αυτός;</b><span>Кто он?</span></p><p><b>Ποια είναι αυτή;</b><span>Кто она?</span></p><p><b>Ποιο είναι αυτό το παιδί;</b><span>Кто этот ребёнок?</span></p><p><b>Πώς σε λένε; — Με λένε Μαρία.</b><span>Как тебя зовут? — Меня зовут Мария.</span></p></div>
+          <figure><img loading="lazy" src="./assets/grammar/05-names.webp" alt="Вопросы кто это и как зовут"><figcaption>Для вежливого обращения: <b>Πώς σας λένε;</b></figcaption></figure>
+        </article>
+
+        <article id="grammar-verbs" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">05</div><p class="eyebrow">Настоящее время</p><h3>Типы глаголов A1, B1, B2</h3>
+          <p>Тип определяется ударением и окончаниями. В приложении тип указан на каждой карточке спряжения.</p>
+          <div class="rule-stack"><div><b>A1 · γράφω</b><code>-ω, -εις, -ει, -ουμε, -ετε, -ουν</code><p>Ударение не на последнем слоге.</p></div><div><b>B1 · μιλάω / μιλώ</b><code>-άω, -άς, -άει, -άμε, -άτε, -άνε</code><p>Разговорная модель на -άω.</p></div><div><b>B2 · οδηγώ</b><code>-ώ, -είς, -εί, -ούμε, -είτε, -ούν</code><p>Ударение на окончании.</p></div></div>
+          <div class="example"><span>Пример</span><b>Γράφω, μιλάς, οδηγεί, μπορούμε.</b><button class="grammar-speak" data-speak="Γράφω, μιλάς, οδηγεί, μπορούμε." type="button" aria-label="Произнести пример">🔊</button></div>
+          <figure><img loading="lazy" src="./assets/grammar/12-conjugation-types.webp" alt="Три типа спряжения греческих глаголов"><figcaption>Сравнение окончаний A1, B1 и B2.</figcaption></figure>
+        </article>
+
+        <article id="grammar-prepositions" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">06</div><p class="eyebrow">Винительный падеж</p><h3>Артикли после предлогов и конечная ν</h3>
+          <p>После <b>σε, από, για, με</b> обычно нужен винительный падеж: <b>τον, την, το</b>. Предлог <b>σε</b> сливается с артиклем.</p>
+          <div class="rule-grid"><div><strong>σε + τον</strong><code>στον</code><span>στον Πειραιά</span></div><div><strong>σε + την</strong><code>στην</code><span>στην Αθήνα</span></div><div><strong>σε + το</strong><code>στο</code><span>στο κέντρο</span></div></div>
+          <p class="note"><b>Конечная ν:</b> в <b>τον, την, δεν, μην</b> сохраняется перед гласными и κ, π, τ, μπ, ντ, γκ, τσ, τζ, ξ, ψ. В мужском <b>τον</b> в современном письме ν обычно сохраняют всегда.</p>
+          <div class="image-pair"><figure><img loading="lazy" src="./assets/grammar/03-final-nu.webp" alt="Правило конечной ню"><figcaption>Мнемоника для конечной ν.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/18-apo-gia.webp" alt="Примеры предлогов από и για"><figcaption><b>από</b> — из/от, <b>για</b> — для/в направлении.</figcaption></figure></div>
+        </article>
+
+        <article id="grammar-movement" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">07</div><p class="eyebrow">Где и куда</p><h3>Движение и транспорт</h3>
+          <p><b>σε / στον / στην / στο</b> обозначает направление или место. <b>με</b> — способ передвижения. С некоторыми глаголами места предлог не нужен.</p>
+          <div class="phrase-list"><p><b>Πάω στο κέντρο με το λεωφορείο.</b><span>Я еду в центр на автобусе.</span></p><p><b>Μένω στην Αθήνα.</b><span>Я живу в Афинах — без σε после μένω.</span></p><p><b>Γυρίζω στο σπίτι.</b><span>Я возвращаюсь домой.</span></p><p><b>Ταξιδεύω με το αεροπλάνο.</b><span>Я путешествую на самолёте.</span></p></div>
+          <div class="image-pair"><figure><img loading="lazy" src="./assets/grammar/11-movement.webp" alt="Пάω и предлоги с транспортом"><figcaption>Πηγαίνω / πάω и сочетания с транспортом.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/17-motion-prepositions.webp" alt="Глаголы движения с σε и με"><figcaption>Где нужен <b>σε</b>, а где — <b>με</b>.</figcaption></figure></div>
+        </article>
+
+        <article id="grammar-numbers" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">08</div><p class="eyebrow">Количество</p><h3>Числа от 100</h3>
+          <p>Сотни согласуются с существительным: <b>διακόσιοι</b> люди, <b>διακόσιες</b> страницы, <b>διακόσια</b> евро. Для простого счёта обычно используется средний род.</p>
+          <div class="forms-grid"><span>100 <b>εκατό</b></span><span>200 <b>διακόσια</b></span><span>300 <b>τριακόσια</b></span><span>400 <b>τετρακόσια</b></span><span>500 <b>πεντακόσια</b></span><span>1000 <b>χίλια</b></span></div>
+          <div class="example"><span>Пример</span><b>Το εισιτήριο κοστίζει εκατόν δύο ευρώ.</b><i>Билет стоит 102 евро.</i></div>
+          <figure><img loading="lazy" src="./assets/grammar/09-numbers.webp" alt="Греческие числа от 100 до 1000"><figcaption>У 200–900 изменяется первая часть и добавляется <b>-κόσια</b>.</figcaption></figure>
+        </article>
+
+        <article id="grammar-time" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">09</div><p class="eyebrow">Когда и как долго</p><h3>Время, διάρκεια и έως</h3>
+          <p>Для точного времени: <b>στη μία</b>, но <b>στις δύο / τρεις…</b>. Время суток помогает уточнить контекст.</p>
+          <div class="phrase-list"><p><b>Είναι μία και τέταρτο.</b><span>Четверть второго.</span></p><p><b>Είναι τρεις και μισή.</b><span>Половина четвёртого.</span></p><p><b>Είναι τρεις παρά τέταρτο.</b><span>Без четверти три.</span></p><p><b>Από τις εννέα έως τις δώδεκα.</b><span>С девяти до двенадцати.</span></p><p><b>Πόσον καιρό είσαι εδώ; — Έναν χρόνο.</b><span>Как долго ты здесь? — Один год.</span></p></div>
+          <div class="image-pair"><figure><img loading="lazy" src="./assets/grammar/13-time.webp" alt="Как говорить время по-гречески"><figcaption>Часы и части суток.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/14-duration.webp" alt="Вопрос о продолжительности времени"><figcaption><b>Πόσον καιρό;</b> — как долго?</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/15-until.webp" alt="Разница έως, ως и μέχρι"><figcaption><b>έως / ως / μέχρι</b> — до, вплоть до.</figcaption></figure></div>
+        </article>
+
+        <article id="grammar-mood" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">10</div><p class="eyebrow">Разговор</p><h3>Приветствие и настроение</h3>
+          <p>С друзьями: <b>Τι κάνεις;</b>. Вежливо или к нескольким людям: <b>Τι κάνετε;</b>. Ответ может быть коротким — глагол повторять не нужно.</p>
+          <div class="phrase-list"><p><b>Τι νέα; — Μια χαρά.</b><span>Что нового? — Отлично.</span></p><p><b>Πώς πάει; — Έτσι κι έτσι.</b><span>Как дела? — Так себе.</span></p><p><b>Τι γίνεται; — Τα ίδια.</b><span>Как оно? — Всё по-старому.</span></p><p><b>Όχι και τόσο καλά.</b><span>Не очень хорошо.</span></p></div>
+          <div class="image-pair"><figure><img loading="lazy" src="./assets/grammar/01-greetings-mood.webp" alt="Вопросы о настроении и ответы"><figcaption>Разговорные вопросы и ответы.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/08-mood-scale.webp" alt="Шкала ответов от очень хорошо до совсем плохо"><figcaption>От <b>πολύ καλά</b> до <b>καθόλου</b>.</figcaption></figure></div>
+        </article>
+
+        <article id="grammar-professions" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">11</div><p class="eyebrow">Тематический словарь</p><h3>Профессии</h3>
+          <p>После <b>είμαι</b> профессия обычно употребляется без артикля. У многих названий есть отдельные мужская и женская формы.</p>
+          <div class="example"><span>Диалог</span><b>Τι δουλειά κάνεις; — Είμαι μηχανικός.</b><i>Кем ты работаешь? — Я инженер.</i><button class="grammar-speak" data-speak="Τι δουλειά κάνεις; Είμαι μηχανικός." type="button" aria-label="Произнести пример">🔊</button></div>
+          <div class="word-cloud"><span>καθηγητής / καθηγήτρια</span><span>γιατρός</span><span>οδηγός</span><span>μηχανικός</span><span>σερβιτόρος / σερβιτόρα</span><span>δάσκαλος / δασκάλα</span><span>μάγειρας / μαγείρισσα</span></div>
+          <p class="note">Все 21 профессия добавлены в отдельный раздел и тест.</p>
+          <figure><img loading="lazy" src="./assets/grammar/06-professions.webp" alt="Названия профессий в мужском и женском роде"><figcaption>Формы профессий и вопрос <b>Τι δουλειά κάνεις;</b></figcaption></figure>
+        </article>
+
+        <article id="grammar-nationalities" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">12</div><p class="eyebrow">Тематический словарь</p><h3>Национальности и языки</h3>
+          <p>Национальность согласуется с полом человека. Название языка обычно среднего рода во множественном числе и употребляется без артикля после <b>μιλάω</b>.</p>
+          <div class="phrase-list"><p><b>Είμαι Ρώσος / Ρωσίδα.</b><span>Я русский / русская.</span></p><p><b>Είμαι από τη Ρωσία.</b><span>Я из России.</span></p><p><b>Μιλάω ρωσικά και ελληνικά.</b><span>Я говорю по-русски и по-гречески.</span></p></div>
+          <div class="example"><span>Диалог</span><b>Από πού είσαι; — Είμαι από την Ισπανία.</b><button class="grammar-speak" data-speak="Από πού είσαι; Είμαι από την Ισπανία." type="button" aria-label="Произнести пример">🔊</button></div>
+          <p class="note">15 национальностей добавлены в отдельный раздел и тест.</p>
+          <figure><img loading="lazy" src="./assets/grammar/07-nationalities.webp" alt="Национальности и соответствующие языки"><figcaption>Мужские, женские формы и названия языков.</figcaption></figure>
+        </article>
+      </div>
+    </section>
   </main>
 
   <nav class="bottom-nav" aria-label="Основная навигация">
@@ -83,6 +195,7 @@
     <button type="button" data-category="all"><span>ΑΩ</span>Все</button>
     <button type="button" data-category="favorites"><span>☆</span>Избранное</button>
     <button type="button" data-category="mistakes"><span>↺</span>Ошибки</button>
+    <button type="button" data-category="grammar"><span>§</span>Правила</button>
   </nav>
   <script type="module" src="./app.js"></script>
 </body>
