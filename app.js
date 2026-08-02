@@ -60,7 +60,7 @@ function renderDashboard() {
   const sections = [
     ["new", "Новые", "＋", getDeck("new").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, getDeck(key).length]),
-    ["grammar", "Грамматика", "§", "13 тем"]
+    ["grammar", "Грамматика", "§", "14 тем"]
   ];
   $("category-grid").innerHTML = sections.map(([key, label, symbol, count]) => `<button class="category" data-category="${key}"><span class="symbol">${symbol}</span><strong>${label}</strong><small>${typeof count === "number" ? `${count} карточек` : count}</small></button>`).join("");
 }
@@ -150,6 +150,8 @@ document.addEventListener("click", event => {
   }
   const grammarSpeak = event.target.closest("[data-speak]");
   if (grammarSpeak) speakGreek(grammarSpeak.dataset.speak);
+  const grammarImage = event.target.closest("#grammar img");
+  if (grammarImage) openImageLightbox(grammarImage);
 });
 $("flashcard").addEventListener("click", event => { if (!event.target.closest("button")) reveal(); });
 $("flashcard").addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); reveal(); } });
@@ -168,6 +170,26 @@ $("grammar-search").addEventListener("input", event => {
   });
   $("grammar-no-results").classList.toggle("hidden", visible > 0);
 });
+
+let lightboxReturnFocus;
+function openImageLightbox(source) {
+  lightboxReturnFocus = source;
+  $("image-lightbox-image").src = source.currentSrc || source.src;
+  $("image-lightbox-image").alt = source.alt;
+  $("image-lightbox-caption").textContent = source.closest("figure")?.querySelector("figcaption")?.textContent || source.alt;
+  $("image-lightbox").classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+  $("image-lightbox-close").focus();
+}
+function closeImageLightbox() {
+  $("image-lightbox").classList.add("hidden");
+  $("image-lightbox-image").removeAttribute("src");
+  document.body.style.overflow = "";
+  lightboxReturnFocus?.focus();
+}
+$("image-lightbox-close").addEventListener("click", closeImageLightbox);
+$("image-lightbox").addEventListener("click", event => { if (event.target === $("image-lightbox")) closeImageLightbox(); });
+document.addEventListener("keydown", event => { if (event.key === "Escape" && !$("image-lightbox").classList.contains("hidden")) closeImageLightbox(); });
 
 let installPrompt;
 window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); installPrompt = event; $("install-button").classList.remove("hidden"); });

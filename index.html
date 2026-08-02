@@ -88,7 +88,7 @@
       </div>
       <label class="grammar-search"><span>Найти правило или пример</span><input id="grammar-search" type="search" placeholder="Например: артикли, από, профессии…" autocomplete="off"></label>
       <nav class="grammar-toc" aria-label="Темы грамматики">
-        <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-calendar">Календарь</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a>
+        <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-calendar">Календарь</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-frequency">Как часто</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a>
       </nav>
       <p id="grammar-no-results" class="empty hidden">Ничего не найдено. Попробуйте другое слово.</p>
 
@@ -167,20 +167,35 @@
 
         <article id="grammar-time" class="grammar-card" data-grammar-card>
           <div class="grammar-number">10</div><p class="eyebrow">Когда и как долго</p><h3>Время, διάρκεια и έως</h3>
-          <p>Для точного времени: <b>στη μία</b>, но <b>στις δύο / τρεις…</b>. Время суток помогает уточнить контекст.</p>
-          <div class="phrase-list"><p><b>Είναι μία και τέταρτο.</b><span>Четверть второго.</span></p><p><b>Είναι τρεις και μισή.</b><span>Половина четвёртого.</span></p><p><b>Είναι τρεις παρά τέταρτο.</b><span>Без четверти три.</span></p><p><b>Από τις εννέα έως τις δώδεκα.</b><span>С девяти до двенадцати.</span></p><p><b>Πόσον καιρό είσαι εδώ; — Έναν χρόνο.</b><span>Как долго ты здесь? — Один год.</span></p></div>
-          <div class="image-pair"><figure><img loading="lazy" src="./assets/grammar/13-time.webp" alt="Как говорить время по-гречески"><figcaption>Часы и части суток.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/14-duration.webp" alt="Вопрос о продолжительности времени"><figcaption><b>Πόσον καιρό;</b> — как долго?</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/15-until.webp" alt="Разница έως, ως и μέχρι"><figcaption><b>έως / ως / μέχρι</b> — до, вплоть до.</figcaption></figure></div>
+          <p>Для точного времени: <b>στη μία</b>, но <b>στις δύο / τρεις…</b>. Чтобы спросить о продолжительности, используйте <b>Πόσο καιρό;</b>.</p>
+          <div class="phrase-list"><p><b>Είναι μία και τέταρτο.</b><span>Четверть второго.</span></p><p><b>Είναι τρεις και μισή.</b><span>Половина четвёртого.</span></p><p><b>Είναι τρεις παρά τέταρτο.</b><span>Без четверти три.</span></p><p><b>Από τις εννέα έως τις δώδεκα.</b><span>С девяти до двенадцати.</span></p></div>
+          <h4>Как сказать «вот уже…»</h4>
+          <p><b>εδώ και + период</b> означает, что действие началось раньше и продолжается сейчас. В русском это «уже», «вот уже».</p>
+          <div class="rule-stack"><div><b>εδώ και — уже в течение</b><code>Εδώ και δύο χρόνια.</code><p>Вот уже два года.</p></div><div><b>από — начиная с точки</b><code>Από το 2024.</code><p>С 2024 года.</p></div><div><b>για — на срок / в течение</b><code>Για δύο εβδομάδες.</code><p>На две недели.</p></div></div>
+          <div class="phrase-list"><p><b>Πόσο καιρό είσαι εδώ; — Εδώ και δύο χρόνια.</b><span>Как давно ты здесь? — Вот уже два года.</span></p><p><b>Πόσο καιρό δουλεύεις εδώ; — Εδώ και έξι μήνες.</b><span>Как долго ты здесь работаешь? — Уже шесть месяцев.</span></p><p><b>Μένω στην Κύπρο εδώ και έναν χρόνο.</b><span>Я живу на Кипре уже год.</span></p><p><b>Μαθαίνω ελληνικά εδώ και τρεις μήνες.</b><span>Я учу греческий уже три месяца.</span></p><p><b>Τον ξέρω από το 2023.</b><span>Я знаю его с 2023 года.</span></p><p><b>Μένω στην Αθήνα για δύο εβδομάδες.</b><span>Я остаюсь в Афинах на две недели.</span></p></div>
+          <div class="example"><span>Произнесите</span><b>Μαθαίνω ελληνικά εδώ και δύο χρόνια.</b><i>Я учу греческий вот уже два года.</i><button class="grammar-speak" data-speak="Μαθαίνω ελληνικά εδώ και δύο χρόνια." type="button" aria-label="Произнести пример">🔊</button></div>
+          <div class="image-pair"><figure><img loading="lazy" src="./assets/grammar/13-time.webp" alt="Как говорить время по-гречески"><figcaption>Часы и части суток.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/23-duration-phrases.webp" alt="Вопрос сколько времени и ответ вот уже два года"><figcaption><b>Εδώ και δύο χρόνια</b> — вот уже два года.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/15-until.webp" alt="Разница έως, ως и μέχρι"><figcaption><b>έως / ως / μέχρι</b> — до, вплоть до.</figcaption></figure></div>
+        </article>
+
+        <article id="grammar-frequency" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">11</div><p class="eyebrow">Регулярность</p><h3>Как часто: от «каждый день» до «никогда»</h3>
+          <p>Слова частотности обычно ставятся перед глаголом. <b>Κάθε</b> сочетается с существительным в единственном числе: <b>κάθε μέρα, κάθε Κυριακή</b>.</p>
+          <div class="frequency-scale"><div><b>100%</b><span><strong>κάθε μέρα / πάντα</strong> каждый день / всегда</span></div><div><b>90%</b><span><strong>σχεδόν πάντα</strong> почти всегда</span></div><div><b>70%</b><span><strong>συνήθως</strong> обычно</span></div><div><b>50%</b><span><strong>συχνά / πολλές φορές</strong> часто / много раз</span></div><div><b>30%</b><span><strong>μερικές φορές / καμιά φορά</strong> иногда</span></div><div><b>10%</b><span><strong>σπάνια</strong> редко</span></div><div><b>0%</b><span><strong>ποτέ δεν</strong> никогда не</span></div></div>
+          <p class="note"><b>Важно:</b> по-гречески отрицание двойное: <b>ποτέ δεν</b>. Нельзя сказать только <s>ποτέ δουλεύω</s>; правильно: <b>ποτέ δεν δουλεύω</b>.</p>
+          <div class="phrase-list"><p><b>Κάθε μέρα πάω στη δουλειά.</b><span>Каждый день я хожу на работу.</span></p><p><b>Πάντα τρώω πρωινό.</b><span>Я всегда завтракаю.</span></p><p><b>Συνήθως πίνω καφέ το πρωί.</b><span>Обычно я пью кофе утром.</span></p><p><b>Συχνά βλέπω τηλεόραση το βράδυ.</b><span>Я часто смотрю телевизор вечером.</span></p><p><b>Μερικές φορές μένω στο σπίτι.</b><span>Иногда я остаюсь дома.</span></p><p><b>Κάπου κάπου πάω για ψώνια.</b><span>Время от времени я хожу за покупками.</span></p><p><b>Σπάνια πάω για ύπνο νωρίς.</b><span>Я редко ложусь спать рано.</span></p><p><b>Ποτέ δεν δουλεύω την Κυριακή.</b><span>Я никогда не работаю в воскресенье.</span></p></div>
+          <div class="example"><span>Произнесите</span><b>Μερικές φορές βγαίνω, αλλά συνήθως μένω στο σπίτι.</b><i>Иногда я выхожу, но обычно остаюсь дома.</i><button class="grammar-speak" data-speak="Μερικές φορές βγαίνω, αλλά συνήθως μένω στο σπίτι." type="button" aria-label="Произнести пример">🔊</button></div>
+          <figure><img loading="lazy" src="./assets/grammar/24-frequency-scale.webp" alt="Примеры наречий частотности от каждый день до никогда"><figcaption>Наречия частотности уже входят в раздел «Наречия» и его тест.</figcaption></figure>
         </article>
 
         <article id="grammar-mood" class="grammar-card" data-grammar-card>
-          <div class="grammar-number">11</div><p class="eyebrow">Разговор</p><h3>Приветствие и настроение</h3>
+          <div class="grammar-number">12</div><p class="eyebrow">Разговор</p><h3>Приветствие и настроение</h3>
           <p>С друзьями: <b>Τι κάνεις;</b>. Вежливо или к нескольким людям: <b>Τι κάνετε;</b>. Ответ может быть коротким — глагол повторять не нужно.</p>
           <div class="phrase-list"><p><b>Τι νέα; — Μια χαρά.</b><span>Что нового? — Отлично.</span></p><p><b>Πώς πάει; — Έτσι κι έτσι.</b><span>Как дела? — Так себе.</span></p><p><b>Τι γίνεται; — Τα ίδια.</b><span>Как оно? — Всё по-старому.</span></p><p><b>Όχι και τόσο καλά.</b><span>Не очень хорошо.</span></p></div>
           <div class="image-pair"><figure><img loading="lazy" src="./assets/grammar/01-greetings-mood.webp" alt="Вопросы о настроении и ответы"><figcaption>Разговорные вопросы и ответы.</figcaption></figure><figure><img loading="lazy" src="./assets/grammar/08-mood-scale.webp" alt="Шкала ответов от очень хорошо до совсем плохо"><figcaption>От <b>πολύ καλά</b> до <b>καθόλου</b>.</figcaption></figure></div>
         </article>
 
         <article id="grammar-professions" class="grammar-card" data-grammar-card>
-          <div class="grammar-number">12</div><p class="eyebrow">Тематический словарь</p><h3>Профессии</h3>
+          <div class="grammar-number">13</div><p class="eyebrow">Тематический словарь</p><h3>Профессии</h3>
           <p>После <b>είμαι</b> профессия обычно употребляется без артикля. У многих названий есть отдельные мужская и женская формы.</p>
           <div class="example"><span>Диалог</span><b>Τι δουλειά κάνεις; — Είμαι μηχανικός.</b><i>Кем ты работаешь? — Я инженер.</i><button class="grammar-speak" data-speak="Τι δουλειά κάνεις; Είμαι μηχανικός." type="button" aria-label="Произнести пример">🔊</button></div>
           <div class="word-cloud"><span>καθηγητής / καθηγήτρια</span><span>γιατρός</span><span>οδηγός</span><span>μηχανικός</span><span>σερβιτόρος / σερβιτόρα</span><span>δάσκαλος / δασκάλα</span><span>μάγειρας / μαγείρισσα</span></div>
@@ -189,7 +204,7 @@
         </article>
 
         <article id="grammar-nationalities" class="grammar-card" data-grammar-card>
-          <div class="grammar-number">13</div><p class="eyebrow">Тематический словарь</p><h3>Национальности и языки</h3>
+          <div class="grammar-number">14</div><p class="eyebrow">Тематический словарь</p><h3>Национальности и языки</h3>
           <p>Национальность согласуется с полом человека. Название языка обычно среднего рода во множественном числе и употребляется без артикля после <b>μιλάω</b>.</p>
           <div class="phrase-list"><p><b>Είμαι Ρώσος / Ρωσίδα.</b><span>Я русский / русская.</span></p><p><b>Είμαι από τη Ρωσία.</b><span>Я из России.</span></p><p><b>Μιλάω ρωσικά και ελληνικά.</b><span>Я говорю по-русски и по-гречески.</span></p></div>
           <div class="example"><span>Диалог</span><b>Από πού είσαι; — Είμαι από την Ισπανία.</b><button class="grammar-speak" data-speak="Από πού είσαι; Είμαι από την Ισπανία." type="button" aria-label="Произнести пример">🔊</button></div>
@@ -199,6 +214,12 @@
       </div>
     </section>
   </main>
+
+  <div id="image-lightbox" class="image-lightbox hidden" role="dialog" aria-modal="true" aria-label="Увеличенное учебное изображение">
+    <button id="image-lightbox-close" type="button" aria-label="Закрыть изображение">×</button>
+    <img id="image-lightbox-image" alt="">
+    <p id="image-lightbox-caption"></p>
+  </div>
 
   <nav class="bottom-nav" aria-label="Основная навигация">
     <button type="button" data-category="new"><span>＋</span>Новые</button>
