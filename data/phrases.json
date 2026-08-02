@@ -190,5 +190,83 @@
     "greek": "Με λένε Μαρία.",
     "russian": "Меня зовут Мария.",
     "new": true
+  },
+  {
+    "id": "phrase-4e7028e718",
+    "greek": "Καλημέρα!",
+    "russian": "Доброе утро!",
+    "new": true
+  },
+  {
+    "id": "phrase-74044a8fb5",
+    "greek": "Γεια σου / σας!",
+    "russian": "Здравствуй / здравствуйте!",
+    "new": true
+  },
+  {
+    "id": "phrase-c60c657fa4",
+    "greek": "Γεια!",
+    "russian": "Привет! / Пока!",
+    "new": true
+  },
+  {
+    "id": "phrase-5de857f5d1",
+    "greek": "Καλό απόγευμα.",
+    "russian": "Хорошего дня / доброго дня.",
+    "new": true
+  },
+  {
+    "id": "phrase-12865ebcdb",
+    "greek": "Καλό βράδυ.",
+    "russian": "Доброго вечера / хорошего вечера при прощании.",
+    "new": true
+  },
+  {
+    "id": "phrase-f0a7fa78b9",
+    "greek": "Καληνύχτα.",
+    "russian": "Спокойной ночи.",
+    "new": true
+  },
+  {
+    "id": "phrase-9230ec0bfe",
+    "greek": "Καλησπέρα.",
+    "russian": "Добрый вечер.",
+    "new": true
+  },
+  {
+    "id": "phrase-3c39d5563e",
+    "greek": "Πώς σε / τη / τον / τους λένε;",
+    "russian": "Как тебя / её / его / их зовут?",
+    "new": true
+  },
+  {
+    "id": "phrase-668d612c69",
+    "greek": "Με λένε…",
+    "russian": "Меня зовут…",
+    "new": true
+  },
+  {
+    "id": "phrase-e7aa39cb6c",
+    "greek": "Και εσένα πώς σε λένε;",
+    "russian": "А как зовут тебя?",
+    "new": true
+  },
+  {
+    "id": "phrase-f3603b4a9f",
+    "greek": "Εμένα με λένε…",
+    "russian": "Меня зовут… (с акцентом на «меня»)",
+    "new": true
+  },
+  {
+    "id": "phrase-18e223c5f4",
+    "greek": "Χαίρω πολύ.",
+    "russian": "Очень приятно.",
+    "new": true
+  },
+  {
+    "id": "phrase-bdfb07b81c",
+    "greek": "Τι ώρα είναι;",
+    "russian": "Который час?",
+    "new": true
   }
 ]

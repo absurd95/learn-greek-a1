@@ -358,5 +358,59 @@
     "greek": "Ο ίδιος / η ίδια / το ίδιο",
     "russian": "тот же / та же / то же / одинаковый / одинаковая / одинаковое",
     "new": true
+  },
+  {
+    "id": "word-1ec9f80df9",
+    "greek": "το δευτερόλεπτο",
+    "russian": "секунда",
+    "new": true
+  },
+  {
+    "id": "word-8e48ff26ca",
+    "greek": "μισός / μισή / μισό",
+    "russian": "половинный / половина",
+    "new": true
+  },
+  {
+    "id": "word-5ecc0eb55a",
+    "greek": "το λεπτό",
+    "russian": "минута",
+    "new": true
+  },
+  {
+    "id": "word-acc4ec0e97",
+    "greek": "η ώρα",
+    "russian": "час",
+    "new": true
+  },
+  {
+    "id": "word-a3047b92d6",
+    "greek": "η οικογένεια",
+    "russian": "семья",
+    "new": true
+  },
+  {
+    "id": "word-99e78ba9b7",
+    "greek": "το παιδί",
+    "russian": "ребёнок",
+    "new": true
+  },
+  {
+    "id": "word-9b3735d11e",
+    "greek": "τα παιδιά",
+    "russian": "дети",
+    "new": true
+  },
+  {
+    "id": "word-3c476a2bc7",
+    "greek": "ο χρόνος / τα χρόνια",
+    "russian": "год / годы",
+    "new": true
+  },
+  {
+    "id": "word-2b73d94641",
+    "greek": "το βιβλίο",
+    "russian": "книга",
+    "new": true
   }
 ]
