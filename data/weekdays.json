@@ -1,0 +1,10 @@
+[
+  {"id":"weekday-monday","greek":"Τη Δευτέρα","russian":"В понедельник","new":true},
+  {"id":"weekday-tuesday","greek":"Την Τρίτη","russian":"Во вторник","new":true},
+  {"id":"weekday-wednesday","greek":"Την Τετάρτη","russian":"В среду","new":true},
+  {"id":"weekday-thursday","greek":"Την Πέμπτη","russian":"В четверг","new":true},
+  {"id":"weekday-friday","greek":"Την Παρασκευή","russian":"В пятницу","new":true},
+  {"id":"weekday-saturday","greek":"Το Σάββατο","russian":"В субботу","new":true},
+  {"id":"weekday-sunday","greek":"Την Κυριακή","russian":"В воскресенье","new":true},
+  {"id":"weekday-weekend","greek":"Το Σαββατοκύριακο","russian":"На выходных","new":true}
+]

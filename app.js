@@ -5,6 +5,8 @@ const SOURCES = [
   ["phrases", "Фразы", "…", "./data/phrases.json"],
   ["professions", "Профессии", "⚒", "./data/professions.json"],
   ["nationalities", "Национальности", "◎", "./data/nationalities.json"],
+  ["months", "Месяцы", "12", "./data/months.json"],
+  ["weekdays", "Дни недели", "7", "./data/weekdays.json"],
   ["conjugations", "Спряжения", "εγώ", "./data/conjugations.json"]
 ];
 const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
@@ -58,7 +60,7 @@ function renderDashboard() {
   const sections = [
     ["new", "Новые", "＋", getDeck("new").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, getDeck(key).length]),
-    ["grammar", "Грамматика", "§", "12 тем"]
+    ["grammar", "Грамматика", "§", "13 тем"]
   ];
   $("category-grid").innerHTML = sections.map(([key, label, symbol, count]) => `<button class="category" data-category="${key}"><span class="symbol">${symbol}</span><strong>${label}</strong><small>${typeof count === "number" ? `${count} карточек` : count}</small></button>`).join("");
 }
@@ -66,7 +68,7 @@ function renderDashboard() {
 function openCategory(category) {
   stopSpeaking();
   state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false;
-  const title = { new: "Новые", all: "Все слова", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", conjugations: "Спряжения" }[category];
+  const title = { new: "Новые", all: "Все слова", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения" }[category];
   $("study-title").textContent = title; $("study-kicker").textContent = category === "conjugations" ? "Таблицы форм" : "Карточки";
   showScreen("study"); renderCard();
 }

@@ -1,0 +1,14 @@
+[
+  {"id":"month-january","greek":"Τον Ιανουάριο","russian":"В январе","new":true},
+  {"id":"month-february","greek":"Τον Φεβρουάριο","russian":"В феврале","new":true},
+  {"id":"month-march","greek":"Τον Μάρτιο","russian":"В марте","new":true},
+  {"id":"month-april","greek":"Τον Απρίλιο","russian":"В апреле","new":true},
+  {"id":"month-may","greek":"Τον Μάιο","russian":"В мае","new":true},
+  {"id":"month-june","greek":"Τον Ιούνιο","russian":"В июне","new":true},
+  {"id":"month-july","greek":"Τον Ιούλιο","russian":"В июле","new":true},
+  {"id":"month-august","greek":"Τον Αύγουστο","russian":"В августе","new":true},
+  {"id":"month-september","greek":"Τον Σεπτέμβριο","russian":"В сентябре","new":true},
+  {"id":"month-october","greek":"Τον Οκτώβριο","russian":"В октябре","new":true},
+  {"id":"month-november","greek":"Τον Νοέμβριο","russian":"В ноябре","new":true},
+  {"id":"month-december","greek":"Τον Δεκέμβριο","russian":"В декабре","new":true}
+]
