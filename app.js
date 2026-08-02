@@ -9,7 +9,7 @@ const SOURCES = [
   ["weekdays", "Дни недели", "7", "./data/weekdays.json"],
   ["conjugations", "Спряжения", "εγώ", "./data/conjugations.json"]
 ];
-const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
+const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, listMode: false, listQuery: "", quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
 const saved = JSON.parse(localStorage.getItem("greek-a1-progress") || "{}");
 const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [] };
 const $ = (id) => document.getElementById(id);
@@ -18,6 +18,7 @@ function saveProgress() { localStorage.setItem("greek-a1-progress", JSON.stringi
 function allCards() { return SOURCES.flatMap(([key, label]) => (state.data[key] || []).map(card => ({ ...card, type: key, typeLabel: label }))); }
 function showScreen(id) { document.querySelectorAll(".screen").forEach(el => el.classList.toggle("active", el.id === id)); window.scrollTo({ top: 0, behavior: "smooth" }); }
 function shuffle(items) { return [...items].sort(() => Math.random() - .5); }
+function escapeHTML(value) { return String(value).replace(/[&<>"']/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[character]); }
 
 function stopSpeaking() {
   if ("speechSynthesis" in window) window.speechSynthesis.cancel();
@@ -67,17 +68,21 @@ function renderDashboard() {
 
 function openCategory(category) {
   stopSpeaking();
-  state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false;
+  state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = false; state.listQuery = "";
   const title = { new: "Новые", all: "Все слова", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения" }[category];
   $("study-title").textContent = title; $("study-kicker").textContent = category === "conjugations" ? "Таблицы форм" : "Карточки";
-  showScreen("study"); renderCard();
+  $("word-list-search").value = ""; showScreen("study"); renderCard();
 }
 
 function renderCard() {
   const card = state.deck[state.index];
   $("empty-state").classList.toggle("hidden", Boolean(card));
-  $("flashcard").classList.toggle("hidden", !card); $("study-actions").classList.toggle("hidden", !card);
+  $("word-list-panel").classList.toggle("hidden", !state.listMode || !card);
+  $("flashcard").classList.toggle("hidden", !card || state.listMode); $("study-actions").classList.toggle("hidden", !card || state.listMode);
+  $("list-toggle").textContent = state.listMode ? "Карточки" : "Показать все";
+  $("list-toggle").setAttribute("aria-pressed", String(state.listMode));
   if (!card) return;
+  if (state.listMode) { renderWordList(); return; }
   $("card-counter").textContent = `${state.index + 1} / ${state.deck.length}`;
   $("card-kind").textContent = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel; $("card-front").textContent = card.greek; $("card-back").textContent = card.russian;
   $("card-back").classList.toggle("hidden", !state.revealed); $("card-hint").classList.toggle("hidden", state.revealed);
@@ -85,6 +90,26 @@ function renderCard() {
   const table = $("conjugation-table");
   table.innerHTML = card.forms ? Object.entries(card.forms).map(([pronoun, form], index) => `<div class="conjugation-row"><span>${pronoun}</span><strong>${form}</strong><button class="speak-form" type="button" data-form-index="${index}" aria-label="Произнести ${form}" title="Произнести ${form}">🔊</button></div>`).join("") : "";
   table.classList.toggle("hidden", !state.revealed || !card.forms);
+}
+
+function renderWordList() {
+  const query = state.listQuery.toLocaleLowerCase("ru");
+  const sorted = [...state.deck].sort((left, right) => left.greek.localeCompare(right.greek, "el", { sensitivity: "base" }));
+  const visible = sorted.filter(card => !query || `${card.greek} ${card.russian} ${card.typeLabel}`.toLocaleLowerCase("ru").includes(query));
+  $("word-list-summary").textContent = query ? `Найдено: ${visible.length} из ${sorted.length}` : `${sorted.length} карточек · по греческому алфавиту`;
+  $("word-list-empty").classList.toggle("hidden", visible.length > 0);
+  $("word-list").innerHTML = visible.map(card => {
+    const favorite = progress.favorites.includes(card.id);
+    const label = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel;
+    return `<article class="word-list-row"><div class="word-list-copy"><div class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(label)}</span></div><p>${escapeHTML(card.russian)}</p></div><div class="word-list-actions"><button class="word-list-speak" type="button" data-list-speak="${escapeHTML(card.id)}" aria-label="Произнести ${escapeHTML(card.greek)}">🔊</button><button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
+  }).join("");
+}
+
+function toggleFavorite(id) {
+  progress.favorites = progress.favorites.includes(id) ? progress.favorites.filter(item => item !== id) : [...progress.favorites, id];
+  saveProgress();
+  if (state.category === "favorites") state.deck = getDeck("favorites");
+  renderCard(); renderDashboard();
 }
 
 function move(step) { if (!state.deck.length) return; stopSpeaking(); state.index = (state.index + step + state.deck.length) % state.deck.length; state.revealed = false; renderCard(); }
@@ -152,14 +177,23 @@ document.addEventListener("click", event => {
   if (grammarSpeak) speakGreek(grammarSpeak.dataset.speak);
   const grammarImage = event.target.closest("#grammar img");
   if (grammarImage) openImageLightbox(grammarImage);
+  const listSpeak = event.target.closest("[data-list-speak]");
+  if (listSpeak) {
+    const card = state.deck.find(item => item.id === listSpeak.dataset.listSpeak);
+    if (card) speakGreek(card.greek);
+  }
+  const listFavorite = event.target.closest("[data-list-favorite]");
+  if (listFavorite) toggleFavorite(listFavorite.dataset.listFavorite);
 });
 $("flashcard").addEventListener("click", event => { if (!event.target.closest("button")) reveal(); });
 $("flashcard").addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); reveal(); } });
-$("favorite-button").addEventListener("click", () => { const id = state.deck[state.index]?.id; if (!id) return; progress.favorites = progress.favorites.includes(id) ? progress.favorites.filter(item => item !== id) : [...progress.favorites, id]; saveProgress(); renderCard(); });
+$("favorite-button").addEventListener("click", () => { const id = state.deck[state.index]?.id; if (id) toggleFavorite(id); });
 $("speak-button").addEventListener("click", () => { const text = state.deck[state.index]?.greek; if (text) speakGreek(text); });
 $("quiz-speak-button").addEventListener("click", () => { if (state.quizSpokenText) speakGreek(state.quizSpokenText); });
 $("previous-button").addEventListener("click", () => move(-1)); $("next-button").addEventListener("click", () => move(1));
 $("quiz-button").addEventListener("click", beginQuiz); $("quiz-next").addEventListener("click", () => { stopSpeaking(); state.quizIndex = (state.quizIndex + 1) % state.quizDeck.length; renderQuestion(); });
+$("list-toggle").addEventListener("click", () => { state.listMode = !state.listMode; stopSpeaking(); renderCard(); });
+$("word-list-search").addEventListener("input", event => { state.listQuery = event.target.value.trim(); renderWordList(); });
 $("grammar-search").addEventListener("input", event => {
   const query = event.target.value.trim().toLocaleLowerCase("ru");
   let visible = 0;

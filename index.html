@@ -38,8 +38,15 @@
           <p id="study-kicker" class="eyebrow">Карточки</p>
           <h2 id="study-title">Новые</h2>
         </div>
+        <button id="list-toggle" class="list-toggle" type="button" aria-pressed="false">Показать все</button>
       </div>
       <div id="empty-state" class="empty hidden">В этом разделе пока нет карточек.</div>
+      <div id="word-list-panel" class="word-list-panel hidden">
+        <label class="word-list-search"><span>Поиск в разделе</span><input id="word-list-search" type="search" placeholder="Греческое слово или перевод…" autocomplete="off"></label>
+        <p id="word-list-summary" class="word-list-summary"></p>
+        <div id="word-list" class="word-list"></div>
+        <p id="word-list-empty" class="empty hidden">Ничего не найдено.</p>
+      </div>
       <article id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Показать перевод">
         <p id="card-counter" class="counter"></p>
         <button id="favorite-button" class="favorite" type="button" aria-label="Добавить в избранное">☆</button>
