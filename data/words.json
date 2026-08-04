@@ -412,5 +412,113 @@
     "greek": "το βιβλίο",
     "russian": "книга",
     "new": true
+  },
+  {
+    "id": "word-35a6f1c201",
+    "greek": "η μουσική",
+    "russian": "музыка",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c202",
+    "greek": "η τηλεόραση",
+    "russian": "телевизор / телевидение",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c203",
+    "greek": "η ταινία",
+    "russian": "фильм",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c204",
+    "greek": "το γράμμα",
+    "russian": "письмо / буква",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c205",
+    "greek": "το μήνυμα",
+    "russian": "сообщение",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c206",
+    "greek": "η βοήθεια",
+    "russian": "помощь",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c207",
+    "greek": "το τσιγάρο",
+    "russian": "сигарета",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c208",
+    "greek": "το τηλέφωνο",
+    "russian": "телефон",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c209",
+    "greek": "το νερό",
+    "russian": "вода",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c210",
+    "greek": "ο καφές",
+    "russian": "кофе",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c211",
+    "greek": "ο δρόμος",
+    "russian": "дорога / улица / путь",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c212",
+    "greek": "το αυτοκίνητο",
+    "russian": "автомобиль / машина",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c213",
+    "greek": "το σπίτι",
+    "russian": "дом",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c214",
+    "greek": "το ψωμί",
+    "russian": "хлеб",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c215",
+    "greek": "ο χορός",
+    "russian": "танец",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c216",
+    "greek": "ο φίλος / η φίλη",
+    "russian": "друг / подруга",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c217",
+    "greek": "η δουλειά",
+    "russian": "работа",
+    "new": true
+  },
+  {
+    "id": "word-35a6f1c218",
+    "greek": "το σχολείο",
+    "russian": "школа",
+    "new": true
   }
 ]

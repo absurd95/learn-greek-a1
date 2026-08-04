@@ -19,6 +19,18 @@ function allCards() { return SOURCES.flatMap(([key, label]) => (state.data[key] 
 function showScreen(id) { document.querySelectorAll(".screen").forEach(el => el.classList.toggle("active", el.id === id)); window.scrollTo({ top: 0, behavior: "smooth" }); }
 function shuffle(items) { return [...items].sort(() => Math.random() - .5); }
 function escapeHTML(value) { return String(value).replace(/[&<>"']/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[character]); }
+function translationParts(value) {
+  return String(value).toLocaleLowerCase("ru")
+    .replace(/\([^)]*\)/g, "")
+    .split(/\s*\/\s*|\s*;\s*|\s*,\s*/)
+    .map(part => part.replace(/[.!?…]/g, "").trim())
+    .filter(Boolean);
+}
+function translationsOverlap(left, right) {
+  const leftParts = translationParts(left);
+  const rightParts = translationParts(right);
+  return leftParts.some(leftPart => rightParts.some(rightPart => leftPart === rightPart));
+}
 
 function stopSpeaking() {
   if ("speechSynthesis" in window) window.speechSynthesis.cancel();
@@ -140,7 +152,7 @@ function renderQuestion() {
     $("quiz-question").textContent = item.form;
     state.quizSpokenText = item.form;
     state.quizAnswer = item.russian;
-    const alternatives = state.quizDeck.filter(candidate => candidate.card.id !== card.id && candidate.pronoun !== item.pronoun && candidate.russian !== item.russian).map(candidate => candidate.russian);
+    const alternatives = state.quizDeck.filter(candidate => candidate.card.id !== card.id && candidate.pronoun !== item.pronoun && !translationsOverlap(candidate.russian, item.russian)).map(candidate => candidate.russian);
     const options = shuffle([item.russian, ...shuffle([...new Set(alternatives)]).slice(0, 3)]);
     $("quiz-options").innerHTML = options.map(text => `<button class="quiz-option" data-correct="${text === item.russian}">${text}</button>`).join("");
     return;
@@ -149,7 +161,7 @@ function renderQuestion() {
   $("quiz-question").textContent = card.greek;
   state.quizSpokenText = card.greek;
   state.quizAnswer = card.russian;
-  const distractors = shuffle(allCards().filter(candidate => candidate.type === card.type && candidate.id !== card.id && candidate.russian !== card.russian)).slice(0, 3);
+  const distractors = shuffle(allCards().filter(candidate => candidate.type === card.type && candidate.id !== card.id && !translationsOverlap(candidate.russian, card.russian))).slice(0, 3);
   const options = shuffle([card, ...distractors]);
   $("quiz-options").innerHTML = options.map(option => `<button class="quiz-option" data-correct="${option.id === card.id}">${option.russian}</button>`).join("");
 }
