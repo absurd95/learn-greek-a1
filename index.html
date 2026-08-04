@@ -57,6 +57,7 @@
           <p id="speech-status" class="speech-status" aria-live="polite"></p>
           <p id="card-hint">Нажмите, чтобы увидеть перевод</p>
           <p id="card-back" class="answer hidden"></p>
+          <p id="card-note" class="card-note hidden"></p>
           <div id="conjugation-table" class="conjugation-table hidden"></div>
         </div>
       </article>
@@ -95,7 +96,7 @@
       </div>
       <label class="grammar-search"><span>Найти правило или пример</span><input id="grammar-search" type="search" placeholder="Например: артикли, από, профессии…" autocomplete="off"></label>
       <nav class="grammar-toc" aria-label="Темы грамматики">
-        <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-calendar">Календарь</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-frequency">Как часто</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a>
+        <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-calendar">Календарь</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-frequency">Как часто</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a><a href="#grammar-accents">Ударение</a>
       </nav>
       <p id="grammar-no-results" class="empty hidden">Ничего не найдено. Попробуйте другое слово.</p>
 
@@ -218,6 +219,18 @@
           <div class="example"><span>Диалог</span><b>Από πού είσαι; — Είμαι από την Ισπανία.</b><button class="grammar-speak" data-speak="Από πού είσαι; Είμαι από την Ισπανία." type="button" aria-label="Произнести пример">🔊</button></div>
           <p class="note">15 национальностей добавлены в отдельный раздел и тест.</p>
           <figure><img loading="lazy" src="./assets/grammar/07-nationalities.webp" alt="Национальности и соответствующие языки"><figcaption>Мужские, женские формы и названия языков.</figcaption></figure>
+        </article>
+
+        <article id="grammar-accents" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">15</div><p class="eyebrow">Одна черточка меняет смысл</p><h3>Πού или που, πώς или πως</h3>
+          <p>Вопросительные слова <b>πού</b> «где / куда?» и <b>πώς</b> «как?» пишутся с ударением. Оно сохраняется и в косвенном вопросе, даже если вопросительного знака нет.</p>
+          <div class="rule-stack"><div><b>πού — где? куда?</b><code>Πού μένεις;</code><p>Где ты живёшь?</p><code>Ξέρω πού μένεις.</code><p>Я знаю, где ты живёшь — косвенный вопрос.</p></div><div><b>που — который / что</b><code>Το σπίτι που βλέπω.</code><p>Дом, который я вижу.</p><code>Χαίρομαι που είσαι εδώ.</code><p>Я рад, что ты здесь.</p></div><div><b>πώς — как?</b><code>Πώς σε λένε;</code><p>Как тебя зовут?</p><code>Ξέρω πώς γίνεται.</code><p>Я знаю, как это делается.</p></div><div><b>πως — что</b><code>Νομίζω πως έχει δίκιο.</code><p>Я думаю, что он / она прав(а).</p></div></div>
+          <h4>Другие похожие пары</h4>
+          <div class="mini-table"><b>πότε — когда?</b><span>Πότε φεύγεις; — Когда ты уезжаешь?</span><b>ποτέ — никогда</b><span>Ποτέ δεν αργώ. — Я никогда не опаздываю.</span><b>ή — или</b><span>Καφέ ή τσάι; — Кофе или чай?</span><b>η — артикль «эта / женщина»</b><span>η αδελφή — сестра</span><b>ότι — что</b><span>Ξέρω ότι έρχεται. — Я знаю, что он идёт.</span><b>ό,τι — всё, что / что бы ни</b><span>Πάρε ό,τι θέλεις. — Возьми всё, что хочешь.</span></div>
+          <p class="note"><b>Важно:</b> в обычном союзе <b>που / πως</b> ударения нет. В прямом или косвенном вопросе пишем <b>πού / πώς</b>.</p>
+          <h4>Как узнавать семьи слов</h4>
+          <div class="phrase-list"><p><b>παν- + επιστήμη → πανεπιστήμιο</b><span>все науки → университет</span></p><p><b>δια- + δίκτυο → διαδίκτυο</b><span>через сеть → интернет</span></p><p><b>υπολογίζω → υπολογιστής</b><span>вычислять → компьютер</span></p><p><b>τραγουδάω → τραγούδι → τραγουδιστής</b><span>петь → песня → певец</span></p><p><b>αρχίζω → αρχή · τελειώνω → τέλος</b><span>начинать → начало · заканчивать → конец</span></p></div>
+          <div class="example"><span>Произнесите</span><b>Ξέρω πού μένεις και πώς πηγαίνεις στη δουλειά.</b><i>Я знаю, где ты живёшь и как добираешься на работу.</i><button class="grammar-speak" data-speak="Ξέρω πού μένεις και πώς πηγαίνεις στη δουλειά." type="button" aria-label="Произнести пример">🔊</button></div>
         </article>
       </div>
     </section>

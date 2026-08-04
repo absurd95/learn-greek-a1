@@ -73,7 +73,7 @@ function renderDashboard() {
   const sections = [
     ["new", "Новые", "＋", getDeck("new").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, getDeck(key).length]),
-    ["grammar", "Грамматика", "§", "14 тем"]
+    ["grammar", "Грамматика", "§", "15 тем"]
   ];
   $("category-grid").innerHTML = sections.map(([key, label, symbol, count]) => `<button class="category" data-category="${key}"><span class="symbol">${symbol}</span><strong>${label}</strong><small>${typeof count === "number" ? `${count} карточек` : count}</small></button>`).join("");
 }
@@ -98,6 +98,7 @@ function renderCard() {
   $("card-counter").textContent = `${state.index + 1} / ${state.deck.length}`;
   $("card-kind").textContent = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel; $("card-front").textContent = card.greek; $("card-back").textContent = card.russian;
   $("card-back").classList.toggle("hidden", !state.revealed); $("card-hint").classList.toggle("hidden", state.revealed);
+  $("card-note").textContent = card.note || ""; $("card-note").classList.toggle("hidden", !state.revealed || !card.note);
   $("favorite-button").textContent = progress.favorites.includes(card.id) ? "★" : "☆";
   const table = $("conjugation-table");
   table.innerHTML = card.forms ? Object.entries(card.forms).map(([pronoun, form], index) => `<div class="conjugation-row"><span>${pronoun}</span><strong>${form}</strong><button class="speak-form" type="button" data-form-index="${index}" aria-label="Произнести ${form}" title="Произнести ${form}">🔊</button></div>`).join("") : "";
@@ -113,7 +114,7 @@ function renderWordList() {
   $("word-list").innerHTML = visible.map(card => {
     const favorite = progress.favorites.includes(card.id);
     const label = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel;
-    return `<article class="word-list-row"><div class="word-list-copy"><div class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(label)}</span></div><p>${escapeHTML(card.russian)}</p></div><div class="word-list-actions"><button class="word-list-speak" type="button" data-list-speak="${escapeHTML(card.id)}" aria-label="Произнести ${escapeHTML(card.greek)}">🔊</button><button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
+    return `<article class="word-list-row"><div class="word-list-copy"><div class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(label)}</span></div><p>${escapeHTML(card.russian)}</p>${card.note ? `<small class="word-list-note">${escapeHTML(card.note)}</small>` : ""}</div><div class="word-list-actions"><button class="word-list-speak" type="button" data-list-speak="${escapeHTML(card.id)}" aria-label="Произнести ${escapeHTML(card.greek)}">🔊</button><button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
   }).join("");
 }
 
