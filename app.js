@@ -9,7 +9,8 @@ const SOURCES = [
   ["weekdays", "Дни недели", "7", "./data/weekdays.json"],
   ["conjugations", "Спряжения", "εγώ", "./data/conjugations.json"]
 ];
-const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, listMode: false, listQuery: "", quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
+const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, listMode: false, listQuery: "", expandedConjugations: new Set(), quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
+const IRREGULAR_VERBS = new Set(["conjugation-020", "conjugation-024", "conjugation-025", "conjugation-039", "conjugation-047", "conjugation-048", "conjugation-049", "conjugation-050", "conjugation-051"]);
 const saved = JSON.parse(localStorage.getItem("greek-a1-progress") || "{}");
 const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [] };
 const $ = (id) => document.getElementById(id);
@@ -82,7 +83,7 @@ function renderDashboard() {
 
 function openCategory(category) {
   stopSpeaking();
-  state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = "";
+  state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = ""; state.expandedConjugations.clear();
   const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения" }[category];
   $("study-title").textContent = title; $("study-kicker").textContent = category === "conjugations" ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
   $("word-list-search").value = ""; showScreen("study"); renderCard();
@@ -111,11 +112,21 @@ function renderWordList() {
   const query = state.listQuery.toLocaleLowerCase("ru");
   const sorted = [...state.deck].sort((left, right) => left.greek.localeCompare(right.greek, "el", { sensitivity: "base" }));
   const visible = sorted.filter(card => !query || `${card.greek} ${card.russian} ${card.typeLabel}`.toLocaleLowerCase("ru").includes(query));
-  $("word-list-summary").textContent = query ? `Найдено: ${visible.length} из ${sorted.length}` : `${sorted.length} карточек · по греческому алфавиту`;
+  const itemLabel = state.category === "conjugations" ? "глаголов" : "карточек";
+  $("word-list-summary").textContent = query ? `Найдено: ${visible.length} из ${sorted.length}` : `${sorted.length} ${itemLabel} · по греческому алфавиту`;
   $("word-list-empty").classList.toggle("hidden", visible.length > 0);
   $("word-list").innerHTML = visible.map(card => {
     const favorite = progress.favorites.includes(card.id);
     const label = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel;
+    if (state.category === "conjugations") {
+      const expanded = state.expandedConjugations.has(card.id);
+      const special = IRREGULAR_VERBS.has(card.id);
+      const forms = Object.entries(card.forms || {}).map(([pronoun, form], index) => {
+        const russian = card.russianForms?.[pronoun] || "";
+        return `<div class="conjugation-list-form"><span>${escapeHTML(pronoun)}</span><strong>${escapeHTML(form)}</strong><small>${escapeHTML(russian)}</small><button class="speak-form" type="button" data-list-form-card="${escapeHTML(card.id)}" data-list-form-index="${index}" aria-label="Произнести ${escapeHTML(form)}">🔊</button></div>`;
+      }).join("");
+      return `<article class="word-list-row conjugation-list-item${expanded ? " expanded" : ""}"><button class="conjugation-list-toggle" type="button" data-conjugation-toggle="${escapeHTML(card.id)}" aria-expanded="${expanded}"><span class="word-list-copy"><span class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(card.group || "")}</span>${special ? '<span class="irregular-badge">особый</span>' : ""}</span><span class="conjugation-list-translation">${escapeHTML(card.russian)}</span></span><span class="conjugation-chevron" aria-hidden="true">⌄</span></button><div class="conjugation-list-forms"${expanded ? "" : " hidden"}>${forms}</div></article>`;
+    }
     return `<article class="word-list-row"><div class="word-list-copy"><div class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(label)}</span></div><p>${escapeHTML(card.russian)}</p>${card.note ? `<small class="word-list-note">${escapeHTML(card.note)}</small>` : ""}</div><div class="word-list-actions"><button class="word-list-speak" type="button" data-list-speak="${escapeHTML(card.id)}" aria-label="Произнести ${escapeHTML(card.greek)}">🔊</button><button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
   }).join("");
 }
@@ -199,6 +210,18 @@ document.addEventListener("click", event => {
   }
   const listFavorite = event.target.closest("[data-list-favorite]");
   if (listFavorite) toggleFavorite(listFavorite.dataset.listFavorite);
+  const conjugationToggle = event.target.closest("[data-conjugation-toggle]");
+  if (conjugationToggle) {
+    const id = conjugationToggle.dataset.conjugationToggle;
+    state.expandedConjugations.has(id) ? state.expandedConjugations.delete(id) : state.expandedConjugations.add(id);
+    renderWordList();
+  }
+  const listFormButton = event.target.closest("[data-list-form-card]");
+  if (listFormButton) {
+    const card = state.deck.find(item => item.id === listFormButton.dataset.listFormCard);
+    const form = Object.values(card?.forms || {})[Number(listFormButton.dataset.listFormIndex)];
+    if (form) speakGreek(form);
+  }
 });
 $("flashcard").addEventListener("click", event => { if (!event.target.closest("button")) reveal(); });
 $("flashcard").addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); reveal(); } });
