@@ -59,6 +59,7 @@ function speakGreek(text) {
 function getDeck(category) {
   const all = allCards();
   if (category === "all") return all;
+  if (category === "dictionary") return all.filter(card => card.type === "words" || card.type === "verbs");
   if (category === "new") return all.filter(card => card.new);
   if (category === "favorites") return all.filter(card => progress.favorites.includes(card.id));
   if (category === "mistakes") return all.filter(card => progress.mistakes.includes(card.id));
@@ -72,6 +73,7 @@ function renderDashboard() {
   $("progress-bar").style.width = `${all.length ? learnedCount / all.length * 100 : 0}%`;
   const sections = [
     ["new", "Новые", "＋", getDeck("new").length],
+    ["dictionary", "Словарь", "Α↔Я", getDeck("dictionary").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, getDeck(key).length]),
     ["grammar", "Грамматика", "§", "15 тем"]
   ];
@@ -80,9 +82,9 @@ function renderDashboard() {
 
 function openCategory(category) {
   stopSpeaking();
-  state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = false; state.listQuery = "";
-  const title = { new: "Новые", all: "Все слова", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения" }[category];
-  $("study-title").textContent = title; $("study-kicker").textContent = category === "conjugations" ? "Таблицы форм" : "Карточки";
+  state.category = category; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = "";
+  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения" }[category];
+  $("study-title").textContent = title; $("study-kicker").textContent = category === "conjugations" ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
   $("word-list-search").value = ""; showScreen("study"); renderCard();
 }
 
