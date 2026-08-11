@@ -74,6 +74,10 @@
         <div><p class="eyebrow">Тест</p><h2 id="quiz-title">Выберите перевод</h2></div>
       </div>
       <div class="quiz-panel">
+        <div id="quiz-direction" class="quiz-direction" aria-label="Направление теста">
+          <button type="button" data-quiz-direction="el-ru" aria-pressed="true">Ελληνικά → русский</button>
+          <button type="button" data-quiz-direction="ru-el" aria-pressed="false">Русский → ελληνικά</button>
+        </div>
         <p id="quiz-counter" class="counter"></p>
         <div class="quiz-question-row">
           <h3 id="quiz-question"></h3>
@@ -105,6 +109,20 @@
           <div class="grammar-number">01</div><p class="eyebrow">Основа</p><h3>Род и артикли</h3>
           <p>У существительного в греческом есть род. Учите слово сразу с артиклем: он помогает выбрать окончания прилагательных и местоимений.</p>
           <div class="rule-grid"><div><strong>Мужской</strong><code>ο</code><p>часто <b>-ος, -ας, -ης</b></p><span>ο φίλος — друг</span></div><div><strong>Женский</strong><code>η</code><p>часто <b>-α, -η</b></p><span>η χώρα — страна</span></div><div><strong>Средний</strong><code>το</code><p>часто <b>-ο, -ι, -μα</b></p><span>το παιδί — ребёнок</span></div></div>
+          <h4>Один и несколько</h4>
+          <div class="number-gender-grid"><div><span>Именительный</span><b>ένας · μία · ένα</b><small>один · одна · одно</small></div><div><span>Винительный</span><b>έναν · μία · ένα</b><small>одного · одну · одно</small></div><div><span>Именительный и винительный</span><b>τρεις · τρεις · τρία</b><small>три: муж. · жен. · ср.</small></div></div>
+          <p class="note">Форма числительного согласуется с родом: <b>έναν αναπτήρα</b>, <b>μία γυναίκα</b>, <b>ένα πράγμα</b>; <b>τρεις άντρες</b>, <b>τρεις γυναίκες</b>, <b>τρία παιδιά</b>.</p>
+          <h4>Склонение существительных</h4>
+          <div class="declension-scroll"><table class="declension-table"><thead><tr><th>Род</th><th>Число и падеж</th><th>Артикль</th><th>Примеры</th></tr></thead><tbody>
+            <tr><th rowspan="4">Мужской</th><td>ед., им.</td><td>ο</td><td>ο λαός · ο ναύτης · ο άντρας</td></tr><tr><td>ед., вин.</td><td>τον</td><td>τον λαό · τον ναύτη · τον άντρα</td></tr><tr><td>мн., им.</td><td>οι</td><td>οι λαοί · οι ναύτες · οι άντρες</td></tr><tr><td>мн., вин.</td><td>τους</td><td>τους λαούς · τους ναύτες · τους άντρες</td></tr>
+            <tr><th rowspan="4">Женский</th><td>ед., им.</td><td>η</td><td>η γυναίκα · η κόρη · η δασκάλα</td></tr><tr><td>ед., вин.</td><td>τη(ν)</td><td>τη γυναίκα · την κόρη · τη δασκάλα</td></tr><tr><td>мн., им.</td><td>οι</td><td>οι γυναίκες · οι κόρες · οι δασκάλες</td></tr><tr><td>мн., вин.</td><td>τις</td><td>τις γυναίκες · τις κόρες · τις δασκάλες</td></tr>
+            <tr><th rowspan="4">Средний</th><td>ед., им.</td><td>το</td><td>το νερό · το παιδί · το μάθημα</td></tr><tr><td>ед., вин.</td><td>το</td><td>το νερό · το παιδί · το μάθημα</td></tr><tr><td>мн., им.</td><td>τα</td><td>τα νερά · τα παιδιά · τα μαθήματα</td></tr><tr><td>мн., вин.</td><td>τα</td><td>τα νερά · τα παιδιά · τα μαθήματα</td></tr>
+          </tbody></table></div>
+          <p class="note"><b>Прилагательное склоняется вместе с существительным:</b> ο μεγάλος άντρας → τον μεγάλο άντρα → οι μεγάλοι άντρες → τους μεγάλους άντρες.</p>
+          <div class="rule-stack"><div><b>Учитель</b><code>ο δάσκαλος → τον δάσκαλο → οι δάσκαλοι → τους δασκάλους</code></div><div><b>Учительница</b><code>η δασκάλα → τη δασκάλα → οι δασκάλες → τις δασκάλες</code></div><div><b>Какой?</b><code>ποιος άντρας · ποια γυναίκα · ποιο πράγμα</code><p>Во множественном числе: ποιοι άντρες · ποιες γυναίκες · ποια πράγματα.</p></div></div>
+          <h4>Особенность слова «молоко»</h4>
+          <div class="milk-rule"><div><b>το γάλα</b><span>молоко — обычно неисчисляемое, единственное число</span></div><div><b>τα γάλατα</b><span>разные виды, упаковки или порции молока</span></div></div>
+          <p class="note">У среднего рода именительный и винительный совпадают. У <b>γάλα</b> множественное образуется не как простое <i>-α</i>, а с расширением основы: <b>γάλα → γάλατα</b>. В обычной фразе «я пью молоко» используется единственное: <b>Πίνω γάλα.</b></p>
           <div class="example"><span>Пример</span><b>Ο Γιώργος, η Μαρία, το γράμμα.</b><button class="grammar-speak" data-speak="Ο Γιώργος, η Μαρία, το γράμμα." type="button" aria-label="Произнести пример">🔊</button></div>
           <figure><img loading="lazy" src="./assets/grammar/02-gender-endings.webp" alt="Схема окончаний существительных трёх родов"><figcaption>Типичные окончания помогают определить род, но бывают исключения.</figcaption></figure>
         </article>

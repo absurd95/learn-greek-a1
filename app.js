@@ -9,7 +9,7 @@ const SOURCES = [
   ["weekdays", "Дни недели", "7", "./data/weekdays.json"],
   ["conjugations", "Спряжения", "εγώ", "./data/conjugations.json"]
 ];
-const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, listMode: false, listQuery: "", expandedConjugations: new Set(), quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
+const state = { data: {}, deck: [], quizDeck: [], category: "new", index: 0, revealed: false, listMode: false, listQuery: "", expandedConjugations: new Set(), quizDirection: "el-ru", quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false };
 const IRREGULAR_VERBS = new Set(["conjugation-020", "conjugation-024", "conjugation-025", "conjugation-039", "conjugation-047", "conjugation-048", "conjugation-049", "conjugation-050", "conjugation-051"]);
 const saved = JSON.parse(localStorage.getItem("greek-a1-progress") || "{}");
 const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [] };
@@ -153,8 +153,12 @@ function beginQuiz() {
   state.quizDeck = state.category === "conjugations"
     ? shuffle(state.deck.flatMap(card => Object.entries(card.forms).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] }))).filter(item => item.russian))
     : shuffle(state.deck.map(card => ({ card })));
+  $("quiz-direction").classList.toggle("hidden", state.category === "conjugations");
   showScreen("quiz");
   renderQuestion();
+}
+function renderQuizDirection() {
+  document.querySelectorAll("[data-quiz-direction]").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.quizDirection === state.quizDirection)));
 }
 function renderQuestion() {
   const item = state.quizDeck[state.quizIndex]; if (!item) return;
@@ -164,6 +168,7 @@ function renderQuestion() {
   if (item.form) {
     $("quiz-title").textContent = "Переведите форму глагола";
     $("quiz-question").textContent = item.form;
+    $("quiz-speak-button").classList.remove("hidden");
     state.quizSpokenText = item.form;
     state.quizAnswer = item.russian;
     const alternatives = state.quizDeck.filter(candidate => candidate.card.id !== card.id && candidate.pronoun !== item.pronoun && !translationsOverlap(candidate.russian, item.russian)).map(candidate => candidate.russian);
@@ -171,8 +176,21 @@ function renderQuestion() {
     $("quiz-options").innerHTML = options.map(text => `<button class="quiz-option" data-correct="${text === item.russian}">${text}</button>`).join("");
     return;
   }
+  renderQuizDirection();
+  if (state.quizDirection === "ru-el") {
+    $("quiz-title").textContent = "Выберите слово по-гречески";
+    $("quiz-question").textContent = card.russian;
+    $("quiz-speak-button").classList.add("hidden");
+    state.quizSpokenText = "";
+    state.quizAnswer = card.greek;
+    const distractors = shuffle(allCards().filter(candidate => candidate.type === card.type && candidate.id !== card.id && !translationsOverlap(candidate.russian, card.russian))).slice(0, 3);
+    const options = shuffle([card, ...distractors]);
+    $("quiz-options").innerHTML = options.map(option => `<button class="quiz-option" data-correct="${option.id === card.id}">${escapeHTML(option.greek)}</button>`).join("");
+    return;
+  }
   $("quiz-title").textContent = "Выберите перевод";
   $("quiz-question").textContent = card.greek;
+  $("quiz-speak-button").classList.remove("hidden");
   state.quizSpokenText = card.greek;
   state.quizAnswer = card.russian;
   const distractors = shuffle(allCards().filter(candidate => candidate.type === card.type && candidate.id !== card.id && !translationsOverlap(candidate.russian, card.russian))).slice(0, 3);
@@ -221,6 +239,11 @@ document.addEventListener("click", event => {
     const card = state.deck.find(item => item.id === listFormButton.dataset.listFormCard);
     const form = Object.values(card?.forms || {})[Number(listFormButton.dataset.listFormIndex)];
     if (form) speakGreek(form);
+  }
+  const quizDirection = event.target.closest("[data-quiz-direction]");
+  if (quizDirection && !state.answered) {
+    state.quizDirection = quizDirection.dataset.quizDirection;
+    renderQuestion();
   }
 });
 $("flashcard").addEventListener("click", event => { if (!event.target.closest("button")) reveal(); });
