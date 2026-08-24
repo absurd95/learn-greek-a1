@@ -3,1009 +3,1807 @@
     "id": "word-1325bc6756",
     "greek": "Η άνοιξη",
     "russian": "весна",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-629a3891b1",
     "greek": "η αμοιβή",
     "russian": "вознаграждение / оплата",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-574156ffc8",
     "greek": "η γλώσσα",
     "russian": "язык",
-    "new": false
+    "new": false,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-6a89ae63d6",
     "greek": "η διεύθυνση",
     "russian": "адрес / направление",
-    "new": false
+    "new": false,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-94a7b7eef6",
     "greek": "η εθνικότητα",
     "russian": "национальность",
-    "new": false
+    "new": false,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-bf0e5efe33",
     "greek": "η εταιρία",
     "russian": "компания / фирма",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-b66e03a4ad",
     "greek": "η ζωή",
     "russian": "жизнь",
-    "new": false
+    "new": false,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-382c6a37f0",
     "greek": "η κομμώτρια",
     "russian": "парикмахер",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-ab322e2471",
     "greek": "Η Κυριακή",
     "russian": "воскресенье",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-9b7fdc80bd",
     "greek": "η λαϊκή",
     "russian": "рынок / овощной базар / овощной и фруктовый рынок / уличный рынок",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-0502a43229",
     "greek": "η στάση",
     "russian": "остановка",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-ccb23378ed",
     "greek": "η τράπεζα",
     "russian": "банк",
-    "new": false
+    "new": false,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-4e5db0f355",
     "greek": "Η χώρα",
     "russian": "страна",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-5972cd42f9",
     "greek": "Κουρασμένος / κουρασμένη",
     "russian": "усталый / усталая",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-829b42a6e1",
     "greek": "ο / η κτηνίατρος",
     "russian": "ветеринар / ветеринарный врач",
-    "new": false
+    "new": false,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-98130dfa16",
     "greek": "ο / η υπάλληλος",
     "russian": "сотрудник / служащий",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-d9a30777ae",
     "greek": "ο αριθμός",
     "russian": "число / номер / цифра",
-    "new": false
+    "new": false,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-d5b88f4cef",
     "greek": "ο καθηγητής",
     "russian": "преподаватель / профессор",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-08ff41980e",
     "greek": "ο ξυλουργός",
     "russian": "плотник / столяр",
-    "new": false
+    "new": false,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-4c50d8f254",
     "greek": "ο πελάτης",
     "russian": "клиент / покупатель",
-    "new": false
+    "new": false,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-13b5621ee5",
     "greek": "ο προαστιακός",
     "russian": "пригородная электричка / пригородный поезд",
-    "new": false
+    "new": false,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-7eb7771f88",
     "greek": "ο σταθμός",
     "russian": "станция / вокзал",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-493952c313",
     "greek": "ο ταξιτζής",
     "russian": "таксист",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-47723b82a4",
     "greek": "ο φοιτητής / η φοιτήτρια",
     "russian": "студент / студентка",
-    "new": false
+    "new": false,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-4099f5b6d6",
     "greek": "Ο χειμώνας",
     "russian": "зима",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-3526a49535",
     "greek": "ο χώρος",
     "russian": "место / пространство / помещение",
-    "new": false
+    "new": false,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-81fc814dfe",
     "greek": "Ο ύπνος / ο υπνάκος",
     "russian": "сон / короткий сон",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2e525d77af",
     "greek": "Τα ψώνια",
     "russian": "покупки",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-1b40318dcd",
     "greek": "το αεροπλάνο",
     "russian": "самолёт",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-b1d42d3648",
     "greek": "το απόγευμα",
     "russian": "вторая половина дня / после полудня",
-    "new": false
+    "new": false,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-851840aebf",
     "greek": "Το βραδινό",
     "russian": "ужин",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-63c01169a4",
     "greek": "το εισιτήριο",
     "russian": "билет",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-106cd752ba",
     "greek": "το επάγγελμα",
     "russian": "профессия",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-11b5afba38",
     "greek": "το επώνυμο",
     "russian": "фамилия",
-    "new": false
+    "new": false,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-f2044a1a78",
     "greek": "το εργαστήριο",
     "russian": "лаборатория / мастерская",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-3c1440c25f",
     "greek": "το κέντρο",
     "russian": "центр",
-    "new": false
+    "new": false,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-92ff5fd84a",
     "greek": "Το καλοκαίρι",
     "russian": "лето",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-fc155c3490",
     "greek": "το λεωφορείο",
     "russian": "автобус",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-7a69bcc39d",
     "greek": "το μεσημέρι",
     "russian": "полдень",
-    "new": false
+    "new": false,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-76c81c6f93",
     "greek": "Το μεσημεριανό",
     "russian": "обед",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-ebd89f3823",
     "greek": "το ξενοδοχείο / τα ξενοδοχεία",
     "russian": "отель / гостиница; отели / гостиницы",
-    "new": false
+    "new": false,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-650992d1db",
     "greek": "Το παγωτό",
     "russian": "мороженое",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-65a8e5f7ee",
     "greek": "το ποδήλατο",
     "russian": "велосипед",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-76469173e9",
     "greek": "Το ποτό",
     "russian": "напиток (обычно алкогольный)",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-64d354f926",
     "greek": "Το πρωινό",
     "russian": "завтрак",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-5ca34d9848",
     "greek": "Το ραδιόφωνο",
     "russian": "радио",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-cf9ea03d9f",
     "greek": "Το Σάββατο",
     "russian": "суббота",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-589a19ed48",
     "greek": "το ταξιδιωτικό γραφείο",
     "russian": "туристическое агентство / туристический офис",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-49123c7c62",
     "greek": "το τρένο",
     "russian": "поезд",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-9e7951fd34",
     "greek": "το τραμ",
     "russian": "трамвай",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-b8a70f8318",
     "greek": "το τρόλεϊ",
     "russian": "троллейбус",
-    "new": false
+    "new": false,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-a05766aeab",
     "greek": "Το φαγητό",
     "russian": "еда",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-df84c0dffa",
     "greek": "Το φθινόπωρο",
     "russian": "осень",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-70cbe4c279",
     "greek": "το ωράριο",
     "russian": "рабочие часы / график работы",
-    "new": false
+    "new": false,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-3068be08d3",
     "greek": "Οι ειδήσεις / τα νέα",
     "russian": "новости",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-f25b5a9019",
     "greek": "η ειδοποίηση",
     "russian": "оповещение / уведомление",
-    "new": true
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-1334c5246f",
     "greek": "η είδηση",
     "russian": "новость",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-201268a160",
     "greek": "Άλλος / άλλη / άλλο",
     "russian": "другой / другая / другое",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-7f8eba5593",
     "greek": "Η παρέα",
     "russian": "компания друзей / круг друзей",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-66ef255634",
     "greek": "Ο ίδιος / η ίδια / το ίδιο",
     "russian": "тот же / та же / то же / одинаковый / одинаковая / одинаковое",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-1ec9f80df9",
     "greek": "το δευτερόλεπτο",
     "russian": "секунда",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-8e48ff26ca",
     "greek": "μισός / μισή / μισό",
     "russian": "половинный / половина",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-5ecc0eb55a",
     "greek": "το λεπτό / τα λεπτά",
     "russian": "минута / минуты; цент / центы",
     "note": "Значение определяется контекстом: πέντε λεπτά — пять минут или пять центов.",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-acc4ec0e97",
     "greek": "η ώρα",
     "russian": "час",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-a3047b92d6",
     "greek": "η οικογένεια",
     "russian": "семья",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-99e78ba9b7",
     "greek": "το παιδί",
     "russian": "ребёнок",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-9b3735d11e",
     "greek": "τα παιδιά",
     "russian": "дети",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-3c476a2bc7",
     "greek": "ο χρόνος / τα χρόνια",
     "russian": "год / годы",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2b73d94641",
     "greek": "το βιβλίο",
     "russian": "книга",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c201",
     "greek": "η μουσική",
     "russian": "музыка",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c202",
     "greek": "η τηλεόραση",
     "russian": "телевизор / телевидение",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c203",
     "greek": "η ταινία",
     "russian": "фильм",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c204",
     "greek": "το γράμμα",
     "russian": "письмо / буква",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c205",
     "greek": "το μήνυμα / τα μηνύματα",
     "russian": "сообщение / сообщения",
     "note": "Частое сочетание: γράφω / στέλνω ένα μήνυμα — пишу / отправляю сообщение.",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c206",
     "greek": "η βοήθεια",
     "russian": "помощь",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c207",
     "greek": "το τσιγάρο",
     "russian": "сигарета",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c208",
     "greek": "το τηλέφωνο",
     "russian": "телефон",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c209",
     "greek": "το νερό",
     "russian": "вода",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c210",
     "greek": "ο καφές",
     "russian": "кофе",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c211",
     "greek": "ο δρόμος",
     "russian": "дорога / улица / путь",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c212",
     "greek": "το αυτοκίνητο",
     "russian": "автомобиль / машина",
-    "new": true
+    "new": true,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c213",
     "greek": "το σπίτι",
     "russian": "дом",
-    "new": true
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c214",
     "greek": "το ψωμί",
     "russian": "хлеб",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c215",
     "greek": "ο χορός",
     "russian": "танец",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c216",
     "greek": "ο φίλος / η φίλη",
     "russian": "друг / подруга",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c217",
     "greek": "η δουλειά",
     "russian": "работа",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-35a6f1c218",
     "greek": "το σχολείο",
     "russian": "школа",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080401",
     "greek": "ο μήνας / οι μήνες",
     "russian": "месяц / месяцы",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080402",
     "greek": "το διάλειμμα",
     "russian": "перерыв / перемена",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080403",
     "greek": "η συμμαθήτρια / οι συμμαθήτριες",
     "russian": "одноклассница / одноклассницы",
     "note": "Мужская форма: ο συμμαθητής — одноклассник.",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080404",
     "greek": "το κυλικείο",
     "russian": "буфет / столовая при школе или учреждении",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080405",
     "greek": "το σάντουιτς",
     "russian": "сэндвич / бутерброд",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080406",
     "greek": "όλος / όλη / όλο · όλοι / όλες / όλα",
     "russian": "весь / вся / всё · все",
     "note": "Форма согласуется с родом и числом: όλοι — мужчины или смешанная группа, όλες — женщины, όλα — предметы или средний род.",
-    "new": true
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080407",
     "greek": "διάφορος / διάφορη / διάφορο",
     "russian": "разный / различный",
     "note": "Во множественном числе διάφορα часто означает «различные, разные».",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080408",
     "greek": "το θέμα / τα θέματα",
     "russian": "тема / темы",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080409",
     "greek": "ο υπολογιστής / το κομπιούτερ",
     "russian": "компьютер",
     "note": "ο υπολογιστής связан с υπολογίζω — считать, вычислять. το κομπιούτερ — заимствованный разговорный вариант.",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080410",
     "greek": "το τραγούδι",
     "russian": "песня",
     "note": "Связано с глаголом τραγουδάω — петь.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080411",
     "greek": "ο τραγουδιστής / η τραγουδίστρια",
     "russian": "певец / певица",
     "note": "Образовано от τραγουδάω — петь.",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080412",
     "greek": "το ίντερνετ / το διαδίκτυο",
     "russian": "интернет",
     "note": "διαδίκτυο: δια- «через, между» + δίκτυο «сеть».",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080413",
     "greek": "το δίκτυο",
     "russian": "сеть",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080414",
     "greek": "η γραφή",
     "russian": "письмо как процесс / письменность / почерк",
     "note": "От γράφω — писать. Для письма в конверте используется το γράμμα.",
-    "new": true
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080415",
     "greek": "η προτίμηση",
     "russian": "предпочтение",
     "note": "От προτιμάω / προτιμώ — предпочитать.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080416",
     "greek": "η αρχή",
     "russian": "начало / принцип",
     "note": "Связано с αρχίζω — начинать.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080417",
     "greek": "το ξεκίνημα",
     "russian": "начало / старт",
     "note": "От ξεκινάω — начинать, отправляться.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080418",
     "greek": "το διάβασμα",
     "russian": "чтение / учёба",
     "note": "От διαβάζω — читать, учиться.",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080419",
     "greek": "η χρήση",
     "russian": "использование / пользование",
     "note": "От χρησιμοποιώ — использовать.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080420",
     "greek": "το σταμάτημα",
     "russian": "остановка / прекращение действия",
     "note": "От σταματάω. Для остановки транспорта обычно η στάση.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080421",
     "greek": "η επιστήμη",
     "russian": "наука",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080422",
     "greek": "το πανεπιστήμιο",
     "russian": "университет",
     "note": "παν- «весь, всё» + επιστήμη «наука»: буквально место, объединяющее науки.",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080423",
     "greek": "το τέλος",
     "russian": "конец",
     "note": "Связано с τελειώνω — заканчивать; στο τέλος — в конце.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080424",
     "greek": "ο σκύλος",
     "russian": "собака / пёс",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080425",
     "greek": "η αδελφή",
     "russian": "сестра",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080426",
     "greek": "η σούπα",
     "russian": "суп",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080427",
     "greek": "το ταξίδι",
     "russian": "путешествие / поездка",
     "note": "Связано с ταξιδεύω — путешествовать.",
-    "new": true
+    "new": true,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080428",
     "greek": "η συνάντηση",
     "russian": "встреча",
     "note": "От συναντάω — встречать, встречаться.",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080429",
     "greek": "η συζήτηση",
     "russian": "обсуждение / беседа",
     "note": "От συζητάω — обсуждать, беседовать.",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080430",
     "greek": "ο υπολογισμός",
     "russian": "расчёт / вычисление",
     "note": "От υπολογίζω — считать, вычислять.",
-    "new": true
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080431",
     "greek": "η πληρωμή",
     "russian": "платёж / оплата",
     "note": "От πληρώνω — платить.",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080432",
     "greek": "η ανάπτυξη",
     "russian": "рост / развитие",
     "note": "Связано по смыслу с μεγαλώνω — расти, становиться старше.",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080433",
     "greek": "το πρωί",
     "russian": "утро / утром",
     "note": "Не путать: το πρωινό — завтрак.",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080434",
     "greek": "το βράδυ / το βράδι",
     "russian": "вечер / вечером",
     "note": "Оба написания употребляются. Не путать: το βραδινό — ужин.",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080701",
     "greek": "αρκετός / αρκετή / αρκετό",
     "russian": "достаточный / довольно много",
     "note": "Согласуется с существительным: αρκετός κόσμος, αρκετό φαγητό.",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080702",
     "greek": "ο κόσμος",
     "russian": "люди / народ / мир",
     "note": "В выражении αρκετός κόσμος означает «довольно много людей». Для народа как нации или населения используется также ο λαός.",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080703",
     "greek": "η πείνα",
     "russian": "голод",
     "note": "Связано с πεινάω — хотеть есть.",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080704",
     "greek": "η δίψα",
     "russian": "жажда",
     "note": "Связано с διψάω — хотеть пить.",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080705",
     "greek": "το μνήμα",
     "russian": "могила / гробница",
     "note": "Не путать с το μνημείο — памятник.",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080706",
     "greek": "το μνημείο",
     "russian": "памятник / монумент",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080707",
     "greek": "οι διακοπές",
     "russian": "каникулы / отпуск",
     "note": "Обычно только множественное число: πάω διακοπές — еду в отпуск.",
-    "new": true
+    "new": true,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080708",
     "greek": "ο καύσωνας",
     "russian": "сильная жара / волна жары",
     "note": "Обычно о длительной экстремальной жаре: Έχει καύσωνα — стоит сильная жара.",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080709",
     "greek": "το βουνό",
     "russian": "гора",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080710",
     "greek": "η βροχή",
     "russian": "дождь",
     "note": "Связано с безличным βρέχει — идёт дождь.",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080711",
     "greek": "το χιόνι",
     "russian": "снег",
     "note": "Связано с безличным χιονίζει — идёт снег.",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080712",
     "greek": "η γειτονιά",
     "russian": "район / окрестности",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080713",
     "greek": "ο γείτονας / η γειτόνισσα",
     "russian": "сосед / соседка",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080714",
     "greek": "σοβαρός / σοβαρή / σοβαρό",
     "russian": "серьёзный / серьёзная / серьёзное",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080715",
     "greek": "ο λαός",
     "russian": "народ / население",
     "note": "ο λαός подчёркивает народ как общность; ο κόσμος в разговоре часто означает людей или толпу.",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080716",
     "greek": "το φιλί / το φιλάκι",
     "russian": "поцелуй / поцелуйчик",
     "note": "Суффикс -άκι часто добавляет уменьшительное или ласковое значение.",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080717",
     "greek": "ο καιρός",
     "russian": "погода / время",
     "note": "Значение определяется контекстом: Τι καιρό κάνει; — Какая погода? Πόσον καιρό; — Как долго?",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080718",
     "greek": "καλός / καλή / καλό",
     "russian": "хороший / хорошая / хорошее",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080719",
     "greek": "η Αίγινα",
     "russian": "Эгина",
     "note": "Греческий остров в Сароническом заливе.",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080720",
     "greek": "όμορφος / όμορφη / όμορφο",
     "russian": "красивый / красивая / красивое",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080721",
     "greek": "η εβδομάδα / η βδομάδα",
     "russian": "неделя",
     "note": "Обе формы употребляются; βδομάδα чаще звучит разговорно.",
-    "new": true
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080722",
     "greek": "το νησί",
     "russian": "остров",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080723",
     "greek": "ο Πειραιάς",
     "russian": "Пирей",
-    "new": true
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080724",
     "greek": "το ψάρι",
     "russian": "рыба",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080725",
     "greek": "το καλαμάρι",
     "russian": "кальмар",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080726",
     "greek": "το χταπόδι / το οχταπόδι",
     "russian": "осьминог",
     "note": "Обе формы встречаются; χταπόδι — очень распространённый разговорный вариант.",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080727",
     "greek": "ψητός / ψητή / ψητό",
     "russian": "жареный / запечённый на гриле",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080728",
     "greek": "το φεγγάρι",
     "russian": "луна",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080729",
     "greek": "η βόλτα",
     "russian": "прогулка",
     "note": "Частое сочетание: πάω βόλτα — иду гулять.",
-    "new": true
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080730",
     "greek": "η βάρκα",
     "russian": "лодка",
-    "new": true
+    "new": true,
+    "topic": "transport",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080731",
     "greek": "η ταβέρνα",
     "russian": "таверна",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080732",
     "greek": "φρέσκος / φρέσκια / φρέσκο",
     "russian": "свежий / свежая / свежее",
-    "new": true
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080733",
     "greek": "η θάλασσα",
     "russian": "море",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
   {
     "id": "word-2026080734",
     "greek": "μεγάλος / μεγάλη / μεγάλο",
     "russian": "большой / большая / большое",
-    "new": true
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
   },
   {
     "id": "word-2026080735",
     "greek": "η ηλιοθεραπεία",
     "russian": "солнечная ванна / загорание",
     "note": "Частое сочетание: κάνω ηλιοθεραπεία — загораю.",
-    "new": true
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun"
   },
-  { "id": "word-2026081101", "greek": "ο κύριος", "russian": "господин / мужчина", "note": "Как обращение перед фамилией: ο κύριος Παπαδόπουλος — господин Пападопулос.", "new": true },
-  { "id": "word-2026081102", "greek": "η κυρία", "russian": "госпожа / женщина", "note": "Как обращение перед фамилией: η κυρία Παπαδοπούλου — госпожа Пападопулу.", "new": true },
-  { "id": "word-2026081103", "greek": "το καλαμαράκι", "russian": "кальмар / небольшой кальмар", "note": "Уменьшительная и очень частая ресторанная форма от το καλαμάρι.", "new": true },
-  { "id": "word-2026081104", "greek": "ο γύρος", "russian": "круг / раунд / тур; гирос", "note": "Не путать с наречием γύρω — вокруг, около: γύρω στις επτά.", "new": true },
-  { "id": "word-2026081105", "greek": "το πράγμα / τα πράγματα", "russian": "вещь / вещи; дело / дела", "new": true },
-  { "id": "word-2026081106", "greek": "ο ηλεκτρικός", "russian": "городская электричка / линия метро ISAP", "note": "με τον ηλεκτρικό — на электричке / метро.", "new": true },
-  { "id": "word-2026081107", "greek": "ο φούρνος", "russian": "печь / духовка / пекарня", "new": true },
-  { "id": "word-2026081108", "greek": "το γάλα / τα γάλατα", "russian": "молоко / разные виды или упаковки молока", "note": "Обычно γάλα — неисчисляемое единственное число. Множественное γάλατα употребляют о видах, упаковках или порциях.", "new": true },
-  { "id": "word-2026081109", "greek": "ο αναπτήρας", "russian": "зажигалка", "new": true },
-  { "id": "word-2026081110", "greek": "ο αγώνας / οι αγώνες", "russian": "соревнование / матч / борьба", "new": true },
-  { "id": "word-2026081401", "greek": "το μπουκάλι / το μπουκαλάκι", "russian": "бутылка / бутылочка", "note": "Уменьшительное образовано суффиксом -άκι: μπουκάλι → μπουκαλάκι.", "new": true },
-  { "id": "word-2026081402", "greek": "τα λεφτά", "russian": "деньги", "note": "Разговорное слово, употребляется во множественном числе.", "new": true },
-  { "id": "word-2026081403", "greek": "τα ψιλά", "russian": "мелочь / мелкие деньги", "new": true },
-  { "id": "word-2026081404", "greek": "τα μετρητά", "russian": "наличные деньги", "new": true },
-  { "id": "word-2026081405", "greek": "τα ρέστα", "russian": "сдача", "new": true },
-  { "id": "word-2026081406", "greek": "η αγορά", "russian": "рынок / покупка / рынок как сфера", "note": "Связано с αγοράζω — покупать.", "new": true },
-  { "id": "word-2026081407", "greek": "η μπίρα", "russian": "пиво", "new": true },
-  { "id": "word-2026081408", "greek": "κάτι", "russian": "что-то / нечто", "new": true },
-  { "id": "word-2026081409", "greek": "η φορά / οι φορές", "russian": "раз / разы", "note": "μία φορά — один раз; δύο φορές — два раза.", "new": true },
-  { "id": "word-2026081410", "greek": "το περίπτερο", "russian": "киоск", "new": true },
-  { "id": "word-2026081411", "greek": "το σπίρτο / τα σπίρτα", "russian": "спичка / спички", "new": true },
-  { "id": "word-2026081412", "greek": "το αλκοόλ", "russian": "алкоголь", "new": true },
-  { "id": "word-2026081413", "greek": "το αναψυκτικό", "russian": "прохладительный / безалкогольный напиток", "new": true },
-  { "id": "word-2026081414", "greek": "η ψύξη", "russian": "охлаждение / заморозка", "new": true },
-  { "id": "word-2026081415", "greek": "το ψυγείο", "russian": "холодильник", "note": "Связано с η ψύξη — охлаждение.", "new": true },
-  { "id": "word-2026081416", "greek": "το οινόπνευμα", "russian": "спирт", "new": true },
-  { "id": "word-2026081417", "greek": "το κρασί", "russian": "вино", "note": "οίνος — книжное и древнегреческое слово «вино», сохранившееся в сложных словах.", "new": true },
-  { "id": "word-2026081418", "greek": "το χαρτί", "russian": "бумага / лист бумаги", "new": true },
-  { "id": "word-2026081419", "greek": "το μαντήλι", "russian": "платок / носовой платок", "new": true },
-  { "id": "word-2026081420", "greek": "το χαρτομάντηλο", "russian": "бумажный носовой платок / салфетка", "note": "χαρτί + μαντήλι → χαρτομάντηλο.", "new": true }
+  {
+    "id": "word-2026081101",
+    "greek": "ο κύριος",
+    "russian": "господин / мужчина",
+    "note": "Как обращение перед фамилией: ο κύριος Παπαδόπουλος — господин Пападопулос.",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081102",
+    "greek": "η κυρία",
+    "russian": "госпожа / женщина",
+    "note": "Как обращение перед фамилией: η κυρία Παπαδοπούλου — госпожа Пападопулу.",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081103",
+    "greek": "το καλαμαράκι",
+    "russian": "кальмар / небольшой кальмар",
+    "note": "Уменьшительная и очень частая ресторанная форма от το καλαμάρι.",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081104",
+    "greek": "ο γύρος",
+    "russian": "круг / раунд / тур; гирос",
+    "note": "Не путать с наречием γύρω — вокруг, около: γύρω στις επτά.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081105",
+    "greek": "το πράγμα / τα πράγματα",
+    "russian": "вещь / вещи; дело / дела",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081106",
+    "greek": "ο ηλεκτρικός",
+    "russian": "городская электричка / линия метро ISAP",
+    "note": "με τον ηλεκτρικό — на электричке / метро.",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081107",
+    "greek": "ο φούρνος",
+    "russian": "печь / духовка / пекарня",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081108",
+    "greek": "το γάλα / τα γάλατα",
+    "russian": "молоко / разные виды или упаковки молока",
+    "note": "Обычно γάλα — неисчисляемое единственное число. Множественное γάλατα употребляют о видах, упаковках или порциях.",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081109",
+    "greek": "ο αναπτήρας",
+    "russian": "зажигалка",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081110",
+    "greek": "ο αγώνας / οι αγώνες",
+    "russian": "соревнование / матч / борьба",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081401",
+    "greek": "το μπουκάλι / το μπουκαλάκι",
+    "russian": "бутылка / бутылочка",
+    "note": "Уменьшительное образовано суффиксом -άκι: μπουκάλι → μπουκαλάκι.",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081402",
+    "greek": "τα λεφτά",
+    "russian": "деньги",
+    "note": "Разговорное слово, употребляется во множественном числе.",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081403",
+    "greek": "τα ψιλά",
+    "russian": "мелочь / мелкие деньги",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081404",
+    "greek": "τα μετρητά",
+    "russian": "наличные деньги",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081405",
+    "greek": "τα ρέστα",
+    "russian": "сдача",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081406",
+    "greek": "η αγορά",
+    "russian": "рынок / покупка / рынок как сфера",
+    "note": "Связано с αγοράζω — покупать.",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081407",
+    "greek": "η μπίρα",
+    "russian": "пиво",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081408",
+    "greek": "κάτι",
+    "russian": "что-то / нечто",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "word-2026081409",
+    "greek": "η φορά / οι φορές",
+    "russian": "раз / разы",
+    "note": "μία φορά — один раз; δύο φορές — два раза.",
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081410",
+    "greek": "το περίπτερο",
+    "russian": "киоск",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081411",
+    "greek": "το σπίρτο / τα σπίρτα",
+    "russian": "спичка / спички",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081412",
+    "greek": "το αλκοόλ",
+    "russian": "алкоголь",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081413",
+    "greek": "το αναψυκτικό",
+    "russian": "прохладительный / безалкогольный напиток",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081414",
+    "greek": "η ψύξη",
+    "russian": "охлаждение / заморозка",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081415",
+    "greek": "το ψυγείο",
+    "russian": "холодильник",
+    "note": "Связано с η ψύξη — охлаждение.",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081416",
+    "greek": "το οινόπνευμα",
+    "russian": "спирт",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081417",
+    "greek": "το κρασί",
+    "russian": "вино",
+    "note": "οίνος — книжное и древнегреческое слово «вино», сохранившееся в сложных словах.",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081418",
+    "greek": "το χαρτί",
+    "russian": "бумага / лист бумаги",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081419",
+    "greek": "το μαντήλι",
+    "russian": "платок / носовой платок",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026081420",
+    "greek": "το χαρτομάντηλο",
+    "russian": "бумажный носовой платок / салфетка",
+    "note": "χαρτί + μαντήλι → χαρτομάντηλο.",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082401",
+    "greek": "η πορτοκαλάδα",
+    "russian": "апельсиновый напиток / апельсиновая газировка",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082402",
+    "greek": "εργατικός / εργατική / εργατικό",
+    "russian": "трудолюбивый / трудолюбивая / трудолюбивое",
+    "note": "Форма εργατικό в сочетании εργατικό υπάλληλο — средняя или мужская винительная форма по контексту.",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "word-2026082403",
+    "greek": "η επιχείρηση",
+    "russian": "предприятие / бизнес",
+    "note": "Перед безударным притяжательным появляется дополнительное ударение: η επιχείρησή μου — моё предприятие.",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082404",
+    "greek": "η σχολή",
+    "russian": "факультет / учебное заведение / школа",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082405",
+    "greek": "η ιατρική",
+    "russian": "медицина",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082406",
+    "greek": "η Νομική",
+    "russian": "юридический факультет / юриспруденция",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082407",
+    "greek": "η τάξη",
+    "russian": "класс / учебная группа / порядок",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082408",
+    "greek": "καινούργιος / καινούργια / καινούργιο",
+    "russian": "новый / новая / новое",
+    "note": "Форма καινούργιους — мужской род, множественное число, винительный падеж.",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "word-2026082409",
+    "greek": "ο μαθητής / η μαθήτρια",
+    "russian": "ученик / ученица",
+    "note": "Мужская винительная форма: τον μαθητή.",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082410",
+    "greek": "η ντουλάπα",
+    "russian": "шкаф",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082411",
+    "greek": "το πουκάμισο / τα πουκάμισα",
+    "russian": "рубашка / рубашки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082412",
+    "greek": "το μολύβι / τα μολύβια",
+    "russian": "карандаш / карандаши",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082413",
+    "greek": "η τσάντα",
+    "russian": "сумка",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082414",
+    "greek": "αυτός / αυτή / αυτό",
+    "russian": "он / она / оно; этот / эта / это",
+    "note": "Винительный падеж: αυτόν / αυτή(ν) / αυτό.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "word-2026082415",
+    "greek": "η εφημερίδα / οι εφημερίδες",
+    "russian": "газета / газеты",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082416",
+    "greek": "το περιοδικό / τα περιοδικά",
+    "russian": "журнал / журналы",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082417",
+    "greek": "η τηλεκάρτα / οι τηλεκάρτες",
+    "russian": "телефонная карта / телефонные карты",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082418",
+    "greek": "το γραμματόσημο / τα γραμματόσημα",
+    "russian": "почтовая марка / почтовые марки",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082419",
+    "greek": "το στιλό / τα στιλό",
+    "russian": "ручка / ручки",
+    "note": "Заимствованное слово: форма во множественном числе не изменяется.",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082420",
+    "greek": "η καραμέλα / οι καραμέλες",
+    "russian": "конфета / конфеты",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082421",
+    "greek": "η τσίχλα / οι τσίχλες",
+    "russian": "жевательная резинка / жевательные резинки",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082422",
+    "greek": "η σοκολάτα / οι σοκολάτες",
+    "russian": "шоколад / шоколадки",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082423",
+    "greek": "το πατατάκι / τα πατατάκια",
+    "russian": "чипс / чипсы",
+    "note": "В значении продукта обычно употребляется множественное: τα πατατάκια.",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082424",
+    "greek": "το γιαούρτι / τα γιαούρτια",
+    "russian": "йогурт / йогурты",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082425",
+    "greek": "το κουλούρι / τα κουλούρια",
+    "russian": "бублик с кунжутом / бублики",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082426",
+    "greek": "το κριτσίνι / τα κριτσίνια",
+    "russian": "хлебная палочка / хлебные палочки",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082427",
+    "greek": "η φρυγανιά / οι φρυγανιές",
+    "russian": "сухарик / поджаренный ломтик хлеба",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082428",
+    "greek": "το κρουασάν / τα κρουασάν",
+    "russian": "круассан / круассаны",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082429",
+    "greek": "η τυρόπιτα / οι τυρόπιτες",
+    "russian": "пирог с сыром / сырные пироги",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082430",
+    "greek": "η σπανακόπιτα / οι σπανακόπιτες",
+    "russian": "пирог со шпинатом / пироги со шпинатом",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082431",
+    "greek": "το βούτημα / τα βουτήματα",
+    "russian": "печенье к кофе / печенье для обмакивания",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082432",
+    "greek": "το γλυκό / τα γλυκά",
+    "russian": "сладость / десерт; сладости",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  }
 ]

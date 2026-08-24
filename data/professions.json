@@ -3,128 +3,186 @@
     "id": "profession-dd070caf5d",
     "greek": "καθηγητής / καθηγήτρια",
     "russian": "преподаватель / преподавательница",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-e86ba4bf85",
     "greek": "κομμωτής / κομμώτρια",
     "russian": "парикмахер (м. / ж.)",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-d527922bba",
     "greek": "φοιτητής / φοιτήτρια",
     "russian": "студент / студентка",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-280986db7b",
     "greek": "εργάτης / εργάτρια",
     "russian": "рабочий / работница",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-8c0c9d137a",
     "greek": "πωλητής / πωλήτρια",
     "russian": "продавец / продавщица",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-02a3a6de96",
     "greek": "αθλητής / αθλήτρια",
     "russian": "спортсмен / спортсменка",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-a34ac051ff",
     "greek": "δικηγόρος",
     "russian": "адвокат",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-e80a78cc2a",
     "greek": "ηλεκτρολόγος",
     "russian": "электрик",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-5e71a94bd7",
     "greek": "οδηγός",
     "russian": "водитель",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-e92ba1f8d5",
     "greek": "μηχανικός",
     "russian": "инженер / механик",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-6fcfa09f44",
     "greek": "γιατρός",
     "russian": "врач",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-16fe55d0c2",
     "greek": "σερβιτόρος / σερβιτόρα",
     "russian": "официант / официантка",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-0b5e5e6ff9",
     "greek": "νοσοκόμος / νοσοκόμα",
     "russian": "медбрат / медсестра",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-c9678ccaaa",
     "greek": "δάσκαλος / δασκάλα",
     "russian": "учитель / учительница",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-b744cc115b",
     "greek": "άνεργος / άνεργη",
     "russian": "безработный / безработная",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-acc4473b18",
     "greek": "μάγειρας / μαγείρισσα",
     "russian": "повар (м. / ж.)",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-ceac4ff5b6",
     "greek": "υπάλληλος",
     "russian": "служащий / сотрудник",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-e572c3852b",
     "greek": "ηθοποιός",
     "russian": "актёр / актриса",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-ab7f3f56df",
     "greek": "ταμίας",
     "russian": "кассир",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-fca5b44867",
     "greek": "αρχιτέκτονας",
     "russian": "архитектор",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
   {
     "id": "profession-ee72445ff4",
     "greek": "γραμματέας",
     "russian": "секретарь",
-    "new": true
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
   },
-  { "id": "profession-2026081101", "greek": "φούρναρης / φουρνάρισσα", "russian": "пекарь / пекарша", "note": "Связанное слово: ο φούρνος — печь, духовка или пекарня.", "new": true },
-  { "id": "profession-2026081401", "greek": "περιπτεράς", "russian": "владелец / продавец киоска", "note": "Винительный падеж: τον περιπτερά.", "new": true }
+  {
+    "id": "profession-2026081101",
+    "greek": "φούρναρης / φουρνάρισσα",
+    "russian": "пекарь / пекарша",
+    "note": "Связанное слово: ο φούρνος — печь, духовка или пекарня.",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "profession-2026081401",
+    "greek": "περιπτεράς",
+    "russian": "владелец / продавец киоска",
+    "note": "Винительный падеж: τον περιπτερά.",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun"
+  }
 ]

@@ -31,15 +31,25 @@
       <div id="category-grid" class="category-grid"></div>
     </section>
 
-    <section id="study" class="screen" aria-labelledby="study-title">
+    <section id="word-topics" class="screen" aria-labelledby="word-topics-title">
       <div class="section-heading">
         <button class="back-button" type="button" data-go="dashboard">← Назад</button>
+        <div><p class="eyebrow">Тематический словарь</p><h2 id="word-topics-title">Слова по темам</h2></div>
+      </div>
+      <p class="topic-intro">Выберите тему: карточки, список, поиск и тест будут работать только с выбранной лексикой.</p>
+      <div id="word-topic-grid" class="category-grid topic-grid"></div>
+    </section>
+
+    <section id="study" class="screen" aria-labelledby="study-title">
+      <div class="section-heading">
+        <button id="study-back-button" class="back-button" type="button" data-go="dashboard">← Назад</button>
         <div>
           <p id="study-kicker" class="eyebrow">Карточки</p>
           <h2 id="study-title">Новые</h2>
         </div>
         <button id="list-toggle" class="list-toggle" type="button" aria-pressed="false">Показать все</button>
       </div>
+      <div id="word-pos-filter" class="word-pos-filter hidden" aria-label="Часть речи"></div>
       <div id="empty-state" class="empty hidden">В этом разделе пока нет карточек.</div>
       <div id="word-list-panel" class="word-list-panel hidden">
         <label class="word-list-search"><span>Поиск в разделе</span><input id="word-list-search" type="search" placeholder="Греческое слово или перевод…" autocomplete="off"></label>
@@ -119,6 +129,7 @@
             <tr><th rowspan="4">Средний</th><td>ед., им.</td><td>το</td><td>το νερό · το παιδί · το μάθημα</td></tr><tr><td>ед., вин.</td><td>το</td><td>το νερό · το παιδί · το μάθημα</td></tr><tr><td>мн., им.</td><td>τα</td><td>τα νερά · τα παιδιά · τα μαθήματα</td></tr><tr><td>мн., вин.</td><td>τα</td><td>τα νερά · τα παιδιά · τα μαθήματα</td></tr>
           </tbody></table></div>
           <p class="note"><b>Прилагательное склоняется вместе с существительным:</b> ο μεγάλος άντρας → τον μεγάλο άντρα → οι μεγάλοι άντρες → τους μεγάλους άντρες.</p>
+          <div class="rule-stack"><div><b>Согласование в винительном</b><code>εργατικός υπάλληλος → έναν εργατικό υπάλληλο</code><p>Артикль, прилагательное и существительное меняются вместе.</p></div></div>
           <div class="rule-stack"><div><b>Учитель</b><code>ο δάσκαλος → τον δάσκαλο → οι δάσκαλοι → τους δασκάλους</code></div><div><b>Учительница</b><code>η δασκάλα → τη δασκάλα → οι δασκάλες → τις δασκάλες</code></div><div><b>Какой?</b><code>ποιος άντρας · ποια γυναίκα · ποιο πράγμα</code><p>Во множественном числе: ποιοι άντρες · ποιες γυναίκες · ποια πράγματα.</p></div></div>
           <h4>Особенность слова «молоко»</h4>
           <div class="milk-rule"><div><b>το γάλα</b><span>молоко — обычно неисчисляемое, единственное число</span></div><div><b>τα γάλατα</b><span>разные виды, упаковки или порции молока</span></div></div>
@@ -131,6 +142,8 @@
           <div class="grammar-number">02</div><p class="eyebrow">Кто и чей</p><h3>Личные и притяжательные местоимения</h3>
           <p>Личное местоимение часто опускается: окончание глагола уже показывает лицо. Притяжательное ставится после существительного с артиклем.</p>
           <div class="mini-table"><b>εγώ — я</b><span>μου — мой / моя / моё</span><b>εσύ — ты</b><span>σου — твой</span><b>αυτός / αυτή / αυτό</b><span>του / της / του — его / её</span><b>εμείς — мы</b><span>μας — наш</span><b>εσείς — вы</b><span>σας — ваш</span><b>αυτοί / αυτές / αυτά</b><span>τους — их</span></div>
+          <div class="rule-stack"><div><b>Кого? Что?</b><code>αυτός / αυτή / αυτό → αυτόν / αυτή(ν) / αυτό</code><p>Мужская форма в винительном получает окончание <b>-ν</b>: Βλέπω αυτόν — Я вижу его.</p></div><div><b>Дополнительное ударение перед μου</b><code>η επιχείρηση → η επιχείρησή μου</code><p>У некоторых слов с ударением на третьем слоге от конца перед безударным μου / σου / μας / σας появляется второе ударение.</p></div></div>
+          <div class="example"><span>Всё вместе</span><b>Χρειάζομαι έναν εργατικό υπάλληλο για την επιχείρησή μου.</b><i>Мне нужен трудолюбивый сотрудник для моего предприятия.</i><button class="grammar-speak" data-speak="Χρειάζομαι έναν εργατικό υπάλληλο για την επιχείρησή μου." type="button" aria-label="Произнести пример">🔊</button></div>
           <div class="example"><span>Пример</span><b>Αυτό είναι το σπίτι μου.</b><i>Это мой дом.</i><button class="grammar-speak" data-speak="Αυτό είναι το σπίτι μου." type="button" aria-label="Произнести пример">🔊</button></div>
           <figure><img loading="lazy" src="./assets/grammar/04-pronouns.webp" alt="Личные и притяжательные местоимения"><figcaption>Соответствие личных и притяжательных форм.</figcaption></figure>
         </article>
