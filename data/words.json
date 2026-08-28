@@ -2076,15 +2076,16 @@
   {
     "id": "word-2026082832",
     "greek": "το κεράσι / τα κεράσια",
-    "russian": "вишня / черешня; ягоды",
+    "russian": "черешня / сладкая вишня",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "note": "Для кислой вишни обычно используется το βύσσινο."
   },
   {
     "id": "word-2026082833",
     "greek": "το σταφύλι / τα σταφύλια",
-    "russian": "виноград / виноградины, гроздья",
+    "russian": "виноградина / виноград; виноградины / гроздья винограда",
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun"
@@ -2344,5 +2345,165 @@
     "topic": "city",
     "partOfSpeech": "adjective",
     "note": "Сравнение: πιο φτηνός / πιο φτηνή / πιο φτηνό — дешевле."
+  },
+  {
+    "id": "word-2026082865",
+    "greek": "το κυδώνι / τα κυδώνια",
+    "russian": "айва / плоды айвы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082866",
+    "greek": "ο ανανάς / οι ανανάδες",
+    "russian": "ананас / ананасы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082867",
+    "greek": "η μπανάνα / οι μπανάνες",
+    "russian": "банан / бананы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082868",
+    "greek": "το περγαμόντο / τα περγαμόντα",
+    "russian": "бергамот / плоды бергамота",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082869",
+    "greek": "το βύσσινο / τα βύσσινα",
+    "russian": "кислая вишня / кислые вишни",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082870",
+    "greek": "το ρόδι / τα ρόδια",
+    "russian": "гранат / гранаты",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082871",
+    "greek": "το γκρέιπφρουτ / τα γκρέιπφρουτ",
+    "russian": "грейпфрут / грейпфруты",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082872",
+    "greek": "το βατόμουρο / τα βατόμουρα",
+    "russian": "ежевика / ягоды ежевики",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082873",
+    "greek": "το σύκο / τα σύκα",
+    "russian": "инжир / плоды инжира",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082874",
+    "greek": "το ακτινίδιο / τα ακτινίδια",
+    "russian": "киви / плоды киви",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082875",
+    "greek": "το κουμκουάτ / τα κουμκουάτ",
+    "russian": "кумкват / плоды кумквата",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082876",
+    "greek": "το λεμόνι / τα λεμόνια",
+    "russian": "лимон / лимоны",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082877",
+    "greek": "το μάνγκο / τα μάνγκο",
+    "russian": "манго / плоды манго",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082878",
+    "greek": "το μούσμουλο / τα μούσμουλα",
+    "russian": "мушмула / плоды мушмулы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082879",
+    "greek": "το νεκταρίνι / τα νεκταρίνια",
+    "russian": "нектарин / нектарины",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082880",
+    "greek": "η παπάγια / οι παπάγιες",
+    "russian": "папайя / плоды папайи",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082881",
+    "greek": "το δαμάσκηνο / τα δαμάσκηνα",
+    "russian": "слива / сливы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082882",
+    "greek": "ο χουρμάς / οι χουρμάδες",
+    "russian": "финик / финики",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082883",
+    "greek": "ο λωτός / οι λωτοί",
+    "russian": "хурма / плоды хурмы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082884",
+    "greek": "το εσπεριδοειδές / τα εσπεριδοειδή",
+    "russian": "цитрусовый плод / цитрусовые",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
   }
 ]
