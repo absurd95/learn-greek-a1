@@ -77,7 +77,8 @@
     "russian": "рынок / овощной базар / овощной и фруктовый рынок / уличный рынок",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "note": "Обычно сокращение от η λαϊκή αγορά — еженедельный уличный рынок. Η λαϊκή γίνεται μία φορά την εβδομάδα — рынок проходит раз в неделю."
   },
   {
     "id": "word-0502a43229",
@@ -2039,5 +2040,309 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "note": "Магазин, где продают фрукты и овощи."
+  },
+  {
+    "id": "word-2026082828",
+    "greek": "το λαχανικό / τα λαχανικά",
+    "russian": "овощ / овощи",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082829",
+    "greek": "το μήλο / τα μήλα",
+    "russian": "яблоко / яблоки",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082830",
+    "greek": "το αχλάδι / τα αχλάδια",
+    "russian": "груша / груши",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082831",
+    "greek": "το μανταρίνι / τα μανταρίνια",
+    "russian": "мандарин / мандарины",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082832",
+    "greek": "το κεράσι / τα κεράσια",
+    "russian": "вишня / черешня; ягоды",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082833",
+    "greek": "το σταφύλι / τα σταφύλια",
+    "russian": "виноград / виноградины, гроздья",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082834",
+    "greek": "το βερίκοκο / τα βερίκοκα",
+    "russian": "абрикос / абрикосы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082835",
+    "greek": "το ροδάκινο / τα ροδάκινα",
+    "russian": "персик / персики",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082836",
+    "greek": "το πεπόνι / τα πεπόνια",
+    "russian": "дыня / дыни",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082837",
+    "greek": "η ντομάτα / οι ντομάτες",
+    "russian": "помидор / помидоры",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082838",
+    "greek": "το αγγούρι / τα αγγούρια",
+    "russian": "огурец / огурцы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082839",
+    "greek": "το κρεμμύδι / τα κρεμμύδια",
+    "russian": "лук / луковицы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082840",
+    "greek": "η πιπεριά / οι πιπεριές",
+    "russian": "перец как овощ / сладкие перцы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Не путать с το πιπέρι — молотый перец, приправа."
+  },
+  {
+    "id": "word-2026082841",
+    "greek": "το μαρούλι / τα μαρούλια",
+    "russian": "салат-латук / кочаны салата",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082842",
+    "greek": "το λάχανο / τα λάχανα",
+    "russian": "капуста / кочаны капусты",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082843",
+    "greek": "το καρότο / τα καρότα",
+    "russian": "морковь / морковки",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082844",
+    "greek": "η πατάτα / οι πατάτες",
+    "russian": "картофель / картофелины",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082845",
+    "greek": "το αυγό / τα αυγά",
+    "russian": "яйцо / яйца",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Также встречается написание αβγό / αβγά."
+  },
+  {
+    "id": "word-2026082846",
+    "greek": "το βούτυρο",
+    "russian": "сливочное масло",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082847",
+    "greek": "το αλεύρι",
+    "russian": "мука",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082848",
+    "greek": "η ζάχαρη",
+    "russian": "сахар",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082849",
+    "greek": "το αλάτι",
+    "russian": "соль",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082850",
+    "greek": "το πιπέρι",
+    "russian": "перец как приправа / молотый перец",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Не путать с η πιπεριά — перец как овощ."
+  },
+  {
+    "id": "word-2026082851",
+    "greek": "το μακαρόνι / τα μακαρόνια",
+    "russian": "макаронина / макароны",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Название блюда обычно употребляется во множественном числе: τα μακαρόνια."
+  },
+  {
+    "id": "word-2026082852",
+    "greek": "το ρύζι",
+    "russian": "рис",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082853",
+    "greek": "η φακή / οι φακές",
+    "russian": "чечевица",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Как продукт обычно употребляется во множественном числе: οι φακές."
+  },
+  {
+    "id": "word-2026082854",
+    "greek": "το φασόλι / τα φασόλια",
+    "russian": "фасолина / фасоль, бобы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082855",
+    "greek": "το λάδι",
+    "russian": "масло, обычно растительное / оливковое",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082856",
+    "greek": "το ξίδι / το ξύδι",
+    "russian": "уксус",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Оба написания нормативны."
+  },
+  {
+    "id": "word-2026082857",
+    "greek": "το σαλάμι / τα σαλάμια",
+    "russian": "салями / колбаса",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082858",
+    "greek": "το κρέας / τα κρέατα",
+    "russian": "мясо / виды мяса",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082859",
+    "greek": "το χοιρινό",
+    "russian": "свинина / свиное мясо",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082860",
+    "greek": "το μοσχαρίσιο κρέας / το μοσχάρι",
+    "russian": "говядина / телятина",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "μοσχαρίσιος / μοσχαρίσια / μοσχαρίσιο — говяжий, телячий."
+  },
+  {
+    "id": "word-2026082861",
+    "greek": "ο κιμάς",
+    "russian": "фарш",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082862",
+    "greek": "το κοτόπουλο / τα κοτόπουλα",
+    "russian": "курица / куриное мясо; куры",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082863",
+    "greek": "το σούπερ μάρκετ / τα σούπερ μάρκετ",
+    "russian": "супермаркет / супермаркеты",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026082864",
+    "greek": "φτηνός / φτηνή / φτηνό",
+    "russian": "дешёвый / дешёвая / дешёвое",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "adjective",
+    "note": "Сравнение: πιο φτηνός / πιο φτηνή / πιο φτηνό — дешевле."
   }
 ]
