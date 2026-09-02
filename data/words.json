@@ -28,7 +28,7 @@
     "greek": "η διεύθυνση",
     "russian": "адрес / направление",
     "new": false,
-    "topic": "other",
+    "topic": "city",
     "partOfSpeech": "noun"
   },
   {
@@ -36,7 +36,7 @@
     "greek": "η εθνικότητα",
     "russian": "национальность",
     "new": false,
-    "topic": "other",
+    "topic": "people",
     "partOfSpeech": "noun"
   },
   {
@@ -101,7 +101,7 @@
     "greek": "Η χώρα",
     "russian": "страна",
     "new": true,
-    "topic": "other",
+    "topic": "people",
     "partOfSpeech": "noun"
   },
   {
@@ -117,7 +117,7 @@
     "greek": "ο / η κτηνίατρος",
     "russian": "ветеринар / ветеринарный врач",
     "new": false,
-    "topic": "nature",
+    "topic": "work",
     "partOfSpeech": "noun"
   },
   {
@@ -149,7 +149,7 @@
     "greek": "ο ξυλουργός",
     "russian": "плотник / столяр",
     "new": false,
-    "topic": "objects",
+    "topic": "work",
     "partOfSpeech": "noun"
   },
   {
@@ -166,7 +166,7 @@
     "greek": "ο προαστιακός",
     "russian": "пригородная электричка / пригородный поезд",
     "new": false,
-    "topic": "city",
+    "topic": "transport",
     "partOfSpeech": "noun"
   },
   {
@@ -214,7 +214,7 @@
     "greek": "Ο ύπνος / ο υπνάκος",
     "russian": "сон / короткий сон",
     "new": true,
-    "topic": "other",
+    "topic": "time",
     "partOfSpeech": "noun"
   },
   {
@@ -270,7 +270,7 @@
     "greek": "το επώνυμο",
     "russian": "фамилия",
     "new": false,
-    "topic": "other",
+    "topic": "people",
     "partOfSpeech": "noun"
   },
   {
@@ -446,7 +446,7 @@
     "greek": "η ειδοποίηση",
     "russian": "оповещение / уведомление",
     "new": true,
-    "topic": "home",
+    "topic": "other",
     "partOfSpeech": "noun"
   },
   {
@@ -747,7 +747,7 @@
     "russian": "весь / вся / всё · все",
     "note": "Форма согласуется с родом и числом: όλοι — мужчины или смешанная группа, όλες — женщины, όλα — предметы или средний род.",
     "new": true,
-    "topic": "home",
+    "topic": "other",
     "partOfSpeech": "adjective"
   },
   {
@@ -817,7 +817,7 @@
     "russian": "письмо как процесс / письменность / почерк",
     "note": "От γράφω — писать. Для письма в конверте используется το γράμμα.",
     "new": true,
-    "topic": "objects",
+    "topic": "education",
     "partOfSpeech": "noun"
   },
   {
@@ -948,7 +948,7 @@
     "russian": "обсуждение / беседа",
     "note": "От συζητάω — обсуждать, беседовать.",
     "new": true,
-    "topic": "food",
+    "topic": "other",
     "partOfSpeech": "noun"
   },
   {
@@ -984,7 +984,7 @@
     "russian": "утро / утром",
     "note": "Не путать: το πρωινό — завтрак.",
     "new": true,
-    "topic": "food",
+    "topic": "time",
     "partOfSpeech": "noun"
   },
   {
@@ -993,7 +993,7 @@
     "russian": "вечер / вечером",
     "note": "Оба написания употребляются. Не путать: το βραδινό — ужин.",
     "new": true,
-    "topic": "food",
+    "topic": "time",
     "partOfSpeech": "noun"
   },
   {
@@ -1002,7 +1002,7 @@
     "russian": "достаточный / довольно много",
     "note": "Согласуется с существительным: αρκετός κόσμος, αρκετό φαγητό.",
     "new": true,
-    "topic": "food",
+    "topic": "other",
     "partOfSpeech": "adjective"
   },
   {
@@ -1158,7 +1158,7 @@
     "russian": "Эгина",
     "note": "Греческий остров в Сароническом заливе.",
     "new": true,
-    "topic": "city",
+    "topic": "transport",
     "partOfSpeech": "noun"
   },
   {
@@ -1257,7 +1257,7 @@
     "greek": "η ταβέρνα",
     "russian": "таверна",
     "new": true,
-    "topic": "food",
+    "topic": "city",
     "partOfSpeech": "noun"
   },
   {
@@ -1343,7 +1343,7 @@
     "russian": "городская электричка / линия метро ISAP",
     "note": "με τον ηλεκτρικό — на электричке / метро.",
     "new": true,
-    "topic": "city",
+    "topic": "transport",
     "partOfSpeech": "noun"
   },
   {
@@ -1492,7 +1492,7 @@
     "greek": "η ψύξη",
     "russian": "охлаждение / заморозка",
     "new": true,
-    "topic": "home",
+    "topic": "other",
     "partOfSpeech": "noun"
   },
   {
@@ -1543,7 +1543,7 @@
     "russian": "бумажный носовой платок / салфетка",
     "note": "χαρτί + μαντήλι → χαρτομάντηλο.",
     "new": true,
-    "topic": "clothes",
+    "topic": "objects",
     "partOfSpeech": "noun"
   },
   {
@@ -2502,6 +2502,183 @@
     "id": "word-2026082884",
     "greek": "το εσπεριδοειδές / τα εσπεριδοειδή",
     "russian": "цитрусовый плод / цитрусовые",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090201",
+    "greek": "η ερώτηση / οι ερωτήσεις",
+    "russian": "вопрос / вопросы",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "note": "Связано с ρωτάω / ρωτώ — спрашивать."
+  },
+  {
+    "id": "word-2026090202",
+    "greek": "η απάντηση / οι απαντήσεις",
+    "russian": "ответ / ответы",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "note": "Связано с απαντάω / απαντώ — отвечать."
+  },
+  {
+    "id": "word-2026090203",
+    "greek": "έτοιμος / έτοιμη / έτοιμο",
+    "russian": "готовый / готовая / готовое",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "id": "word-2026090204",
+    "greek": "το παιχνίδι / τα παιχνίδια",
+    "russian": "игра / игрушка; игры / игрушки",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "note": "Связано с παίζω — играть."
+  },
+  {
+    "id": "word-2026090205",
+    "greek": "η μαμά / οι μαμάδες",
+    "russian": "мама / мамы",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090206",
+    "greek": "το χωριάτικο ψωμί",
+    "russian": "деревенский хлеб / хлеб по-деревенски",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090207",
+    "greek": "το κουλουράκι / τα κουλουράκια",
+    "russian": "маленькое печенье / печенье-крендельки",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Уменьшительная форма от το κουλούρι."
+  },
+  {
+    "id": "word-2026090208",
+    "greek": "το τσουρέκι / τα τσουρέκια",
+    "russian": "цуреки / сладкий праздничный хлеб",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090209",
+    "greek": "το κέικ / τα κέικ",
+    "russian": "кекс / пирог; кексы",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Заимствованное слово, форма множественного числа не изменяется."
+  },
+  {
+    "id": "word-2026090210",
+    "greek": "η τούρτα / οι τούρτες",
+    "russian": "торт / торты",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090211",
+    "greek": "το πακέτο / τα πακέτα",
+    "russian": "пакет / пачка / упаковка",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "note": "Например: ένα πακέτο χαρτομάντιλα — пачка бумажных платков."
+  },
+  {
+    "id": "word-2026090212",
+    "greek": "ο χυμός / οι χυμοί",
+    "russian": "сок / соки",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090213",
+    "greek": "ο καπνός",
+    "russian": "табак / дым",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "note": "Значение определяется контекстом; как товар в киоске — табак."
+  },
+  {
+    "id": "word-2026090214",
+    "greek": "η κόκα κόλα",
+    "russian": "кока-кола / кола",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090215",
+    "greek": "ο ελληνικός καφές",
+    "russian": "греческий кофе",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090216",
+    "greek": "ο φραπές",
+    "russian": "фраппе / холодный растворимый кофе",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090217",
+    "greek": "ο καπουτσίνο",
+    "russian": "капучино",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090218",
+    "greek": "ο φρέντο καπουτσίνο / ο καπουτσίνο φρέντο",
+    "russian": "холодный капучино / фреддо капучино",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Оба порядка слов встречаются в заказах."
+  },
+  {
+    "id": "word-2026090219",
+    "greek": "ο φρέντο εσπρέσο / ο εσπρέσο φρέντο",
+    "russian": "холодный эспрессо / фреддо эспрессо",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "note": "Оба порядка слов встречаются в заказах."
+  },
+  {
+    "id": "word-2026090220",
+    "greek": "το τσάι",
+    "russian": "чай",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "word-2026090221",
+    "greek": "η στέβια",
+    "russian": "стевия / подсластитель из стевии",
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun"
