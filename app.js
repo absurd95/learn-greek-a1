@@ -44,28 +44,70 @@ function translationsOverlap(left, right) {
   return leftParts.some(leftPart => rightParts.some(rightPart => leftPart === rightPart));
 }
 
+let activeUtterance = null;
+let speechStartTimer = null;
+let speechRequestId = 0;
+
+function setSpeechStatus(message = "") {
+  const status = $("speech-status");
+  if (status) status.textContent = message;
+}
+
 function stopSpeaking() {
-  if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+  speechRequestId += 1;
+  if (speechStartTimer) window.clearTimeout(speechStartTimer);
+  speechStartTimer = null;
+  activeUtterance = null;
+  if ("speechSynthesis" in window && (window.speechSynthesis.speaking || window.speechSynthesis.pending)) window.speechSynthesis.cancel();
+  setSpeechStatus();
 }
 
 function speakGreek(text) {
-  const status = $("speech-status");
   if (!("speechSynthesis" in window) || typeof SpeechSynthesisUtterance === "undefined") {
-    if (status) status.textContent = "Озвучивание не поддерживается этим браузером";
+    setSpeechStatus("Озвучивание не поддерживается этим браузером");
     return;
   }
+  const synth = window.speechSynthesis;
+  const mustRestart = synth.speaking || synth.pending;
   stopSpeaking();
-  const utterance = new SpeechSynthesisUtterance(text);
-  const voices = window.speechSynthesis.getVoices();
-  const greekVoice = voices.find(voice => voice.lang.toLowerCase().startsWith("el"));
-  utterance.lang = "el-GR";
-  utterance.rate = .82;
-  utterance.pitch = 1;
-  if (greekVoice) utterance.voice = greekVoice;
-  utterance.onstart = () => { if (status) status.textContent = "Произношу…"; };
-  utterance.onend = () => { if (status) status.textContent = ""; };
-  utterance.onerror = () => { if (status) status.textContent = "Не найден греческий голос на устройстве"; };
-  window.speechSynthesis.speak(utterance);
+  const requestId = speechRequestId;
+  setSpeechStatus("Готовлю озвучивание…");
+
+  const start = () => {
+    speechStartTimer = null;
+    if (requestId !== speechRequestId) return;
+    const utterance = new SpeechSynthesisUtterance(text);
+    const greekVoice = synth.getVoices().find(voice => voice.lang.toLowerCase().startsWith("el"));
+    utterance.lang = "el-GR";
+    utterance.rate = .82;
+    utterance.pitch = 1;
+    if (greekVoice) utterance.voice = greekVoice;
+    activeUtterance = utterance;
+    utterance.onstart = () => setSpeechStatus("Произношу…");
+    utterance.onend = () => {
+      if (activeUtterance !== utterance) return;
+      activeUtterance = null;
+      setSpeechStatus();
+    };
+    utterance.onerror = event => {
+      if (activeUtterance !== utterance) return;
+      activeUtterance = null;
+      if (event.error === "canceled" || event.error === "interrupted") { setSpeechStatus(); return; }
+      setSpeechStatus(event.error === "not-allowed" ? "Нажмите ещё раз, чтобы разрешить озвучивание" : "Не удалось запустить озвучивание");
+    };
+    synth.resume();
+    synth.speak(utterance);
+  };
+
+  // WebKit может молча отменить новый голос, если speak() вызвать сразу после cancel().
+  if (mustRestart) speechStartTimer = window.setTimeout(start, 80);
+  else start();
+}
+
+if ("speechSynthesis" in window) {
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.addEventListener?.("voiceschanged", () => window.speechSynthesis.getVoices(), { once: true });
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && activeUtterance) window.speechSynthesis.resume(); });
 }
 
 function getDeck(category) {
