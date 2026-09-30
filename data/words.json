@@ -3097,8 +3097,8 @@
   {
     "id": "word-2026091640",
     "greek": "κανένας / καμία / κανένα",
-    "russian": "никто / никакой / никакая / никакое",
-    "note": "В отрицательном предложении употребляется вместе с δεν: Κανένας δεν πληρώνει — никто не платит.",
+    "russian": "кто-нибудь / какой-нибудь; никто / никакой",
+    "note": "В вопросе означает «кто-нибудь / какой-нибудь»: Έχεις κανέναν σκούφο; С отрицанием δεν — «никто / никакой»: Δεν έχω κανέναν σκούφο.",
     "new": true,
     "topic": "people",
     "partOfSpeech": "pronoun"
@@ -3123,11 +3123,32 @@
   },
   {
     "id": "word-2026092303",
-    "greek": "το βάθος",
-    "russian": "глубина",
+    "greek": "το βάθος / τα βάθη",
+    "russian": "глубина / глубины",
     "note": "Связанное прилагательное: βαθύς / βαθιά / βαθύ — глубокий.",
     "new": true,
     "topic": "other",
     "partOfSpeech": "noun"
-  }
+  },
+  {"id":"word-2026093001","greek":"το αθλητικό παπούτσι / τα αθλητικά παπούτσια","russian":"спортивная обувь / спортивные туфли, кроссовки","new":true,"topic":"clothes","partOfSpeech":"noun"},
+  {"id":"word-2026093002","greek":"η φανέλα / οι φανέλες","russian":"майка / футболка","note":"В зависимости от контекста φανέλα может означать майку, футболку или спортивную форму.","new":true,"topic":"clothes","partOfSpeech":"noun"},
+  {"id":"word-2026093003","greek":"ο σκούφος / οι σκούφοι","russian":"вязаная шапка / шапки","new":true,"topic":"clothes","partOfSpeech":"noun"},
+  {"id":"word-2026093004","greek":"η γόβα / οι γόβες","russian":"туфля на каблуке / туфли на каблуках","new":true,"topic":"clothes","partOfSpeech":"noun"},
+  {"id":"word-2026093005","greek":"το καπέλο / τα καπέλα","russian":"шляпа, головной убор / шляпы","new":true,"topic":"clothes","partOfSpeech":"noun"},
+  {"id":"word-2026093006","greek":"η κάρτα / οι κάρτες","russian":"карта / карты","note":"Με κάρτα — картой; банковская карта: η τραπεζική κάρτα.","new":true,"topic":"city","partOfSpeech":"noun"},
+  {"id":"word-2026093007","greek":"το νούμερο / τα νούμερα","russian":"номер / размер","note":"Φοράω νούμερο 42 — я ношу 42-й размер.","new":true,"topic":"city","partOfSpeech":"noun"},
+  {"id":"word-2026093008","greek":"το χρώμα / τα χρώματα","russian":"цвет / цвета","new":true,"topic":"city","partOfSpeech":"noun"},
+  {"id":"word-2026093009","greek":"το ζευγάρι / τα ζευγάρια","russian":"пара / пары","note":"Ένα ζευγάρι παπούτσια — одна пара обуви.","new":true,"topic":"city","partOfSpeech":"noun"},
+  {"id":"word-2026093010","greek":"η βαλίτσα / οι βαλίτσες","russian":"чемодан / чемоданы","new":true,"topic":"transport","partOfSpeech":"noun"},
+  {"id":"word-2026093011","greek":"ξανθός / ξανθιά / ξανθό","russian":"светловолосый / светловолосая / светловолосое","new":true,"topic":"people","partOfSpeech":"adjective"},
+  {"id":"word-2026093012","greek":"μελαχρινός / μελαχρινή / μελαχρινό","russian":"темноволосый / темноволосая / темноволосое","new":true,"topic":"people","partOfSpeech":"adjective"},
+  {"id":"word-2026093013","greek":"πολύχρωμος / πολύχρωμη / πολύχρωμο","russian":"разноцветный / разноцветная / разноцветное","new":true,"topic":"people","partOfSpeech":"adjective"},
+  {"id":"word-2026093014","greek":"άσπρος / άσπρη / άσπρο","russian":"белый / белая / белое","note":"Разговорный общеупотребительный синоним λευκός / λευκή / λευκό.","new":true,"topic":"people","partOfSpeech":"adjective"},
+  {"id":"word-2026093015","greek":"η κοπέλα / οι κοπέλες","russian":"девушка / девушки","new":true,"topic":"people","partOfSpeech":"noun"},
+  {"id":"word-2026093016","greek":"τα γυαλιά","russian":"очки","note":"Слово обычно употребляется во множественном числе.","new":true,"topic":"objects","partOfSpeech":"noun"},
+  {"id":"word-2026093017","greek":"τα γυαλιά ηλίου","russian":"солнечные очки","note":"Буквально «очки солнца»; ηλίου — родительный падеж от ο ήλιος.","new":true,"topic":"objects","partOfSpeech":"noun"},
+  {"id":"word-2026093018","greek":"ο ήλιος","russian":"солнце","new":true,"topic":"nature","partOfSpeech":"noun"},
+  {"id":"word-2026093019","greek":"το δάσος / τα δάση","russian":"лес / леса","new":true,"topic":"nature","partOfSpeech":"noun"},
+  {"id":"word-2026093020","greek":"το λάθος / τα λάθη","russian":"ошибка / ошибки","new":true,"topic":"other","partOfSpeech":"noun"},
+  {"id":"word-2026093021","greek":"τίποτα","russian":"что-нибудь; ничего","note":"В вопросе: Θέλεις τίποτα; — хочешь что-нибудь? С отрицанием: Δεν θέλω τίποτα — ничего не хочу.","new":true,"topic":"other","partOfSpeech":"pronoun"}
 ]
