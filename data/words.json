@@ -352,7 +352,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-shops"
+      "transport-places"
     ]
   },
   {
@@ -844,7 +844,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-shops"
+      "transport-places"
     ]
   },
   {
@@ -3709,7 +3709,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-shops"
+      "transport-places"
     ]
   },
   {

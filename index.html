@@ -26,9 +26,19 @@
         <p class="eyebrow">Сегодня</p>
         <h2 id="dashboard-title">Немного каждый день</h2>
         <p id="progress-copy">Выберите набор и начните тренировку.</p>
-        <div class="progress"><span id="progress-bar"></span></div>
+      <div class="progress"><span id="progress-bar"></span></div>
+      <button id="resume-quiz" type="button" class="hidden">Продолжить тест</button>
       </div>
       <div id="category-grid" class="category-grid"></div>
+      <button id="open-situations" type="button">Занятия по ситуациям →</button>
+    </section>
+
+    <section id="situations" class="screen" aria-labelledby="situations-title">
+      <div class="section-heading"><button class="back-button" type="button" data-go="dashboard">← Назад</button><div><p class="eyebrow">Слова, глаголы и фразы вместе</p><h2 id="situations-title">Занятия по ситуациям</h2></div></div>
+      <p class="topic-intro">Выберите одну или несколько ситуаций. Одинаковые карточки учитываются один раз.</p>
+      <div id="situations-grid" class="category-grid topic-grid"></div>
+      <p id="situations-summary" class="topic-intro"></p>
+      <button id="open-selected-situations" class="hidden" type="button">Открыть занятие</button>
     </section>
 
     <section id="word-topics" class="screen" aria-labelledby="word-topics-title">
@@ -36,7 +46,10 @@
         <button class="back-button" type="button" data-go="dashboard">← Назад</button>
         <div><p class="eyebrow">Тематический словарь</p><h2 id="word-topics-title">Слова по темам</h2></div>
       </div>
-      <p class="topic-intro">Выберите тему: карточки, список, поиск и тест будут работать только с выбранной лексикой.</p>
+      <p class="topic-intro">Откройте тему целиком или отметьте несколько небольших подборок для одного занятия.</p>
+      <label class="word-list-search"><span>Найти подборку</span><input id="collection-search" type="search" placeholder="Например: фрукты, кофе, одежда…"></label>
+      <p id="collection-selection-summary" class="topic-intro"></p>
+      <button id="open-selected-collections" type="button" class="hidden">Открыть выбранные подборки</button>
       <div id="word-topic-grid" class="category-grid topic-grid"></div>
     </section>
 
@@ -50,9 +63,13 @@
         <button id="list-toggle" class="list-toggle" type="button" aria-pressed="false">Показать все</button>
       </div>
       <div id="word-pos-filter" class="word-pos-filter hidden" aria-label="Часть речи"></div>
+      <div id="situation-type-filter" class="word-pos-filter hidden" aria-label="Вид материала"></div>
+      <p id="study-progress" class="word-list-summary"></p>
+      <button id="study-list-quiz" type="button" class="hidden">Тест по этому набору</button>
       <div id="empty-state" class="empty hidden">В этом разделе пока нет карточек.</div>
       <div id="word-list-panel" class="word-list-panel hidden">
         <label class="word-list-search"><span>Поиск в разделе</span><input id="word-list-search" type="search" placeholder="Греческое слово или перевод…" autocomplete="off"></label>
+        <label class="word-list-search"><span>Порядок</span><select id="word-list-sort"><option value="el">По греческому</option><option value="ru">По русскому</option></select></label>
         <p id="word-list-summary" class="word-list-summary"></p>
         <div id="word-list" class="word-list"></div>
         <p id="word-list-empty" class="empty hidden">Ничего не найдено.</p>
@@ -78,6 +95,17 @@
       </div>
     </section>
 
+    <section id="quiz-setup" class="screen" aria-labelledby="quiz-setup-title">
+      <div class="section-heading"><button class="back-button" type="button" data-go="study">← Карточки</button><div><p class="eyebrow">Перед тестом</p><h2 id="quiz-setup-title">Настройка занятия</h2></div></div>
+      <div class="quiz-panel quiz-setup-panel">
+        <label>Количество вопросов <select id="quiz-limit"><option value="10">10</option><option value="20">20</option><option value="all">Все</option></select></label>
+        <label>Направление <select id="quiz-mode"><option value="el-ru">Греческий → русский</option><option value="ru-el">Русский → греческий</option><option value="mixed">Смешанное</option></select></label>
+        <label>Материал <select id="quiz-pool"><option value="all">Все карточки</option><option value="mistakes">Ошибки</option><option value="unpracticed">Ещё не тренировались</option></select></label>
+        <p id="quiz-setup-summary" class="note"></p>
+        <button id="quiz-start" type="button">Начать тест</button>
+      </div>
+    </section>
+
     <section id="quiz" class="screen" aria-labelledby="quiz-title">
       <div class="section-heading">
         <button class="back-button" type="button" data-go="study">← Карточки</button>
@@ -97,6 +125,11 @@
         <p id="quiz-feedback" class="feedback" aria-live="polite"></p>
         <button id="quiz-next" class="hidden" type="button">Следующий вопрос</button>
       </div>
+    </section>
+
+    <section id="quiz-result" class="screen" aria-labelledby="quiz-result-title">
+      <div class="section-heading"><div><p class="eyebrow">Занятие завершено</p><h2 id="quiz-result-title">Результат</h2></div></div>
+      <div class="quiz-panel"><p id="quiz-result-score" class="result-score"></p><div id="quiz-result-errors"></div><div class="result-actions"><button id="quiz-retry" type="button">Повторить ошибки</button><button id="quiz-more" type="button">Следующие 10</button><button id="quiz-topics" type="button" class="secondary">К выбору темы</button></div></div>
     </section>
 
     <section id="grammar" class="screen grammar-screen" aria-labelledby="grammar-title">

@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 FILES = sorted(DATA.glob("*.json"))
-CARD_FILES = [path for path in FILES if path.name not in {"collections.json", "id-aliases.json"}]
+CARD_FILES = [path for path in FILES if path.name not in {"collections.json", "id-aliases.json", "situations.json"}]
 ALLOWED_TOPICS = {
     "food", "home", "clothes", "education", "work", "people",
     "city", "transport", "time", "nature", "objects", "other",
@@ -46,6 +46,7 @@ def main() -> None:
     sources = {path.name: json.loads(path.read_text()) for path in CARD_FILES}
     collections = json.loads((DATA / "collections.json").read_text())
     aliases = json.loads((DATA / "id-aliases.json").read_text())
+    situations = json.loads((DATA / "situations.json").read_text())
     collection_ids = [item["id"] for item in collections]
     assert len(collection_ids) == len(set(collection_ids)), "duplicate collection IDs"
     assert all(item["parent"] in ALLOWED_TOPICS for item in collections), "bad collection parent"
@@ -72,6 +73,14 @@ def main() -> None:
     active_ids = set(ids)
     assert not (set(aliases) & active_ids), "retired ID still active"
     assert set(aliases.values()) <= active_ids, "missing alias target"
+    assert len({item["id"] for item in situations}) == len(situations), "duplicate situation ID"
+    for item in situations:
+        assert item["cardIds"] and len(item["cardIds"]) == len(set(item["cardIds"])), f"duplicate/empty situation: {item['id']}"
+        assert set(item["cardIds"]) <= active_ids, f"unknown card in situation: {item['id']}"
+        assert not any(card_id.startswith("conjugation-") for card_id in item["cardIds"]), f"whole conjugation in situation: {item['id']}"
+    for card in sources["phrases.json"]:
+        if "sourceId" in card:
+            assert card["sourceId"] in active_ids and card["sourceId"] != card["id"], f"bad phrase source: {card['id']}"
 
     themed_by_id = {card["id"]: card for card in themed}
     for card_id, expected in EXPECTED_TOPICS.items():
