@@ -5,7 +5,10 @@
     "russian": "преподаватель / преподавательница",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-e86ba4bf85",
@@ -13,7 +16,10 @@
     "russian": "парикмахер (м. / ж.)",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-d527922bba",
@@ -21,7 +27,10 @@
     "russian": "студент / студентка",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-280986db7b",
@@ -29,7 +38,10 @@
     "russian": "рабочий / работница",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-8c0c9d137a",
@@ -38,7 +50,10 @@
     "note": "Связано с πουλάω — продавать и η πώληση — продажа. Не путать с η πόλη — город и ο πολίτης — гражданин.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-02a3a6de96",
@@ -46,7 +61,10 @@
     "russian": "спортсмен / спортсменка",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-a34ac051ff",
@@ -54,7 +72,10 @@
     "russian": "адвокат",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-e80a78cc2a",
@@ -62,7 +83,10 @@
     "russian": "электрик",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-5e71a94bd7",
@@ -70,7 +94,10 @@
     "russian": "водитель",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-e92ba1f8d5",
@@ -78,7 +105,10 @@
     "russian": "инженер / механик",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-6fcfa09f44",
@@ -86,7 +116,10 @@
     "russian": "врач",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-16fe55d0c2",
@@ -94,7 +127,10 @@
     "russian": "официант / официантка",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-0b5e5e6ff9",
@@ -102,7 +138,10 @@
     "russian": "медбрат / медсестра",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-c9678ccaaa",
@@ -110,7 +149,10 @@
     "russian": "учитель / учительница",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-b744cc115b",
@@ -118,7 +160,10 @@
     "russian": "безработный / безработная",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-acc4473b18",
@@ -126,7 +171,10 @@
     "russian": "повар (м. / ж.)",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-ceac4ff5b6",
@@ -134,7 +182,10 @@
     "russian": "служащий / сотрудник",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-e572c3852b",
@@ -142,7 +193,10 @@
     "russian": "актёр / актриса",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-ab7f3f56df",
@@ -150,7 +204,10 @@
     "russian": "кассир",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-fca5b44867",
@@ -158,7 +215,10 @@
     "russian": "архитектор",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-ee72445ff4",
@@ -166,7 +226,10 @@
     "russian": "секретарь",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-2026081101",
@@ -175,7 +238,10 @@
     "note": "Связанное слово: ο φούρνος — печь, духовка или пекарня.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-2026081401",
@@ -184,7 +250,10 @@
     "note": "Винительный падеж: τον περιπτερά.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "profession-2026082801",
@@ -193,6 +262,9 @@
     "note": "Работает в μανάβικο или φρουταρία.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   }
 ]

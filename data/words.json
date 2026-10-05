@@ -5,7 +5,10 @@
     "russian": "весна",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-629a3891b1",
@@ -13,7 +16,10 @@
     "russian": "вознаграждение / оплата",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-574156ffc8",
@@ -21,7 +27,10 @@
     "russian": "язык",
     "new": false,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-6a89ae63d6",
@@ -29,7 +38,10 @@
     "russian": "адрес / направление",
     "new": false,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-94a7b7eef6",
@@ -37,7 +49,10 @@
     "russian": "национальность",
     "new": false,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-bf0e5efe33",
@@ -45,7 +60,10 @@
     "russian": "компания / фирма",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-b66e03a4ad",
@@ -53,15 +71,10 @@
     "russian": "жизнь",
     "new": false,
     "topic": "other",
-    "partOfSpeech": "noun"
-  },
-  {
-    "id": "word-382c6a37f0",
-    "greek": "η κομμώτρια",
-    "russian": "парикмахер",
-    "new": false,
-    "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-ab322e2471",
@@ -69,7 +82,10 @@
     "russian": "воскресенье",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-9b7fdc80bd",
@@ -78,7 +94,10 @@
     "new": true,
     "topic": "city",
     "partOfSpeech": "noun",
-    "note": "Обычно сокращение от η λαϊκή αγορά — еженедельный уличный рынок. Η λαϊκή γίνεται μία φορά την εβδομάδα — рынок проходит раз в неделю."
+    "note": "Обычно сокращение от η λαϊκή αγορά — еженедельный уличный рынок. Η λαϊκή γίνεται μία φορά την εβδομάδα — рынок проходит раз в неделю.",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-0502a43229",
@@ -86,7 +105,10 @@
     "russian": "остановка",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-ccb23378ed",
@@ -94,7 +116,10 @@
     "russian": "банк",
     "new": false,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-4e5db0f355",
@@ -102,7 +127,10 @@
     "russian": "страна",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-5972cd42f9",
@@ -110,7 +138,10 @@
     "russian": "усталый / усталая",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-829b42a6e1",
@@ -118,15 +149,10 @@
     "russian": "ветеринар / ветеринарный врач",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
-  },
-  {
-    "id": "word-98130dfa16",
-    "greek": "ο / η υπάλληλος",
-    "russian": "сотрудник / служащий",
-    "new": false,
-    "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-d9a30777ae",
@@ -134,15 +160,10 @@
     "russian": "число / номер / цифра",
     "new": false,
     "topic": "other",
-    "partOfSpeech": "noun"
-  },
-  {
-    "id": "word-d5b88f4cef",
-    "greek": "ο καθηγητής",
-    "russian": "преподаватель / профессор",
-    "new": false,
-    "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-quantity"
+    ]
   },
   {
     "id": "word-08ff41980e",
@@ -150,7 +171,10 @@
     "russian": "плотник / столяр",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ]
   },
   {
     "id": "word-4c50d8f254",
@@ -159,7 +183,10 @@
     "new": false,
     "topic": "city",
     "partOfSpeech": "noun",
-    "note": "В кафе: οι πελάτες στην καφετέρια — посетители в кофейне."
+    "note": "В кафе: οι πελάτες στην καφετέρια — посетители в кофейне.",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-13b5621ee5",
@@ -167,7 +194,10 @@
     "russian": "пригородная электричка / пригородный поезд",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-7eb7771f88",
@@ -175,7 +205,10 @@
     "russian": "станция / вокзал",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-493952c313",
@@ -183,15 +216,11 @@
     "russian": "таксист",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
-  },
-  {
-    "id": "word-47723b82a4",
-    "greek": "ο φοιτητής / η φοιτήτρια",
-    "russian": "студент / студентка",
-    "new": false,
-    "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles",
+      "work-professions"
+    ]
   },
   {
     "id": "word-4099f5b6d6",
@@ -199,7 +228,10 @@
     "russian": "зима",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-3526a49535",
@@ -207,7 +239,10 @@
     "russian": "место / пространство / помещение",
     "new": false,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-81fc814dfe",
@@ -215,7 +250,10 @@
     "russian": "сон / короткий сон",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-2e525d77af",
@@ -224,7 +262,10 @@
     "note": "Обычно употребляется во множественном числе: κάνω ψώνια / ψωνίζω — делаю покупки. Единственное το ψώνιο — отдельная покупка, а разговорно также навязчивая идея или чудаковатый человек.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-1b40318dcd",
@@ -232,7 +273,10 @@
     "russian": "самолёт",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-b1d42d3648",
@@ -240,7 +284,10 @@
     "russian": "вторая половина дня / после полудня",
     "new": false,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-851840aebf",
@@ -248,7 +295,10 @@
     "russian": "ужин",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-63c01169a4",
@@ -256,7 +306,10 @@
     "russian": "билет",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-106cd752ba",
@@ -264,7 +317,10 @@
     "russian": "профессия",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-11b5afba38",
@@ -272,7 +328,10 @@
     "russian": "фамилия",
     "new": false,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-f2044a1a78",
@@ -280,7 +339,10 @@
     "russian": "лаборатория / мастерская",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-3c1440c25f",
@@ -288,7 +350,10 @@
     "russian": "центр",
     "new": false,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-92ff5fd84a",
@@ -296,7 +361,10 @@
     "russian": "лето",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-fc155c3490",
@@ -304,7 +372,10 @@
     "russian": "автобус",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-7a69bcc39d",
@@ -312,7 +383,10 @@
     "russian": "полдень",
     "new": false,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-76c81c6f93",
@@ -320,7 +394,10 @@
     "russian": "обед",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-ebd89f3823",
@@ -328,7 +405,11 @@
     "russian": "отель / гостиница; отели / гостиницы",
     "new": false,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops",
+      "transport-holiday"
+    ]
   },
   {
     "id": "word-650992d1db",
@@ -336,7 +417,10 @@
     "russian": "мороженое",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-65a8e5f7ee",
@@ -344,7 +428,10 @@
     "russian": "велосипед",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-76469173e9",
@@ -352,7 +439,10 @@
     "russian": "напиток (обычно алкогольный)",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-64d354f926",
@@ -360,7 +450,10 @@
     "russian": "завтрак",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-5ca34d9848",
@@ -368,7 +461,10 @@
     "russian": "радио",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ]
   },
   {
     "id": "word-cf9ea03d9f",
@@ -376,7 +472,10 @@
     "russian": "суббота",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-589a19ed48",
@@ -384,7 +483,11 @@
     "russian": "туристическое агентство / туристический офис",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday",
+      "work-business"
+    ]
   },
   {
     "id": "word-49123c7c62",
@@ -392,7 +495,10 @@
     "russian": "поезд",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-9e7951fd34",
@@ -400,7 +506,10 @@
     "russian": "трамвай",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-b8a70f8318",
@@ -408,7 +517,10 @@
     "russian": "троллейбус",
     "new": false,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-a05766aeab",
@@ -416,7 +528,10 @@
     "russian": "еда",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-df84c0dffa",
@@ -424,7 +539,10 @@
     "russian": "осень",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-70cbe4c279",
@@ -432,7 +550,10 @@
     "russian": "рабочие часы / график работы",
     "new": false,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-3068be08d3",
@@ -440,7 +561,10 @@
     "russian": "новости",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-f25b5a9019",
@@ -448,7 +572,10 @@
     "russian": "оповещение / уведомление",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-1334c5246f",
@@ -456,7 +583,10 @@
     "russian": "новость",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-201268a160",
@@ -464,7 +594,11 @@
     "russian": "другой / другая / другое",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-pronouns",
+      "people-family"
+    ]
   },
   {
     "id": "word-7f8eba5593",
@@ -472,7 +606,11 @@
     "russian": "компания друзей / круг друзей",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure",
+      "people-family"
+    ]
   },
   {
     "id": "word-66ef255634",
@@ -480,7 +618,10 @@
     "russian": "тот же / та же / то же / одинаковый / одинаковая / одинаковое",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-1ec9f80df9",
@@ -488,7 +629,10 @@
     "russian": "секунда",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-8e48ff26ca",
@@ -496,7 +640,11 @@
     "russian": "половинный / половина",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-quantity",
+      "time-calendar"
+    ]
   },
   {
     "id": "word-5ecc0eb55a",
@@ -505,7 +653,10 @@
     "note": "Значение определяется контекстом: πέντε λεπτά — пять минут или пять центов.",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-acc4ec0e97",
@@ -513,7 +664,10 @@
     "russian": "час",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-a3047b92d6",
@@ -521,7 +675,10 @@
     "russian": "семья",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-99e78ba9b7",
@@ -529,7 +686,10 @@
     "russian": "ребёнок",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-9b3735d11e",
@@ -537,7 +697,10 @@
     "russian": "дети",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-3c476a2bc7",
@@ -545,7 +708,10 @@
     "russian": "год / годы",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-2b73d94641",
@@ -553,7 +719,10 @@
     "russian": "книга",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-35a6f1c201",
@@ -561,7 +730,10 @@
     "russian": "музыка",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ]
   },
   {
     "id": "word-35a6f1c202",
@@ -569,7 +741,10 @@
     "russian": "телевизор / телевидение",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ]
   },
   {
     "id": "word-35a6f1c203",
@@ -577,7 +752,10 @@
     "russian": "фильм",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ]
   },
   {
     "id": "word-35a6f1c204",
@@ -585,7 +763,10 @@
     "russian": "письмо / буква; письма / буквы",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-35a6f1c205",
@@ -594,7 +775,10 @@
     "note": "Частое сочетание: γράφω / στέλνω ένα μήνυμα — пишу / отправляю сообщение.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-35a6f1c206",
@@ -602,7 +786,10 @@
     "russian": "помощь",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-35a6f1c207",
@@ -610,7 +797,10 @@
     "russian": "сигарета",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-35a6f1c208",
@@ -618,7 +808,10 @@
     "russian": "телефон",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ]
   },
   {
     "id": "word-35a6f1c209",
@@ -626,7 +819,10 @@
     "russian": "вода",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-35a6f1c210",
@@ -635,7 +831,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Варианты: γλυκός — сладкий, μέτριος — средней сладости, σκέτος — без сахара. Ο γαλλικός καφές / ο καφές φίλτρου — фильтр-кофе."
+    "note": "Варианты: γλυκός — сладкий, μέτριος — средней сладости, σκέτος — без сахара. Ο γαλλικός καφές / ο καφές φίλτρου — фильтр-кофе.",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-35a6f1c211",
@@ -643,7 +842,10 @@
     "russian": "дорога / улица / путь",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-35a6f1c212",
@@ -651,7 +853,10 @@
     "russian": "автомобиль / машина",
     "new": true,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-35a6f1c213",
@@ -659,7 +864,10 @@
     "russian": "дом",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ]
   },
   {
     "id": "word-35a6f1c214",
@@ -667,7 +875,10 @@
     "russian": "хлеб",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-35a6f1c215",
@@ -675,7 +886,10 @@
     "russian": "танец",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ]
   },
   {
     "id": "word-35a6f1c216",
@@ -683,7 +897,10 @@
     "russian": "друг / подруга",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-35a6f1c217",
@@ -691,7 +908,10 @@
     "russian": "работа / дело; работы / дела",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-35a6f1c218",
@@ -699,7 +919,10 @@
     "russian": "школа",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080401",
@@ -707,7 +930,10 @@
     "russian": "месяц / месяцы",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-2026080402",
@@ -715,7 +941,10 @@
     "russian": "перерыв / перемена",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080403",
@@ -724,7 +953,10 @@
     "note": "Мужская форма: ο συμμαθητής — одноклассник.",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080404",
@@ -732,7 +964,10 @@
     "russian": "буфет / столовая при школе или учреждении",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080405",
@@ -740,7 +975,10 @@
     "russian": "сэндвич / бутерброд",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026080406",
@@ -749,7 +987,10 @@
     "note": "Форма согласуется с родом и числом: όλοι — мужчины или смешанная группа, όλες — женщины, όλα — предметы или средний род.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-pronouns"
+    ]
   },
   {
     "id": "word-2026080407",
@@ -758,7 +999,10 @@
     "note": "Во множественном числе διάφορα часто означает «различные, разные».",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080408",
@@ -766,7 +1010,10 @@
     "russian": "тема / темы",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080409",
@@ -775,7 +1022,10 @@
     "note": "ο υπολογιστής связан с υπολογίζω — считать, вычислять. το κομπιούτερ — заимствованный разговорный вариант.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ]
   },
   {
     "id": "word-2026080410",
@@ -784,7 +1034,10 @@
     "note": "Связано с глаголом τραγουδάω — петь.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ]
   },
   {
     "id": "word-2026080411",
@@ -793,7 +1046,11 @@
     "note": "Образовано от τραγουδάω — петь.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure",
+      "work-professions"
+    ]
   },
   {
     "id": "word-2026080412",
@@ -802,7 +1059,10 @@
     "note": "διαδίκτυο: δια- «через, между» + δίκτυο «сеть».",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ]
   },
   {
     "id": "word-2026080413",
@@ -810,7 +1070,10 @@
     "russian": "сеть",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ]
   },
   {
     "id": "word-2026080414",
@@ -819,7 +1082,10 @@
     "note": "От γράφω — писать. Для письма в конверте используется το γράμμα.",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080415",
@@ -828,7 +1094,10 @@
     "note": "От προτιμάω / προτιμώ — предпочитать.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080416",
@@ -837,7 +1106,10 @@
     "note": "Связано с αρχίζω — начинать.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080417",
@@ -846,7 +1118,10 @@
     "note": "От ξεκινάω — начинать, отправляться.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080418",
@@ -855,7 +1130,10 @@
     "note": "От διαβάζω — читать, учиться.",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080419",
@@ -864,7 +1142,10 @@
     "note": "От χρησιμοποιώ — использовать.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080420",
@@ -873,7 +1154,10 @@
     "note": "От σταματάω. Для остановки транспорта обычно η στάση.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080421",
@@ -881,7 +1165,10 @@
     "russian": "наука",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080422",
@@ -890,7 +1177,10 @@
     "note": "παν- «весь, всё» + επιστήμη «наука»: буквально место, объединяющее науки.",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080423",
@@ -899,7 +1189,10 @@
     "note": "Связано с τελειώνω — заканчивать; στο τέλος — в конце.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080424",
@@ -908,7 +1201,10 @@
     "note": "ο σκύλος — пёс или собака как вид; η σκύλα — самка; το σκυλί — собака, часто нейтрально-разговорная форма.",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-animals"
+    ]
   },
   {
     "id": "word-2026080425",
@@ -916,7 +1212,10 @@
     "russian": "сестра",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026080426",
@@ -924,7 +1223,10 @@
     "russian": "суп",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026080427",
@@ -933,7 +1235,10 @@
     "note": "Связано с ταξιδεύω — путешествовать.",
     "new": true,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ]
   },
   {
     "id": "word-2026080428",
@@ -942,7 +1247,10 @@
     "note": "От συναντάω — встречать, встречаться.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026080429",
@@ -951,7 +1259,10 @@
     "note": "От συζητάω — обсуждать, беседовать.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080430",
@@ -960,7 +1271,10 @@
     "note": "От υπολογίζω — считать, вычислять.",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026080431",
@@ -969,7 +1283,10 @@
     "note": "От πληρώνω — платить.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026080432",
@@ -978,7 +1295,10 @@
     "note": "Связано по смыслу с μεγαλώνω — расти, становиться старше.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026080433",
@@ -987,7 +1307,10 @@
     "note": "Не путать: το πρωινό — завтрак.",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-2026080434",
@@ -996,7 +1319,10 @@
     "note": "Оба написания употребляются. Не путать: το βραδινό — ужин.",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-2026080701",
@@ -1005,7 +1331,10 @@
     "note": "Согласуется с существительным: αρκετός κόσμος, αρκετό φαγητό.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-quantity"
+    ]
   },
   {
     "id": "word-2026080702",
@@ -1014,7 +1343,10 @@
     "note": "В выражении αρκετός κόσμος означает «довольно много людей». Для народа как нации или населения используется также ο λαός.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026080703",
@@ -1023,7 +1355,10 @@
     "note": "Связано с πεινάω — хотеть есть.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-2026080704",
@@ -1032,7 +1367,10 @@
     "note": "Связано с διψάω — хотеть пить.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-2026080705",
@@ -1041,7 +1379,10 @@
     "note": "Не путать с το μνημείο — памятник.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026080706",
@@ -1049,7 +1390,10 @@
     "russian": "памятник / монумент",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026080707",
@@ -1058,7 +1402,10 @@
     "note": "Обычно только множественное число: πάω διακοπές — еду в отпуск.",
     "new": true,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ]
   },
   {
     "id": "word-2026080708",
@@ -1067,7 +1414,10 @@
     "note": "Обычно о длительной экстремальной жаре: Έχει καύσωνα — стоит сильная жара.",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080709",
@@ -1075,7 +1425,10 @@
     "russian": "гора",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080710",
@@ -1084,7 +1437,10 @@
     "note": "Связано с безличным βρέχει — идёт дождь.",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080711",
@@ -1093,7 +1449,10 @@
     "note": "Связано с безличным χιονίζει — идёт снег.",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080712",
@@ -1101,7 +1460,10 @@
     "russian": "район / окрестности",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026080713",
@@ -1110,7 +1472,10 @@
     "note": "Винительный падеж: τον γείτονα; множественное число: τους γείτονες.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026080714",
@@ -1118,7 +1483,10 @@
     "russian": "серьёзный / серьёзная / серьёзное",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026080715",
@@ -1127,7 +1495,10 @@
     "note": "ο λαός подчёркивает народ как общность; ο κόσμος в разговоре часто означает людей или толпу.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026080716",
@@ -1136,7 +1507,10 @@
     "note": "Суффикс -άκι часто добавляет уменьшительное или ласковое значение.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026080717",
@@ -1145,7 +1519,10 @@
     "note": "Значение определяется контекстом: Τι καιρό κάνει; — Какая погода? Πόσον καιρό; — Как долго?",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080718",
@@ -1153,7 +1530,10 @@
     "russian": "хороший / хорошая / хорошее",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026080719",
@@ -1162,7 +1542,10 @@
     "note": "Греческий остров в Сароническом заливе.",
     "new": true,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ]
   },
   {
     "id": "word-2026080720",
@@ -1170,7 +1553,10 @@
     "russian": "красивый / красивая / красивое",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026080721",
@@ -1179,7 +1565,10 @@
     "note": "Обе формы употребляются; βδομάδα чаще звучит разговорно.",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ]
   },
   {
     "id": "word-2026080722",
@@ -1187,7 +1576,10 @@
     "russian": "остров",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080723",
@@ -1195,7 +1587,10 @@
     "russian": "Пирей",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026080724",
@@ -1203,7 +1598,10 @@
     "russian": "рыба",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026080725",
@@ -1211,7 +1609,10 @@
     "russian": "кальмар",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026080726",
@@ -1220,7 +1621,10 @@
     "note": "Обе формы встречаются; χταπόδι — очень распространённый разговорный вариант.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026080727",
@@ -1228,7 +1632,10 @@
     "russian": "жареный / запечённый на гриле",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-2026080728",
@@ -1236,7 +1643,10 @@
     "russian": "луна",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080729",
@@ -1245,7 +1655,11 @@
     "note": "Частое сочетание: πάω βόλτα — иду гулять.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure",
+      "people-family"
+    ]
   },
   {
     "id": "word-2026080730",
@@ -1253,7 +1667,10 @@
     "russian": "лодка",
     "new": true,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-2026080731",
@@ -1261,7 +1678,10 @@
     "russian": "таверна",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026080732",
@@ -1269,7 +1689,10 @@
     "russian": "свежий / свежая / свежее",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-2026080733",
@@ -1277,7 +1700,10 @@
     "russian": "море",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026080734",
@@ -1285,7 +1711,10 @@
     "russian": "большой / большая / большое",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026080735",
@@ -1294,7 +1723,10 @@
     "note": "Частое сочетание: κάνω ηλιοθεραπεία — загораю.",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026081101",
@@ -1303,7 +1735,10 @@
     "note": "Как обращение перед фамилией: ο κύριος Παπαδόπουλος — господин Пападопулос.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026081102",
@@ -1312,7 +1747,10 @@
     "note": "Как обращение перед фамилией: η κυρία Παπαδοπούλου — госпожа Пападопулу.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026081103",
@@ -1321,7 +1759,10 @@
     "note": "Уменьшительная и очень частая ресторанная форма от το καλαμάρι.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026081104",
@@ -1330,7 +1771,10 @@
     "note": "Не путать с наречием γύρω — вокруг, около: γύρω στις επτά.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026081105",
@@ -1338,7 +1782,10 @@
     "russian": "вещь / вещи; дело / дела",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026081106",
@@ -1347,7 +1794,10 @@
     "note": "με τον ηλεκτρικό — на электричке / метро.",
     "new": true,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ]
   },
   {
     "id": "word-2026081107",
@@ -1355,7 +1805,10 @@
     "russian": "печь / духовка / пекарня",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026081108",
@@ -1364,7 +1817,10 @@
     "note": "Обычно γάλα — неисчисляемое единственное число. Множественное γάλατα употребляют о видах, упаковках или порциях.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-dairy"
+    ]
   },
   {
     "id": "word-2026081109",
@@ -1373,7 +1829,10 @@
     "note": "Связано с ανάβω — зажигать / включать.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026081110",
@@ -1381,7 +1840,10 @@
     "russian": "соревнование / матч / борьба",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ]
   },
   {
     "id": "word-2026081401",
@@ -1390,7 +1852,10 @@
     "note": "Уменьшительное образовано суффиксом -άκι: μπουκάλι → μπουκαλάκι.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026081402",
@@ -1399,7 +1864,10 @@
     "note": "Разговорное слово, употребляется во множественном числе.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026081403",
@@ -1407,7 +1875,10 @@
     "russian": "мелочь / мелкие деньги",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026081404",
@@ -1415,7 +1886,10 @@
     "russian": "наличные деньги",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026081405",
@@ -1423,7 +1897,10 @@
     "russian": "сдача",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026081406",
@@ -1432,7 +1909,10 @@
     "note": "Связано с αγοράζω — покупать.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026081407",
@@ -1440,7 +1920,10 @@
     "russian": "пиво",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026081408",
@@ -1448,7 +1931,10 @@
     "russian": "что-то / нечто",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "pronoun"
+    "partOfSpeech": "pronoun",
+    "collectionIds": [
+      "other-pronouns"
+    ]
   },
   {
     "id": "word-2026081409",
@@ -1457,7 +1943,11 @@
     "note": "μία φορά — один раз; δύο φορές — два раза.",
     "new": true,
     "topic": "time",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-quantity",
+      "time-calendar"
+    ]
   },
   {
     "id": "word-2026081410",
@@ -1465,7 +1955,10 @@
     "russian": "киоск",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026081411",
@@ -1473,7 +1966,10 @@
     "russian": "спичка / спички",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026081412",
@@ -1481,7 +1977,10 @@
     "russian": "алкоголь",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026081413",
@@ -1489,7 +1988,10 @@
     "russian": "прохладительный / безалкогольный напиток",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026081414",
@@ -1497,7 +1999,11 @@
     "russian": "охлаждение / заморозка",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning",
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026081415",
@@ -1506,15 +2012,21 @@
     "note": "Связано с η ψύξη — охлаждение.",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ]
   },
   {
     "id": "word-2026081416",
     "greek": "το οινόπνευμα",
     "russian": "спирт",
     "new": true,
-    "topic": "food",
-    "partOfSpeech": "noun"
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning"
+    ]
   },
   {
     "id": "word-2026081417",
@@ -1523,7 +2035,10 @@
     "note": "οίνος — книжное и древнегреческое слово «вино», сохранившееся в сложных словах.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026081418",
@@ -1531,7 +2046,10 @@
     "russian": "бумага / лист бумаги",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026081419",
@@ -1539,7 +2057,10 @@
     "russian": "платок / носовой платок",
     "new": true,
     "topic": "clothes",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes"
+    ]
   },
   {
     "id": "word-2026081420",
@@ -1548,7 +2069,10 @@
     "note": "χαρτί + μαντήλι → χαρτομάντηλο.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026082401",
@@ -1556,7 +2080,10 @@
     "russian": "апельсиновый напиток / апельсиновая газировка",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026082402",
@@ -1565,7 +2092,11 @@
     "note": "Форма εργατικό в сочетании εργατικό υπάλληλο — средняя или мужская винительная форма по контексту.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description",
+      "work-professions"
+    ]
   },
   {
     "id": "word-2026082403",
@@ -1574,7 +2105,10 @@
     "note": "Перед безударным притяжательным появляется дополнительное ударение: η επιχείρησή μου — моё предприятие.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-2026082404",
@@ -1582,7 +2116,10 @@
     "russian": "факультет / учебное заведение / школа",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026082405",
@@ -1590,7 +2127,10 @@
     "russian": "медицина",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026082406",
@@ -1598,7 +2138,10 @@
     "russian": "юридический факультет / юриспруденция",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026082407",
@@ -1606,7 +2149,10 @@
     "russian": "класс / учебная группа / порядок",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026082408",
@@ -1614,8 +2160,11 @@
     "russian": "новый / новая / новое",
     "note": "Форма καινούργιους — мужской род, множественное число, винительный падеж.",
     "new": true,
-    "topic": "people",
-    "partOfSpeech": "adjective"
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026082409",
@@ -1624,7 +2173,10 @@
     "note": "Мужские формы: ο μαθητής → τον μαθητή → οι μαθητές → τους μαθητές.",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026082410",
@@ -1633,7 +2185,10 @@
     "note": "Обычно высокий шкаф для одежды. Небольшой встроенный или кухонный шкафчик — το ντουλάπι.",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ]
   },
   {
     "id": "word-2026082411",
@@ -1641,7 +2196,10 @@
     "russian": "рубашка / рубашки",
     "new": true,
     "topic": "clothes",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-wear"
+    ]
   },
   {
     "id": "word-2026082412",
@@ -1649,7 +2207,10 @@
     "russian": "карандаш / карандаши",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026082413",
@@ -1657,7 +2218,10 @@
     "russian": "сумка",
     "new": true,
     "topic": "clothes",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes"
+    ]
   },
   {
     "id": "word-2026082414",
@@ -1666,7 +2230,10 @@
     "note": "Винительный падеж: αυτόν / αυτή(ν) / αυτό.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "pronoun"
+    "partOfSpeech": "pronoun",
+    "collectionIds": [
+      "other-pronouns"
+    ]
   },
   {
     "id": "word-2026082415",
@@ -1674,7 +2241,10 @@
     "russian": "газета / газеты",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026082416",
@@ -1682,7 +2252,10 @@
     "russian": "журнал / журналы",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026082417",
@@ -1690,7 +2263,10 @@
     "russian": "телефонная карта / телефонные карты",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026082418",
@@ -1698,7 +2274,10 @@
     "russian": "почтовая марка / почтовые марки",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026082419",
@@ -1707,7 +2286,10 @@
     "note": "Оба написания встречаются; στιλό — нормативный вариант, множественное число не изменяется.",
     "new": true,
     "topic": "education",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026082420",
@@ -1715,7 +2297,10 @@
     "russian": "конфета / конфеты",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082421",
@@ -1723,7 +2308,10 @@
     "russian": "жевательная резинка / жевательные резинки",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082422",
@@ -1731,7 +2319,10 @@
     "russian": "шоколад / шоколадки",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082423",
@@ -1740,7 +2331,10 @@
     "note": "В значении продукта обычно употребляется множественное: τα πατατάκια.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082424",
@@ -1748,7 +2342,10 @@
     "russian": "йогурт / йогурты",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-dairy"
+    ]
   },
   {
     "id": "word-2026082425",
@@ -1756,7 +2353,10 @@
     "russian": "бублик с кунжутом / бублики",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082426",
@@ -1764,7 +2364,10 @@
     "russian": "хлебная палочка / хлебные палочки",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082427",
@@ -1772,7 +2375,10 @@
     "russian": "сухарик / поджаренный ломтик хлеба",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082428",
@@ -1780,7 +2386,10 @@
     "russian": "круассан / круассаны",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082429",
@@ -1788,7 +2397,10 @@
     "russian": "пирог с сыром / сырные пироги",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082430",
@@ -1796,7 +2408,10 @@
     "russian": "пирог со шпинатом / пироги со шпинатом",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082431",
@@ -1804,7 +2419,10 @@
     "russian": "печенье к кофе / печенье для обмакивания",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082432",
@@ -1812,7 +2430,10 @@
     "russian": "сладость / десерт; сладости",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082801",
@@ -1820,7 +2441,10 @@
     "russian": "фрукт / фрукты",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082802",
@@ -1829,7 +2453,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Обычно употребляется во множественном числе."
+    "note": "Обычно употребляется во множественном числе.",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082803",
@@ -1837,7 +2464,10 @@
     "russian": "варенье / джем",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082804",
@@ -1845,7 +2475,10 @@
     "russian": "арбуз / арбузы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082805",
@@ -1853,7 +2486,10 @@
     "russian": "экскурсия / поездка",
     "new": true,
     "topic": "transport",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ]
   },
   {
     "id": "word-2026082806",
@@ -1862,7 +2498,10 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "noun",
-    "note": "Связанная фраза: Κάνω ησυχία — соблюдаю тишину."
+    "note": "Связанная фраза: Κάνω ησυχία — соблюдаю тишину.",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026082807",
@@ -1870,7 +2509,10 @@
     "russian": "мяч / мячи",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026082808",
@@ -1879,7 +2521,10 @@
     "new": true,
     "topic": "objects",
     "partOfSpeech": "noun",
-    "note": "Не «подделка»: для фальшивки используются другие слова, например το πλαστό."
+    "note": "Не «подделка»: для фальшивки используются другие слова, например το πλαστό.",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026082809",
@@ -1887,7 +2532,10 @@
     "russian": "лагерь / кемпинг",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
   },
   {
     "id": "word-2026082810",
@@ -1895,7 +2543,10 @@
     "russian": "крест / кресты",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026082811",
@@ -1904,7 +2555,10 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "note": "Во множественном числе форма не изменяется."
+    "note": "Во множественном числе форма не изменяется.",
+    "collectionIds": [
+      "clothes-wear"
+    ]
   },
   {
     "id": "word-2026082812",
@@ -1913,7 +2567,11 @@
     "new": true,
     "topic": "people",
     "partOfSpeech": "pronoun",
-    "note": "В винительном: κάποιον / κάποια(ν) / κάποιο."
+    "note": "В винительном: κάποιον / κάποια(ν) / κάποιο.",
+    "collectionIds": [
+      "other-pronouns",
+      "people-family"
+    ]
   },
   {
     "id": "word-2026082813",
@@ -1922,7 +2580,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Связано: η τυρόπιτα — пирог с сыром."
+    "note": "Связано: η τυρόπιτα — пирог с сыром.",
+    "collectionIds": [
+      "food-dairy"
+    ]
   },
   {
     "id": "word-2026082814",
@@ -1931,7 +2592,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Связано: η σπανακόπιτα — пирог со шпинатом."
+    "note": "Связано: η σπανακόπιτα — пирог со шпинатом.",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082815",
@@ -1940,7 +2604,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Связано: η πορτοκαλόπιτα — апельсиновый пирог."
+    "note": "Связано: η πορτοκαλόπιτα — апельсиновый пирог.",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082816",
@@ -1948,7 +2615,10 @@
     "russian": "апельсиновый пирог / апельсиновые пироги",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082817",
@@ -1957,7 +2627,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Связано: η φραουλόπιτα — клубничный пирог."
+    "note": "Связано: η φραουλόπιτα — клубничный пирог.",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082818",
@@ -1965,7 +2638,10 @@
     "russian": "клубничный пирог / клубничные пироги",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082819",
@@ -1974,7 +2650,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "adjective",
-    "note": "О кофе: γλυκός καφές — сладкий кофе."
+    "note": "О кофе: γλυκός καφές — сладкий кофе.",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082820",
@@ -1983,7 +2662,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "adjective",
-    "note": "О кофе: μέτριος καφές — кофе с умеренным количеством сахара."
+    "note": "О кофе: μέτριος καφές — кофе с умеренным количеством сахара.",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-2026082821",
@@ -1992,7 +2674,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "adjective",
-    "note": "Σκέτος καφές — кофе без сахара."
+    "note": "Σκέτος καφές — кофе без сахара.",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-2026082822",
@@ -2000,7 +2685,10 @@
     "russian": "фильтр-кофе / французский кофе",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026082823",
@@ -2009,7 +2697,11 @@
     "new": true,
     "topic": "city",
     "partOfSpeech": "noun",
-    "note": "Не путать: ο καφές — кофе, το καφέ — кафе."
+    "note": "Не путать: ο καφές — кофе, το καφέ — кафе.",
+    "collectionIds": [
+      "city-shops",
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026082824",
@@ -2018,7 +2710,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Обычно о горячем или приготовленном напитке."
+    "note": "Обычно о горячем или приготовленном напитке.",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026082825",
@@ -2027,7 +2722,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Το γλυκό σνακ — сладкий перекус; το αλμυρό σνακ — солёный перекус."
+    "note": "Το γλυκό σνακ — сладкий перекус; το αλμυρό σνακ — солёный перекус.",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026082826",
@@ -2035,7 +2733,10 @@
     "russian": "солёный / солёная / солёное",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "food-meals"
+    ]
   },
   {
     "id": "word-2026082827",
@@ -2044,7 +2745,10 @@
     "new": true,
     "topic": "city",
     "partOfSpeech": "noun",
-    "note": "Магазин, где продают фрукты и овощи."
+    "note": "Магазин, где продают фрукты и овощи.",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026082828",
@@ -2052,7 +2756,10 @@
     "russian": "овощ / овощи",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082829",
@@ -2060,7 +2767,10 @@
     "russian": "яблоко / яблоки",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082830",
@@ -2068,7 +2778,10 @@
     "russian": "груша / груши",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082831",
@@ -2076,7 +2789,10 @@
     "russian": "мандарин / мандарины",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082832",
@@ -2085,7 +2801,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Для кислой вишни обычно используется το βύσσινο."
+    "note": "Для кислой вишни обычно используется το βύσσινο.",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082833",
@@ -2093,7 +2812,10 @@
     "russian": "виноградина / виноград; виноградины / гроздья винограда",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082834",
@@ -2101,7 +2823,10 @@
     "russian": "абрикос / абрикосы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082835",
@@ -2109,7 +2834,10 @@
     "russian": "персик / персики",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082836",
@@ -2117,7 +2845,10 @@
     "russian": "дыня / дыни",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082837",
@@ -2125,7 +2856,10 @@
     "russian": "помидор / помидоры",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082838",
@@ -2133,7 +2867,10 @@
     "russian": "огурец / огурцы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082839",
@@ -2141,7 +2878,10 @@
     "russian": "лук / луковицы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082840",
@@ -2150,7 +2890,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Не путать с το πιπέρι — молотый перец, приправа."
+    "note": "Не путать с το πιπέρι — молотый перец, приправа.",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082841",
@@ -2158,7 +2901,10 @@
     "russian": "салат-латук / кочаны салата",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082842",
@@ -2166,7 +2912,10 @@
     "russian": "капуста / кочаны капусты",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082843",
@@ -2174,7 +2923,10 @@
     "russian": "морковь / морковки",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082844",
@@ -2182,7 +2934,10 @@
     "russian": "картофель / картофелины",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082845",
@@ -2191,7 +2946,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Также встречается написание αβγό / αβγά."
+    "note": "Также встречается написание αβγό / αβγά.",
+    "collectionIds": [
+      "food-dairy"
+    ]
   },
   {
     "id": "word-2026082846",
@@ -2199,7 +2957,10 @@
     "russian": "сливочное масло",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-dairy"
+    ]
   },
   {
     "id": "word-2026082847",
@@ -2207,7 +2968,10 @@
     "russian": "мука",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082848",
@@ -2215,7 +2979,10 @@
     "russian": "сахар",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082849",
@@ -2223,7 +2990,10 @@
     "russian": "соль",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082850",
@@ -2232,7 +3002,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Не путать с η πιπεριά — перец как овощ."
+    "note": "Не путать с η πιπεριά — перец как овощ.",
+    "collectionIds": [
+      "food-vegetables"
+    ]
   },
   {
     "id": "word-2026082851",
@@ -2241,7 +3014,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Название блюда обычно употребляется во множественном числе: τα μακαρόνια."
+    "note": "Название блюда обычно употребляется во множественном числе: τα μακαρόνια.",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082852",
@@ -2249,7 +3025,10 @@
     "russian": "рис",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082853",
@@ -2258,7 +3037,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Как продукт обычно употребляется во множественном числе: οι φακές."
+    "note": "Как продукт обычно употребляется во множественном числе: οι φακές.",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082854",
@@ -2266,7 +3048,10 @@
     "russian": "фасолина / фасоль, бобы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082855",
@@ -2274,7 +3059,10 @@
     "russian": "масло, обычно растительное / оливковое",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082856",
@@ -2283,7 +3071,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Оба написания нормативны."
+    "note": "Оба написания нормативны.",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082857",
@@ -2291,7 +3082,10 @@
     "russian": "салями / колбаса",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026082858",
@@ -2299,7 +3093,10 @@
     "russian": "мясо / виды мяса",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026082859",
@@ -2307,7 +3104,10 @@
     "russian": "свинина / свиное мясо",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026082860",
@@ -2316,7 +3116,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "μοσχαρίσιος / μοσχαρίσια / μοσχαρίσιο — говяжий, телячий."
+    "note": "μοσχαρίσιος / μοσχαρίσια / μοσχαρίσιο — говяжий, телячий.",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026082861",
@@ -2324,7 +3127,10 @@
     "russian": "фарш",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026082862",
@@ -2332,7 +3138,10 @@
     "russian": "курица / куриное мясо; куры",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026082863",
@@ -2340,7 +3149,10 @@
     "russian": "супермаркет / супермаркеты",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026082864",
@@ -2349,7 +3161,11 @@
     "new": true,
     "topic": "city",
     "partOfSpeech": "adjective",
-    "note": "Сравнение: πιο φτηνός / πιο φτηνή / πιο φτηνό — дешевле."
+    "note": "Сравнение: πιο φτηνός / πιο φτηνή / πιο φτηνό — дешевле.",
+    "collectionIds": [
+      "city-shops",
+      "other-description"
+    ]
   },
   {
     "id": "word-2026082865",
@@ -2357,7 +3173,10 @@
     "russian": "айва / плоды айвы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082866",
@@ -2365,7 +3184,10 @@
     "russian": "ананас / ананасы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026082867",
@@ -2373,7 +3195,10 @@
     "russian": "банан / бананы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082868",
@@ -2381,7 +3206,10 @@
     "russian": "бергамот / плоды бергамота",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082869",
@@ -2389,7 +3217,10 @@
     "russian": "кислая вишня / кислые вишни",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082870",
@@ -2397,7 +3228,10 @@
     "russian": "гранат / гранаты",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082871",
@@ -2405,7 +3239,10 @@
     "russian": "грейпфрут / грейпфруты",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082872",
@@ -2413,7 +3250,10 @@
     "russian": "ежевика / ягоды ежевики",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082873",
@@ -2421,7 +3261,10 @@
     "russian": "инжир / плоды инжира",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082874",
@@ -2429,7 +3272,10 @@
     "russian": "киви / плоды киви",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082875",
@@ -2437,7 +3283,10 @@
     "russian": "кумкват / плоды кумквата",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082876",
@@ -2445,7 +3294,10 @@
     "russian": "лимон / лимоны",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082877",
@@ -2453,7 +3305,10 @@
     "russian": "манго / плоды манго",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082878",
@@ -2461,7 +3316,10 @@
     "russian": "мушмула / плоды мушмулы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082879",
@@ -2469,7 +3327,10 @@
     "russian": "нектарин / нектарины",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082880",
@@ -2477,7 +3338,10 @@
     "russian": "папайя / плоды папайи",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082881",
@@ -2485,7 +3349,10 @@
     "russian": "слива / сливы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082882",
@@ -2493,7 +3360,10 @@
     "russian": "финик / финики",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082883",
@@ -2501,7 +3371,10 @@
     "russian": "хурма / плоды хурмы",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026082884",
@@ -2509,7 +3382,10 @@
     "russian": "цитрусовый плод / цитрусовые",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-fruit"
+    ]
   },
   {
     "id": "word-2026090201",
@@ -2518,7 +3394,10 @@
     "new": true,
     "topic": "education",
     "partOfSpeech": "noun",
-    "note": "Связано с ρωτάω / ρωτώ — спрашивать."
+    "note": "Связано с ρωτάω / ρωτώ — спрашивать.",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026090202",
@@ -2527,7 +3406,10 @@
     "new": true,
     "topic": "education",
     "partOfSpeech": "noun",
-    "note": "Связано с απαντάω / απαντώ — отвечать."
+    "note": "Связано с απαντάω / απαντώ — отвечать.",
+    "collectionIds": [
+      "education-study"
+    ]
   },
   {
     "id": "word-2026090203",
@@ -2535,16 +3417,22 @@
     "russian": "готовый / готовая / готовое",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026090204",
     "greek": "το παιχνίδι / τα παιχνίδια",
     "russian": "игра / игрушка; игры / игрушки",
     "new": true,
-    "topic": "objects",
+    "topic": "other",
     "partOfSpeech": "noun",
-    "note": "Связано с παίζω — играть."
+    "note": "Связано с παίζω — играть.",
+    "collectionIds": [
+      "other-leisure"
+    ]
   },
   {
     "id": "word-2026090205",
@@ -2552,7 +3440,10 @@
     "russian": "мама / мамы",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026090206",
@@ -2560,7 +3451,10 @@
     "russian": "деревенский хлеб / хлеб по-деревенски",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026090207",
@@ -2569,7 +3463,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Уменьшительная форма от το κουλούρι."
+    "note": "Уменьшительная форма от το κουλούρι.",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026090208",
@@ -2577,7 +3474,10 @@
     "russian": "цуреки / сладкий праздничный хлеб",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026090209",
@@ -2586,7 +3486,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Заимствованное слово, форма множественного числа не изменяется."
+    "note": "Заимствованное слово, форма множественного числа не изменяется.",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026090210",
@@ -2594,7 +3497,10 @@
     "russian": "торт / торты",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026090211",
@@ -2603,7 +3509,10 @@
     "new": true,
     "topic": "objects",
     "partOfSpeech": "noun",
-    "note": "Например: ένα πακέτο χαρτομάντιλα — пачка бумажных платков."
+    "note": "Например: ένα πακέτο χαρτομάντιλα — пачка бумажных платков.",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026090212",
@@ -2611,7 +3520,10 @@
     "russian": "сок / соки",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026090213",
@@ -2620,7 +3532,10 @@
     "new": true,
     "topic": "objects",
     "partOfSpeech": "noun",
-    "note": "Значение определяется контекстом; как товар в киоске — табак."
+    "note": "Значение определяется контекстом; как товар в киоске — табак.",
+    "collectionIds": [
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026090214",
@@ -2628,7 +3543,10 @@
     "russian": "кока-кола / кола",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026090215",
@@ -2636,7 +3554,10 @@
     "russian": "греческий кофе",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026090216",
@@ -2644,7 +3565,10 @@
     "russian": "фраппе / холодный растворимый кофе",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026090217",
@@ -2652,7 +3576,10 @@
     "russian": "капучино",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026090218",
@@ -2661,7 +3588,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Оба порядка слов встречаются в заказах."
+    "note": "Оба порядка слов встречаются в заказах.",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026090219",
@@ -2670,7 +3600,10 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "Оба порядка слов встречаются в заказах."
+    "note": "Оба порядка слов встречаются в заказах.",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026090220",
@@ -2678,7 +3611,10 @@
     "russian": "чай",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ]
   },
   {
     "id": "word-2026090221",
@@ -2686,7 +3622,10 @@
     "russian": "стевия / подсластитель из стевии",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-coffee"
+    ]
   },
   {
     "id": "word-2026090701",
@@ -2695,7 +3634,10 @@
     "note": "Связано с συνεχίζω — продолжать. Без артикля συνέχεια может употребляться наречно: «постоянно / всё время».",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026090702",
@@ -2704,7 +3646,10 @@
     "note": "В магазине и киоске: δίνω μια απόδειξη — выдаю чек.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026090703",
@@ -2713,7 +3658,11 @@
     "note": "Буквально салфетка для малыша; в магазине так называют влажные салфетки.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning",
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026090704",
@@ -2722,7 +3671,10 @@
     "note": "το σοκολατένιο παγωτό — шоколадное мороженое; также говорят παγωτό σοκολάτα.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "food-bakery"
+    ]
   },
   {
     "id": "word-2026090705",
@@ -2731,7 +3683,10 @@
     "note": "Связано с παραγγέλνω — заказывать; κάνω μια παραγγελία — делаю заказ.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026090706",
@@ -2740,7 +3695,10 @@
     "note": "Связано с πουλάω — продавать и ο πωλητής / η πωλήτρια — продавец / продавщица.",
     "new": true,
     "topic": "work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ]
   },
   {
     "id": "word-2026090707",
@@ -2749,7 +3707,10 @@
     "note": "Не путать с η πώληση — продажа.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026090708",
@@ -2758,7 +3719,10 @@
     "note": "Связано с η πόλη — город. Женская словарная форма: η πολίτιδα.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026091601",
@@ -2767,7 +3731,10 @@
     "note": "Перед существительным согласуется с ним: μερικοί πολίτες; в винительном — μερικούς πολίτες.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-quantity"
+    ]
   },
   {
     "id": "word-2026091602",
@@ -2776,7 +3743,11 @@
     "note": "Множественное число: εκείνοι / εκείνες / εκείνα — те / они.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "pronoun"
+    "partOfSpeech": "pronoun",
+    "collectionIds": [
+      "other-pronouns",
+      "people-family"
+    ]
   },
   {
     "id": "word-2026091603",
@@ -2785,7 +3756,10 @@
     "note": "Именительный: ο Ζαχαρίας; винительный: τον Ζαχαρία; обращение: Ζαχαρία!",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026091604",
@@ -2793,7 +3767,10 @@
     "russian": "весы",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026091605",
@@ -2802,7 +3779,10 @@
     "note": "В магазине обычно означает пакет для покупок.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
   },
   {
     "id": "word-2026091606",
@@ -2811,7 +3791,10 @@
     "note": "В уборке: βγάζω / καθαρίζω τη σκόνη — убираю пыль.",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning"
+    ]
   },
   {
     "id": "word-2026091607",
@@ -2820,7 +3803,10 @@
     "note": "η ηλεκτρική σκούπα — пылесос; περνάω με τη σκούπα — подметаю или пылесошу.",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning"
+    ]
   },
   {
     "id": "word-2026091608",
@@ -2828,7 +3814,10 @@
     "russian": "комната / комнаты",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ]
   },
   {
     "id": "word-2026091609",
@@ -2836,7 +3825,10 @@
     "russian": "оконное стекло / стёкла",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning"
+    ]
   },
   {
     "id": "word-2026091610",
@@ -2844,7 +3836,10 @@
     "russian": "кровать / кровати",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ]
   },
   {
     "id": "word-2026091611",
@@ -2852,7 +3847,10 @@
     "russian": "надежда / надежды",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026091612",
@@ -2861,7 +3859,10 @@
     "note": "έχω τη φροντίδα του σπιτιού — отвечаю за заботу о доме; более естественно также φροντίζω το σπίτι.",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning"
+    ]
   },
   {
     "id": "word-2026091613",
@@ -2870,7 +3871,10 @@
     "note": "Разговорный вариант — η μαμά.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026091614",
@@ -2878,7 +3882,10 @@
     "russian": "стейк / отбивная; стейки / отбивные",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026091615",
@@ -2887,7 +3894,10 @@
     "note": "μοσχαρίσιες μπριζόλες — говяжьи стейки; το μοσχαρίσιο κρέας — говядина.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "food-meat"
+    ]
   },
   {
     "id": "word-2026091616",
@@ -2895,7 +3905,10 @@
     "russian": "коридор / проход / ряд между стеллажами",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026091617",
@@ -2904,7 +3917,10 @@
     "note": "Значение определяется контекстом. 200 ελιές словами: διακόσιες ελιές.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026091618",
@@ -2912,7 +3928,11 @@
     "russian": "зубная паста",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning",
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026091619",
@@ -2921,7 +3941,11 @@
     "note": "Заимствованное несклоняемое слово: форма во множественном числе не меняется.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning",
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026091620",
@@ -2930,7 +3954,10 @@
     "note": "Обычно употребляется во множественном числе.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-appearance"
+    ]
   },
   {
     "id": "word-2026091621",
@@ -2938,7 +3965,11 @@
     "russian": "туалетная бумага",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning",
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026091622",
@@ -2947,7 +3978,11 @@
     "note": "απορρυπαντικό για τα ρούχα / απορρυπαντικό ρούχων — средство для стирки.",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning",
+      "objects-daily"
+    ]
   },
   {
     "id": "word-2026091623",
@@ -2956,7 +3991,10 @@
     "note": "Собирательное множественное число.",
     "new": true,
     "topic": "clothes",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-wear"
+    ]
   },
   {
     "id": "word-2026091624",
@@ -2965,7 +4003,10 @@
     "note": "τυρί για τοστ — сыр для тостов. Форма во множественном числе не меняется.",
     "new": true,
     "topic": "food",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ]
   },
   {
     "id": "word-2026091625",
@@ -2973,7 +4014,10 @@
     "russian": "тостер / сэндвичница",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ]
   },
   {
     "id": "word-2026091626",
@@ -2981,7 +4025,10 @@
     "russian": "животное / животные",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-animals"
+    ]
   },
   {
     "id": "word-2026091627",
@@ -2990,7 +4037,10 @@
     "note": "ο γάτος — кот-самец; η γάτα — кошка; το γατί — котёнок или разговорно кошка.",
     "new": true,
     "topic": "nature",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-animals"
+    ]
   },
   {
     "id": "word-2026091628",
@@ -2998,7 +4048,10 @@
     "russian": "многоквартирный дом / многоквартирные дома",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ]
   },
   {
     "id": "word-2026091629",
@@ -3006,7 +4059,10 @@
     "russian": "жильё / место жительства / жилой дом",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ]
   },
   {
     "id": "word-2026091630",
@@ -3015,7 +4071,10 @@
     "note": "ο τρίτος όροφος — третий этаж; στον τρίτο όροφο — на третьем этаже.",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ]
   },
   {
     "id": "word-2026091631",
@@ -3024,7 +4083,10 @@
     "note": "Обычно небольшой кухонный или встроенный шкафчик; платяной шкаф — η ντουλάπα.",
     "new": true,
     "topic": "home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ]
   },
   {
     "id": "word-2026091632",
@@ -3032,7 +4094,10 @@
     "russian": "младенец / младенцы",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-appearance"
+    ]
   },
   {
     "id": "word-2026091633",
@@ -3041,7 +4106,11 @@
     "note": "Значение зависит от контекста: о телосложении — худой, о силе или возможности — слабый / невозможный.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description",
+      "people-appearance"
+    ]
   },
   {
     "id": "word-2026091634",
@@ -3049,7 +4118,10 @@
     "russian": "белый / белая / белое",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026091635",
@@ -3058,7 +4130,10 @@
     "note": "Название страны; пишется с прописной буквы.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ]
   },
   {
     "id": "word-2026091636",
@@ -3067,7 +4142,10 @@
     "note": "το μαγαζί — разговорнее; το κατάστημα — нейтральнее или официальнее. κατάστημα κινητών τηλεφώνων — магазин мобильных телефонов.",
     "new": true,
     "topic": "city",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ]
   },
   {
     "id": "word-2026091637",
@@ -3075,7 +4153,10 @@
     "russian": "конкретный / определённый",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026091638",
@@ -3084,7 +4165,10 @@
     "note": "Связано по корню с γνωρίζω, но не переводится как «знание».",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
   {
     "id": "word-2026091639",
@@ -3092,7 +4176,10 @@
     "russian": "фотоаппарат / фотоаппараты",
     "new": true,
     "topic": "objects",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ]
   },
   {
     "id": "word-2026091640",
@@ -3101,7 +4188,11 @@
     "note": "В вопросе означает «кто-нибудь / какой-нибудь»: Έχεις κανέναν σκούφο; С отрицанием δεν — «никто / никакой»: Δεν έχω κανέναν σκούφο.",
     "new": true,
     "topic": "people",
-    "partOfSpeech": "pronoun"
+    "partOfSpeech": "pronoun",
+    "collectionIds": [
+      "other-pronouns",
+      "people-family"
+    ]
   },
   {
     "id": "word-2026092301",
@@ -3110,7 +4201,10 @@
     "note": "В греческом это исчисляемое существительное среднего рода: μου κάνει το παντελόνι — брюки мне по размеру.",
     "new": true,
     "topic": "clothes",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-wear"
+    ]
   },
   {
     "id": "word-2026092302",
@@ -3119,7 +4213,10 @@
     "note": "Формы множественного числа: βαθιοί / βαθιές / βαθιά.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
   },
   {
     "id": "word-2026092303",
@@ -3128,27 +4225,255 @@
     "note": "Связанное прилагательное: βαθύς / βαθιά / βαθύ — глубокий.",
     "new": true,
     "topic": "other",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
   },
-  {"id":"word-2026093001","greek":"το αθλητικό παπούτσι / τα αθλητικά παπούτσια","russian":"спортивная обувь / спортивные туфли, кроссовки","new":true,"topic":"clothes","partOfSpeech":"noun"},
-  {"id":"word-2026093002","greek":"η φανέλα / οι φανέλες","russian":"майка / футболка","note":"В зависимости от контекста φανέλα может означать майку, футболку или спортивную форму.","new":true,"topic":"clothes","partOfSpeech":"noun"},
-  {"id":"word-2026093003","greek":"ο σκούφος / οι σκούφοι","russian":"вязаная шапка / шапки","new":true,"topic":"clothes","partOfSpeech":"noun"},
-  {"id":"word-2026093004","greek":"η γόβα / οι γόβες","russian":"туфля на каблуке / туфли на каблуках","new":true,"topic":"clothes","partOfSpeech":"noun"},
-  {"id":"word-2026093005","greek":"το καπέλο / τα καπέλα","russian":"шляпа, головной убор / шляпы","new":true,"topic":"clothes","partOfSpeech":"noun"},
-  {"id":"word-2026093006","greek":"η κάρτα / οι κάρτες","russian":"карта / карты","note":"Με κάρτα — картой; банковская карта: η τραπεζική κάρτα.","new":true,"topic":"city","partOfSpeech":"noun"},
-  {"id":"word-2026093007","greek":"το νούμερο / τα νούμερα","russian":"номер / размер","note":"Φοράω νούμερο 42 — я ношу 42-й размер.","new":true,"topic":"city","partOfSpeech":"noun"},
-  {"id":"word-2026093008","greek":"το χρώμα / τα χρώματα","russian":"цвет / цвета","new":true,"topic":"city","partOfSpeech":"noun"},
-  {"id":"word-2026093009","greek":"το ζευγάρι / τα ζευγάρια","russian":"пара / пары","note":"Ένα ζευγάρι παπούτσια — одна пара обуви.","new":true,"topic":"city","partOfSpeech":"noun"},
-  {"id":"word-2026093010","greek":"η βαλίτσα / οι βαλίτσες","russian":"чемодан / чемоданы","new":true,"topic":"transport","partOfSpeech":"noun"},
-  {"id":"word-2026093011","greek":"ξανθός / ξανθιά / ξανθό","russian":"светловолосый / светловолосая / светловолосое","new":true,"topic":"people","partOfSpeech":"adjective"},
-  {"id":"word-2026093012","greek":"μελαχρινός / μελαχρινή / μελαχρινό","russian":"темноволосый / темноволосая / темноволосое","new":true,"topic":"people","partOfSpeech":"adjective"},
-  {"id":"word-2026093013","greek":"πολύχρωμος / πολύχρωμη / πολύχρωμο","russian":"разноцветный / разноцветная / разноцветное","new":true,"topic":"people","partOfSpeech":"adjective"},
-  {"id":"word-2026093014","greek":"άσπρος / άσπρη / άσπρο","russian":"белый / белая / белое","note":"Разговорный общеупотребительный синоним λευκός / λευκή / λευκό.","new":true,"topic":"people","partOfSpeech":"adjective"},
-  {"id":"word-2026093015","greek":"η κοπέλα / οι κοπέλες","russian":"девушка / девушки","new":true,"topic":"people","partOfSpeech":"noun"},
-  {"id":"word-2026093016","greek":"τα γυαλιά","russian":"очки","note":"Слово обычно употребляется во множественном числе.","new":true,"topic":"objects","partOfSpeech":"noun"},
-  {"id":"word-2026093017","greek":"τα γυαλιά ηλίου","russian":"солнечные очки","note":"Буквально «очки солнца»; ηλίου — родительный падеж от ο ήλιος.","new":true,"topic":"objects","partOfSpeech":"noun"},
-  {"id":"word-2026093018","greek":"ο ήλιος","russian":"солнце","new":true,"topic":"nature","partOfSpeech":"noun"},
-  {"id":"word-2026093019","greek":"το δάσος / τα δάση","russian":"лес / леса","new":true,"topic":"nature","partOfSpeech":"noun"},
-  {"id":"word-2026093020","greek":"το λάθος / τα λάθη","russian":"ошибка / ошибки","new":true,"topic":"other","partOfSpeech":"noun"},
-  {"id":"word-2026093021","greek":"τίποτα","russian":"что-нибудь; ничего","note":"В вопросе: Θέλεις τίποτα; — хочешь что-нибудь? С отрицанием: Δεν θέλω τίποτα — ничего не хочу.","new":true,"topic":"other","partOfSpeech":"pronoun"}
+  {
+    "id": "word-2026093001",
+    "greek": "το αθλητικό παπούτσι / τα αθλητικά παπούτσια",
+    "russian": "спортивная обувь / спортивные туфли, кроссовки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes"
+    ]
+  },
+  {
+    "id": "word-2026093002",
+    "greek": "η φανέλα / οι φανέλες",
+    "russian": "майка / футболка",
+    "note": "В зависимости от контекста φανέλα может означать майку, футболку или спортивную форму.",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-wear"
+    ]
+  },
+  {
+    "id": "word-2026093003",
+    "greek": "ο σκούφος / οι σκούφοι",
+    "russian": "вязаная шапка / шапки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes"
+    ]
+  },
+  {
+    "id": "word-2026093004",
+    "greek": "η γόβα / οι γόβες",
+    "russian": "туфля на каблуке / туфли на каблуках",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes"
+    ]
+  },
+  {
+    "id": "word-2026093005",
+    "greek": "το καπέλο / τα καπέλα",
+    "russian": "шляпа, головной убор / шляпы",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes"
+    ]
+  },
+  {
+    "id": "word-2026093006",
+    "greek": "η κάρτα / οι κάρτες",
+    "russian": "карта / карты",
+    "note": "Με κάρτα — картой; банковская карта: η τραπεζική κάρτα.",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money"
+    ]
+  },
+  {
+    "id": "word-2026093007",
+    "greek": "το νούμερο / τα νούμερα",
+    "russian": "номер / размер",
+    "note": "Φοράω νούμερο 42 — я ношу 42-й размер.",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money",
+      "other-quantity"
+    ]
+  },
+  {
+    "id": "word-2026093008",
+    "greek": "το χρώμα / τα χρώματα",
+    "russian": "цвет / цвета",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money",
+      "other-colors"
+    ]
+  },
+  {
+    "id": "word-2026093009",
+    "greek": "το ζευγάρι / τα ζευγάρια",
+    "russian": "пара / пары",
+    "note": "Ένα ζευγάρι παπούτσια — одна пара обуви.",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money",
+      "other-quantity"
+    ]
+  },
+  {
+    "id": "word-2026093010",
+    "greek": "η βαλίτσα / οι βαλίτσες",
+    "russian": "чемодан / чемоданы",
+    "new": true,
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ]
+  },
+  {
+    "id": "word-2026093011",
+    "greek": "ξανθός / ξανθιά / ξανθό",
+    "russian": "светловолосый / светловолосая / светловолосое",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description",
+      "people-appearance"
+    ]
+  },
+  {
+    "id": "word-2026093012",
+    "greek": "μελαχρινός / μελαχρινή / μελαχρινό",
+    "russian": "темноволосый / темноволосая / темноволосое",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description",
+      "people-appearance"
+    ]
+  },
+  {
+    "id": "word-2026093013",
+    "greek": "πολύχρωμος / πολύχρωμη / πολύχρωμο",
+    "russian": "разноцветный / разноцветная / разноцветное",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-colors"
+    ]
+  },
+  {
+    "id": "word-2026093014",
+    "greek": "άσπρος / άσπρη / άσπρο",
+    "russian": "белый / белая / белое",
+    "note": "Разговорный общеупотребительный синоним λευκός / λευκή / λευκό.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-colors"
+    ]
+  },
+  {
+    "id": "word-2026093015",
+    "greek": "η κοπέλα / οι κοπέλες",
+    "russian": "девушка / девушки",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-appearance"
+    ]
+  },
+  {
+    "id": "word-2026093016",
+    "greek": "τα γυαλιά",
+    "russian": "очки",
+    "note": "Слово обычно употребляется во множественном числе.",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes",
+      "objects-daily"
+    ]
+  },
+  {
+    "id": "word-2026093017",
+    "greek": "τα γυαλιά ηλίου",
+    "russian": "солнечные очки",
+    "note": "Буквально «очки солнца»; ηλίου — родительный падеж от ο ήλιος.",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "clothes-shoes",
+      "objects-daily"
+    ]
+  },
+  {
+    "id": "word-2026093018",
+    "greek": "ο ήλιος",
+    "russian": "солнце",
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
+  },
+  {
+    "id": "word-2026093019",
+    "greek": "το δάσος / τα δάση",
+    "russian": "лес / леса",
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ]
+  },
+  {
+    "id": "word-2026093020",
+    "greek": "το λάθος / τα λάθη",
+    "russian": "ошибка / ошибки",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ]
+  },
+  {
+    "id": "word-2026093021",
+    "greek": "τίποτα",
+    "russian": "что-нибудь; ничего",
+    "note": "В вопросе: Θέλεις τίποτα; — хочешь что-нибудь? С отрицанием: Δεν θέλω τίποτα — ничего не хочу.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "pronoun",
+    "collectionIds": [
+      "other-pronouns"
+    ]
+  }
 ]

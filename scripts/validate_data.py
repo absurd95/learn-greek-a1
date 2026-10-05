@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 FILES = sorted(DATA.glob("*.json"))
+CARD_FILES = [path for path in FILES if path.name not in {"collections.json", "id-aliases.json"}]
 ALLOWED_TOPICS = {
     "food", "home", "clothes", "education", "work", "people",
     "city", "transport", "time", "nature", "objects", "other",
@@ -42,7 +43,12 @@ def normalized(value: str) -> str:
 
 
 def main() -> None:
-    sources = {path.name: json.loads(path.read_text()) for path in FILES}
+    sources = {path.name: json.loads(path.read_text()) for path in CARD_FILES}
+    collections = json.loads((DATA / "collections.json").read_text())
+    aliases = json.loads((DATA / "id-aliases.json").read_text())
+    collection_ids = [item["id"] for item in collections]
+    assert len(collection_ids) == len(set(collection_ids)), "duplicate collection IDs"
+    assert all(item["parent"] in ALLOWED_TOPICS for item in collections), "bad collection parent"
     cards = [card for rows in sources.values() for card in rows]
 
     ids = [card["id"] for card in cards]
@@ -60,6 +66,12 @@ def main() -> None:
     for card in themed:
         assert card.get("topic") in ALLOWED_TOPICS, f"bad topic: {card['id']}"
         assert card.get("partOfSpeech") in ALLOWED_PARTS, f"bad part of speech: {card['id']}"
+        assert isinstance(card.get("collectionIds"), list) and card["collectionIds"], f"missing collections: {card['id']}"
+        assert len(card["collectionIds"]) == len(set(card["collectionIds"])), f"repeated collection: {card['id']}"
+        assert set(card["collectionIds"]) <= set(collection_ids), f"unknown collection: {card['id']}"
+    active_ids = set(ids)
+    assert not (set(aliases) & active_ids), "retired ID still active"
+    assert set(aliases.values()) <= active_ids, "missing alias target"
 
     themed_by_id = {card["id"]: card for card in themed}
     for card_id, expected in EXPECTED_TOPICS.items():
