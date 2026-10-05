@@ -51,7 +51,7 @@
     "topic": "people",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "people-family"
+      "other-abstract"
     ]
   },
   {
@@ -129,7 +129,7 @@
     "topic": "people",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "people-family"
+      "transport-places"
     ]
   },
   {
@@ -264,7 +264,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-money"
+      "city-shops"
     ]
   },
   {
@@ -596,8 +596,7 @@
     "topic": "people",
     "partOfSpeech": "adjective",
     "collectionIds": [
-      "other-pronouns",
-      "people-family"
+      "other-pronouns"
     ]
   },
   {
@@ -1657,8 +1656,7 @@
     "topic": "people",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "other-leisure",
-      "people-family"
+      "other-leisure"
     ]
   },
   {
@@ -2001,7 +1999,6 @@
     "topic": "other",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "home-cleaning",
       "other-abstract"
     ]
   },
@@ -2569,8 +2566,7 @@
     "partOfSpeech": "pronoun",
     "note": "В винительном: κάποιον / κάποια(ν) / κάποιο.",
     "collectionIds": [
-      "other-pronouns",
-      "people-family"
+      "other-pronouns"
     ]
   },
   {
@@ -3745,8 +3741,7 @@
     "topic": "people",
     "partOfSpeech": "pronoun",
     "collectionIds": [
-      "other-pronouns",
-      "people-family"
+      "other-pronouns"
     ]
   },
   {
@@ -3769,7 +3764,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-money"
+      "city-shops"
     ]
   },
   {
@@ -3781,7 +3776,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-money"
+      "city-shops"
     ]
   },
   {
@@ -4096,7 +4091,7 @@
     "topic": "people",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "people-appearance"
+      "people-family"
     ]
   },
   {
@@ -4132,7 +4127,7 @@
     "topic": "people",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "people-family"
+      "transport-places"
     ]
   },
   {
@@ -4190,8 +4185,7 @@
     "topic": "people",
     "partOfSpeech": "pronoun",
     "collectionIds": [
-      "other-pronouns",
-      "people-family"
+      "other-pronouns"
     ]
   },
   {
@@ -4307,7 +4301,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-money",
+      "clothes-wear",
       "other-quantity"
     ]
   },
@@ -4319,7 +4313,7 @@
     "topic": "other",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-money",
+      "clothes-wear",
       "other-colors"
     ]
   },
@@ -4332,7 +4326,7 @@
     "topic": "city",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "city-money",
+      "clothes-shoes",
       "other-quantity"
     ]
   },
@@ -4402,7 +4396,7 @@
     "topic": "people",
     "partOfSpeech": "noun",
     "collectionIds": [
-      "people-appearance"
+      "people-family"
     ]
   },
   {

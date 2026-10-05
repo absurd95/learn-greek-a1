@@ -64,6 +64,9 @@ def main() -> None:
             assert card.get("greek") and card.get("russian"), f"incomplete card: {card.get('id')}"
 
     themed = sources["words.json"] + sources["professions.json"]
+    collection_usage = Counter(collection_id for card in themed for collection_id in card.get("collectionIds", []))
+    empty_collections = set(collection_ids) - set(collection_usage)
+    assert not empty_collections, f"empty collections: {sorted(empty_collections)}"
     for card in themed:
         assert card.get("topic") in ALLOWED_TOPICS, f"bad topic: {card['id']}"
         assert card.get("partOfSpeech") in ALLOWED_PARTS, f"bad part of speech: {card['id']}"
@@ -78,6 +81,7 @@ def main() -> None:
         assert item["cardIds"] and len(item["cardIds"]) == len(set(item["cardIds"])), f"duplicate/empty situation: {item['id']}"
         assert set(item["cardIds"]) <= active_ids, f"unknown card in situation: {item['id']}"
         assert not any(card_id.startswith("conjugation-") for card_id in item["cardIds"]), f"whole conjugation in situation: {item['id']}"
+        assert len({card_id.split("-", 1)[0] for card_id in item["cardIds"]}) >= 2, f"situation does not mix material: {item['id']}"
     for card in sources["phrases.json"]:
         if "sourceId" in card:
             assert card["sourceId"] in active_ids and card["sourceId"] != card["id"], f"bad phrase source: {card['id']}"
