@@ -4380,7 +4380,7 @@
     "id": "word-2026093014",
     "greek": "άσπρος / άσπρη / άσπρο",
     "russian": "белый / белая / белое",
-    "note": "Разговорный общеупотребительный синоним λευκός / λευκή / λευκό.",
+    "note": "Разговорный общеупотребительный синоним λευκός / λευκή / λευκό. Прилагательное согласуется с родом: άσπρος σκούφος, άσπρη μπλούζα, άσπρο πουκάμισο.",
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
@@ -4469,5 +4469,286 @@
     "collectionIds": [
       "other-pronouns"
     ]
+  },
+  {
+    "id": "word-2026100501",
+    "greek": "η μπλούζα / οι μπλούζες",
+    "russian": "блузка / кофточка; блузки / кофточки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100502",
+    "greek": "το σακάκι / τα σακάκια",
+    "russian": "пиджак / пиджаки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100503",
+    "greek": "η γραβάτα / οι γραβάτες",
+    "russian": "галстук / галстуки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100504",
+    "greek": "το κοστούμι / τα κοστούμια",
+    "russian": "костюм / костюмы",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100505",
+    "greek": "το πουλόβερ / τα πουλόβερ",
+    "russian": "свитер / свитеры",
+    "note": "Форма множественного числа совпадает с единственным.",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100506",
+    "greek": "το φανελάκι / τα φανελάκια",
+    "russian": "майка / маечки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100507",
+    "greek": "το εσώρουχο / τα εσώρουχα",
+    "russian": "предмет нижнего белья / нижнее бельё",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100508",
+    "greek": "το φόρεμα / τα φορέματα",
+    "russian": "платье / платья",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100509",
+    "greek": "η φούστα / οι φούστες",
+    "russian": "юбка / юбки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100510",
+    "greek": "το σορτς / τα σορτς",
+    "russian": "шорты",
+    "note": "Заимствованное слово; форма обычно не меняется во множественном числе.",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100511",
+    "greek": "το παλτό / τα παλτά",
+    "russian": "пальто / пальто",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100512",
+    "greek": "το κασκόλ / τα κασκόλ",
+    "russian": "шарф / шарфы",
+    "note": "Форма множественного числа обычно совпадает с единственным.",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100513",
+    "greek": "το καλσόν / τα καλσόν",
+    "russian": "колготки",
+    "note": "Обычно употребляется как название предмета одежды; форма не меняется.",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-wear"]
+  },
+  {
+    "id": "word-2026100514",
+    "greek": "το παπούτσι / τα παπούτσια",
+    "russian": "ботинок / обувь; ботинки / туфли",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-shoes"]
+  },
+  {
+    "id": "word-2026100515",
+    "greek": "η μπότα / οι μπότες",
+    "russian": "сапог / сапоги",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-shoes"]
+  },
+  {
+    "id": "word-2026100516",
+    "greek": "η παντόφλα / οι παντόφλες",
+    "russian": "тапок / тапочки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-shoes"]
+  },
+  {
+    "id": "word-2026100517",
+    "greek": "το πέδιλο / τα πέδιλα",
+    "russian": "сандалия / сандалии",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-shoes"]
+  },
+  {
+    "id": "word-2026100518",
+    "greek": "η κάλτσα / οι κάλτσες",
+    "russian": "носок / носки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-shoes"]
+  },
+  {
+    "id": "word-2026100519",
+    "greek": "το γάντι / τα γάντια",
+    "russian": "перчатка / перчатки",
+    "new": true,
+    "topic": "clothes",
+    "partOfSpeech": "noun",
+    "collectionIds": ["clothes-shoes"]
+  },
+  {
+    "id": "word-2026100520",
+    "greek": "μαύρος / μαύρη / μαύρο",
+    "russian": "чёрный / чёрная / чёрное",
+    "note": "Прилагательное согласуется с родом существительного: μαύρος σκούφος, μαύρη μπλούζα, μαύρο πουκάμισο.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100521",
+    "greek": "κόκκινος / κόκκινη / κόκκινο",
+    "russian": "красный / красная / красное",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100522",
+    "greek": "κίτρινος / κίτρινη / κίτρινο",
+    "russian": "жёлтый / жёлтая / жёлтое",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100523",
+    "greek": "πράσινος / πράσινη / πράσινο",
+    "russian": "зелёный / зелёная / зелёное",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100524",
+    "greek": "γαλάζιος / γαλάζια / γαλάζιο",
+    "russian": "голубой / голубая / голубое",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100525",
+    "greek": "μπλε",
+    "russian": "синий / синяя / синее",
+    "note": "Неизменяемое прилагательное: одна форма для всех родов, например μπλε σκούφος, μπλε μπλούζα, μπλε πουκάμισο.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100526",
+    "greek": "καφέ",
+    "russian": "коричневый / коричневая / коричневое",
+    "note": "Неизменяемое прилагательное: одна форма для всех родов.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100527",
+    "greek": "γκρι",
+    "russian": "серый / серая / серое",
+    "note": "Неизменяемое прилагательное: одна форма для всех родов.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100528",
+    "greek": "μωβ",
+    "russian": "фиолетовый / фиолетовая / фиолетовое",
+    "note": "Неизменяемое прилагательное: одна форма для всех родов.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100529",
+    "greek": "ροζ",
+    "russian": "розовый / розовая / розовое",
+    "note": "Неизменяемое прилагательное: одна форма для всех родов.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100530",
+    "greek": "μπεζ",
+    "russian": "бежевый / бежевая / бежевое",
+    "note": "Неизменяемое прилагательное: одна форма для всех родов.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["other-colors"]
   }
 ]
