@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 FILES = sorted(DATA.glob("*.json"))
-CARD_FILES = [path for path in FILES if path.name not in {"collections.json", "id-aliases.json", "situations.json"}]
+CARD_FILES = [path for path in FILES if path.name not in {"collections.json", "id-aliases.json", "situations.json", "verb-sets.json"}]
 ALLOWED_TOPICS = {
     "food", "home", "clothes", "education", "work", "people",
     "city", "transport", "time", "nature", "objects", "other",
@@ -95,6 +95,16 @@ def main() -> None:
     conjugations = {normalized(card["greek"]): card for card in sources["conjugations.json"]}
     missing = sorted(set(verbs) - set(conjugations))
     assert not missing, f"verbs without conjugation: {missing}"
+    verb_sets = json.loads((DATA / "verb-sets.json").read_text())
+    assert len({item["id"] for item in verb_sets}) == len(verb_sets), "duplicate verb set ID"
+    verbs_by_id = {card["id"]: card for card in sources["verbs.json"]}
+    for item in verb_sets:
+        assert item.get("title") and item.get("description"), f"incomplete verb set: {item['id']}"
+        assert item["verbIds"] and len(item["verbIds"]) == len(set(item["verbIds"])), f"duplicate/empty verb set: {item['id']}"
+        assert set(item["verbIds"]) <= set(verbs_by_id), f"unknown verb in set: {item['id']}"
+        for verb_id in item["verbIds"]:
+            table = conjugations[normalized(verbs_by_id[verb_id]["greek"])]
+            assert len(table.get("forms", {})) == 6 and len(table.get("russianForms", {})) == 6, f"incomplete set conjugation: {verb_id}"
     for card in conjugations.values():
         expected_count = 1 if card["greek"] in IMPERSONAL_VERBS else 6
         assert len(card.get("forms", {})) == expected_count, f"bad forms: {card['id']}"

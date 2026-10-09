@@ -16,7 +16,7 @@ const WORD_TOPICS = [
   ["time", "Время", "◷"], ["nature", "Природа и погода", "☀"], ["objects", "Предметы", "▣"], ["other", "Прочее", "…"]
 ];
 const PARTS_OF_SPEECH = [["all", "Все"], ["noun", "Существительные"], ["adjective", "Прилагательные"], ["pronoun", "Местоимения"], ["numeral", "Числительные"], ["other", "Другое"]];
-const state = { data: {}, collections: [], situations: [], aliases: {}, deck: [], quizDeck: [], category: "new", wordTopic: null, selectedCollections: new Set(), selectedSituations: new Set(), situationType: "all", wordPartOfSpeech: "all", index: 0, revealed: false, listMode: false, listQuery: "", listSort: "el", expandedConjugations: new Set(), quizDirection: localStorage.getItem("greek-a1-quiz-direction") || "el-ru", quizMode: "el-ru", quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false, session: null, quizScope: [] };
+const state = { data: {}, collections: [], situations: [], verbSets: [], aliases: {}, deck: [], quizDeck: [], category: "new", wordTopic: null, selectedCollections: new Set(), selectedSituations: new Set(), situationType: "all", wordPartOfSpeech: "all", index: 0, revealed: false, listMode: false, listQuery: "", listSort: "el", expandedConjugations: new Set(), quizDirection: localStorage.getItem("greek-a1-quiz-direction") || "el-ru", quizMode: "el-ru", quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false, session: null, quizScope: [] };
 const IRREGULAR_VERBS = new Set(["conjugation-020", "conjugation-024", "conjugation-025", "conjugation-039", "conjugation-047", "conjugation-048", "conjugation-049", "conjugation-050", "conjugation-051"]);
 const saved = JSON.parse(localStorage.getItem("greek-a1-progress") || "{}");
 const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [], practice: saved.practice || {} };
@@ -130,7 +130,15 @@ if ("speechSynthesis" in window) {
   document.addEventListener("visibilitychange", () => { if (!document.hidden && activeUtterance) window.speechSynthesis.resume(); });
 }
 
+function isConjugationCategory(category = state.category) { return category === "conjugations" || category === "passive-a2-forms"; }
+function verbSetDeck(forms = false) {
+  const set = state.verbSets.find(item => item.id === "passive-a2");
+  const verbs = (state.data.verbs || []).filter(card => set?.verbIds.includes(card.id));
+  const names = new Set(verbs.map(card => normalizedSearch(card.greek)));
+  return allCards().filter(card => forms ? card.type === "conjugations" && names.has(normalizedSearch(card.greek)) : card.type === "verbs" && set?.verbIds.includes(card.id));
+}
 function getDeck(category) {
+  if (category === "passive-a2" || category === "passive-a2-forms") return verbSetDeck(category.endsWith("-forms"));
   const all = allCards();
   if (category === "all") return all;
   if (category === "dictionary") return all.filter(card => card.type === "words" || card.type === "verbs");
@@ -148,6 +156,7 @@ function renderDashboard() {
   const sections = [
     ["new", "Новые", "＋", getDeck("new").length],
     ["dictionary", "Словарь", "Α↔Я", getDeck("dictionary").length],
+    ["passive-a2", "Глаголы на -μαι · A2", "-μαι", getDeck("passive-a2").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, key === "words" ? themedWordCards().length : getDeck(key).length]),
     ["grammar", "Грамматика", "§", "15 тем"]
   ];
@@ -215,13 +224,18 @@ function situationDeckForAll() { const prior = state.situationType; state.situat
 function openCategory(category) {
   stopSpeaking();
   state.category = category; state.wordTopic = null; state.selectedCollections.clear(); state.wordPartOfSpeech = "all"; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = ""; state.expandedConjugations.clear();
-  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения" }[category];
-  $("study-title").textContent = title; $("study-kicker").textContent = category === "conjugations" ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
+  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
+  $("study-title").textContent = title; $("study-kicker").textContent = isConjugationCategory(category) ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
   $("study-back-button").dataset.go = "dashboard"; $("word-pos-filter").classList.add("hidden"); $("situation-type-filter").classList.add("hidden");
   $("word-list-search").value = ""; showScreen("study"); renderCard();
 }
 
 function renderCard() {
+  const passiveSet = state.category === "passive-a2" || state.category === "passive-a2-forms";
+  $("verb-set-mode").classList.toggle("hidden", !passiveSet);
+  $("verb-set-description").classList.toggle("hidden", !passiveSet);
+  $("verb-set-description").textContent = passiveSet ? state.verbSets.find(item => item.id === "passive-a2")?.description || "" : "";
+  $("verb-set-mode").querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.category === state.category)));
   const card = state.deck[state.index];
   const viewed = state.deck.filter(item => progress.learned.includes(item.id)).length;
   const practiced = state.deck.filter(item => progress.practice[item.id]?.answers || Object.keys(item.forms || {}).some(pronoun => progress.practice[`${item.id}:${pronoun}`]?.answers)).length;
@@ -252,20 +266,20 @@ function renderWordList() {
     const conjugation = card.type === "verbs" ? state.data.conjugations?.find(item => normalizedSearch(item.greek) === normalizedSearch(card.greek)) : null;
     return normalizedSearch(`${card.greek} ${card.russian} ${card.typeLabel} ${card.note || ""} ${Object.values(card.forms || conjugation?.forms || {}).join(" ")}`).includes(query);
   });
-  const itemLabel = state.category === "conjugations" ? "глаголов" : "карточек";
+  const itemLabel = isConjugationCategory() ? "глаголов" : "карточек";
   $("word-list-summary").textContent = query ? `Найдено: ${visible.length} из ${sorted.length}` : `${sorted.length} ${itemLabel} · по ${state.listSort === "ru" ? "русскому переводу" : "греческому алфавиту"}`;
   $("word-list-empty").classList.toggle("hidden", visible.length > 0);
   $("word-list").innerHTML = visible.map(card => {
     const favorite = progress.favorites.includes(card.id);
     const label = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel;
-    if (state.category === "conjugations") {
+    if (isConjugationCategory()) {
       const expanded = state.expandedConjugations.has(card.id);
-      const special = IRREGULAR_VERBS.has(card.id);
+      const special = IRREGULAR_VERBS.has(card.id) || state.category === "passive-a2-forms" && /Особая модель|Особые формы/.test(card.note || "");
       const forms = Object.entries(card.forms || {}).map(([pronoun, form], index) => {
         const russian = card.russianForms?.[pronoun] || "";
         return `<div class="conjugation-list-form"><span>${escapeHTML(pronoun)}</span><strong>${escapeHTML(form)}</strong><small>${escapeHTML(russian)}</small><button class="speak-form" type="button" data-list-form-card="${escapeHTML(card.id)}" data-list-form-index="${index}" aria-label="Произнести ${escapeHTML(form)}">🔊</button></div>`;
       }).join("");
-      return `<article class="word-list-row conjugation-list-item${expanded ? " expanded" : ""}"><button class="conjugation-list-toggle" type="button" data-conjugation-toggle="${escapeHTML(card.id)}" aria-expanded="${expanded}"><span class="word-list-copy"><span class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(card.group || "")}</span>${special ? '<span class="irregular-badge">особый</span>' : ""}</span><span class="conjugation-list-translation">${escapeHTML(card.russian)}</span></span><span class="conjugation-chevron" aria-hidden="true">⌄</span></button><div class="conjugation-list-forms"${expanded ? "" : " hidden"}>${forms}</div></article>`;
+      return `<article class="word-list-row conjugation-list-item${expanded ? " expanded" : ""}"><button class="conjugation-list-toggle" type="button" data-conjugation-toggle="${escapeHTML(card.id)}" aria-expanded="${expanded}"><span class="word-list-copy"><span class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(card.group || "")}</span>${special ? '<span class="irregular-badge">особый</span>' : ""}</span><span class="conjugation-list-translation">${escapeHTML(card.russian)}</span></span><span class="conjugation-chevron" aria-hidden="true">⌄</span></button><div class="conjugation-list-forms"${expanded ? "" : " hidden"}>${card.note ? `<p class="word-list-note">${escapeHTML(card.note)}</p>` : ""}${forms}<button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
     }
     return `<article class="word-list-row"><div class="word-list-copy"><div class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(label)}</span></div><p>${escapeHTML(card.russian)}</p>${card.note ? `<small class="word-list-note">${escapeHTML(card.note)}</small>` : ""}</div><div class="word-list-actions"><button class="word-list-speak" type="button" data-list-speak="${escapeHTML(card.id)}" aria-label="Произнести ${escapeHTML(card.greek)}">🔊</button><button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
   }).join("");
@@ -287,7 +301,7 @@ function reveal() {
 }
 
 function quizKey(item) { return item.pronoun ? `${item.card.id}:${item.pronoun}` : item.card.id; }
-function quizItems(cards) { return state.category === "conjugations" ? cards.flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : cards.map(card => ({ card })); }
+function quizItems(cards) { return isConjugationCategory() ? cards.flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : cards.map(card => ({ card })); }
 function sameQuizKind(left, right) { return left.card.type === right.card.type && (left.card.type !== "words" && left.card.type !== "professions" || left.card.partOfSpeech === right.card.partOfSpeech); }
 function quizCandidates(item, pool, direction) {
   const label = candidate => candidate.pronoun ? (direction === "ru-el" ? candidate.form : candidate.russian) : candidate.card[direction === "ru-el" ? "greek" : "russian"];
@@ -332,27 +346,27 @@ function beginQuiz() {
 function restoreQuiz() {
   let savedSession; try { savedSession = JSON.parse(localStorage.getItem("greek-a1-active-quiz")); } catch { return; }
   if (!savedSession?.keys?.length) return;
-  const source = savedSession.category === "conjugations" ? allCards().filter(card => card.type === "conjugations").flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : allCards().map(card => ({ card }));
+  const source = isConjugationCategory(savedSession.category) ? allCards().filter(card => card.type === "conjugations").flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : allCards().map(card => ({ card }));
   const byKey = new Map(source.map(item => [quizKey(item), item]));
   const deck = savedSession.keys.map(key => byKey.get(key));
   if (deck.some(item => !item)) { localStorage.removeItem("greek-a1-active-quiz"); alert("Словарь обновился, часть вопросов исчезла. Выберите тему заново."); renderDashboard(); return; }
   state.session = savedSession; state.quizDeck = deck; state.quizScope = savedSession.scopeKeys.map(key => byKey.get(key)).filter(Boolean); state.quizMode = savedSession.mode; state.quizIndex = savedSession.index;
-  state.category = savedSession.category; document.querySelector("#quiz .back-button").dataset.go = "dashboard"; showScreen("quiz"); renderQuestion();
+  state.category = savedSession.category; state.deck = [...new Map(state.quizScope.map(item => [item.card.id, item.card])).values()]; $("quiz-mode").value = savedSession.mode; document.querySelector("#quiz .back-button").dataset.go = "dashboard"; showScreen("quiz"); renderQuestion();
 }
 function renderQuestion() {
   const item = state.quizDeck[state.quizIndex]; if (!item) return;
-  const direction = item.pronoun ? "el-ru" : quizDirectionAt(state.quizIndex);
+  const direction = quizDirectionAt(state.quizIndex);
   const pool = eligibleQuizItems(state.quizScope);
   const distractors = quizCandidates(item, pool, direction).slice(0, 3);
-  const answer = item.pronoun ? item.russian : item.card[direction === "ru-el" ? "greek" : "russian"];
-  const prompt = item.pronoun ? item.form : item.card[direction === "ru-el" ? "russian" : "greek"];
+  const answer = item.pronoun ? (direction === "ru-el" ? item.form : item.russian) : item.card[direction === "ru-el" ? "greek" : "russian"];
+  const prompt = item.pronoun ? (direction === "ru-el" ? item.russian : item.form) : item.card[direction === "ru-el" ? "russian" : "greek"];
   state.quizAnswer = answer; state.quizSpokenText = direction === "ru-el" ? "" : prompt;
   $("quiz-direction").classList.add("hidden");
   $("quiz-title").textContent = direction === "ru-el" ? "Выберите слово по-гречески" : "Выберите перевод";
   $("quiz-question").textContent = prompt;
   $("quiz-speak-button").classList.toggle("hidden", !state.quizSpokenText);
   $("quiz-counter").textContent = `${state.quizIndex + 1} / ${state.quizDeck.length}`;
-  const optionLabel = candidate => candidate.pronoun ? candidate.russian : candidate.card[direction === "ru-el" ? "greek" : "russian"];
+  const optionLabel = candidate => candidate.pronoun ? (direction === "ru-el" ? candidate.form : candidate.russian) : candidate.card[direction === "ru-el" ? "greek" : "russian"];
   $("quiz-options").innerHTML = shuffle([item, ...distractors]).map(candidate => `<button class="quiz-option" data-correct="${quizKey(candidate) === quizKey(item)}">${escapeHTML(optionLabel(candidate))}</button>`).join("");
   state.answered = Boolean(state.session.answers[state.quizIndex]);
   $("quiz-next").classList.toggle("hidden", !state.answered);
@@ -378,7 +392,9 @@ function finishQuiz() {
   $("quiz-result-score").textContent = `${correct} из ${answers.length} · ${Math.round(correct / answers.length * 100)}%${state.session.skipped ? ` · ${state.session.skipped} исключено как неоднозначные` : ""}`;
   $("quiz-result-errors").innerHTML = answers.filter(answer => !answer.correct).map(answer => {
     const item = state.quizDeck.find(candidate => quizKey(candidate) === answer.key);
-    return `<article class="result-error"><strong>${escapeHTML(item.card.greek)}</strong> — ${escapeHTML(item.card.russian)}${item.card.note ? `<p>${escapeHTML(item.card.note)}</p>` : ""}</article>`;
+    const greek = item.pronoun ? `${item.pronoun}: ${item.form}` : item.card.greek;
+    const russian = item.pronoun ? item.russian : item.card.russian;
+    return `<article class="result-error"><strong>${escapeHTML(greek)}</strong> — ${escapeHTML(russian)}${item.card.note ? `<p>${escapeHTML(item.card.note)}</p>` : ""}</article>`;
   }).join("") || "Ошибок нет!";
   $("quiz-retry").classList.toggle("hidden", correct === answers.length);
   $("quiz-more").classList.toggle("hidden", !eligibleQuizItems(state.quizScope).some(item => !state.session.seen.includes(quizKey(item))));
@@ -487,4 +503,4 @@ window.addEventListener("beforeinstallprompt", event => { event.preventDefault()
 $("install-button").addEventListener("click", async () => { if (!installPrompt) return; installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $("install-button").classList.add("hidden"); });
 if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
 
-Promise.all([...SOURCES.map(async ([key,,, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })]), ...[["collections", "./data/collections.json"], ["aliases", "./data/id-aliases.json"], ["situations", "./data/situations.json"]].map(async ([key, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })])]).then(entries => { const data = Object.fromEntries(entries); state.collections = data.collections; state.aliases = data.aliases; state.situations = data.situations; delete data.collections; delete data.aliases; delete data.situations; state.data = data; migrateProgress(); renderDashboard(); }).catch(() => { $("category-grid").innerHTML = '<div class="empty">Не удалось загрузить словарь. Обновите страницу.</div>'; });
+Promise.all([...SOURCES.map(async ([key,,, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })]), ...[["collections", "./data/collections.json"], ["aliases", "./data/id-aliases.json"], ["situations", "./data/situations.json"], ["verbSets", "./data/verb-sets.json"]].map(async ([key, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })])]).then(entries => { const data = Object.fromEntries(entries); state.collections = data.collections; state.aliases = data.aliases; state.situations = data.situations; state.verbSets = data.verbSets; delete data.verbSets; delete data.collections; delete data.aliases; delete data.situations; state.data = data; migrateProgress(); renderDashboard(); }).catch(() => { $("category-grid").innerHTML = '<div class="empty">Не удалось загрузить словарь. Обновите страницу.</div>'; });

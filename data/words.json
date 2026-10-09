@@ -192,6 +192,7 @@
     "id": "word-13b5621ee5",
     "greek": "ο προαστιακός",
     "russian": "пригородная электричка / пригородный поезд",
+    "note": "Сокращение от ο προαστιακός σιδηρόδρομος; существительное мужского рода. Το προάστιο — пригород.",
     "new": false,
     "topic": "transport",
     "partOfSpeech": "noun",
@@ -3112,7 +3113,7 @@
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",
-    "note": "μοσχαρίσιος / μοσχαρίσια / μοσχαρίσιο — говяжий, телячий.",
+    "note": "μοσχαρίσιος / μοσχαρίσια / μοσχαρίσιο — говяжий, телячий. Το μοσχάρι также означает телёнка; о продукте — говядина / телятина.",
     "collectionIds": [
       "food-meat"
     ]
@@ -4750,5 +4751,294 @@
     "topic": "other",
     "partOfSpeech": "adjective",
     "collectionIds": ["other-colors"]
+  },
+  {
+    "id": "word-2026100901",
+    "greek": "η έκπτωση / οι εκπτώσεις",
+    "russian": "скидка / скидки",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-money",
+      "city-shops"
+    ],
+    "new": true,
+    "note": "Έκπτωση είκοσι τοις εκατό — скидка двадцать процентов."
+  },
+  {
+    "id": "word-2026100902",
+    "greek": "το είδος / τα είδη",
+    "russian": "вид / тип / категория",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Τα ηλεκτρικά είδη — электротовары; конкретная вещь — το πράγμα."
+  },
+  {
+    "id": "word-2026100903",
+    "greek": "τα ηλεκτρικά είδη",
+    "russian": "электротовары / электроприборы",
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture",
+      "city-shops"
+    ],
+    "new": true,
+    "note": "Устойчивое сочетание; единственное: το ηλεκτρικό είδος."
+  },
+  {
+    "id": "word-2026100904",
+    "greek": "ο δήμος / οι δήμοι",
+    "russian": "муниципалитет / муниципалитеты",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "note": "Το δημαρχείο — здание муниципальной администрации."
+  },
+  {
+    "id": "word-2026100905",
+    "greek": "το δημαρχείο / τα δημαρχεία",
+    "russian": "мэрия / здания мэрии",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true
+  },
+  {
+    "id": "word-2026100906",
+    "greek": "δημόσιος / δημόσια / δημόσιο",
+    "russian": "государственный / общественный / муниципальный",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description",
+      "transport-vehicles"
+    ],
+    "new": true,
+    "note": "Τα δημόσια μέσα μεταφοράς — общественный транспорт."
+  },
+  {
+    "id": "word-2026100907",
+    "greek": "το μέσο / τα μέσα",
+    "russian": "средство / средства",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ],
+    "new": true,
+    "note": "Το μεταφορικό μέσο — средство передвижения; μέσα — внутри, μέσω — посредством."
+  },
+  {
+    "id": "word-2026100908",
+    "greek": "η μεταφορά / οι μεταφορές",
+    "russian": "перевозка / транспортировка / перенос",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ],
+    "new": true,
+    "note": "Τα μέσα μεταφοράς — транспортные средства; слово также означает метафору."
+  },
+  {
+    "id": "word-2026100909",
+    "greek": "η μετακίνηση / οι μετακινήσεις",
+    "russian": "перемещение / передвижение",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ],
+    "new": true
+  },
+  {
+    "id": "word-2026100910",
+    "greek": "το προάστιο / τα προάστια",
+    "russian": "пригород / пригороды",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "note": "Связано с ο προαστιακός — пригородный поезд."
+  },
+  {
+    "id": "word-2026100911",
+    "greek": "τα μεσάνυχτα",
+    "russian": "полночь",
+    "topic": "time",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "new": true,
+    "note": "Употребляется во множественном числе: τα μεσάνυχτα — в полночь."
+  },
+  {
+    "id": "word-2026100912",
+    "greek": "ημερήσιος / ημερήσια / ημερήσιο",
+    "russian": "ежедневный / дневной",
+    "topic": "time",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "new": true,
+    "note": "Η ημερήσια κάρτα — проездной на день. Однодневная экскурсия — μονοήμερη εκδρομή."
+  },
+  {
+    "id": "word-2026100913",
+    "greek": "μηνιαίος / μηνιαία / μηνιαίο",
+    "russian": "ежемесячный / месячный",
+    "topic": "time",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "new": true,
+    "note": "Η μηνιαία κάρτα — месячный проездной. Για έναν μήνα — на один месяц."
+  },
+  {
+    "id": "word-2026100914",
+    "greek": "μονοήμερος / μονοήμερη / μονοήμερο",
+    "russian": "однодневный / однодневная / однодневное",
+    "topic": "transport",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "transport-holiday"
+    ],
+    "new": true,
+    "note": "Η μονοήμερη εκδρομή — однодневная экскурсия."
+  },
+  {
+    "id": "word-2026100915",
+    "greek": "η έρευνα / οι έρευνες",
+    "russian": "исследование / опрос",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "note": "Ερευνώ — исследовать; в контексте опроса изучают мнения или привычки."
+  },
+  {
+    "id": "word-2026100916",
+    "greek": "η ξεκούραση",
+    "russian": "отдых",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Ξεκουράζομαι — отдыхаю; ξεκουράζω — помогаю кому-либо отдохнуть."
+  },
+  {
+    "id": "word-2026100917",
+    "greek": "η κούραση",
+    "russian": "усталость",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Κουράζομαι — устаю; κουράζω — утомляю."
+  },
+  {
+    "id": "word-2026100918",
+    "greek": "η σκέψη / οι σκέψεις",
+    "russian": "мысль / мысли",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Σκέφτομαι — думать."
+  },
+  {
+    "id": "word-2026100919",
+    "greek": "το ενδιαφέρον / τα ενδιαφέροντα",
+    "russian": "интерес / интересы",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Ενδιαφέρομαι για — интересоваться чем-либо."
+  },
+  {
+    "id": "word-2026100920",
+    "greek": "ο φόβος / οι φόβοι",
+    "russian": "страх / страхи",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Φοβάμαι — бояться."
+  },
+  {
+    "id": "word-2026100921",
+    "greek": "η χαρά",
+    "russian": "радость",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Χαίρομαι — радоваться."
+  },
+  {
+    "id": "word-2026100922",
+    "greek": "η λύπη",
+    "russian": "печаль / сожаление",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Λυπάμαι — сожалеть / грустить."
+  },
+  {
+    "id": "word-2026100923",
+    "greek": "η ετοιμασία / οι ετοιμασίες",
+    "russian": "подготовка / приготовления",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Ετοιμάζομαι — готовиться."
+  },
+  {
+    "id": "word-2026100924",
+    "greek": "η αίσθηση / οι αισθήσεις",
+    "russian": "ощущение / ощущения",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "note": "Αισθάνομαι — чувствовать."
   }
 ]
