@@ -38,17 +38,18 @@ const context = vm.createContext({
   },
 });
 const source = fs.readFileSync(path.join(root, "app.js"), "utf8");
+vm.runInContext(fs.readFileSync(path.join(root, "game-core.js"), "utf8"), context);
 vm.runInContext(source.slice(0, source.indexOf('document.addEventListener("click"')), context);
 const run = code => vm.runInContext(code, context);
 run("state.data = fixture.data; state.verbSets = fixture.sets;");
-assert.equal(run('getDeck("passive-a2").length'), 20);
-assert.equal(run('getDeck("passive-a2-forms").length'), 20);
+assert.equal(run('getDeck("passive-a2").length'), 21);
+assert.equal(run('getDeck("passive-a2-forms").length'), 21);
 assert.equal(run('getDeck("passive-a2").every(card => card.type === "verbs")'), true);
 assert.equal(run('getDeck("passive-a2-forms").every(card => card.type === "conjugations")'), true);
 
 for (const category of ["passive-a2", "passive-a2-forms"]) {
   run('state.category = ' + JSON.stringify(category) + '; state.deck = getDeck(state.category); state.quizScope = quizItems(state.deck);');
-  const count = category.endsWith("-forms") ? 120 : 20;
+  const count = category.endsWith("-forms") ? 126 : 21;
   assert.equal(run("state.quizScope.length"), count);
   assert.equal(run("eligibleQuizItems(state.quizScope).length"), count);
   for (const direction of ["el-ru", "ru-el", "mixed"]) {
@@ -85,4 +86,4 @@ for (const category of ["passive-a2", "passive-a2-forms"]) {
     run("previousKeys.clear()");
   }
 }
-console.log("OK: both A2 modes, 20 verbs / 120 forms, all directions, progress, restore, results and non-repeating batches");
+console.log("OK: both A2 modes, 21 verbs / 126 forms, all directions, progress, restore, results and non-repeating batches");

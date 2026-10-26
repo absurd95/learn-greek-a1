@@ -8,6 +8,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "καθηγητής",
+        "plural": "καθηγητές"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "καθηγήτρια",
+        "plural": "καθηγήτριες"
+      }
     ]
   },
   {
@@ -19,6 +33,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "κομμωτής",
+        "plural": "κομμωτές"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "κομμώτρια",
+        "plural": "κομμώτριες"
+      }
     ]
   },
   {
@@ -30,6 +58,22 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φοιτητής",
+        "plural": "φοιτητές",
+        "genitiveSingular": "φοιτητή",
+        "genitivePlural": "φοιτητών"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "φοιτήτρια",
+        "plural": "φοιτήτριες"
+      }
     ]
   },
   {
@@ -41,6 +85,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "εργάτης",
+        "plural": "εργάτες"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "εργάτρια",
+        "plural": "εργάτριες"
+      }
     ]
   },
   {
@@ -53,6 +111,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "πωλητής",
+        "plural": "πωλητές"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "πωλήτρια",
+        "plural": "πωλήτριες"
+      }
     ]
   },
   {
@@ -64,6 +136,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αθλητής",
+        "plural": "αθλητές"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "αθλήτρια",
+        "plural": "αθλήτριες"
+      }
     ]
   },
   {
@@ -75,6 +161,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "δικηγόρος",
+        "plural": "δικηγόροι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "δικηγόρος",
+        "plural": "δικηγόροι"
+      }
     ]
   },
   {
@@ -86,6 +186,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ηλεκτρολόγος",
+        "plural": "ηλεκτρολόγοι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "ηλεκτρολόγος",
+        "plural": "ηλεκτρολόγοι"
+      }
     ]
   },
   {
@@ -97,6 +211,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "οδηγός",
+        "plural": "οδηγοί"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "οδηγός",
+        "plural": "οδηγοί"
+      }
     ]
   },
   {
@@ -108,6 +236,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "μηχανικός",
+        "plural": "μηχανικοί"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "μηχανικός",
+        "plural": "μηχανικοί"
+      }
     ]
   },
   {
@@ -119,6 +261,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "γιατρός",
+        "plural": "γιατροί"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "γιατρός",
+        "plural": "γιατροί"
+      }
     ]
   },
   {
@@ -130,6 +286,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "σερβιτόρος",
+        "plural": "σερβιτόροι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "σερβιτόρα",
+        "plural": "σερβιτόρες"
+      }
     ]
   },
   {
@@ -141,6 +311,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "νοσοκόμος",
+        "plural": "νοσοκόμοι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "νοσοκόμα",
+        "plural": "νοσοκόμες"
+      }
     ]
   },
   {
@@ -152,6 +336,24 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "δάσκαλος",
+        "plural": "δάσκαλοι",
+        "genitiveSingular": "δασκάλου",
+        "genitivePlural": "δασκάλων"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "δασκάλα",
+        "plural": "δασκάλες",
+        "genitiveSingular": "δασκάλας",
+        "genitivePlural": "δασκάλων"
+      }
     ]
   },
   {
@@ -163,6 +365,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "άνεργος",
+        "plural": "άνεργοι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "άνεργη",
+        "plural": "άνεργες"
+      }
     ]
   },
   {
@@ -174,6 +390,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "μάγειρας",
+        "plural": "μάγειρες"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "μαγείρισσα",
+        "plural": "μαγείρισσες"
+      }
     ]
   },
   {
@@ -185,6 +415,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "υπάλληλος",
+        "plural": "υπάλληλοι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "υπάλληλος",
+        "plural": "υπάλληλοι"
+      }
     ]
   },
   {
@@ -196,6 +440,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ηθοποιός",
+        "plural": "ηθοποιοί"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "ηθοποιός",
+        "plural": "ηθοποιοί"
+      }
     ]
   },
   {
@@ -207,6 +465,22 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ταμίας",
+        "plural": "ταμίες",
+        "genitiveSingular": "ταμία",
+        "genitivePlural": "ταμιών"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "ταμίας",
+        "plural": "ταμίες"
+      }
     ]
   },
   {
@@ -218,6 +492,22 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αρχιτέκτονας",
+        "plural": "αρχιτέκτονες",
+        "genitiveSingular": "αρχιτέκτονα",
+        "genitivePlural": "αρχιτεκτόνων"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "αρχιτέκτονας",
+        "plural": "αρχιτέκτονες"
+      }
     ]
   },
   {
@@ -229,6 +519,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "γραμματέας",
+        "plural": "γραμματείς"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "γραμματέας",
+        "plural": "γραμματείς"
+      }
     ]
   },
   {
@@ -241,6 +545,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φούρναρης",
+        "plural": "φουρνάρηδες"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "φουρνάρισσα",
+        "plural": "φουρνάρισσες"
+      }
     ]
   },
   {
@@ -253,6 +571,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "περιπτεράς",
+        "plural": "περιπτεράδες"
+      }
     ]
   },
   {
@@ -265,6 +591,69 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "μανάβης",
+        "plural": "μανάβηδες"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "μανάβισσα",
+        "plural": "μανάβισσες"
+      }
+    ]
+  },
+  {
+    "id": "profession-2026102614",
+    "greek": "ο ναύτης / οι ναύτες",
+    "russian": "моряк / матрос; моряки / матросы",
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ναύτης",
+        "plural": "ναύτες",
+        "genitiveSingular": "ναύτη",
+        "genitivePlural": "ναυτών"
+      }
+    ]
+  },
+  {
+    "id": "profession-20261026-programmer",
+    "greek": "ο προγραμματιστής / η προγραμματίστρια",
+    "russian": "программист / программистка",
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions",
+      "objects-technology"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "προγραμματιστής",
+        "plural": "προγραμματιστές",
+        "genitiveSingular": "προγραμματιστή",
+        "genitivePlural": "προγραμματιστών"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "προγραμματίστρια",
+        "plural": "προγραμματίστριες"
+      }
     ]
   }
 ]

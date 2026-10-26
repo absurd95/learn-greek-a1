@@ -19,7 +19,7 @@ ALLOWED_TOPICS = {
     "city", "transport", "time", "nature", "objects", "other",
 }
 ALLOWED_PARTS = {"noun", "adjective", "pronoun", "numeral", "other"}
-IMPERSONAL_VERBS = {"Βρέχει", "Χιονίζει"}
+IMPERSONAL_VERBS = {"Βρέχει", "Χιονίζει", "Ψιχαλίζει"}
 EXPECTED_TOPICS = {
     "word-2026080429": "other",       # η συζήτηση
     "word-2026080433": "time",        # το πρωί
@@ -73,6 +73,27 @@ def main() -> None:
         assert isinstance(card.get("collectionIds"), list) and card["collectionIds"], f"missing collections: {card['id']}"
         assert len(card["collectionIds"]) == len(set(card["collectionIds"])), f"repeated collection: {card['id']}"
         assert set(card["collectionIds"]) <= set(collection_ids), f"unknown collection: {card['id']}"
+    for card in themed:
+        if card["partOfSpeech"] != "noun":
+            assert "nounForms" not in card, f"noun forms on non-noun: {card['id']}"
+            continue
+        forms = card.get("nounForms")
+        assert isinstance(forms, list) and forms, f"missing noun forms: {card['id']}"
+        assert len({form["key"] for form in forms}) == len(forms), f"duplicate noun form keys: {card['id']}"
+        for form in forms:
+            assert re.fullmatch(r"[a-z0-9-]+", form["key"]), f"unstable form key: {card['id']}"
+            assert form.get("gender") in {"masculine", "feminine", "neuter"}, f"bad noun gender: {card['id']}"
+            assert form.get("singular") or form.get("plural"), f"no nominative: {card['id']}"
+            assert not form.get("genitiveSingular") or form.get("singular"), f"genitive without singular: {card['id']}"
+            assert not form.get("genitivePlural") or form.get("plural"), f"genitive without plural: {card['id']}"
+            for name in ["singular", "plural", "genitiveSingular", "genitivePlural"]:
+                if name not in form:
+                    continue
+                value = form[name]
+                assert isinstance(value, str) and value == value.strip() and value, f"bad noun form: {card['id']}"
+                assert unicodedata.normalize("NFC", value) == value, f"non-NFC noun form: {card['id']}"
+                assert not re.match(r"^(ο|η|το|οι|τα|του|της|των)\\s+", value, re.I), f"article inside noun form: {card['id']}"
+                assert not re.search(r"[0-9/;·]", value), f"not a noun form: {card['id']}"
     active_ids = set(ids)
     assert not (set(aliases) & active_ids), "retired ID still active"
     assert set(aliases.values()) <= active_ids, "missing alias target"

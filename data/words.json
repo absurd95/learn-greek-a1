@@ -8,6 +8,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "άνοιξη"
+      }
     ]
   },
   {
@@ -19,6 +26,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αμοιβή"
+      }
     ]
   },
   {
@@ -30,6 +44,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γλώσσα"
+      }
     ]
   },
   {
@@ -41,6 +62,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "διεύθυνση"
+      }
     ]
   },
   {
@@ -52,17 +80,37 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εθνικότητα"
+      }
     ]
   },
   {
     "id": "word-bf0e5efe33",
-    "greek": "η εταιρία",
+    "greek": "η εταιρία / η εταιρεία",
     "russian": "компания / фирма",
     "new": false,
     "topic": "work",
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "note": "Оба написания допустимы. Εταιρία πληροφορικής — IT-компания.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εταιρία"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "εταιρεία"
+      }
     ]
   },
   {
@@ -74,6 +122,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ζωή"
+      }
     ]
   },
   {
@@ -85,6 +140,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Κυριακή"
+      }
     ]
   },
   {
@@ -97,6 +159,13 @@
     "note": "Обычно сокращение от η λαϊκή αγορά — еженедельный уличный рынок. Η λαϊκή γίνεται μία φορά την εβδομάδα — рынок проходит раз в неделю.",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "λαϊκή"
+      }
     ]
   },
   {
@@ -108,6 +177,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "στάση"
+      }
     ]
   },
   {
@@ -119,6 +195,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τράπεζα"
+      }
     ]
   },
   {
@@ -130,6 +213,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "χώρα"
+      }
     ]
   },
   {
@@ -152,6 +242,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "κτηνίατρος",
+        "plural": "κτηνίατροι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "κτηνίατρος",
+        "plural": "κτηνίατροι"
+      }
     ]
   },
   {
@@ -163,6 +267,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-quantity"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αριθμός"
+      }
     ]
   },
   {
@@ -174,6 +285,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ξυλουργός"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "ξυλουργός"
+      }
     ]
   },
   {
@@ -186,6 +309,20 @@
     "note": "В кафе: οι πελάτες στην καφετέρια — посетители в кофейне.",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "πελάτης",
+        "plural": "πελάτες"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "πελάτισσα",
+        "plural": "πελάτισσες"
+      }
     ]
   },
   {
@@ -198,6 +335,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "προαστιακός"
+      }
     ]
   },
   {
@@ -209,6 +353,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "σταθμός"
+      }
     ]
   },
   {
@@ -221,6 +372,13 @@
     "collectionIds": [
       "transport-vehicles",
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ταξιτζής"
+      }
     ]
   },
   {
@@ -232,6 +390,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "χειμώνας"
+      }
     ]
   },
   {
@@ -243,6 +408,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "χώρος"
+      }
     ]
   },
   {
@@ -254,6 +426,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ύπνος"
+      },
+      {
+        "key": "variant-2",
+        "gender": "masculine",
+        "singular": "υπνάκος"
+      }
     ]
   },
   {
@@ -266,6 +450,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "ψώνια"
+      }
     ]
   },
   {
@@ -277,6 +468,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αεροπλάνο"
+      }
     ]
   },
   {
@@ -288,6 +486,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "απόγευμα"
+      }
     ]
   },
   {
@@ -299,6 +504,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βραδινό"
+      }
     ]
   },
   {
@@ -310,6 +522,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "εισιτήριο"
+      }
     ]
   },
   {
@@ -321,6 +540,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "επάγγελμα"
+      }
     ]
   },
   {
@@ -332,6 +558,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "επώνυμο"
+      }
     ]
   },
   {
@@ -343,6 +576,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "εργαστήριο"
+      }
     ]
   },
   {
@@ -354,6 +594,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κέντρο"
+      }
     ]
   },
   {
@@ -365,6 +612,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καλοκαίρι"
+      }
     ]
   },
   {
@@ -376,6 +630,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λεωφορείο"
+      }
     ]
   },
   {
@@ -387,6 +648,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μεσημέρι"
+      }
     ]
   },
   {
@@ -398,6 +666,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μεσημεριανό"
+      }
     ]
   },
   {
@@ -410,6 +685,14 @@
     "collectionIds": [
       "city-shops",
       "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ξενοδοχείο",
+        "plural": "ξενοδοχεία"
+      }
     ]
   },
   {
@@ -421,6 +704,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παγωτό"
+      }
     ]
   },
   {
@@ -432,6 +722,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ποδήλατο"
+      }
     ]
   },
   {
@@ -443,6 +740,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ποτό"
+      }
     ]
   },
   {
@@ -454,6 +758,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πρωινό"
+      }
     ]
   },
   {
@@ -465,6 +776,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ραδιόφωνο"
+      }
     ]
   },
   {
@@ -476,6 +794,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "Σάββατο"
+      }
     ]
   },
   {
@@ -488,6 +813,13 @@
     "collectionIds": [
       "transport-holiday",
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ταξιδιωτικό γραφείο"
+      }
     ]
   },
   {
@@ -499,6 +831,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τρένο"
+      }
     ]
   },
   {
@@ -510,6 +849,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τραμ"
+      }
     ]
   },
   {
@@ -521,6 +867,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τρόλεϊ"
+      }
     ]
   },
   {
@@ -532,6 +885,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φαγητό"
+      }
     ]
   },
   {
@@ -543,6 +903,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φθινόπωρο"
+      }
     ]
   },
   {
@@ -554,6 +921,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ωράριο"
+      }
     ]
   },
   {
@@ -565,6 +939,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "plural": "ειδήσεις"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "plural": "νέα"
+      }
     ]
   },
   {
@@ -576,6 +962,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ειδοποίηση"
+      }
     ]
   },
   {
@@ -587,6 +980,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "είδηση"
+      }
     ]
   },
   {
@@ -610,6 +1010,13 @@
     "collectionIds": [
       "other-leisure",
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "παρέα"
+      }
     ]
   },
   {
@@ -632,6 +1039,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δευτερόλεπτο"
+      }
     ]
   },
   {
@@ -656,6 +1070,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λεπτό",
+        "plural": "λεπτά"
+      }
     ]
   },
   {
@@ -667,6 +1089,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ώρα"
+      }
     ]
   },
   {
@@ -678,6 +1107,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "οικογένεια"
+      }
     ]
   },
   {
@@ -689,6 +1125,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παιδί",
+        "plural": "παιδιά",
+        "genitiveSingular": "παιδιού",
+        "genitivePlural": "παιδιών"
+      }
     ]
   },
   {
@@ -700,6 +1146,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "παιδιά"
+      }
     ]
   },
   {
@@ -711,6 +1164,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "χρόνος"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "plural": "χρόνια"
+      }
     ]
   },
   {
@@ -722,6 +1187,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βιβλίο",
+        "plural": "βιβλία",
+        "genitiveSingular": "βιβλίου",
+        "genitivePlural": "βιβλίων"
+      }
     ]
   },
   {
@@ -733,6 +1208,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μουσική"
+      }
     ]
   },
   {
@@ -744,6 +1226,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τηλεόραση"
+      }
     ]
   },
   {
@@ -755,6 +1244,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ταινία"
+      }
     ]
   },
   {
@@ -766,6 +1262,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γράμμα",
+        "plural": "γράμματα",
+        "genitiveSingular": "γράμματος",
+        "genitivePlural": "γραμμάτων"
+      }
     ]
   },
   {
@@ -778,6 +1284,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μήνυμα",
+        "plural": "μηνύματα"
+      }
     ]
   },
   {
@@ -789,6 +1303,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "βοήθεια"
+      }
     ]
   },
   {
@@ -800,6 +1321,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τσιγάρο"
+      }
     ]
   },
   {
@@ -811,6 +1339,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τηλέφωνο"
+      }
     ]
   },
   {
@@ -822,6 +1357,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "νερό"
+      }
     ]
   },
   {
@@ -834,6 +1376,13 @@
     "note": "Варианты: γλυκός — сладкий, μέτριος — средней сладости, σκέτος — без сахара. Ο γαλλικός καφές / ο καφές φίλτρου — фильтр-кофе.",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "καφές"
+      }
     ]
   },
   {
@@ -845,6 +1394,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "δρόμος"
+      }
     ]
   },
   {
@@ -856,6 +1412,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αυτοκίνητο"
+      }
     ]
   },
   {
@@ -867,6 +1430,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σπίτι",
+        "genitiveSingular": "σπιτιού",
+        "genitivePlural": "σπιτιών",
+        "plural": "σπίτια"
+      }
     ]
   },
   {
@@ -878,6 +1451,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ψωμί"
+      }
     ]
   },
   {
@@ -889,6 +1469,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "χορός"
+      }
     ]
   },
   {
@@ -900,6 +1487,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φίλος"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "φίλη"
+      }
     ]
   },
   {
@@ -911,6 +1510,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "δουλειά",
+        "plural": "δουλειές",
+        "genitiveSingular": "δουλειάς",
+        "genitivePlural": "δουλειών"
+      }
     ]
   },
   {
@@ -922,6 +1531,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σχολείο",
+        "genitiveSingular": "σχολείου",
+        "genitivePlural": "σχολείων",
+        "plural": "σχολεία"
+      }
     ]
   },
   {
@@ -933,6 +1552,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "μήνας",
+        "plural": "μήνες",
+        "genitiveSingular": "μήνα",
+        "genitivePlural": "μηνών"
+      }
     ]
   },
   {
@@ -944,6 +1573,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "διάλειμμα"
+      }
     ]
   },
   {
@@ -956,6 +1592,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "συμμαθήτρια",
+        "plural": "συμμαθήτριες"
+      }
     ]
   },
   {
@@ -967,6 +1611,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κυλικείο"
+      }
     ]
   },
   {
@@ -978,6 +1629,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σάντουιτς"
+      }
     ]
   },
   {
@@ -1013,6 +1671,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "θέμα",
+        "plural": "θέματα"
+      }
     ]
   },
   {
@@ -1025,6 +1691,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "υπολογιστής"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "κομπιούτερ"
+      }
     ]
   },
   {
@@ -1037,6 +1715,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τραγούδι",
+        "plural": "τραγούδια",
+        "genitiveSingular": "τραγουδιού",
+        "genitivePlural": "τραγουδιών"
+      }
     ]
   },
   {
@@ -1050,6 +1738,18 @@
     "collectionIds": [
       "other-leisure",
       "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "τραγουδιστής"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "τραγουδίστρια"
+      }
     ]
   },
   {
@@ -1062,6 +1762,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ίντερνετ"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "διαδίκτυο"
+      }
     ]
   },
   {
@@ -1073,6 +1785,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δίκτυο"
+      }
     ]
   },
   {
@@ -1085,6 +1804,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γραφή"
+      }
     ]
   },
   {
@@ -1097,6 +1823,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "προτίμηση"
+      }
     ]
   },
   {
@@ -1109,6 +1842,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αρχή"
+      }
     ]
   },
   {
@@ -1121,6 +1861,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ξεκίνημα"
+      }
     ]
   },
   {
@@ -1133,6 +1880,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "διάβασμα"
+      }
     ]
   },
   {
@@ -1145,6 +1899,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "χρήση"
+      }
     ]
   },
   {
@@ -1157,6 +1918,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σταμάτημα"
+      }
     ]
   },
   {
@@ -1168,6 +1936,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "επιστήμη"
+      }
     ]
   },
   {
@@ -1180,6 +1955,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πανεπιστήμιο"
+      }
     ]
   },
   {
@@ -1192,6 +1974,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τέλος"
+      }
     ]
   },
   {
@@ -1204,6 +1993,24 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-animals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "σκύλος"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "σκύλα"
+      },
+      {
+        "key": "variant-3",
+        "gender": "neuter",
+        "singular": "σκυλί",
+        "plural": "σκυλιά"
+      }
     ]
   },
   {
@@ -1215,6 +2022,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αδελφή"
+      }
     ]
   },
   {
@@ -1226,6 +2040,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σούπα"
+      }
     ]
   },
   {
@@ -1238,6 +2059,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ταξίδι"
+      }
     ]
   },
   {
@@ -1250,6 +2078,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "συνάντηση"
+      }
     ]
   },
   {
@@ -1262,6 +2097,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "συζήτηση"
+      }
     ]
   },
   {
@@ -1274,6 +2116,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "υπολογισμός"
+      }
     ]
   },
   {
@@ -1286,6 +2135,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πληρωμή"
+      }
     ]
   },
   {
@@ -1298,6 +2154,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ανάπτυξη"
+      }
     ]
   },
   {
@@ -1310,6 +2173,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πρωί"
+      }
     ]
   },
   {
@@ -1322,6 +2192,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βράδυ"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "βράδι"
+      }
     ]
   },
   {
@@ -1346,6 +2228,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "κόσμος"
+      }
     ]
   },
   {
@@ -1358,6 +2247,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πείνα"
+      }
     ]
   },
   {
@@ -1370,6 +2266,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "δίψα"
+      }
     ]
   },
   {
@@ -1382,6 +2285,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μνήμα"
+      }
     ]
   },
   {
@@ -1393,6 +2303,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μνημείο"
+      }
     ]
   },
   {
@@ -1405,6 +2322,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "plural": "διακοπές"
+      }
     ]
   },
   {
@@ -1417,6 +2341,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "καύσωνας"
+      }
     ]
   },
   {
@@ -1428,6 +2359,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βουνό",
+        "plural": "βουνά",
+        "genitiveSingular": "βουνού",
+        "genitivePlural": "βουνών"
+      }
     ]
   },
   {
@@ -1440,6 +2381,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "βροχή"
+      }
     ]
   },
   {
@@ -1452,6 +2400,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χιόνι"
+      }
     ]
   },
   {
@@ -1463,6 +2418,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γειτονιά"
+      }
     ]
   },
   {
@@ -1475,6 +2437,22 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "γείτονας",
+        "plural": "γείτονες",
+        "genitiveSingular": "γείτονα",
+        "genitivePlural": "γειτόνων"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "γειτόνισσα",
+        "plural": "γειτόνισσες"
+      }
     ]
   },
   {
@@ -1498,6 +2476,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "λαός"
+      }
     ]
   },
   {
@@ -1510,6 +2495,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φιλί"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "φιλάκι"
+      }
     ]
   },
   {
@@ -1522,6 +2519,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "καιρός"
+      }
     ]
   },
   {
@@ -1545,6 +2549,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Αίγινα"
+      }
     ]
   },
   {
@@ -1568,6 +2579,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εβδομάδα"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "βδομάδα"
+      }
     ]
   },
   {
@@ -1579,6 +2602,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "νησί"
+      }
     ]
   },
   {
@@ -1590,6 +2620,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "Πειραιάς"
+      }
     ]
   },
   {
@@ -1601,6 +2638,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ψάρι"
+      }
     ]
   },
   {
@@ -1612,6 +2656,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καλαμάρι"
+      }
     ]
   },
   {
@@ -1624,6 +2675,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χταπόδι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "οχταπόδι"
+      }
     ]
   },
   {
@@ -1646,6 +2709,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φεγγάρι"
+      }
     ]
   },
   {
@@ -1658,6 +2728,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "βόλτα"
+      }
     ]
   },
   {
@@ -1669,6 +2746,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "βάρκα"
+      }
     ]
   },
   {
@@ -1680,6 +2764,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ταβέρνα"
+      }
     ]
   },
   {
@@ -1702,6 +2793,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "θάλασσα",
+        "plural": "θάλασσες",
+        "genitiveSingular": "θάλασσας",
+        "genitivePlural": "θαλασσών"
+      }
     ]
   },
   {
@@ -1725,6 +2826,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ηλιοθεραπεία"
+      }
     ]
   },
   {
@@ -1737,6 +2845,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "κύριος"
+      }
     ]
   },
   {
@@ -1749,6 +2864,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κυρία"
+      }
     ]
   },
   {
@@ -1761,6 +2883,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καλαμαράκι"
+      }
     ]
   },
   {
@@ -1773,6 +2902,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "γύρος"
+      }
     ]
   },
   {
@@ -1784,6 +2920,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πράγμα",
+        "plural": "πράγματα"
+      }
     ]
   },
   {
@@ -1796,6 +2940,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-vehicles"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ηλεκτρικός"
+      }
     ]
   },
   {
@@ -1807,6 +2958,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φούρνος"
+      }
     ]
   },
   {
@@ -1819,6 +2977,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-dairy"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γάλα",
+        "plural": "γάλατα"
+      }
     ]
   },
   {
@@ -1831,6 +2997,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αναπτήρας",
+        "plural": "αναπτήρες",
+        "genitiveSingular": "αναπτήρα",
+        "genitivePlural": "αναπτήρων"
+      }
     ]
   },
   {
@@ -1842,6 +3018,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αγώνας",
+        "plural": "αγώνες",
+        "genitiveSingular": "αγώνα",
+        "genitivePlural": "αγώνων"
+      }
     ]
   },
   {
@@ -1854,6 +3040,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μπουκάλι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "μπουκαλάκι"
+      }
     ]
   },
   {
@@ -1866,6 +3064,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "λεφτά"
+      }
     ]
   },
   {
@@ -1877,6 +3082,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "ψιλά"
+      }
     ]
   },
   {
@@ -1888,6 +3100,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "μετρητά"
+      }
     ]
   },
   {
@@ -1899,6 +3118,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "ρέστα"
+      }
     ]
   },
   {
@@ -1911,6 +3137,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αγορά"
+      }
     ]
   },
   {
@@ -1922,6 +3155,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μπίρα"
+      }
     ]
   },
   {
@@ -1946,6 +3186,14 @@
     "collectionIds": [
       "other-quantity",
       "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φορά",
+        "plural": "φορές"
+      }
     ]
   },
   {
@@ -1957,6 +3205,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "περίπτερο"
+      }
     ]
   },
   {
@@ -1968,6 +3223,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σπίρτο",
+        "plural": "σπίρτα"
+      }
     ]
   },
   {
@@ -1979,6 +3242,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αλκοόλ"
+      }
     ]
   },
   {
@@ -1990,6 +3260,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αναψυκτικό"
+      }
     ]
   },
   {
@@ -2001,6 +3278,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ψύξη"
+      }
     ]
   },
   {
@@ -2013,6 +3297,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ψυγείο"
+      }
     ]
   },
   {
@@ -2024,6 +3315,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-cleaning"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "οινόπνευμα"
+      }
     ]
   },
   {
@@ -2036,6 +3334,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κρασί"
+      }
     ]
   },
   {
@@ -2047,6 +3352,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χαρτί"
+      }
     ]
   },
   {
@@ -2058,6 +3370,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μαντήλι"
+      }
     ]
   },
   {
@@ -2070,6 +3389,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χαρτομάντηλο",
+        "plural": "χαρτομάντιλα"
+      }
     ]
   },
   {
@@ -2081,6 +3408,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πορτοκαλάδα"
+      }
     ]
   },
   {
@@ -2106,6 +3440,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "επιχείρηση"
+      }
     ]
   },
   {
@@ -2117,6 +3458,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σχολή"
+      }
     ]
   },
   {
@@ -2128,6 +3476,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ιατρική"
+      }
     ]
   },
   {
@@ -2139,6 +3494,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Νομική"
+      }
     ]
   },
   {
@@ -2150,6 +3512,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τάξη"
+      }
     ]
   },
   {
@@ -2174,6 +3543,22 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "μαθητής",
+        "plural": "μαθητές",
+        "genitiveSingular": "μαθητή",
+        "genitivePlural": "μαθητών"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "μαθήτρια",
+        "plural": "μαθήτριες"
+      }
     ]
   },
   {
@@ -2186,6 +3571,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ντουλάπα",
+        "plural": "ντουλάπες"
+      }
     ]
   },
   {
@@ -2197,6 +3590,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πουκάμισο",
+        "plural": "πουκάμισα"
+      }
     ]
   },
   {
@@ -2208,6 +3609,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μολύβι",
+        "plural": "μολύβια"
+      }
     ]
   },
   {
@@ -2219,6 +3628,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τσάντα",
+        "plural": "τσάντες",
+        "genitiveSingular": "τσάντας",
+        "genitivePlural": "τσαντών"
+      }
     ]
   },
   {
@@ -2242,6 +3661,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εφημερίδα",
+        "plural": "εφημερίδες"
+      }
     ]
   },
   {
@@ -2253,6 +3680,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "περιοδικό",
+        "plural": "περιοδικά"
+      }
     ]
   },
   {
@@ -2264,6 +3699,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τηλεκάρτα",
+        "plural": "τηλεκάρτες"
+      }
     ]
   },
   {
@@ -2275,6 +3718,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γραμματόσημο",
+        "plural": "γραμματόσημα"
+      }
     ]
   },
   {
@@ -2287,6 +3738,20 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "στιλό",
+        "plural": "στιλό"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "στυλό",
+        "plural": "στυλό"
+      }
     ]
   },
   {
@@ -2298,6 +3763,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "καραμέλα",
+        "plural": "καραμέλες"
+      }
     ]
   },
   {
@@ -2309,6 +3782,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τσίχλα",
+        "plural": "τσίχλες"
+      }
     ]
   },
   {
@@ -2320,6 +3801,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σοκολάτα",
+        "plural": "σοκολάτες"
+      }
     ]
   },
   {
@@ -2332,6 +3821,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πατατάκι",
+        "plural": "πατατάκια"
+      }
     ]
   },
   {
@@ -2343,6 +3840,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-dairy"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γιαούρτι",
+        "plural": "γιαούρτια"
+      }
     ]
   },
   {
@@ -2354,6 +3859,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κουλούρι",
+        "plural": "κουλούρια"
+      }
     ]
   },
   {
@@ -2365,6 +3878,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κριτσίνι",
+        "plural": "κριτσίνια"
+      }
     ]
   },
   {
@@ -2376,6 +3897,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φρυγανιά",
+        "plural": "φρυγανιές"
+      }
     ]
   },
   {
@@ -2387,6 +3916,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κρουασάν",
+        "plural": "κρουασάν"
+      }
     ]
   },
   {
@@ -2398,6 +3935,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τυρόπιτα",
+        "plural": "τυρόπιτες"
+      }
     ]
   },
   {
@@ -2409,6 +3954,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σπανακόπιτα",
+        "plural": "σπανακόπιτες"
+      }
     ]
   },
   {
@@ -2420,6 +3973,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βούτημα",
+        "plural": "βουτήματα"
+      }
     ]
   },
   {
@@ -2431,6 +3992,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γλυκό",
+        "plural": "γλυκά"
+      }
     ]
   },
   {
@@ -2442,6 +4011,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φρούτο",
+        "plural": "φρούτα"
+      }
     ]
   },
   {
@@ -2454,6 +4031,13 @@
     "note": "Обычно употребляется во множественном числе.",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "κορν φλέικς"
+      }
     ]
   },
   {
@@ -2465,6 +4049,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μαρμελάδα"
+      }
     ]
   },
   {
@@ -2476,6 +4067,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καρπούζι",
+        "plural": "καρπούζια"
+      }
     ]
   },
   {
@@ -2487,6 +4086,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εκδρομή",
+        "plural": "εκδρομές"
+      }
     ]
   },
   {
@@ -2499,6 +4106,13 @@
     "note": "Связанная фраза: Κάνω ησυχία — соблюдаю тишину.",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ησυχία"
+      }
     ]
   },
   {
@@ -2510,6 +4124,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μπάλα",
+        "plural": "μπάλες"
+      }
     ]
   },
   {
@@ -2522,6 +4144,14 @@
     "note": "Не «подделка»: для фальшивки используются другие слова, например το πλαστό.",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κατασκευή",
+        "plural": "κατασκευές"
+      }
     ]
   },
   {
@@ -2533,6 +4163,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κατασκήνωση",
+        "plural": "κατασκηνώσεις"
+      }
     ]
   },
   {
@@ -2544,6 +4182,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "σταυρός",
+        "plural": "σταυροί"
+      }
     ]
   },
   {
@@ -2556,6 +4202,14 @@
     "note": "Во множественном числе форма не изменяется.",
     "collectionIds": [
       "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μπουφάν",
+        "plural": "μπουφάν"
+      }
     ]
   },
   {
@@ -2580,6 +4234,14 @@
     "note": "Связано: η τυρόπιτα — пирог с сыром.",
     "collectionIds": [
       "food-dairy"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τυρί",
+        "plural": "τυριά"
+      }
     ]
   },
   {
@@ -2592,6 +4254,13 @@
     "note": "Связано: η σπανακόπιτα — пирог со шпинатом.",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σπανάκι"
+      }
     ]
   },
   {
@@ -2604,6 +4273,14 @@
     "note": "Связано: η πορτοκαλόπιτα — апельсиновый пирог.",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πορτοκάλι",
+        "plural": "πορτοκάλια"
+      }
     ]
   },
   {
@@ -2615,6 +4292,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πορτοκαλόπιτα",
+        "plural": "πορτοκαλόπιτες"
+      }
     ]
   },
   {
@@ -2627,6 +4312,14 @@
     "note": "Связано: η φραουλόπιτα — клубничный пирог.",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φράουλα",
+        "plural": "φράουλες"
+      }
     ]
   },
   {
@@ -2638,6 +4331,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φραουλόπιτα",
+        "plural": "φραουλόπιτες"
+      }
     ]
   },
   {
@@ -2685,6 +4386,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "γαλλικός καφές"
+      },
+      {
+        "key": "variant-2",
+        "gender": "masculine",
+        "singular": "καφές φίλτρου"
+      }
     ]
   },
   {
@@ -2698,6 +4411,18 @@
     "collectionIds": [
       "city-shops",
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καφέ"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "καφετέρια"
+      }
     ]
   },
   {
@@ -2710,6 +4435,14 @@
     "note": "Обычно о горячем или приготовленном напитке.",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ρόφημα",
+        "plural": "ροφήματα"
+      }
     ]
   },
   {
@@ -2722,6 +4455,14 @@
     "note": "Το γλυκό σνακ — сладкий перекус; το αλμυρό σνακ — солёный перекус.",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σνακ",
+        "plural": "σνακ"
+      }
     ]
   },
   {
@@ -2745,6 +4486,18 @@
     "note": "Магазин, где продают фрукты и овощи.",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μανάβικο"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "φρουταρία"
+      }
     ]
   },
   {
@@ -2756,6 +4509,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λαχανικό",
+        "plural": "λαχανικά"
+      }
     ]
   },
   {
@@ -2767,6 +4528,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μήλο",
+        "plural": "μήλα"
+      }
     ]
   },
   {
@@ -2778,6 +4547,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αχλάδι",
+        "plural": "αχλάδια"
+      }
     ]
   },
   {
@@ -2789,6 +4566,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μανταρίνι",
+        "plural": "μανταρίνια"
+      }
     ]
   },
   {
@@ -2801,6 +4586,14 @@
     "note": "Для кислой вишни обычно используется το βύσσινο.",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κεράσι",
+        "plural": "κεράσια"
+      }
     ]
   },
   {
@@ -2812,6 +4605,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σταφύλι",
+        "plural": "σταφύλια"
+      }
     ]
   },
   {
@@ -2823,6 +4624,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βερίκοκο",
+        "plural": "βερίκοκα"
+      }
     ]
   },
   {
@@ -2834,6 +4643,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ροδάκινο",
+        "plural": "ροδάκινα"
+      }
     ]
   },
   {
@@ -2845,6 +4662,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πεπόνι",
+        "plural": "πεπόνια"
+      }
     ]
   },
   {
@@ -2856,6 +4681,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ντομάτα",
+        "plural": "ντομάτες"
+      }
     ]
   },
   {
@@ -2867,6 +4700,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αγγούρι",
+        "plural": "αγγούρια"
+      }
     ]
   },
   {
@@ -2878,6 +4719,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κρεμμύδι",
+        "plural": "κρεμμύδια"
+      }
     ]
   },
   {
@@ -2890,6 +4739,14 @@
     "note": "Не путать с το πιπέρι — молотый перец, приправа.",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πιπεριά",
+        "plural": "πιπεριές"
+      }
     ]
   },
   {
@@ -2901,6 +4758,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μαρούλι",
+        "plural": "μαρούλια"
+      }
     ]
   },
   {
@@ -2912,6 +4777,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λάχανο",
+        "plural": "λάχανα"
+      }
     ]
   },
   {
@@ -2923,6 +4796,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καρότο",
+        "plural": "καρότα"
+      }
     ]
   },
   {
@@ -2934,6 +4815,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πατάτα",
+        "plural": "πατάτες"
+      }
     ]
   },
   {
@@ -2946,6 +4835,14 @@
     "note": "Также встречается написание αβγό / αβγά.",
     "collectionIds": [
       "food-dairy"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αυγό",
+        "plural": "αυγά"
+      }
     ]
   },
   {
@@ -2957,6 +4854,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-dairy"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βούτυρο"
+      }
     ]
   },
   {
@@ -2968,6 +4872,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αλεύρι"
+      }
     ]
   },
   {
@@ -2979,6 +4890,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ζάχαρη"
+      }
     ]
   },
   {
@@ -2990,6 +4908,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αλάτι"
+      }
     ]
   },
   {
@@ -3002,6 +4927,13 @@
     "note": "Не путать с η πιπεριά — перец как овощ.",
     "collectionIds": [
       "food-vegetables"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πιπέρι"
+      }
     ]
   },
   {
@@ -3014,6 +4946,14 @@
     "note": "Название блюда обычно употребляется во множественном числе: τα μακαρόνια.",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μακαρόνι",
+        "plural": "μακαρόνια"
+      }
     ]
   },
   {
@@ -3025,6 +4965,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ρύζι"
+      }
     ]
   },
   {
@@ -3037,6 +4984,14 @@
     "note": "Как продукт обычно употребляется во множественном числе: οι φακές.",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φακή",
+        "plural": "φακές"
+      }
     ]
   },
   {
@@ -3048,6 +5003,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φασόλι",
+        "plural": "φασόλια"
+      }
     ]
   },
   {
@@ -3059,6 +5022,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λάδι"
+      }
     ]
   },
   {
@@ -3071,6 +5041,18 @@
     "note": "Оба написания нормативны.",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ξίδι"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "ξύδι"
+      }
     ]
   },
   {
@@ -3082,6 +5064,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σαλάμι",
+        "plural": "σαλάμια"
+      }
     ]
   },
   {
@@ -3093,6 +5083,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κρέας",
+        "plural": "κρέατα"
+      }
     ]
   },
   {
@@ -3104,6 +5102,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χοιρινό"
+      }
     ]
   },
   {
@@ -3116,6 +5121,18 @@
     "note": "μοσχαρίσιος / μοσχαρίσια / μοσχαρίσιο — говяжий, телячий. Το μοσχάρι также означает телёнка; о продукте — говядина / телятина.",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μοσχαρίσιο κρέας"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "μοσχάρι"
+      }
     ]
   },
   {
@@ -3127,6 +5144,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "κιμάς"
+      }
     ]
   },
   {
@@ -3138,6 +5162,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κοτόπουλο",
+        "plural": "κοτόπουλα"
+      }
     ]
   },
   {
@@ -3149,6 +5181,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σούπερ μάρκετ",
+        "plural": "σούπερ μάρκετ"
+      }
     ]
   },
   {
@@ -3173,6 +5213,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κυδώνι",
+        "plural": "κυδώνια"
+      }
     ]
   },
   {
@@ -3184,6 +5232,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ανανάς",
+        "plural": "ανανάδες"
+      }
     ]
   },
   {
@@ -3195,6 +5251,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μπανάνα",
+        "plural": "μπανάνες"
+      }
     ]
   },
   {
@@ -3206,6 +5270,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "περγαμόντο",
+        "plural": "περγαμόντα"
+      }
     ]
   },
   {
@@ -3217,6 +5289,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βύσσινο",
+        "plural": "βύσσινα"
+      }
     ]
   },
   {
@@ -3228,6 +5308,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ρόδι",
+        "plural": "ρόδια"
+      }
     ]
   },
   {
@@ -3239,6 +5327,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γκρέιπφρουτ",
+        "plural": "γκρέιπφρουτ"
+      }
     ]
   },
   {
@@ -3250,6 +5346,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βατόμουρο",
+        "plural": "βατόμουρα"
+      }
     ]
   },
   {
@@ -3261,6 +5365,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σύκο",
+        "plural": "σύκα"
+      }
     ]
   },
   {
@@ -3272,6 +5384,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ακτινίδιο",
+        "plural": "ακτινίδια"
+      }
     ]
   },
   {
@@ -3283,6 +5403,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κουμκουάτ",
+        "plural": "κουμκουάτ"
+      }
     ]
   },
   {
@@ -3294,6 +5422,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λεμόνι",
+        "plural": "λεμόνια"
+      }
     ]
   },
   {
@@ -3305,6 +5441,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μάνγκο",
+        "plural": "μάνγκο"
+      }
     ]
   },
   {
@@ -3316,6 +5460,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μούσμουλο",
+        "plural": "μούσμουλα"
+      }
     ]
   },
   {
@@ -3327,6 +5479,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "νεκταρίνι",
+        "plural": "νεκταρίνια"
+      }
     ]
   },
   {
@@ -3338,6 +5498,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "παπάγια",
+        "plural": "παπάγιες"
+      }
     ]
   },
   {
@@ -3349,6 +5517,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δαμάσκηνο",
+        "plural": "δαμάσκηνα"
+      }
     ]
   },
   {
@@ -3360,6 +5536,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "χουρμάς",
+        "plural": "χουρμάδες"
+      }
     ]
   },
   {
@@ -3371,6 +5555,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "λωτός",
+        "plural": "λωτοί"
+      }
     ]
   },
   {
@@ -3382,6 +5574,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-fruit"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "εσπεριδοειδές",
+        "plural": "εσπεριδοειδή"
+      }
     ]
   },
   {
@@ -3394,6 +5594,14 @@
     "note": "Связано с ρωτάω / ρωτώ — спрашивать.",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ερώτηση",
+        "plural": "ερωτήσεις"
+      }
     ]
   },
   {
@@ -3406,6 +5614,14 @@
     "note": "Связано с απαντάω / απαντώ — отвечать.",
     "collectionIds": [
       "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "απάντηση",
+        "plural": "απαντήσεις"
+      }
     ]
   },
   {
@@ -3429,6 +5645,14 @@
     "note": "Связано с παίζω — играть.",
     "collectionIds": [
       "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παιχνίδι",
+        "plural": "παιχνίδια"
+      }
     ]
   },
   {
@@ -3440,6 +5664,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μαμά",
+        "plural": "μαμάδες"
+      }
     ]
   },
   {
@@ -3451,6 +5683,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χωριάτικο ψωμί"
+      }
     ]
   },
   {
@@ -3463,6 +5702,14 @@
     "note": "Уменьшительная форма от το κουλούρι.",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κουλουράκι",
+        "plural": "κουλουράκια"
+      }
     ]
   },
   {
@@ -3474,6 +5721,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τσουρέκι",
+        "plural": "τσουρέκια"
+      }
     ]
   },
   {
@@ -3486,6 +5741,14 @@
     "note": "Заимствованное слово, форма множественного числа не изменяется.",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κέικ",
+        "plural": "κέικ"
+      }
     ]
   },
   {
@@ -3497,6 +5760,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-bakery"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τούρτα",
+        "plural": "τούρτες"
+      }
     ]
   },
   {
@@ -3509,6 +5780,14 @@
     "note": "Например: ένα πακέτο χαρτομάντιλα — пачка бумажных платков.",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πακέτο",
+        "plural": "πακέτα"
+      }
     ]
   },
   {
@@ -3520,6 +5799,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "χυμός",
+        "plural": "χυμοί"
+      }
     ]
   },
   {
@@ -3532,6 +5819,13 @@
     "note": "Значение определяется контекстом; как товар в киоске — табак.",
     "collectionIds": [
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "καπνός"
+      }
     ]
   },
   {
@@ -3543,6 +5837,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κόκα κόλα"
+      }
     ]
   },
   {
@@ -3554,6 +5855,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ελληνικός καφές"
+      }
     ]
   },
   {
@@ -3565,6 +5873,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φραπές"
+      }
     ]
   },
   {
@@ -3576,6 +5891,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "καπουτσίνο"
+      }
     ]
   },
   {
@@ -3588,6 +5910,18 @@
     "note": "Оба порядка слов встречаются в заказах.",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φρέντο καπουτσίνο"
+      },
+      {
+        "key": "variant-2",
+        "gender": "masculine",
+        "singular": "καπουτσίνο φρέντο"
+      }
     ]
   },
   {
@@ -3600,6 +5934,18 @@
     "note": "Оба порядка слов встречаются в заказах.",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φρέντο εσπρέσο"
+      },
+      {
+        "key": "variant-2",
+        "gender": "masculine",
+        "singular": "εσπρέσο φρέντο"
+      }
     ]
   },
   {
@@ -3611,6 +5957,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τσάι"
+      }
     ]
   },
   {
@@ -3622,6 +5975,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-coffee"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "στέβια"
+      }
     ]
   },
   {
@@ -3634,6 +5994,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "συνέχεια"
+      }
     ]
   },
   {
@@ -3646,6 +6013,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "απόδειξη",
+        "plural": "αποδείξεις"
+      }
     ]
   },
   {
@@ -3659,6 +6034,14 @@
     "collectionIds": [
       "home-cleaning",
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μωρομάντιλο",
+        "plural": "μωρομάντιλα"
+      }
     ]
   },
   {
@@ -3683,6 +6066,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "παραγγελία",
+        "plural": "παραγγελίες"
+      }
     ]
   },
   {
@@ -3695,6 +6086,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πώληση",
+        "plural": "πωλήσεις"
+      }
     ]
   },
   {
@@ -3707,6 +6106,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πόλη",
+        "plural": "πόλεις"
+      }
     ]
   },
   {
@@ -3719,6 +6126,22 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "πολίτης",
+        "plural": "πολίτες",
+        "genitiveSingular": "πολίτη",
+        "genitivePlural": "πολιτών"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "πολίτιδα",
+        "plural": "πολίτιδες"
+      }
     ]
   },
   {
@@ -3755,6 +6178,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "Ζαχαρίας"
+      }
     ]
   },
   {
@@ -3766,6 +6196,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ζυγαριά",
+        "plural": "ζυγαριές"
+      }
     ]
   },
   {
@@ -3778,6 +6216,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σακούλα",
+        "plural": "σακούλες"
+      }
     ]
   },
   {
@@ -3790,6 +6236,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-cleaning"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σκόνη"
+      }
     ]
   },
   {
@@ -3802,6 +6255,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-cleaning"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σκούπα",
+        "plural": "σκούπες"
+      }
     ]
   },
   {
@@ -3813,6 +6274,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δωμάτιο",
+        "plural": "δωμάτια"
+      }
     ]
   },
   {
@@ -3824,6 +6293,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-cleaning"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τζάμι",
+        "plural": "τζάμια"
+      }
     ]
   },
   {
@@ -3835,6 +6312,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κρεβάτι",
+        "plural": "κρεβάτια"
+      }
     ]
   },
   {
@@ -3846,6 +6331,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ελπίδα",
+        "plural": "ελπίδες"
+      }
     ]
   },
   {
@@ -3858,6 +6351,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-cleaning"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φροντίδα"
+      }
     ]
   },
   {
@@ -3870,6 +6370,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μητέρα",
+        "plural": "μητέρες",
+        "genitiveSingular": "μητέρας",
+        "genitivePlural": "μητέρων"
+      }
     ]
   },
   {
@@ -3881,6 +6391,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-meat"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μπριζόλα",
+        "plural": "μπριζόλες"
+      }
     ]
   },
   {
@@ -3904,6 +6422,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "διάδρομος",
+        "plural": "διάδρομοι"
+      }
     ]
   },
   {
@@ -3916,6 +6442,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ελιά",
+        "plural": "ελιές"
+      }
     ]
   },
   {
@@ -3928,6 +6462,13 @@
     "collectionIds": [
       "home-cleaning",
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "οδοντόκρεμα"
+      }
     ]
   },
   {
@@ -3941,6 +6482,14 @@
     "collectionIds": [
       "home-cleaning",
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σαμπουάν",
+        "plural": "σαμπουάν"
+      }
     ]
   },
   {
@@ -3953,6 +6502,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-appearance"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "μαλλιά"
+      }
     ]
   },
   {
@@ -3965,6 +6521,13 @@
     "collectionIds": [
       "home-cleaning",
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χαρτί υγείας"
+      }
     ]
   },
   {
@@ -3978,6 +6541,14 @@
     "collectionIds": [
       "home-cleaning",
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "απορρυπαντικό",
+        "plural": "απορρυπαντικά"
+      }
     ]
   },
   {
@@ -3990,6 +6561,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "ρούχα"
+      }
     ]
   },
   {
@@ -4002,6 +6580,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τοστ",
+        "plural": "τοστ"
+      }
     ]
   },
   {
@@ -4013,6 +6599,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τοστιέρα",
+        "plural": "τοστιέρες"
+      }
     ]
   },
   {
@@ -4024,6 +6618,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-animals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ζώο",
+        "plural": "ζώα"
+      }
     ]
   },
   {
@@ -4036,6 +6638,24 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-animals"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "γάτος"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "γάτα"
+      },
+      {
+        "key": "variant-3",
+        "gender": "neuter",
+        "singular": "γατί",
+        "plural": "γατιά"
+      }
     ]
   },
   {
@@ -4047,6 +6667,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πολυκατοικία",
+        "plural": "πολυκατοικίες"
+      }
     ]
   },
   {
@@ -4058,6 +6686,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κατοικία",
+        "plural": "κατοικίες"
+      }
     ]
   },
   {
@@ -4070,6 +6706,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "όροφος",
+        "plural": "όροφοι"
+      }
     ]
   },
   {
@@ -4082,6 +6726,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ντουλάπι",
+        "plural": "ντουλάπια",
+        "genitiveSingular": "ντουλαπιού",
+        "genitivePlural": "ντουλαπιών"
+      }
     ]
   },
   {
@@ -4093,6 +6747,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μωρό",
+        "plural": "μωρά"
+      }
     ]
   },
   {
@@ -4129,6 +6791,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Λευκορωσία"
+      }
     ]
   },
   {
@@ -4141,6 +6810,18 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μαγαζί"
+      },
+      {
+        "key": "variant-2",
+        "gender": "neuter",
+        "singular": "κατάστημα"
+      }
     ]
   },
   {
@@ -4164,6 +6845,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γνώμη",
+        "plural": "γνώμες"
+      }
     ]
   },
   {
@@ -4175,6 +6864,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φωτογραφική μηχανή",
+        "plural": "φωτογραφικές μηχανές"
+      }
     ]
   },
   {
@@ -4199,6 +6896,16 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παντελόνι",
+        "plural": "παντελόνια",
+        "genitiveSingular": "παντελονιού",
+        "genitivePlural": "παντελονιών"
+      }
     ]
   },
   {
@@ -4223,6 +6930,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βάθος",
+        "plural": "βάθη"
+      }
     ]
   },
   {
@@ -4234,6 +6949,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "αθλητικό παπούτσι",
+        "plural": "αθλητικά παπούτσια"
+      }
     ]
   },
   {
@@ -4246,6 +6969,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φανέλα",
+        "plural": "φανέλες"
+      }
     ]
   },
   {
@@ -4257,6 +6988,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "σκούφος",
+        "plural": "σκούφοι"
+      }
     ]
   },
   {
@@ -4268,6 +7007,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γόβα",
+        "plural": "γόβες"
+      }
     ]
   },
   {
@@ -4279,6 +7026,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καπέλο",
+        "plural": "καπέλα"
+      }
     ]
   },
   {
@@ -4291,6 +7046,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "city-money"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κάρτα",
+        "plural": "κάρτες"
+      }
     ]
   },
   {
@@ -4304,6 +7067,14 @@
     "collectionIds": [
       "clothes-wear",
       "other-quantity"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "νούμερο",
+        "plural": "νούμερα"
+      }
     ]
   },
   {
@@ -4316,6 +7087,16 @@
     "collectionIds": [
       "clothes-wear",
       "other-colors"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χρώμα",
+        "plural": "χρώματα",
+        "genitiveSingular": "χρώματος",
+        "genitivePlural": "χρωμάτων"
+      }
     ]
   },
   {
@@ -4329,6 +7110,14 @@
     "collectionIds": [
       "clothes-shoes",
       "other-quantity"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ζευγάρι",
+        "plural": "ζευγάρια"
+      }
     ]
   },
   {
@@ -4340,6 +7129,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "βαλίτσα",
+        "plural": "βαλίτσες"
+      }
     ]
   },
   {
@@ -4398,6 +7195,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κοπέλα",
+        "plural": "κοπέλες"
+      }
     ]
   },
   {
@@ -4411,6 +7216,13 @@
     "collectionIds": [
       "clothes-shoes",
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "γυαλιά"
+      }
     ]
   },
   {
@@ -4424,6 +7236,13 @@
     "collectionIds": [
       "clothes-shoes",
       "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "γυαλιά ηλίου"
+      }
     ]
   },
   {
@@ -4435,6 +7254,13 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ήλιος"
+      }
     ]
   },
   {
@@ -4446,6 +7272,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "nature-weather"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δάσος",
+        "plural": "δάση"
+      }
     ]
   },
   {
@@ -4457,6 +7291,14 @@
     "partOfSpeech": "noun",
     "collectionIds": [
       "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λάθος",
+        "plural": "λάθη"
+      }
     ]
   },
   {
@@ -4478,7 +7320,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μπλούζα",
+        "plural": "μπλούζες"
+      }
+    ]
   },
   {
     "id": "word-2026100502",
@@ -4487,7 +7339,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σακάκι",
+        "plural": "σακάκια"
+      }
+    ]
   },
   {
     "id": "word-2026100503",
@@ -4496,7 +7358,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γραβάτα",
+        "plural": "γραβάτες"
+      }
+    ]
   },
   {
     "id": "word-2026100504",
@@ -4505,7 +7377,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κοστούμι",
+        "plural": "κοστούμια"
+      }
+    ]
   },
   {
     "id": "word-2026100505",
@@ -4515,7 +7397,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πουλόβερ",
+        "plural": "πουλόβερ"
+      }
+    ]
   },
   {
     "id": "word-2026100506",
@@ -4524,7 +7416,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φανελάκι",
+        "plural": "φανελάκια"
+      }
+    ]
   },
   {
     "id": "word-2026100507",
@@ -4533,7 +7435,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "εσώρουχο",
+        "plural": "εσώρουχα"
+      }
+    ]
   },
   {
     "id": "word-2026100508",
@@ -4542,7 +7454,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φόρεμα",
+        "plural": "φορέματα"
+      }
+    ]
   },
   {
     "id": "word-2026100509",
@@ -4551,7 +7473,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "φούστα",
+        "plural": "φούστες"
+      }
+    ]
   },
   {
     "id": "word-2026100510",
@@ -4561,7 +7493,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σορτς",
+        "plural": "σορτς"
+      }
+    ]
   },
   {
     "id": "word-2026100511",
@@ -4570,7 +7512,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παλτό",
+        "plural": "παλτά"
+      }
+    ]
   },
   {
     "id": "word-2026100512",
@@ -4580,7 +7532,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κασκόλ",
+        "plural": "κασκόλ"
+      }
+    ]
   },
   {
     "id": "word-2026100513",
@@ -4590,7 +7552,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-wear"]
+    "collectionIds": [
+      "clothes-wear"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καλσόν",
+        "plural": "καλσόν"
+      }
+    ]
   },
   {
     "id": "word-2026100514",
@@ -4599,7 +7571,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-shoes"]
+    "collectionIds": [
+      "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παπούτσι",
+        "plural": "παπούτσια"
+      }
+    ]
   },
   {
     "id": "word-2026100515",
@@ -4608,7 +7590,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-shoes"]
+    "collectionIds": [
+      "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μπότα",
+        "plural": "μπότες"
+      }
+    ]
   },
   {
     "id": "word-2026100516",
@@ -4617,7 +7609,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-shoes"]
+    "collectionIds": [
+      "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "παντόφλα",
+        "plural": "παντόφλες"
+      }
+    ]
   },
   {
     "id": "word-2026100517",
@@ -4626,7 +7628,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-shoes"]
+    "collectionIds": [
+      "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πέδιλο",
+        "plural": "πέδιλα"
+      }
+    ]
   },
   {
     "id": "word-2026100518",
@@ -4635,7 +7647,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-shoes"]
+    "collectionIds": [
+      "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κάλτσα",
+        "plural": "κάλτσες"
+      }
+    ]
   },
   {
     "id": "word-2026100519",
@@ -4644,7 +7666,17 @@
     "new": true,
     "topic": "clothes",
     "partOfSpeech": "noun",
-    "collectionIds": ["clothes-shoes"]
+    "collectionIds": [
+      "clothes-shoes"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γάντι",
+        "plural": "γάντια"
+      }
+    ]
   },
   {
     "id": "word-2026100520",
@@ -4654,7 +7686,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100521",
@@ -4663,7 +7697,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100522",
@@ -4672,7 +7708,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100523",
@@ -4681,7 +7719,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100524",
@@ -4690,7 +7730,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100525",
@@ -4700,7 +7742,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100526",
@@ -4710,7 +7754,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100527",
@@ -4720,7 +7766,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100528",
@@ -4730,7 +7778,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100529",
@@ -4740,7 +7790,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100530",
@@ -4750,7 +7802,9 @@
     "new": true,
     "topic": "other",
     "partOfSpeech": "adjective",
-    "collectionIds": ["other-colors"]
+    "collectionIds": [
+      "other-colors"
+    ]
   },
   {
     "id": "word-2026100901",
@@ -4763,7 +7817,15 @@
       "city-shops"
     ],
     "new": true,
-    "note": "Έκπτωση είκοσι τοις εκατό — скидка двадцать процентов."
+    "note": "Έκπτωση είκοσι τοις εκατό — скидка двадцать процентов.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "έκπτωση",
+        "plural": "εκπτώσεις"
+      }
+    ]
   },
   {
     "id": "word-2026100902",
@@ -4775,7 +7837,15 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Τα ηλεκτρικά είδη — электротовары; конкретная вещь — το πράγμα."
+    "note": "Τα ηλεκτρικά είδη — электротовары; конкретная вещь — το πράγμα.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "είδος",
+        "plural": "είδη"
+      }
+    ]
   },
   {
     "id": "word-2026100903",
@@ -4788,7 +7858,14 @@
       "city-shops"
     ],
     "new": true,
-    "note": "Устойчивое сочетание; единственное: το ηλεκτρικό είδος."
+    "note": "Устойчивое сочетание; единственное: το ηλεκτρικό είδος.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "ηλεκτρικά είδη"
+      }
+    ]
   },
   {
     "id": "word-2026100904",
@@ -4800,7 +7877,15 @@
       "transport-places"
     ],
     "new": true,
-    "note": "Το δημαρχείο — здание муниципальной администрации."
+    "note": "Το δημαρχείο — здание муниципальной администрации.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "δήμος",
+        "plural": "δήμοι"
+      }
+    ]
   },
   {
     "id": "word-2026100905",
@@ -4811,7 +7896,15 @@
     "collectionIds": [
       "transport-places"
     ],
-    "new": true
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δημαρχείο",
+        "plural": "δημαρχεία"
+      }
+    ]
   },
   {
     "id": "word-2026100906",
@@ -4836,7 +7929,15 @@
       "transport-vehicles"
     ],
     "new": true,
-    "note": "Το μεταφορικό μέσο — средство передвижения; μέσα — внутри, μέσω — посредством."
+    "note": "Το μεταφορικό μέσο — средство передвижения; μέσα — внутри, μέσω — посредством.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μέσο",
+        "plural": "μέσα"
+      }
+    ]
   },
   {
     "id": "word-2026100908",
@@ -4848,7 +7949,15 @@
       "transport-vehicles"
     ],
     "new": true,
-    "note": "Τα μέσα μεταφοράς — транспортные средства; слово также означает метафору."
+    "note": "Τα μέσα μεταφοράς — транспортные средства; слово также означает метафору.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μεταφορά",
+        "plural": "μεταφορές"
+      }
+    ]
   },
   {
     "id": "word-2026100909",
@@ -4859,7 +7968,15 @@
     "collectionIds": [
       "transport-vehicles"
     ],
-    "new": true
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μετακίνηση",
+        "plural": "μετακινήσεις"
+      }
+    ]
   },
   {
     "id": "word-2026100910",
@@ -4871,7 +7988,15 @@
       "transport-places"
     ],
     "new": true,
-    "note": "Связано с ο προαστιακός — пригородный поезд."
+    "note": "Связано с ο προαστιακός — пригородный поезд.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "προάστιο",
+        "plural": "προάστια"
+      }
+    ]
   },
   {
     "id": "word-2026100911",
@@ -4883,7 +8008,14 @@
       "time-calendar"
     ],
     "new": true,
-    "note": "Употребляется во множественном числе: τα μεσάνυχτα — в полночь."
+    "note": "Употребляется во множественном числе: τα μεσάνυχτα — в полночь.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "μεσάνυχτα"
+      }
+    ]
   },
   {
     "id": "word-2026100912",
@@ -4931,7 +8063,15 @@
       "education-study"
     ],
     "new": true,
-    "note": "Ερευνώ — исследовать; в контексте опроса изучают мнения или привычки."
+    "note": "Ερευνώ — исследовать; в контексте опроса изучают мнения или привычки.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "έρευνα",
+        "plural": "έρευνες"
+      }
+    ]
   },
   {
     "id": "word-2026100916",
@@ -4943,7 +8083,14 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Ξεκουράζομαι — отдыхаю; ξεκουράζω — помогаю кому-либо отдохнуть."
+    "note": "Ξεκουράζομαι — отдыхаю; ξεκουράζω — помогаю кому-либо отдохнуть.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ξεκούραση"
+      }
+    ]
   },
   {
     "id": "word-2026100917",
@@ -4955,7 +8102,14 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Κουράζομαι — устаю; κουράζω — утомляю."
+    "note": "Κουράζομαι — устаю; κουράζω — утомляю.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κούραση"
+      }
+    ]
   },
   {
     "id": "word-2026100918",
@@ -4967,7 +8121,15 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Σκέφτομαι — думать."
+    "note": "Σκέφτομαι — думать.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σκέψη",
+        "plural": "σκέψεις"
+      }
+    ]
   },
   {
     "id": "word-2026100919",
@@ -4979,7 +8141,15 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Ενδιαφέρομαι για — интересоваться чем-либо."
+    "note": "Ενδιαφέρομαι για — интересоваться чем-либо.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ενδιαφέρον",
+        "plural": "ενδιαφέροντα"
+      }
+    ]
   },
   {
     "id": "word-2026100920",
@@ -4991,7 +8161,15 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Φοβάμαι — бояться."
+    "note": "Φοβάμαι — бояться.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "φόβος",
+        "plural": "φόβοι"
+      }
+    ]
   },
   {
     "id": "word-2026100921",
@@ -5003,7 +8181,14 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Χαίρομαι — радоваться."
+    "note": "Χαίρομαι — радоваться.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "χαρά"
+      }
+    ]
   },
   {
     "id": "word-2026100922",
@@ -5015,7 +8200,14 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Λυπάμαι — сожалеть / грустить."
+    "note": "Λυπάμαι — сожалеть / грустить.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "λύπη"
+      }
+    ]
   },
   {
     "id": "word-2026100923",
@@ -5027,7 +8219,15 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Ετοιμάζομαι — готовиться."
+    "note": "Ετοιμάζομαι — готовиться.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ετοιμασία",
+        "plural": "ετοιμασίες"
+      }
+    ]
   },
   {
     "id": "word-2026100924",
@@ -5039,6 +8239,1416 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Αισθάνομαι — чувствовать."
+    "note": "Αισθάνομαι — чувствовать.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αίσθηση",
+        "plural": "αισθήσεις"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102601",
+    "greek": "η κόρη / οι κόρες",
+    "russian": "дочь / дочери",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κόρη",
+        "plural": "κόρες",
+        "genitiveSingular": "κόρης",
+        "genitivePlural": "κορών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102602",
+    "greek": "το μάθημα / τα μαθήματα",
+    "russian": "урок / занятие; уроки / занятия",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μάθημα",
+        "plural": "μαθήματα",
+        "genitiveSingular": "μαθήματος",
+        "genitivePlural": "μαθημάτων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102603",
+    "greek": "η κουζίνα / οι κουζίνες",
+    "russian": "кухня / кухни",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κουζίνα",
+        "plural": "κουζίνες",
+        "genitiveSingular": "κουζίνας",
+        "genitivePlural": "κουζινών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102604",
+    "greek": "η κουρτίνα / οι κουρτίνες",
+    "russian": "штора / шторы",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κουρτίνα",
+        "plural": "κουρτίνες",
+        "genitiveSingular": "κουρτίνας",
+        "genitivePlural": "κουρτινών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102605",
+    "greek": "η πληροφορική",
+    "russian": "информатика / информационные технологии",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study",
+      "objects-technology"
+    ],
+    "new": true,
+    "note": "Η εταιρία πληροφορικής — IT-компания; информационные технологии.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πληροφορική",
+        "genitiveSingular": "πληροφορικής"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102606",
+    "greek": "το μέλος / τα μέλη",
+    "russian": "член / участник; члены / участники",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "note": "Τα μέλη της οικογένειας — члены семьи. Средний род на -ος: μέλος → μέλους → μελών.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μέλος",
+        "plural": "μέλη",
+        "genitiveSingular": "μέλους",
+        "genitivePlural": "μελών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102607",
+    "greek": "η μητρική γλώσσα / οι μητρικές γλώσσες",
+    "russian": "родной язык / родные языки",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μητρική γλώσσα",
+        "plural": "μητρικές γλώσσες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102608",
+    "greek": "η σημαία / οι σημαίες",
+    "russian": "флаг / флаги",
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σημαία",
+        "plural": "σημαίες",
+        "genitiveSingular": "σημαίας",
+        "genitivePlural": "σημαιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102609",
+    "greek": "η γνώση / οι γνώσεις",
+    "russian": "знание / знания",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "note": "Γνωρίζω — знать / быть знакомым. Οι γνώσεις — знания.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γνώση",
+        "plural": "γνώσεις",
+        "genitiveSingular": "γνώσης",
+        "genitivePlural": "γνώσεων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102610",
+    "greek": "ο σπουδαστής / η σπουδάστρια / οι σπουδαστές / οι σπουδάστριες",
+    "russian": "учащийся / студент учебного заведения",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "note": "Учащийся учебного заведения; в вузе также φοιτητής. Женская форма: η σπουδάστρια.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "σπουδαστής",
+        "plural": "σπουδαστές",
+        "genitiveSingular": "σπουδαστή",
+        "genitivePlural": "σπουδαστών"
+      },
+      {
+        "key": "feminine",
+        "gender": "feminine",
+        "singular": "σπουδάστρια",
+        "plural": "σπουδάστριες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102611",
+    "greek": "το βραβείο / τα βραβεία",
+    "russian": "награда / премия; награды / премии",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "βραβείο",
+        "plural": "βραβεία",
+        "genitiveSingular": "βραβείου",
+        "genitivePlural": "βραβείων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102612",
+    "greek": "ο νικητής / οι νικητές",
+    "russian": "победитель / победители",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "νικητής",
+        "plural": "νικητές",
+        "genitiveSingular": "νικητή",
+        "genitivePlural": "νικητών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102613",
+    "greek": "η θέση / οι θέσεις",
+    "russian": "место / положение; места / положения",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "θέση",
+        "plural": "θέσεις",
+        "genitiveSingular": "θέσης",
+        "genitivePlural": "θέσεων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102615",
+    "greek": "ο επιβάτης / οι επιβάτες",
+    "russian": "пассажир / пассажиры",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-vehicles"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "επιβάτης",
+        "plural": "επιβάτες",
+        "genitiveSingular": "επιβάτη",
+        "genitivePlural": "επιβατών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102616",
+    "greek": "η νίκη / οι νίκες",
+    "russian": "победа / победы",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "νίκη",
+        "plural": "νίκες",
+        "genitiveSingular": "νίκης",
+        "genitivePlural": "νικών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102617",
+    "greek": "το μέγεθος / τα μεγέθη",
+    "russian": "размер / величина; размеры / величины",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-description"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μέγεθος",
+        "plural": "μεγέθη",
+        "genitiveSingular": "μεγέθους",
+        "genitivePlural": "μεγεθών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102618",
+    "greek": "η αποθήκη / οι αποθήκες",
+    "russian": "кладовая / склад; кладовые / склады",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αποθήκη",
+        "plural": "αποθήκες",
+        "genitiveSingular": "αποθήκης",
+        "genitivePlural": "αποθηκών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102619",
+    "greek": "η γεύση / οι γεύσεις",
+    "russian": "вкус / вкусы",
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meals"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γεύση",
+        "plural": "γεύσεις",
+        "genitiveSingular": "γεύσης",
+        "genitivePlural": "γεύσεων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102620",
+    "greek": "η γαρίδα / οι γαρίδες",
+    "russian": "креветка / креветки",
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-meat"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γαρίδα",
+        "plural": "γαρίδες",
+        "genitiveSingular": "γαρίδας",
+        "genitivePlural": "γαρίδων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102621",
+    "greek": "ο αφηγητής / οι αφηγητές",
+    "russian": "рассказчик / рассказчики",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αφηγητής",
+        "plural": "αφηγητές",
+        "genitiveSingular": "αφηγητή",
+        "genitivePlural": "αφηγητών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102622",
+    "greek": "η ιστορία / οι ιστορίες",
+    "russian": "история / рассказ; истории / рассказы",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ιστορία",
+        "plural": "ιστορίες",
+        "genitiveSingular": "ιστορίας",
+        "genitivePlural": "ιστοριών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102623",
+    "greek": "το κύμα / τα κύματα",
+    "russian": "волна / волны",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κύμα",
+        "plural": "κύματα",
+        "genitiveSingular": "κύματος",
+        "genitivePlural": "κυμάτων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102624",
+    "greek": "η εγγονή / οι εγγονές",
+    "russian": "внучка / внучки",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εγγονή",
+        "plural": "εγγονές",
+        "genitiveSingular": "εγγονής",
+        "genitivePlural": "εγγονών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102625",
+    "greek": "η σειρήνα / οι σειρήνες",
+    "russian": "сирена / сирены",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "note": "В примере «песня сирены» — мифологическое существо; другое значение — звуковая сирена / сигнализация.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σειρήνα",
+        "plural": "σειρήνες",
+        "genitiveSingular": "σειρήνας",
+        "genitivePlural": "σειρήνων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102626",
+    "greek": "ο τοίχος / οι τοίχοι",
+    "russian": "стена / стены",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "τοίχος",
+        "plural": "τοίχοι",
+        "genitiveSingular": "τοίχου",
+        "genitivePlural": "τοίχων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102627",
+    "greek": "η αίθουσα / οι αίθουσες",
+    "russian": "зал / аудитория; залы / аудитории",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αίθουσα",
+        "plural": "αίθουσες",
+        "genitiveSingular": "αίθουσας",
+        "genitivePlural": "αιθουσών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102628",
+    "greek": "το ύψος / τα ύψη",
+    "russian": "высота / рост; высоты",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-description"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ύψος",
+        "plural": "ύψη",
+        "genitiveSingular": "ύψους",
+        "genitivePlural": "υψών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102629",
+    "greek": "το δέντρο / τα δέντρα",
+    "russian": "дерево / деревья",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δέντρο",
+        "plural": "δέντρα",
+        "genitiveSingular": "δέντρου",
+        "genitivePlural": "δέντρων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102630",
+    "greek": "η σελίδα / οι σελίδες",
+    "russian": "страница / страницы",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σελίδα",
+        "plural": "σελίδες",
+        "genitiveSingular": "σελίδας",
+        "genitivePlural": "σελίδων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102631",
+    "greek": "το γέλιο / τα γέλια",
+    "russian": "смех",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γέλιο",
+        "plural": "γέλια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102632",
+    "greek": "η πόρτα / οι πόρτες",
+    "russian": "дверь / двери",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πόρτα",
+        "plural": "πόρτες",
+        "genitiveSingular": "πόρτας",
+        "genitivePlural": "πορτών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102633",
+    "greek": "το σχήμα / τα σχήματα",
+    "russian": "форма / фигура; формы / фигуры",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-description"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σχήμα",
+        "plural": "σχήματα",
+        "genitiveSingular": "σχήματος",
+        "genitivePlural": "σχημάτων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102634",
+    "greek": "το πρόσωπο / τα πρόσωπα",
+    "russian": "лицо / лица",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-appearance"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πρόσωπο",
+        "plural": "πρόσωπα",
+        "genitiveSingular": "προσώπου",
+        "genitivePlural": "προσώπων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102635",
+    "greek": "το παράθυρο / τα παράθυρα",
+    "russian": "окно / окна",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "note": "Родительный допускает варианты του παραθύρου / του παράθυρου; в игре на ударение эта вариативная форма не используется.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παράθυρο",
+        "plural": "παράθυρα"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102636",
+    "greek": "το σαλόνι / τα σαλόνια",
+    "russian": "гостиная / гостиные",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σαλόνι",
+        "plural": "σαλόνια",
+        "genitiveSingular": "σαλονιού",
+        "genitivePlural": "σαλονιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102637",
+    "greek": "ο άνθρωπος / οι άνθρωποι",
+    "russian": "человек / люди",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "άνθρωπος",
+        "plural": "άνθρωποι",
+        "genitiveSingular": "ανθρώπου",
+        "genitivePlural": "ανθρώπων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102638",
+    "greek": "η ζέστη",
+    "russian": "жара / тепло",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ζέστη",
+        "genitiveSingular": "ζέστης"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102639",
+    "greek": "το κρύο",
+    "russian": "холод",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κρύο",
+        "genitiveSingular": "κρύου"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102640",
+    "greek": "η ψύχρα",
+    "russian": "прохлада / зябкая погода",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ψύχρα",
+        "genitiveSingular": "ψύχρας"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102641",
+    "greek": "η δροσιά",
+    "russian": "прохлада / свежесть воздуха",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "δροσιά",
+        "genitiveSingular": "δροσιάς"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102642",
+    "greek": "ο αέρας / οι αέρηδες",
+    "russian": "воздух / ветер",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "note": "В погоде обычно единственное: έχει αέρα / φυσάει — ветрено. Οι αέρηδες — ветры.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αέρας",
+        "plural": "αέρηδες",
+        "genitiveSingular": "αέρα"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102643",
+    "greek": "η λιακάδα",
+    "russian": "солнечная погода",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "λιακάδα",
+        "genitiveSingular": "λιακάδας"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102644",
+    "greek": "η συννεφιά",
+    "russian": "облачность / пасмурная погода",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "συννεφιά",
+        "genitiveSingular": "συννεφιάς"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102645",
+    "greek": "η υγρασία",
+    "russian": "влажность",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "υγρασία",
+        "genitiveSingular": "υγρασίας"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102646",
+    "greek": "η παγωνιά",
+    "russian": "мороз / сильный холод",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "παγωνιά",
+        "genitiveSingular": "παγωνιάς"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102647",
+    "greek": "η θερμοκρασία / οι θερμοκρασίες",
+    "russian": "температура / температуры",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "θερμοκρασία",
+        "plural": "θερμοκρασίες",
+        "genitiveSingular": "θερμοκρασίας",
+        "genitivePlural": "θερμοκρασιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102648",
+    "greek": "ο βαθμός / οι βαθμοί",
+    "russian": "градус / степень; градусы / степени",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "βαθμός",
+        "plural": "βαθμοί",
+        "genitiveSingular": "βαθμού",
+        "genitivePlural": "βαθμών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102649",
+    "greek": "ο πατέρας / οι πατέρες",
+    "russian": "отец / отцы",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "note": "Также разговорное множественное οι πατεράδες; здесь приведена форма οι πατέρες.",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "πατέρας",
+        "plural": "πατέρες",
+        "genitiveSingular": "πατέρα",
+        "genitivePlural": "πατέρων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102650",
+    "greek": "η γυναίκα / οι γυναίκες",
+    "russian": "женщина / жена; женщины / жёны",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γυναίκα",
+        "plural": "γυναίκες",
+        "genitiveSingular": "γυναίκας",
+        "genitivePlural": "γυναικών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102651",
+    "greek": "ο άντρας / οι άντρες",
+    "russian": "мужчина / муж; мужчины / мужья",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "άντρας",
+        "plural": "άντρες",
+        "genitiveSingular": "άντρα",
+        "genitivePlural": "αντρών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102652",
+    "greek": "η βιβλιοθήκη / οι βιβλιοθήκες",
+    "russian": "библиотека / книжный шкаф; библиотеки / книжные шкафы",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study",
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "βιβλιοθήκη",
+        "plural": "βιβλιοθήκες",
+        "genitiveSingular": "βιβλιοθήκης",
+        "genitivePlural": "βιβλιοθηκών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102653",
+    "greek": "η τέχνη / οι τέχνες",
+    "russian": "искусство / искусства",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "τέχνη",
+        "plural": "τέχνες",
+        "genitiveSingular": "τέχνης",
+        "genitivePlural": "τεχνών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102654",
+    "greek": "η ομάδα / οι ομάδες",
+    "russian": "группа / команда; группы / команды",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ομάδα",
+        "plural": "ομάδες",
+        "genitiveSingular": "ομάδας",
+        "genitivePlural": "ομάδων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102655",
+    "greek": "η εικόνα / οι εικόνες",
+    "russian": "изображение / картина; изображения / картины",
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εικόνα",
+        "plural": "εικόνες",
+        "genitiveSingular": "εικόνας",
+        "genitivePlural": "εικόνων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102656",
+    "greek": "το άλογο / τα άλογα",
+    "russian": "лошадь / лошади",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-animals"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "άλογο",
+        "plural": "άλογα",
+        "genitiveSingular": "αλόγου",
+        "genitivePlural": "αλόγων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102657",
+    "greek": "το έπιπλο / τα έπιπλα",
+    "russian": "предмет мебели / мебель",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "έπιπλο",
+        "plural": "έπιπλα",
+        "genitiveSingular": "επίπλου",
+        "genitivePlural": "επίπλων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102658",
+    "greek": "το θέατρο / τα θέατρα",
+    "russian": "театр / театры",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places",
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "θέατρο",
+        "plural": "θέατρα",
+        "genitiveSingular": "θεάτρου",
+        "genitivePlural": "θεάτρων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102659",
+    "greek": "το σίδερο / τα σίδερα",
+    "russian": "утюг / железо; утюги / железные предметы",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σίδερο",
+        "plural": "σίδερα",
+        "genitiveSingular": "σίδερου",
+        "genitivePlural": "σίδερων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102660",
+    "greek": "το δάχτυλο / τα δάχτυλα",
+    "russian": "палец / пальцы",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-appearance"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δάχτυλο",
+        "plural": "δάχτυλα",
+        "genitiveSingular": "δάχτυλου",
+        "genitivePlural": "δάχτυλων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102661",
+    "greek": "το σύννεφο / τα σύννεφα",
+    "russian": "облако / облака",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σύννεφο",
+        "plural": "σύννεφα",
+        "genitiveSingular": "σύννεφου",
+        "genitivePlural": "σύννεφων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102662",
+    "greek": "το τριαντάφυλλο / τα τριαντάφυλλα",
+    "russian": "роза / розы",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τριαντάφυλλο",
+        "plural": "τριαντάφυλλα",
+        "genitiveSingular": "τριαντάφυλλου",
+        "genitivePlural": "τριαντάφυλλων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102663",
+    "greek": "ο αντίλαλος / οι αντίλαλοι",
+    "russian": "эхо",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "αντίλαλος",
+        "plural": "αντίλαλοι",
+        "genitiveSingular": "αντίλαλου",
+        "genitivePlural": "αντίλαλων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102664",
+    "greek": "ο ανήφορος / οι ανήφοροι",
+    "russian": "подъём / дорога в гору",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ανήφορος",
+        "plural": "ανήφοροι",
+        "genitiveSingular": "ανήφορου",
+        "genitivePlural": "ανήφορων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102665",
+    "greek": "το παραμύθι / τα παραμύθια",
+    "russian": "сказка / сказки",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "παραμύθι",
+        "plural": "παραμύθια",
+        "genitiveSingular": "παραμυθιού",
+        "genitivePlural": "παραμυθιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102666",
+    "greek": "η κιμωλία / οι κιμωλίες",
+    "russian": "мел / кусочки мела",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κιμωλία",
+        "plural": "κιμωλίες",
+        "genitiveSingular": "κιμωλίας",
+        "genitivePlural": "κιμωλιών"
+      }
+    ]
+  },
+  {
+    "id": "word-20261026-local",
+    "greek": "ντόπιος / ντόπια / ντόπιο",
+    "russian": "местный / местная / местное",
+    "topic": "people",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "people-appearance",
+      "other-description"
+    ],
+    "note": "Με ντόπιους — с местными жителями; прилагательное может употребляться как существительное.",
+    "new": true
+  },
+  {
+    "id": "word-20261026-child-adj",
+    "greek": "παιδικός / παιδική / παιδικό",
+    "russian": "детский / детская / детское",
+    "topic": "people",
+    "partOfSpeech": "adjective",
+    "collectionIds": ["people-family", "other-description"],
+    "note": "Το παιδικό δωμάτιο — детская комната; το δωμάτιο του παιδιού — комната ребёнка. Παιδί → παιδικός.",
+    "new": true
+  },
+  {
+    "id": "word-20261026-name",
+    "greek": "το όνομα / τα ονόματα",
+    "russian": "имя / имена",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": ["people-family"],
+    "note": "Λέγομαι — меня зовут; το όνομά μου — моё имя, с дополнительным ударением перед μου.",
+    "new": true,
+    "nounForms": [{"key":"main","gender":"neuter","singular":"όνομα","plural":"ονόματα","genitiveSingular":"ονόματος","genitivePlural":"ονομάτων"}]
+  },
+  {
+    "id": "word-20261026-drizzle",
+    "greek": "η ψιχάλα",
+    "russian": "мелкий дождь / морось",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": ["nature-weather"],
+    "note": "Связано с ψιχαλίζει — моросит. О погоде обычно в единственном числе.",
+    "new": true,
+    "nounForms": [{"key":"main","gender":"feminine","singular":"ψιχάλα","genitiveSingular":"ψιχάλας"}]
   }
 ]

@@ -19,7 +19,7 @@ const PARTS_OF_SPEECH = [["all", "Все"], ["noun", "Существительн
 const state = { data: {}, collections: [], situations: [], verbSets: [], aliases: {}, deck: [], quizDeck: [], category: "new", wordTopic: null, selectedCollections: new Set(), selectedSituations: new Set(), situationType: "all", wordPartOfSpeech: "all", index: 0, revealed: false, listMode: false, listQuery: "", listSort: "el", expandedConjugations: new Set(), quizDirection: localStorage.getItem("greek-a1-quiz-direction") || "el-ru", quizMode: "el-ru", quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false, session: null, quizScope: [] };
 const IRREGULAR_VERBS = new Set(["conjugation-020", "conjugation-024", "conjugation-025", "conjugation-039", "conjugation-047", "conjugation-048", "conjugation-049", "conjugation-050", "conjugation-051"]);
 const saved = JSON.parse(localStorage.getItem("greek-a1-progress") || "{}");
-const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [], practice: saved.practice || {} };
+const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [], practice: saved.practice || {}, games: { articles: saved.games?.articles || {}, stress: saved.games?.stress || {} } };
 const $ = (id) => document.getElementById(id);
 
 function saveProgress() { localStorage.setItem("greek-a1-progress", JSON.stringify(progress)); }
@@ -158,10 +158,13 @@ function renderDashboard() {
     ["dictionary", "Словарь", "Α↔Я", getDeck("dictionary").length],
     ["passive-a2", "Глаголы на -μαι · A2", "-μαι", getDeck("passive-a2").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, key === "words" ? themedWordCards().length : getDeck(key).length]),
-    ["grammar", "Грамматика", "§", "15 тем"]
+    ["game-articles", "Артикли и род", "ο η το", "2 режима"],
+    ["game-stress", "Ударение", "ά", "игра"],
+    ["grammar", "Грамматика", "§", "16 тем"]
   ];
   $("category-grid").innerHTML = sections.map(([key, label, symbol, count]) => `<button class="category" data-category="${key}"><span class="symbol">${symbol}</span><strong>${label}</strong><small>${typeof count === "number" ? `${count} карточек` : count}</small></button>`).join("");
   $("resume-quiz").classList.toggle("hidden", !localStorage.getItem("greek-a1-active-quiz"));
+  $("resume-game").classList.toggle("hidden", !localStorage.getItem("greek-a1-active-game"));
 }
 
 function renderWordTopics() {
@@ -401,8 +404,185 @@ function finishQuiz() {
   localStorage.removeItem("greek-a1-active-quiz"); renderDashboard(); showScreen("quiz-result");
 }
 
+
+let gameKind = "articles", gameSession = null, gamePool = [], gameSelection = new Set();
+const GAME_STORAGE = "greek-a1-active-game";
+const genderLabels = { masculine: "мужского", feminine: "женского", neuter: "среднего" };
+const formLabels = { singular: "ед. число", plural: "мн. число", genitiveSingular: "родительный, ед. число", genitivePlural: "родительный, мн. число", lemma: "словарная форма" };
+function readGameSettings() {
+  return { kind: gameKind, mode: $("game-mode").value, number: $("game-number").value,
+    target: $("game-target").value, type: $("game-type").value, material: $("game-material").value,
+    limit: $("game-limit").value, includeCases: $("game-cases").checked,
+    collectionIds: [...$("game-collections").querySelectorAll("input:checked")].map(input => input.value) };
+}
+function rawGamePool(settings) {
+  return settings.kind === "articles" ? GreekGames.nounEntries(themedWordCards(), settings) : GreekGames.stressEntries(allCards(), settings);
+}
+function gameMetrics(kind = gameKind) { return progress.games[kind]; }
+function gameSetupSummary() {
+  const settings = readGameSettings();
+  $("game-target-label").classList.toggle("hidden", settings.kind !== "articles" || settings.mode !== "board");
+  $("game-limit-label").classList.toggle("hidden", settings.kind === "articles" && settings.mode === "board");
+  const pool = GreekGames.filterPractice(rawGamePool(settings), settings, gameMetrics());
+  let possible = pool.length > 0;
+  if (settings.kind === "articles" && settings.mode === "board")
+    possible = (settings.target === "rotate" ? GreekGames.genders : [settings.target]).some(target => GreekGames.buildBoard(pool, target));
+  $("game-setup-summary").textContent = possible ? `${pool.length} доступных форм. ${settings.mode === "board" && settings.kind === "articles" ? "В раунде до 10 слов; нужны слова разных родов." : "Без повторов в пределах занятия."}` :
+    "Нет подходящих заданий. Расширьте подборку, измените число или выберите весь материал.";
+  $("game-start").disabled = !possible;
+}
+function openGameSetup(kind) {
+  stopSpeaking(); gameKind = kind;
+  let prior = {}; try { prior = JSON.parse(localStorage.getItem("greek-a1-game-settings-" + kind) || "{}"); } catch {}
+  $("game-setup-title").textContent = kind === "articles" ? "Артикли и род" : "Ударение";
+  $("game-article-options").classList.toggle("hidden", kind !== "articles");
+  $("game-stress-options").classList.toggle("hidden", kind !== "stress");
+  for (const [id, value] of Object.entries({ mode: prior.mode || "single", number: prior.number || "singular", target: prior.target || "rotate", type: prior.type || "all", material: prior.material || "all", limit: prior.limit || "10" })) $("game-" + id).value = value;
+  $("game-cases").checked = Boolean(prior.includeCases);
+  $("game-collections").innerHTML = state.collections.map(item => `<label><input type="checkbox" value="${escapeHTML(item.id)}"${prior.collectionIds?.includes(item.id) ? " checked" : ""}> ${escapeHTML(item.title)}</label>`).join("");
+  $("game-instructions").textContent = kind === "articles" ?
+    "Артикль в задании скрыт. Во множественном числе οι — общий артикль мужского и женского рода, τα — среднего. Слова общего рода без контекста исключены." :
+    "Нажмите на гласную, над которой должен стоять знак ударения. Озвучивание и правильное написание появятся после ответа. В родительном ударение может измениться.";
+  gameSetupSummary(); showScreen("game-setup");
+}
+function gameUnits(settings, pool, used = [], rotation = 0) {
+  const usedKeys = new Set(used);
+  if (settings.kind === "articles" && settings.mode === "board") {
+    const targets = settings.target === "rotate" ? [...GreekGames.genders.slice(rotation % 3), ...GreekGames.genders.slice(0, rotation % 3)] : [settings.target];
+    for (const target of targets) {
+      const board = GreekGames.buildBoard(pool, target, used);
+      if (board) return [{ target, keys: board.entries.map(entry => entry.key) }];
+    }
+    return [];
+  }
+  const remaining = GreekGames.shuffle(pool.filter(entry => !usedKeys.has(entry.key)));
+  return remaining.slice(0, settings.limit === "all" ? remaining.length : Number(settings.limit)).map(entry => ({ keys: [entry.key] }));
+}
+function saveGame() { localStorage.setItem(GAME_STORAGE, JSON.stringify(gameSession)); renderDashboard(); }
+function startGameUnits(settings, pool, units, used = [], rotation = 0) {
+  if (!units.length) { openGameSetup(settings.kind); $("game-setup-summary").textContent = "Подходящие формы закончились. Выберите другую подборку или начните новое занятие."; return; }
+  stopSpeaking(); gamePool = pool; gameKind = settings.kind; gameSelection.clear();
+  gameSession = { version: 1, settings, scopeKeys: pool.map(entry => entry.key), units, index: 0, answers: [], used, rotation };
+  saveGame(); renderGame();
+}
+function beginGame() {
+  const settings = readGameSettings(), pool = GreekGames.filterPractice(rawGamePool(settings), settings, gameMetrics());
+  localStorage.setItem("greek-a1-game-settings-" + gameKind, JSON.stringify(settings));
+  startGameUnits(settings, pool, gameUnits(settings, pool));
+}
+function resumeGame() {
+  let session; try { session = JSON.parse(localStorage.getItem(GAME_STORAGE)); } catch {}
+  if (!session || session.version !== 1 || !["articles", "stress"].includes(session.settings?.kind) ||
+      !Array.isArray(session.units) || !session.units.length || !Array.isArray(session.scopeKeys) ||
+      !Array.isArray(session.answers) || !Number.isInteger(session.index) || session.index < 0 || session.index >= session.units.length) {
+    localStorage.removeItem(GAME_STORAGE); renderDashboard(); return;
+  }
+  const available = rawGamePool(session.settings), byKey = new Map(available.map(entry => [entry.key, entry]));
+  if (session.units.some(unit => !Array.isArray(unit.keys) || unit.keys.some(key => !byKey.has(key)))) {
+    localStorage.removeItem(GAME_STORAGE); openGameSetup(session.settings.kind);
+    $("game-setup-summary").textContent = "Словарь обновился, часть форм больше недоступна. Результаты сохранены; выберите новое занятие."; return;
+  }
+  gamePool = session.scopeKeys.map(key => byKey.get(key)).filter(Boolean);
+  gameSession = session; gameKind = session.settings.kind; gameSelection = new Set(session.selected || []);
+  renderGame();
+}
+function gameEntry(key) { return gamePool.find(entry => entry.key === key); }
+function nounFeedback(entry) {
+  const singular = entry.singular ? GreekGames.singularArticles[entry.gender] + " " + entry.singular : "";
+  const plural = entry.plural ? (entry.gender === "neuter" ? "τα " : "οι ") + entry.plural : "";
+  return [singular, plural].filter(Boolean).join(" → ") + " — " + entry.russian;
+}
+function renderGame() {
+  const session = gameSession, unit = session.units[session.index], answer = session.answers[session.index];
+  const board = session.settings.kind === "articles" && session.settings.mode === "board", stress = session.settings.kind === "stress";
+  $("game-play-title").textContent = stress ? "Ударение" : "Артикли и род";
+  $("game-counter").textContent = board ? `Раунд · ${unit.keys.length} слов` : `${session.index + 1} / ${session.units.length}`;
+  $("game-board-check").classList.toggle("hidden", !board || Boolean(answer));
+  $("game-next").classList.toggle("hidden", !answer); $("game-feedback").classList.toggle("hidden", !answer);
+  $("game-audio").classList.toggle("hidden", !answer || board); $("game-feedback").innerHTML = "";
+  if (board) {
+    $("game-question").textContent = `Отметьте все слова ${genderLabels[unit.target]} рода`;
+    $("game-context").textContent = "Отметьте нужные слова и нажмите «Проверить». Во множественном числе род нельзя определить по одному артиклю οι.";
+    $("game-choices").className = "game-board";
+    $("game-choices").innerHTML = unit.keys.map((key, index) => {
+      const entry = gameEntry(key), row = answer?.rows.find(row => row.key === key);
+      return `<button type="button" data-game-tile="${index}" aria-pressed="${answer ? row.selected : gameSelection.has(key)}"${answer ? " disabled" : ""} class="${row ? row.correct ? "correct" : "wrong" : ""}"><strong>${escapeHTML(entry.text)}</strong><small>${entry.number === "plural" ? "мн. число" : "ед. число"}</small>${row ? `<span>${row.correct ? "Верно" : row.expected ? "Пропущено" : "Лишнее"}</span>` : ""}</button>`;
+    }).join("");
+    if (answer) $("game-feedback").innerHTML = `<b>${answer.correct ? "Все слова отмечены верно!" : "Есть пропущенные или лишние слова."} ${answer.rows.filter(row => row.correct).length} из ${unit.keys.length} решений.</b>` +
+      unit.keys.map(key => `<p>${escapeHTML(nounFeedback(gameEntry(key)))}</p>`).join("");
+  } else {
+    const entry = gameEntry(unit.keys[0]);
+    $("game-context").textContent = stress ? formLabels[entry.formName] || "словарная форма" : `${entry.number === "plural" ? "Множественное" : "Единственное"} число. Выберите артикль.`;
+    $("game-question").textContent = stress ? "Где поставить ударение?" : entry.text;
+    $("game-choices").className = stress ? "stress-word" : "game-options";
+    if (stress) $("game-choices").innerHTML = Array.from(entry.plain).map((letter, index) => entry.vowelIndices.includes(index) ?
+        `<button type="button" data-game-stress="${index}" aria-label="Буква ${escapeHTML(letter)}, позиция ${index + 1}"${answer ? " disabled" : ""} class="${answer && entry.acceptedIndices.includes(index) ? "correct" : answer && answer.choice === index ? "wrong" : ""}">${escapeHTML(letter)}</button>` :
+        `<span>${escapeHTML(letter)}</span>`).join("");
+    else {
+      const options = entry.number === "plural" ? ["οι", "τα"] : ["ο", "η", "το"];
+      $("game-choices").innerHTML = options.map(option => `<button type="button" data-game-article="${option}"${answer ? " disabled" : ""} class="${answer && option === GreekGames.article(entry) ? "correct" : answer && option === answer.choice ? "wrong" : ""}">${option}</button>`).join("");
+    }
+    if (answer) {
+      const spelling = stress ? entry.spellings.join(" / ") : nounFeedback(entry);
+      let explanation = "";
+      if (stress) {
+        const letters = Array.from(entry.text), index = entry.stressIndex;
+        const pair = GreekGames.stripStress((letters[index - 1] || "") + letters[index]).toLowerCase();
+        if (["αι", "ει", "οι", "υι", "ου", "αυ", "ευ"].includes(pair)) explanation = `В сочетании ${pair} знак ударения стоит над второй буквой.`;
+      }
+      $("game-feedback").innerHTML = `<b>${answer.correct ? "Верно!" : "Правильный ответ:"}</b><p class="game-correct-word">${escapeHTML(spelling)}</p>${stress ? `<p>${escapeHTML(entry.russian)}</p>` : ""}${explanation ? `<p>${escapeHTML(explanation)}</p>` : ""}${entry.note ? `<p>${escapeHTML(entry.note)}</p>` : ""}`;
+    }
+  }
+  showScreen("game-play");
+}
+function answerGame(choice) {
+  if (!gameSession || gameSession.answers[gameSession.index]) return;
+  const unit = gameSession.units[gameSession.index], settings = gameSession.settings;
+  let answer;
+  if (settings.kind === "articles" && settings.mode === "board") {
+    const rows = GreekGames.gradeBoard({ target: unit.target, entries: unit.keys.map(gameEntry) }, [...gameSelection]);
+    answer = { correct: rows.every(row => row.correct), rows: rows.map(row => ({ key: row.entry.key, correct: row.correct, selected: row.selected, expected: row.expected })) };
+    for (const row of rows) GreekGames.updateMetric(gameMetrics(), GreekGames.metricKey(row.entry, settings, unit.target), row.correct);
+  } else {
+    const entry = gameEntry(unit.keys[0]), correct = settings.kind === "stress" ? entry.acceptedIndices.includes(Number(choice)) : choice === GreekGames.article(entry);
+    answer = { correct, choice: settings.kind === "stress" ? Number(choice) : choice };
+    GreekGames.updateMetric(gameMetrics(), GreekGames.metricKey(entry, settings), correct);
+  }
+  gameSession.answers[gameSession.index] = answer; delete gameSession.selected;
+  saveProgress(); saveGame(); renderGame(); $("game-next").focus();
+}
+function nextGameQuestion() {
+  if (!gameSession?.answers[gameSession.index]) return;
+  stopSpeaking(); gameSelection.clear();
+  if (gameSession.index + 1 < gameSession.units.length) {
+    gameSession.index++; delete gameSession.selected; saveGame(); renderGame(); $("game-question").focus(); return;
+  }
+  finishGame();
+}
+function finishGame() {
+  const session = gameSession;
+  session.used = [...new Set([...session.used, ...session.units.flatMap(unit => unit.keys)])];
+  const correct = session.answers.filter(answer => answer.correct).length;
+  const isBoard = session.settings.kind === "articles" && session.settings.mode === "board";
+  $("game-result-score").textContent = isBoard ?
+    `${correct} из ${session.units.length} раундов полностью верно · ${session.answers.reduce((n, answer) => n + answer.rows.filter(row => row.correct).length, 0)} из ${session.units.reduce((n, unit) => n + unit.keys.length, 0)} решений` :
+    `${correct} из ${session.units.length} · ${Math.round(100 * correct / session.units.length)}%`;
+  $("game-result-errors").innerHTML = session.units.flatMap((unit, index) => {
+    if (session.answers[index].correct) return [];
+    const keys = isBoard ? session.answers[index].rows.filter(row => !row.correct).map(row => row.key) : unit.keys;
+    return keys.map(key => {
+      const entry = gameEntry(key);
+      return `<article class="result-error"><b>${escapeHTML(session.settings.kind === "stress" ? entry.spellings.join(" / ") : nounFeedback(entry))}</b>${session.settings.kind === "stress" ? `<p>${escapeHTML(entry.russian)}</p>` : ""}</article>`;
+    });
+  }).join("") || "<p>Ошибок нет!</p>";
+  $("game-retry").classList.toggle("hidden", correct === session.units.length);
+  $("game-more").classList.toggle("hidden", !gameUnits(session.settings, gamePool, session.used, session.rotation + 1).length);
+  localStorage.removeItem(GAME_STORAGE); renderDashboard(); showScreen("game-result"); $("game-result-title").focus();
+}
+
+
 document.addEventListener("click", event => {
-  const category = event.target.closest("[data-category]")?.dataset.category; if (category) category === "grammar" ? showScreen("grammar") : category === "words" ? renderWordTopics() : openCategory(category);
+  const category = event.target.closest("[data-category]")?.dataset.category; if (category) category.startsWith("game-") ? openGameSetup(category.slice(5)) : category === "grammar" ? showScreen("grammar") : category === "words" ? renderWordTopics() : openCategory(category);
   const wordTopic = event.target.closest("[data-word-topic]")?.dataset.wordTopic; if (wordTopic) openWordTopic(wordTopic);
   const collection = event.target.closest("[data-collection]")?.dataset.collection;
   if (collection) { state.selectedCollections.has(collection) ? state.selectedCollections.delete(collection) : state.selectedCollections.add(collection); renderWordTopics(); }
@@ -501,6 +681,40 @@ document.addEventListener("keydown", event => { if (event.key === "Escape" && !$
 let installPrompt;
 window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); installPrompt = event; $("install-button").classList.remove("hidden"); });
 $("install-button").addEventListener("click", async () => { if (!installPrompt) return; installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $("install-button").classList.add("hidden"); });
+
+$("resume-game").addEventListener("click", resumeGame);
+$("game-start").addEventListener("click", beginGame);
+$("game-setup").addEventListener("change", gameSetupSummary);
+$("game-board-check").addEventListener("click", () => answerGame());
+$("game-next").addEventListener("click", nextGameQuestion);
+$("game-audio").addEventListener("click", () => {
+  if (!gameSession?.answers[gameSession.index]) return;
+  speakGreek(gameEntry(gameSession.units[gameSession.index].keys[0]).text);
+});
+$("game-choices").addEventListener("click", event => {
+  if (!gameSession || gameSession.answers[gameSession.index]) return;
+  const tile = event.target.closest("[data-game-tile]");
+  if (tile) {
+    const key = gameSession.units[gameSession.index].keys[Number(tile.dataset.gameTile)];
+    gameSelection.has(key) ? gameSelection.delete(key) : gameSelection.add(key);
+    gameSession.selected = [...gameSelection]; saveGame();
+    tile.setAttribute("aria-pressed", String(gameSelection.has(key))); return;
+  }
+  const stress = event.target.closest("[data-game-stress]");
+  if (stress) answerGame(Number(stress.dataset.gameStress));
+  const article = event.target.closest("[data-game-article]");
+  if (article) answerGame(article.dataset.gameArticle);
+});
+$("game-retry").addEventListener("click", () => {
+  const prior = gameSession;
+  startGameUnits(prior.settings, gamePool, prior.units.filter((unit, index) => !prior.answers[index].correct), prior.used, prior.rotation);
+});
+$("game-more").addEventListener("click", () => {
+  const prior = gameSession, settings = { ...prior.settings, limit: "10" };
+  startGameUnits(settings, gamePool, gameUnits(settings, gamePool, prior.used, prior.rotation + 1), prior.used, prior.rotation + 1);
+});
+$("game-settings").addEventListener("click", () => openGameSetup(gameKind));
+
 if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
 
 Promise.all([...SOURCES.map(async ([key,,, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })]), ...[["collections", "./data/collections.json"], ["aliases", "./data/id-aliases.json"], ["situations", "./data/situations.json"], ["verbSets", "./data/verb-sets.json"]].map(async ([key, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })])]).then(entries => { const data = Object.fromEntries(entries); state.collections = data.collections; state.aliases = data.aliases; state.situations = data.situations; state.verbSets = data.verbSets; delete data.verbSets; delete data.collections; delete data.aliases; delete data.situations; state.data = data; migrateProgress(); renderDashboard(); }).catch(() => { $("category-grid").innerHTML = '<div class="empty">Не удалось загрузить словарь. Обновите страницу.</div>'; });

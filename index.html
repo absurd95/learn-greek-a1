@@ -28,6 +28,7 @@
         <p id="progress-copy">Выберите набор и начните тренировку.</p>
       <div class="progress"><span id="progress-bar"></span></div>
       <button id="resume-quiz" type="button" class="hidden">Продолжить тест</button>
+      <button id="resume-game" class="secondary hidden" type="button">Продолжить игру</button>
       </div>
       <div id="category-grid" class="category-grid"></div>
       <button id="open-situations" type="button">Занятия по ситуациям →</button>
@@ -100,6 +101,42 @@
       </div>
     </section>
 
+    <section id="game-setup" class="screen" aria-labelledby="game-setup-title">
+      <div class="section-heading"><button class="back-button" type="button" data-go="dashboard">← Назад</button><h2 id="game-setup-title">Артикли и род</h2></div>
+      <p id="game-instructions" class="note"></p>
+      <div class="quiz-panel quiz-setup-panel">
+        <div id="game-article-options" class="game-settings">
+          <label>Упражнение <select id="game-mode"><option value="single">Выбери артикль</option><option value="board">Найди слова заданного рода</option></select></label>
+          <label>Число <select id="game-number"><option value="singular">Единственное</option><option value="plural">Множественное</option><option value="mixed">Смешанное</option></select></label>
+          <label id="game-target-label">Найдите слова <select id="game-target"><option value="rotate">Чередовать роды</option><option value="masculine">Мужского рода</option><option value="feminine">Женского рода</option><option value="neuter">Среднего рода</option></select></label>
+        </div>
+        <div id="game-stress-options" class="game-settings hidden">
+          <label>Часть словаря <select id="game-type"><option value="all">Все виды</option><option value="words">Слова</option><option value="verbs">Глаголы</option><option value="adverbs">Наречия</option><option value="professions">Профессии</option></select></label>
+          <label class="game-check"><input id="game-cases" type="checkbox"> Включить проверенные формы родительного падежа</label>
+        </div>
+        <details class="game-collection-details"><summary>Тематические подборки — без отметок используются все</summary><div id="game-collections" class="game-collections"></div></details>
+        <label>Материал <select id="game-material"><option value="all">Все формы</option><option value="errors">Ошибки этой игры</option><option value="unpracticed">Ещё не тренировались</option></select></label>
+        <label id="game-limit-label">Количество вопросов <select id="game-limit"><option value="10">10</option><option value="20">20</option><option value="all">Все</option></select></label>
+        <p id="game-setup-summary" class="note" aria-live="polite"></p>
+        <button id="game-start" type="button">Начать игру</button>
+      </div>
+    </section>
+    <section id="game-play" class="screen" aria-labelledby="game-play-title">
+      <div class="section-heading"><button class="back-button" type="button" data-go="dashboard">← На главную</button><h2 id="game-play-title">Артикли и род</h2></div>
+      <div class="quiz-panel"><p id="game-counter" class="word-list-summary"></p>
+        <h3 id="game-question" tabindex="-1"></h3><p id="game-context" class="note"></p><div id="game-choices"></div>
+        <button id="game-board-check" type="button" class="hidden">Проверить</button>
+        <div id="game-feedback" class="game-feedback hidden" aria-live="polite"></div>
+        <button id="game-audio" type="button" class="secondary hidden" aria-label="Произнести правильный ответ">🔊 Послушать</button>
+        <button id="game-next" type="button" class="hidden">Дальше</button>
+      </div>
+    </section>
+    <section id="game-result" class="screen" aria-labelledby="game-result-title">
+      <p class="eyebrow">Занятие завершено</p><h2 id="game-result-title" tabindex="-1">Результат игры</h2>
+      <p id="game-result-score"></p><div id="game-result-errors"></div>
+      <div class="game-result-actions"><button id="game-retry" type="button">Повторить ошибки</button><button id="game-more" type="button">Следующие 10</button><button id="game-settings" class="secondary" type="button">Настройки игры</button><button class="secondary" data-go="dashboard" type="button">На главную</button></div>
+    </section>
+
     <section id="quiz-setup" class="screen" aria-labelledby="quiz-setup-title">
       <div class="section-heading"><button class="back-button" type="button" data-go="study">← Карточки</button><div><p class="eyebrow">Перед тестом</p><h2 id="quiz-setup-title">Настройка занятия</h2></div></div>
       <div class="quiz-panel quiz-setup-panel">
@@ -148,7 +185,7 @@
       </div>
       <label class="grammar-search"><span>Найти правило или пример</span><input id="grammar-search" type="search" placeholder="Например: артикли, από, профессии…" autocomplete="off"></label>
       <nav class="grammar-toc" aria-label="Темы грамматики">
-        <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-calendar">Календарь</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-frequency">Как часто</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a><a href="#grammar-accents">Ударение</a>
+        <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-calendar">Календарь</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-frequency">Как часто</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a><a href="#grammar-accents">Ударение</a><a href="#grammar-genitive">Родительный падеж</a>
       </nav>
       <p id="grammar-no-results" class="empty hidden">Ничего не найдено. Попробуйте другое слово.</p>
 
@@ -334,6 +371,44 @@
           <figure><img loading="lazy" src="./assets/grammar/07-nationalities.webp" alt="Национальности и соответствующие языки"><figcaption>Мужские, женские формы и названия языков.</figcaption></figure>
         </article>
 
+
+        <article id="grammar-genitive" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">16</div><p class="eyebrow">Чей? Чья? Чьё? Чьи?</p><h3>Родительный падеж · Γενική πτώση</h3>
+          <p>Родительный обозначает принадлежность и отношения между словами: <b>η κόρη της Μαρίας</b> — дочь Марии; <b>το δωμάτιο του παιδιού</b> — комната ребёнка; <b>οι κουρτίνες της κουζίνας</b> — шторы кухни. Вопросы: ποιανού; ποιανής; во множественном числе — ποιανών; также τίνος;</p>
+          <div class="declension-scroll"><table class="declension-table"><thead><tr><th>Род</th><th>Единственное</th><th>Множественное</th><th>Неопределённый, ед.</th></tr></thead><tbody><tr><td>Мужской</td><td>του</td><td>των</td><td>ενός</td></tr><tr><td>Женский</td><td>της</td><td>των</td><td>μιας / μίας</td></tr><tr><td>Средний</td><td>του</td><td>των</td><td>ενός</td></tr></tbody></table></div>
+          <h4>Форма слова и ударение</h4>
+          <div class="rule-stack"><div><b>Мужской род</b><code>ο δάσκαλος → του δασκάλου → των δασκάλων</code><code>ο άνθρωπος → του ανθρώπου → των ανθρώπων</code><code>ο ναύτης → του ναύτη → των ναυτών</code><code>ο άντρας → του άντρα → των αντρών</code><p>У многих слов на -ος ударение меняется, но это не универсальное правило: ο αντίλαλος → του αντίλαλου → των αντίλαλων.</p></div><div><b>Женский род</b><code>η γυναίκα → της γυναίκας → των γυναικών</code><code>η βιβλιοθήκη → της βιβλιοθήκης → των βιβλιοθηκών</code><code>η σελίδα → της σελίδας → των σελίδων</code><code>η μητέρα → της μητέρας → των μητέρων</code><p>Родительный множественного проверяйте по словарю: у одних слов ударение переходит на последний слог, у других сохраняется.</p></div><div><b>Средний род</b><code>το παιδί → του παιδιού → των παιδιών</code><code>το μάθημα → του μαθήματος → των μαθημάτων</code><code>το γράμμα → του γράμματος → των γραμμάτων</code><code>το μέλος → του μέλους → των μελών</code><code>το πρόσωπο → του προσώπου → των προσώπων</code><code>το σύννεφο → του σύννεφου → των σύννεφων</code><p>Не переносите ударение механически: πρόσωπο и σύννεφο склоняются с разным поведением ударения.</p></div></div>
+          <h4>Родительный и косвенное дополнение</h4><p><b>Λέω του παιδιού ένα παραμύθι.</b> = <b>Λέω στο παιδί ένα παραμύθι.</b> — Рассказываю ребёнку сказку. С полным существительным часто употребляется конструкция с σε; с кратким местоимением: <b>του λέω</b> — говорю ему.</p>
+          <h4>Не путайте τις и στις</h4><code>Βλέπω τις τσάντες στις επτά το πρωί.</code><p>Вижу сумки в семь утра. <b>Τις τσάντες</b> — винительный женского рода во множественном; <b>στις</b> = σε + τις, здесь обозначает время.</p>
+          <h4>24 пары: единственное и множественное число владельца</h4><p>Первое существительное остаётся как в задании. Меняем только второе: <b>το χρώμα της σημαίας / των σημαιών</b> — цвет флага / флагов.</p>
+          <div class="declension-scroll"><table class="declension-table"><thead><tr><th>Один владелец / объект</th><th>Несколько</th><th>Перевод</th></tr></thead><tbody><tr data-genitive-example><td>το σπίτι του γείτονα</td><td>το σπίτι των γειτόνων</td><td>дом соседа / соседей</td></tr>
+<tr data-genitive-example><td>το επάγγελμα του αρχιτέκτονα</td><td>το επάγγελμα των αρχιτεκτόνων</td><td>профессия архитектора / архитекторов</td></tr>
+<tr data-genitive-example><td>το τέλος του αγώνα</td><td>το τέλος των αγώνων</td><td>конец состязания / состязаний</td></tr>
+<tr data-genitive-example><td>το χρώμα του αναπτήρα</td><td>το χρώμα των αναπτήρων</td><td>цвет зажигалки / зажигалок</td></tr>
+<tr data-genitive-example><td>οι γνώσεις του σπουδαστή</td><td>οι γνώσεις των σπουδαστών</td><td>знания учащегося / учащихся</td></tr>
+<tr data-genitive-example><td>το βραβείο του νικητή</td><td>το βραβείο των νικητών</td><td>награда победителя / победителей</td></tr>
+<tr data-genitive-example><td>η θέση του επιβάτη</td><td>η θέση των επιβατών</td><td>место пассажира / пассажиров</td></tr>
+<tr data-genitive-example><td>το πουκάμισο του ναύτη</td><td>το πουκάμισο των ναυτών</td><td>рубашка моряка / моряков</td></tr>
+<tr data-genitive-example><td>η μέρα της νίκης</td><td>η μέρα των νικών</td><td>день победы / побед</td></tr>
+<tr data-genitive-example><td>το μέγεθος της αποθήκης</td><td>το μέγεθος των αποθηκών</td><td>размер кладовой / кладовых</td></tr>
+<tr data-genitive-example><td>η γεύση της γαρίδας</td><td>η γεύση των γαρίδων</td><td>вкус креветки / креветок</td></tr>
+<tr data-genitive-example><td>ο μήνας της δουλειάς</td><td>ο μήνας των δουλειών</td><td>месяц работы / работ</td></tr>
+<tr data-genitive-example><td>ο αφηγητής της ιστορίας</td><td>ο αφηγητής των ιστοριών</td><td>рассказчик истории / историй</td></tr>
+<tr data-genitive-example><td>τα κύματα της θάλασσας</td><td>τα κύματα των θαλασσών</td><td>волны моря / морей</td></tr>
+<tr data-genitive-example><td>το φόρεμα της εγγονής</td><td>το φόρεμα των εγγονών</td><td>платье внучки / внучек</td></tr>
+<tr data-genitive-example><td>το τραγούδι της σειρήνας</td><td>το τραγούδι των σειρήνων</td><td>песня сирены / сирен</td></tr>
+<tr data-genitive-example><td>οι τοίχοι της αίθουσας</td><td>οι τοίχοι των αιθουσών</td><td>стены зала / залов</td></tr>
+<tr data-genitive-example><td>τα χιόνια του βουνού</td><td>τα χιόνια των βουνών</td><td>снега горы / гор</td></tr>
+<tr data-genitive-example><td>το ύψος του δέντρου</td><td>το ύψος των δέντρων</td><td>высота дерева / деревьев</td></tr>
+<tr data-genitive-example><td>οι σελίδες του βιβλίου</td><td>οι σελίδες των βιβλίων</td><td>страницы книги / книг</td></tr>
+<tr data-genitive-example><td>το χρώμα του παντελονιού</td><td>το χρώμα των παντελονιών</td><td>цвет брюк / нескольких пар брюк</td></tr>
+<tr data-genitive-example><td>το γέλιο του παιδιού</td><td>το γέλιο των παιδιών</td><td>смех ребёнка / детей</td></tr>
+<tr data-genitive-example><td>η πόρτα του ντουλαπιού</td><td>η πόρτα των ντουλαπιών</td><td>дверца шкафчика / шкафчиков</td></tr>
+<tr data-genitive-example><td>το σχήμα του προσώπου</td><td>το σχήμα των προσώπων</td><td>форма лица / лиц</td></tr>
+</tbody></table></div>
+          <div class="example"><span>Ударение меняется вместе с формой</span><b>Το μάθημα, του μαθήματος, των μαθημάτων.</b><button class="grammar-speak" data-speak="Το μάθημα, του μαθήματος, των μαθημάτων." type="button" aria-label="Произнести формы">🔊</button></div>
+        </article>
+
         <article id="grammar-accents" class="grammar-card" data-grammar-card>
           <div class="grammar-number">15</div><p class="eyebrow">Одна черточка меняет смысл</p><h3>Πού или που, πώς или πως</h3>
           <p>Вопросительные слова <b>πού</b> «где / куда?» и <b>πώς</b> «как?» пишутся с ударением. Оно сохраняется и в косвенном вопросе, даже если вопросительного знака нет.</p>
@@ -365,6 +440,7 @@
     <button type="button" data-category="mistakes"><span>↺</span>Ошибки</button>
     <button type="button" data-category="grammar"><span>§</span>Правила</button>
   </nav>
+  <script src="./game-core.js"></script>
   <script type="module" src="./app.js"></script>
 </body>
 </html>
