@@ -994,11 +994,12 @@
     "greek": "Άλλος / άλλη / άλλο",
     "russian": "другой / другая / другое",
     "new": true,
-    "topic": "people",
-    "partOfSpeech": "adjective",
+    "topic": "other",
+    "partOfSpeech": "pronoun",
     "collectionIds": [
       "other-pronouns"
-    ]
+    ],
+    "note": "Местоимение: άλλες αγγελίες — другие объявления; τέτοιες αγγελίες — такие объявления."
   },
   {
     "id": "word-7f8eba5593",
@@ -1114,7 +1115,8 @@
         "gender": "feminine",
         "singular": "οικογένεια"
       }
-    ]
+    ],
+    "note": "Грамматически единственное женского рода: η οικογένεια περνάει καλά / είναι χαρούμενη. При αυτοί — множественное: είναι χαρούμενοι."
   },
   {
     "id": "word-99e78ba9b7",
@@ -1176,7 +1178,8 @@
         "gender": "neuter",
         "plural": "χρόνια"
       }
-    ]
+    ],
+    "note": "Περνάω χρόνο μαζί με την οικογένεια — провожу время с семьёй. Здесь χρόνος означает время; χρόνια в других контекстах — годы."
   },
   {
     "id": "word-2b73d94641",
@@ -1985,9 +1988,9 @@
   },
   {
     "id": "word-2026080424",
-    "greek": "ο σκύλος / η σκύλα / το σκυλί / τα σκυλιά",
+    "greek": "ο σκύλος / η σκύλα / το σκυλί / τα σκυλιά / ο σκυλάκος / οι σκυλάκοι / το σκυλάκι / τα σκυλάκια",
     "russian": "пёс / собака / собачка; собаки",
-    "note": "ο σκύλος — пёс или собака как вид; η σκύλα — самка; το σκυλί — собака, часто нейтрально-разговорная форма.",
+    "note": "ο σκύλος — пёс или собака как вид; η σκύλα — самка; το σκυλί — собака, часто нейтрально-разговорная форма. Ο σκυλάκος / το σκυλάκι — ласковые уменьшительные: пёсик / собачка. В этих примерах -άκος сохраняет мужской род, -άκι даёт средний.",
     "new": true,
     "topic": "nature",
     "partOfSpeech": "noun",
@@ -2010,6 +2013,22 @@
         "gender": "neuter",
         "singular": "σκυλί",
         "plural": "σκυλιά"
+      },
+      {
+        "key": "diminutive-masculine",
+        "gender": "masculine",
+        "singular": "σκυλάκος",
+        "plural": "σκυλάκοι",
+        "genitiveSingular": "σκυλάκου",
+        "genitivePlural": "σκυλάκων"
+      },
+      {
+        "key": "diminutive-neuter",
+        "gender": "neuter",
+        "singular": "σκυλάκι",
+        "plural": "σκυλάκια",
+        "genitiveSingular": "σκυλακιού",
+        "genitivePlural": "σκυλακιών"
       }
     ]
   },
@@ -2425,7 +2444,8 @@
         "gender": "feminine",
         "singular": "γειτονιά"
       }
-    ]
+    ],
+    "note": "Район вокруг дома / соседство. Περιοχή — район или местность в более широком смысле; значения могут пересекаться."
   },
   {
     "id": "word-2026080713",
@@ -6626,7 +6646,8 @@
         "singular": "ζώο",
         "plural": "ζώα"
       }
-    ]
+    ],
+    "note": "Το κατοικίδιο ζώο / το κατοικίδιο — домашний питомец."
   },
   {
     "id": "word-2026091627",
@@ -6675,7 +6696,8 @@
         "singular": "πολυκατοικία",
         "plural": "πολυκατοικίες"
       }
-    ]
+    ],
+    "note": "Πολυ- — много; κατοικία — жилище. Многоквартирный дом; μονοκατοικία — отдельный дом для одной семьи."
   },
   {
     "id": "word-2026091629",
@@ -6694,7 +6716,8 @@
         "singular": "κατοικία",
         "plural": "κατοικίες"
       }
-    ]
+    ],
+    "note": "Общее название жилища, более формальное, чем σπίτι. Общая основа οικ- связана с οίκος — дом."
   },
   {
     "id": "word-2026091630",
@@ -8181,7 +8204,7 @@
       "other-abstract"
     ],
     "new": true,
-    "note": "Χαίρομαι — радоваться.",
+    "note": "Χαίρομαι — радоваться; χαρούμενος — радостный. Сравните: η χαρά — радость, η ευτυχία — счастье.",
     "nounForms": [
       {
         "key": "variant-1",
@@ -9650,5 +9673,291 @@
     "note": "Связано с ψιχαλίζει — моросит. О погоде обычно в единственном числе.",
     "new": true,
     "nounForms": [{"key":"main","gender":"feminine","singular":"ψιχάλα","genitiveSingular":"ψιχάλας"}]
+  },
+  {
+    "id": "word-2026102701",
+    "greek": "η αγγελία / οι αγγελίες",
+    "russian": "объявление / объявления",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops",
+      "home-rooms"
+    ],
+    "note": "Άλλες αγγελίες — другие объявления; τέτοιες αγγελίες — такие объявления. Не путать с η παραγγελία — заказ.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "αγγελία",
+        "plural": "αγγελίες",
+        "genitiveSingular": "αγγελίας",
+        "genitivePlural": "αγγελιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102702",
+    "greek": "η περιοχή / οι περιοχές",
+    "russian": "район / местность / область",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places",
+      "home-rooms"
+    ],
+    "note": "Περιοχή — район или область в широком смысле; γειτονιά — окрестности дома / соседский район. Значения могут пересекаться.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "περιοχή",
+        "plural": "περιοχές",
+        "genitiveSingular": "περιοχής",
+        "genitivePlural": "περιοχών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102703",
+    "greek": "ο οίκος / οι οίκοι",
+    "russian": "дом / семейство (книжное)",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "note": "В повседневной речи о доме обычно σπίτι. Οίκος встречается в книжной речи и сочетаниях: εκδοτικός οίκος — издательство, οίκος μόδας — дом моды. Основа οικ- связана с κατοικία.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "οίκος",
+        "plural": "οίκοι",
+        "genitiveSingular": "οίκου",
+        "genitivePlural": "οίκων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102704",
+    "greek": "η μονοκατοικία / οι μονοκατοικίες",
+    "russian": "отдельный жилой дом / частный дом",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "note": "Μονο- — один; κατοικία — жилище. Дом для одной семьи, в отличие от πολυκατοικία — многоквартирного дома.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "μονοκατοικία",
+        "plural": "μονοκατοικίες",
+        "genitiveSingular": "μονοκατοικίας",
+        "genitivePlural": "μονοκατοικιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102705",
+    "greek": "το ενοίκιο / το νοίκι · τα ενοίκια / τα νοίκια",
+    "russian": "арендная плата",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms",
+      "city-money"
+    ],
+    "note": "Το νοίκι — разговорный вариант. Νοικιάζω / ενοικιάζω — снимать или сдавать в аренду; ενοικιάζομαι — сдаваться в аренду.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "ενοίκιο",
+        "plural": "ενοίκια",
+        "genitiveSingular": "ενοικίου",
+        "genitivePlural": "ενοικίων"
+      },
+      {
+        "key": "colloquial",
+        "gender": "neuter",
+        "singular": "νοίκι",
+        "plural": "νοίκια",
+        "genitiveSingular": "νοικιού",
+        "genitivePlural": "νοικιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102706",
+    "greek": "η ενοικίαση / οι ενοικιάσεις",
+    "russian": "аренда / сдача в аренду",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms",
+      "city-money"
+    ],
+    "note": "Связано с ενοικιάζω. Το ενοίκιο — сумма арендной платы; η ενοικίαση — сама аренда.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "ενοικίαση",
+        "plural": "ενοικιάσεις",
+        "genitiveSingular": "ενοικίασης",
+        "genitivePlural": "ενοικιάσεων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102707",
+    "greek": "η φωτογραφία / οι φωτογραφίες",
+    "russian": "фотография / фотографии",
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology",
+      "other-leisure"
+    ],
+    "note": "Βγάζω φωτογραφία = τραβάω φωτογραφία — фотографирую; φωτογραφική μηχανή — фотоаппарат.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "φωτογραφία",
+        "plural": "φωτογραφίες",
+        "genitiveSingular": "φωτογραφίας",
+        "genitivePlural": "φωτογραφιών"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102708",
+    "greek": "το πάρκο / τα πάρκα",
+    "russian": "парк / парки",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places",
+      "other-leisure"
+    ],
+    "note": "Η οικογένεια περνάει καλά στο πάρκο — семья хорошо проводит время в парке.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "πάρκο",
+        "plural": "πάρκα",
+        "genitiveSingular": "πάρκου",
+        "genitivePlural": "πάρκων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102709",
+    "greek": "η ευτυχία",
+    "russian": "счастье",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "note": "Семья слов: ευτυχία — счастье, ευτυχισμένος — счастливый. Историческая связь с ευ- («хорошо») и τύχη («удача / судьба»). Это подсказка к происхождению, не универсальное правило сборки слов.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "ευτυχία",
+        "genitiveSingular": "ευτυχίας"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102710",
+    "greek": "η τύχη",
+    "russian": "удача / судьба",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "note": "Καλή τύχη! — Удачи! Связано с ευτυχία — счастье.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "τύχη",
+        "genitiveSingular": "τύχης"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102711",
+    "greek": "το κατοικίδιο / τα κατοικίδια",
+    "russian": "домашний питомец / домашние питомцы",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-animals"
+    ],
+    "note": "Существительное от сочетания το κατοικίδιο ζώο — домашнее животное; связано с κατοικία — жилище.",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "κατοικίδιο",
+        "plural": "κατοικίδια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026102712",
+    "greek": "τέτοιος / τέτοια / τέτοιο",
+    "russian": "такой / такая / такое",
+    "topic": "other",
+    "partOfSpeech": "pronoun",
+    "collectionIds": [
+      "other-pronouns"
+    ],
+    "note": "Указательное местоимение: τέτοιο σπίτι — такой дом; τέτοιες αγγελίες — такие объявления. Другие объявления — άλλες αγγελίες.",
+    "new": true
+  },
+  {
+    "id": "word-2026102713",
+    "greek": "χαρούμενος / χαρούμενη / χαρούμενο",
+    "russian": "радостный / весёлый",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Связано с η χαρά — радость. Η οικογένεια είναι χαρούμενη, но αυτοί είναι χαρούμενοι.",
+    "new": true
+  },
+  {
+    "id": "word-2026102714",
+    "greek": "ευτυχισμένος / ευτυχισμένη / ευτυχισμένο",
+    "russian": "счастливый / счастливая / счастливое",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Связано с η ευτυχία — счастье. Οι φίλοι είναι ευτυχισμένοι — друзья счастливы.",
+    "new": true
   }
 ]

@@ -35,6 +35,7 @@ const context = vm.createContext({
     data: Object.fromEntries(["words", "verbs", "adverbs", "phrases", "professions", "nationalities", "months", "weekdays", "conjugations"]
       .map(name => [name, JSON.parse(fs.readFileSync(path.join(root, "data", name + ".json"), "utf8"))])),
     sets: JSON.parse(fs.readFileSync(path.join(root, "data/verb-sets.json"), "utf8")),
+    situations: JSON.parse(fs.readFileSync(path.join(root, "data/situations.json"), "utf8")),
   },
 });
 const source = fs.readFileSync(path.join(root, "app.js"), "utf8");
@@ -42,14 +43,16 @@ vm.runInContext(fs.readFileSync(path.join(root, "game-core.js"), "utf8"), contex
 vm.runInContext(source.slice(0, source.indexOf('document.addEventListener("click"')), context);
 const run = code => vm.runInContext(code, context);
 run("state.data = fixture.data; state.verbSets = fixture.sets;");
-assert.equal(run('getDeck("passive-a2").length'), 21);
-assert.equal(run('getDeck("passive-a2-forms").length'), 21);
+const expectedVerbs = context.fixture.sets.find(set => set.id === "passive-a2").verbIds.length;
+assert.ok(expectedVerbs > 0);
+assert.equal(run('getDeck("passive-a2").length'), expectedVerbs);
+assert.equal(run('getDeck("passive-a2-forms").length'), expectedVerbs);
 assert.equal(run('getDeck("passive-a2").every(card => card.type === "verbs")'), true);
 assert.equal(run('getDeck("passive-a2-forms").every(card => card.type === "conjugations")'), true);
 
 for (const category of ["passive-a2", "passive-a2-forms"]) {
   run('state.category = ' + JSON.stringify(category) + '; state.deck = getDeck(state.category); state.quizScope = quizItems(state.deck);');
-  const count = category.endsWith("-forms") ? 126 : 21;
+  const count = category.endsWith("-forms") ? expectedVerbs * 6 : expectedVerbs;
   assert.equal(run("state.quizScope.length"), count);
   assert.equal(run("eligibleQuizItems(state.quizScope).length"), count);
   for (const direction of ["el-ru", "ru-el", "mixed"]) {
@@ -86,4 +89,21 @@ for (const category of ["passive-a2", "passive-a2-forms"]) {
     run("previousKeys.clear()");
   }
 }
-console.log("OK: both A2 modes, 21 verbs / 126 forms, all directions, progress, restore, results and non-repeating batches");
+const rental = context.fixture.data.conjugations.find(card => card.greek === "Ενοικιάζομαι / νοικιάζομαι");
+run(`state.situations = fixture.situations; state.selectedSituations = new Set(["rental"]);
+     state.listQuery = "old search"; $("word-list-search").value = "old search"; openSelectedSituations();`);
+assert.equal(run("state.listQuery"), "");
+assert.equal(element("word-list-search").value, "");
+assert.equal(run("state.deck.length"), context.fixture.situations.find(item => item.id === "rental").cardIds.length);
+assert.equal(Object.keys(rental.forms).length, 6);
+assert.equal(rental.forms["εμείς"], "ενοικιαζόμαστε / νοικιαζόμαστε");
+assert.ok(rental.note.includes("Первое и второе лицо"));
+run(`var feels = allCards().find(card => card.type === "verbs" && card.greek === "Νιώθω");
+     var senses = allCards().find(card => card.type === "verbs" && card.greek === "Αισθάνομαι");
+     var rents = allCards().find(card => card.type === "verbs" && card.greek === "Ενοικιάζω / νοικιάζω");
+     var takes = allCards().find(card => card.type === "verbs" && card.greek === "Βγάζω");`);
+for (const direction of ["el-ru", "ru-el"]) {
+  assert.equal(run('quizCandidates({card:feels},[{card:senses}], ' + JSON.stringify(direction) + ').length'), 0);
+  assert.equal(run('quizCandidates({card:rents},[{card:takes}], ' + JSON.stringify(direction) + ').length'), 0);
+}
+console.log(`OK: both A2 modes, ${expectedVerbs} verbs / ${expectedVerbs * 6} forms, all directions, progress, restore, non-repeating batches and synonym exclusion`);

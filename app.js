@@ -212,7 +212,8 @@ function renderSituations() {
   showScreen("situations");
 }
 function openSelectedSituations() {
-  state.category = "situations"; state.wordTopic = null; state.situationType = "all"; state.deck = situationDeck(); state.index = 0; state.revealed = false; state.listMode = false;
+  state.category = "situations"; state.wordTopic = null; state.situationType = "all"; state.deck = situationDeck(); state.index = 0; state.revealed = false; state.listMode = false; state.listQuery = "";
+  $("word-list-search").value = "";
   $("study-title").textContent = state.selectedSituations.size === 1 ? state.situations.find(item => state.selectedSituations.has(item.id)).title : "Выбранные ситуации";
   $("study-kicker").textContent = "Ситуационное занятие"; $("study-back-button").dataset.go = "situations";
   $("word-pos-filter").classList.add("hidden"); $("situation-type-filter").classList.remove("hidden");

@@ -37,7 +37,16 @@ assert.equal(G.stripStress("ΜΆΘΗΜΑ"), "ΜΑΘΗΜΑ");
 for (const value of ["πού", "πώς", "ή", "μπλε", "τα πράγματα", "πράγματά"]) assert.equal(G.stressInfo(value), null, value);
 assert.deepEqual(G.stressInfo("κουλούρι").stressIndex, 5);
 assert.equal(G.stressInfo("μαΐου").plain, "μαϊου");
+const rentalNouns = G.nounEntries(cards, { number: "singular" });
+for (const [word, expected] of [["ενοίκιο", "το"], ["νοίκι", "το"], ["μονοκατοικία", "η"], ["κατοικίδιο", "το"], ["σκυλάκος", "ο"], ["σκυλάκι", "το"]]) {
+  const entry = rentalNouns.find(item => item.text === word);
+  assert.ok(entry, word + " missing from article game");
+  assert.equal(G.article(entry), expected);
+}
+const dogs = data.words.find(card => card.id === "word-2026080424");
+assert.deepEqual(dogs.nounForms.slice(0, 3).map(form => form.key), ["variant-1", "variant-2", "variant-3"]);
 const base = G.stressEntries(cards), cases = G.stressEntries(cards, { includeCases: true });
+for (const word of ["ενοίκιο", "νοίκι", "σκυλάκος", "σκυλάκι", "νοικιού", "σκυλακιού"]) assert.ok(cases.some(item => item.text === word), word + " missing from stress game");
 assert.ok(cases.length > base.length);
 assert.ok(!base.some(item => item.formName.startsWith("genitive")));
 for (const word of ["μαθήματος", "μαθημάτων", "ανθρώπου", "ανθρώπων", "παιδιού", "παιδιών"])
