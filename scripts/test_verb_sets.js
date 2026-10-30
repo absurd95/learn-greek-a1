@@ -44,6 +44,10 @@ vm.runInContext(source.slice(0, source.indexOf('document.addEventListener("click
 const run = code => vm.runInContext(code, context);
 run("state.data = fixture.data; state.verbSets = fixture.sets;");
 const expectedVerbs = context.fixture.sets.find(set => set.id === "passive-a2").verbIds.length;
+const numbers = context.fixture.data.words.filter(card => card.numeralKind);
+assert.equal(numbers.filter(card => card.numeralKind === "cardinal").length, 49);
+assert.equal(numbers.filter(card => card.numeralKind === "ordinal").length, 49);
+assert.ok(numbers.some(card => card.id === "numeral-cardinal-1000000000"));
 assert.ok(expectedVerbs > 0);
 assert.equal(run('getDeck("passive-a2").length'), expectedVerbs);
 assert.equal(run('getDeck("passive-a2-forms").length'), expectedVerbs);
@@ -51,7 +55,7 @@ assert.equal(run('getDeck("passive-a2").every(card => card.type === "verbs")'), 
 assert.equal(run('getDeck("passive-a2-forms").every(card => card.type === "conjugations")'), true);
 
 for (const category of ["passive-a2", "passive-a2-forms"]) {
-  run('state.category = ' + JSON.stringify(category) + '; state.deck = getDeck(state.category); state.quizScope = quizItems(state.deck);');
+  run('state.category = ' + JSON.stringify(category) + '; state.deck = getDeck(state.category); state.quizScope = quizItems(state.deck); state.quizCandidatePool = state.quizScope;');
   const count = category.endsWith("-forms") ? expectedVerbs * 6 : expectedVerbs;
   assert.equal(run("state.quizScope.length"), count);
   assert.equal(run("eligibleQuizItems(state.quizScope).length"), count);
@@ -106,4 +110,40 @@ for (const direction of ["el-ru", "ru-el"]) {
   assert.equal(run('quizCandidates({card:feels},[{card:senses}], ' + JSON.stringify(direction) + ').length'), 0);
   assert.equal(run('quizCandidates({card:rents},[{card:takes}], ' + JSON.stringify(direction) + ').length'), 0);
 }
+// A single selected word draws distractors from its original section, not from the selection.
+run(`openCategory("verbs"); state.selectedCards = new Set([state.deck[0].id]); openQuizSetup(true);`);
+assert.equal(run("state.quizScope.length"), 1);
+assert.ok(run("state.quizCandidatePool.length") > 1);
+assert.equal(run("eligibleQuizItems(state.quizScope, state.quizCandidatePool).length"), 1);
+element("quiz-mode").value = "mixed";
+run("beginQuiz()");
+assert.equal(run("state.quizDeck.length"), 1);
+assert.equal(run("state.session.candidateKeys.length"), run("state.quizCandidatePool.length"));
+assert.ok(element("quiz-options").innerHTML.includes('data-correct="false"'));
+run("restoreQuiz()");
+assert.equal(run("state.quizScope.length"), 1);
+assert.ok(run("state.quizCandidatePool.length") > 1);
+run(`progress.practice[quizKey(state.quizScope[0])] = {answers: 1, correct: 0, lastCorrect: false};`);
+element("quiz-pool").value = "unpracticed";
+run("beginQuiz()");
+assert.match(element("quiz-setup-summary").textContent, /Нет карточек для выбранного фильтра/);
+element("quiz-pool").value = "mistakes";
+run("beginQuiz()");
+assert.equal(run("state.quizDeck.length"), 1);
+element("quiz-pool").value = "all";
+run(`state.quizScope = state.quizScope.slice(0, 1); state.quizCandidatePool = state.quizScope; beginQuiz();`);
+assert.match(element("quiz-setup-summary").textContent, /Нет однозначных вопросов/);
+run(`state.category = "passive-a2-forms"; state.deck = getDeck(state.category);
+     state.selectedCards = new Set([state.deck[0].id]); openQuizSetup(true);`);
+assert.equal(run("state.quizScope.length"), 6);
+assert.ok(run("state.quizCandidatePool.length") > 6);
+run(`state.category = "words"; state.deck = allCards().filter(card => card.numeralKind);
+     state.selectedCards = new Set([state.deck.find(card => card.numeralKind === "cardinal").id]); openQuizSetup(true);`);
+assert.ok(run('quizCandidates(state.quizScope[0], state.quizCandidatePool, "el-ru").every(item => item.card.numeralKind === "cardinal")'));
+run(`state.category = "verbs"; state.deck = getDeck("verbs"); state.selectedCards.clear();
+     state.selectedCards.add(state.deck[0].id); state.listQuery = "несуществующий поиск"; renderWordList();`);
+assert.equal(run("state.selectedCards.size"), 1);
+run(`state.quizCandidatePool = []; state.quizScope = quizItems(state.deck); startQuiz(state.quizScope);
+     delete state.session.candidateKeys; saveQuizSession(); restoreQuiz();`);
+assert.equal(run("state.quizCandidatePool.length"), run("state.quizScope.length"));
 console.log(`OK: both A2 modes, ${expectedVerbs} verbs / ${expectedVerbs * 6} forms, all directions, progress, restore, non-repeating batches and synonym exclusion`);

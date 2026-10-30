@@ -655,5 +655,15 @@
         "plural": "προγραμματίστριες"
       }
     ]
+  },
+  {
+    "id": "profession-2026103101",
+    "greek": "ο υδραυλικός / οι υδραυλικοί",
+    "russian": "сантехник / сантехники",
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": ["work-professions"],
+    "nounForms": [{"key":"main","gender":"masculine","singular":"υδραυλικός","plural":"υδραυλικοί"}],
+    "new": true
   }
 ]

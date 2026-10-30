@@ -17,6 +17,8 @@ const WORD_TOPICS = [
 ];
 const PARTS_OF_SPEECH = [["all", "Все"], ["noun", "Существительные"], ["adjective", "Прилагательные"], ["pronoun", "Местоимения"], ["numeral", "Числительные"], ["other", "Другое"]];
 const state = { data: {}, collections: [], situations: [], verbSets: [], aliases: {}, deck: [], quizDeck: [], category: "new", wordTopic: null, selectedCollections: new Set(), selectedSituations: new Set(), situationType: "all", wordPartOfSpeech: "all", index: 0, revealed: false, listMode: false, listQuery: "", listSort: "el", expandedConjugations: new Set(), quizDirection: localStorage.getItem("greek-a1-quiz-direction") || "el-ru", quizMode: "el-ru", quizIndex: 0, quizAnswer: null, quizSpokenText: "", answered: false, session: null, quizScope: [] };
+state.selectedCards = new Set(); state.selectingCards = false; state.quizCandidatePool = [];
+function resetCardSelection() { state.selectedCards.clear(); state.selectingCards = false; }
 const IRREGULAR_VERBS = new Set(["conjugation-020", "conjugation-024", "conjugation-025", "conjugation-039", "conjugation-047", "conjugation-048", "conjugation-049", "conjugation-050", "conjugation-051"]);
 const saved = JSON.parse(localStorage.getItem("greek-a1-progress") || "{}");
 const progress = { favorites: saved.favorites || [], mistakes: saved.mistakes || [], learned: saved.learned || [], practice: saved.practice || {}, games: { articles: saved.games?.articles || {}, stress: saved.games?.stress || {} } };
@@ -196,6 +198,7 @@ function openWordTopic(topic) {
   openSelectedCollections(topic === "all" ? "Все темы" : WORD_TOPICS.find(([key]) => key === topic)?.[1]);
 }
 function openSelectedCollections(label = "Выбранные подборки") {
+  resetCardSelection();
   state.category = "words"; state.wordTopic = "all"; state.wordPartOfSpeech = "all"; state.deck = getSelectedWordDeck(); state.index = 0; state.revealed = false; state.listMode = false; state.listQuery = "";
   $("study-title").textContent = label; $("study-kicker").textContent = "Слова по теме"; $("study-back-button").dataset.go = "word-topics";
   $("word-pos-filter").classList.remove("hidden"); $("situation-type-filter").classList.add("hidden"); renderPartOfSpeechFilter(); $("word-list-search").value = ""; showScreen("study"); renderCard();
@@ -212,6 +215,7 @@ function renderSituations() {
   showScreen("situations");
 }
 function openSelectedSituations() {
+  resetCardSelection();
   state.category = "situations"; state.wordTopic = null; state.situationType = "all"; state.deck = situationDeck(); state.index = 0; state.revealed = false; state.listMode = false; state.listQuery = "";
   $("word-list-search").value = "";
   $("study-title").textContent = state.selectedSituations.size === 1 ? state.situations.find(item => state.selectedSituations.has(item.id)).title : "Выбранные ситуации";
@@ -227,6 +231,7 @@ function situationDeckForAll() { const prior = state.situationType; state.situat
 
 function openCategory(category) {
   stopSpeaking();
+  resetCardSelection();
   state.category = category; state.wordTopic = null; state.selectedCollections.clear(); state.wordPartOfSpeech = "all"; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = ""; state.expandedConjugations.clear();
   const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
   $("study-title").textContent = title; $("study-kicker").textContent = isConjugationCategory(category) ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
@@ -262,7 +267,7 @@ function renderCard() {
   table.classList.toggle("hidden", !state.revealed || !card.forms);
 }
 
-function renderWordList() {
+function visibleWordList() {
   const query = normalizedSearch(state.listQuery);
   const sorted = [...state.deck].sort((left, right) => state.listSort === "ru" ? left.russian.localeCompare(right.russian, "ru") : sortHead(left).localeCompare(sortHead(right), "el", { sensitivity: "base" }));
   const visible = sorted.filter(card => {
@@ -270,11 +275,17 @@ function renderWordList() {
     const conjugation = card.type === "verbs" ? state.data.conjugations?.find(item => normalizedSearch(item.greek) === normalizedSearch(card.greek)) : null;
     return normalizedSearch(`${card.greek} ${card.russian} ${card.typeLabel} ${card.note || ""} ${Object.values(card.forms || conjugation?.forms || {}).join(" ")}`).includes(query);
   });
+  return { query, sorted, visible };
+}
+function renderWordList() {
+  const { query, sorted, visible } = visibleWordList();
+  renderSelectionControls();
   const itemLabel = isConjugationCategory() ? "глаголов" : "карточек";
   $("word-list-summary").textContent = query ? `Найдено: ${visible.length} из ${sorted.length}` : `${sorted.length} ${itemLabel} · по ${state.listSort === "ru" ? "русскому переводу" : "греческому алфавиту"}`;
   $("word-list-empty").classList.toggle("hidden", visible.length > 0);
   $("word-list").innerHTML = visible.map(card => {
     const favorite = progress.favorites.includes(card.id);
+    const select = state.selectingCards ? `<label class="card-selection"><input type="checkbox" data-select-card="${escapeHTML(card.id)}" ${state.selectedCards.has(card.id) ? "checked" : ""} aria-label="Выбрать ${escapeHTML(card.greek)}"><span>В тест</span></label>` : "";
     const label = card.group ? `${card.typeLabel} · ${card.group}` : card.typeLabel;
     if (isConjugationCategory()) {
       const expanded = state.expandedConjugations.has(card.id);
@@ -283,10 +294,16 @@ function renderWordList() {
         const russian = card.russianForms?.[pronoun] || "";
         return `<div class="conjugation-list-form"><span>${escapeHTML(pronoun)}</span><strong>${escapeHTML(form)}</strong><small>${escapeHTML(russian)}</small><button class="speak-form" type="button" data-list-form-card="${escapeHTML(card.id)}" data-list-form-index="${index}" aria-label="Произнести ${escapeHTML(form)}">🔊</button></div>`;
       }).join("");
-      return `<article class="word-list-row conjugation-list-item${expanded ? " expanded" : ""}"><button class="conjugation-list-toggle" type="button" data-conjugation-toggle="${escapeHTML(card.id)}" aria-expanded="${expanded}"><span class="word-list-copy"><span class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(card.group || "")}</span>${special ? '<span class="irregular-badge">особый</span>' : ""}</span><span class="conjugation-list-translation">${escapeHTML(card.russian)}</span></span><span class="conjugation-chevron" aria-hidden="true">⌄</span></button><div class="conjugation-list-forms"${expanded ? "" : " hidden"}>${card.note ? `<p class="word-list-note">${escapeHTML(card.note)}</p>` : ""}${forms}<button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
+      return `<article class="word-list-row conjugation-list-item${expanded ? " expanded" : ""}">${select}<button class="conjugation-list-toggle" type="button" data-conjugation-toggle="${escapeHTML(card.id)}" aria-expanded="${expanded}"><span class="word-list-copy"><span class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(card.group || "")}</span>${special ? '<span class="irregular-badge">особый</span>' : ""}</span><span class="conjugation-list-translation">${escapeHTML(card.russian)}</span></span><span class="conjugation-chevron" aria-hidden="true">⌄</span></button><div class="conjugation-list-forms"${expanded ? "" : " hidden"}>${card.note ? `<p class="word-list-note">${escapeHTML(card.note)}</p>` : ""}${forms}<button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
     }
-    return `<article class="word-list-row"><div class="word-list-copy"><div class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(label)}</span></div><p>${escapeHTML(card.russian)}</p>${card.note ? `<small class="word-list-note">${escapeHTML(card.note)}</small>` : ""}</div><div class="word-list-actions"><button class="word-list-speak" type="button" data-list-speak="${escapeHTML(card.id)}" aria-label="Произнести ${escapeHTML(card.greek)}">🔊</button><button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
+    return `<article class="word-list-row">${select}<div class="word-list-copy"><div class="word-list-greek"><strong>${escapeHTML(card.greek)}</strong><span>${escapeHTML(label)}</span></div><p>${escapeHTML(card.russian)}</p>${card.note ? `<small class="word-list-note">${escapeHTML(card.note)}</small>` : ""}</div><div class="word-list-actions"><button class="word-list-speak" type="button" data-list-speak="${escapeHTML(card.id)}" aria-label="Произнести ${escapeHTML(card.greek)}">🔊</button><button class="word-list-favorite" type="button" data-list-favorite="${escapeHTML(card.id)}" aria-label="${favorite ? "Убрать из избранного" : "Добавить в избранное"}">${favorite ? "★" : "☆"}</button></div></article>`;
   }).join("");
+}
+function renderSelectionControls() {
+  $("selection-toggle").setAttribute("aria-pressed", String(state.selectingCards));
+  for (const id of ["selection-all", "selection-clear", "selection-quiz"]) $(id).classList.toggle("hidden", !state.selectingCards);
+  $("selection-quiz").disabled = !state.selectedCards.size;
+  $("selection-summary").textContent = state.selectingCards ? `Выбрано: ${state.selectedCards.size}` : "";
 }
 
 function toggleFavorite(id) {
@@ -306,7 +323,7 @@ function reveal() {
 
 function quizKey(item) { return item.pronoun ? `${item.card.id}:${item.pronoun}` : item.card.id; }
 function quizItems(cards) { return isConjugationCategory() ? cards.flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : cards.map(card => ({ card })); }
-function sameQuizKind(left, right) { return left.card.type === right.card.type && (left.card.type !== "words" && left.card.type !== "professions" || left.card.partOfSpeech === right.card.partOfSpeech); }
+function sameQuizKind(left, right) { return left.card.type === right.card.type && (left.card.type !== "words" && left.card.type !== "professions" || left.card.partOfSpeech === right.card.partOfSpeech && (left.card.partOfSpeech !== "numeral" || left.card.numeralKind === right.card.numeralKind)); }
 function quizCandidates(item, pool, direction) {
   const label = candidate => candidate.pronoun ? (direction === "ru-el" ? candidate.form : candidate.russian) : candidate.card[direction === "ru-el" ? "greek" : "russian"];
   const own = normalizedSearch(label(item));
@@ -319,26 +336,28 @@ function quizCandidates(item, pool, direction) {
   }));
 }
 function quizDirectionAt(index) { return state.quizMode === "mixed" ? (index % 2 ? "ru-el" : "el-ru") : state.quizMode; }
-function eligibleQuizItems(pool) { return pool.filter(item => quizCandidates(item, pool, "el-ru").length && quizCandidates(item, pool, "ru-el").length); }
-function openQuizSetup() {
-  stopSpeaking(); state.quizScope = quizItems(state.deck);
+function eligibleQuizItems(pool, candidates = pool) { return pool.filter(item => quizCandidates(item, candidates, "el-ru").length && quizCandidates(item, candidates, "ru-el").length); }
+function openQuizSetup(selectedOnly = false) {
+  stopSpeaking(); state.quizCandidatePool = quizItems(state.deck);
+  state.quizScope = selectedOnly ? state.quizCandidatePool.filter(item => state.selectedCards.has(item.card.id)) : state.quizCandidatePool;
   $("quiz-mode").value = localStorage.getItem("greek-a1-quiz-direction") || "el-ru";
-  const eligible = eligibleQuizItems(state.quizScope).length;
-  $("quiz-setup-summary").textContent = `${eligible} доступных вопросов из ${state.quizScope.length}; ${state.quizScope.length - eligible} исключено: нет однозначно неверного варианта. Поиск в списке на тест не влияет.`;
+  const eligible = eligibleQuizItems(state.quizScope, state.quizCandidatePool).length;
+  $("quiz-setup-summary").textContent = `${selectedOnly ? "Выбранные карточки. " : ""}${eligible} доступных вопросов из ${state.quizScope.length}; ${state.quizScope.length - eligible} исключено: нет однозначно неверного варианта в разделе. Поиск в списке на тест не влияет.`;
   showScreen("quiz-setup");
 }
 function saveQuizSession() { localStorage.setItem("greek-a1-active-quiz", JSON.stringify(state.session)); renderDashboard(); }
 function startQuiz(items, scope = state.quizScope, previousSeen = []) {
   const limit = $("quiz-limit").value === "all" ? items.length : Number($("quiz-limit").value);
-  const pool = eligibleQuizItems(scope);
+  const candidates = state.quizCandidatePool.length ? state.quizCandidatePool : scope;
+  const pool = eligibleQuizItems(scope, candidates);
   const allowed = new Set(pool.map(quizKey));
   const selected = shuffle(items.filter(item => allowed.has(quizKey(item)))).slice(0, limit);
   const skipped = items.length - items.filter(item => allowed.has(quizKey(item))).length;
-  if (!selected.length) { $("quiz-setup-summary").textContent = `Нет однозначных вопросов. Исключено: ${skipped}. Объедините несколько подборок.`; showScreen("quiz-setup"); return; }
+  if (!selected.length) { $("quiz-setup-summary").textContent = items.length ? `Нет однозначных вопросов. Исключено: ${skipped}. Расширьте раздел или подборку.` : "Нет карточек для выбранного фильтра. Выберите другой материал или отметьте больше слов."; showScreen("quiz-setup"); return; }
   state.quizMode = $("quiz-mode").value;
   document.querySelector("#quiz .back-button").dataset.go = "study";
   localStorage.setItem("greek-a1-quiz-direction", state.quizMode);
-  state.session = { keys: selected.map(quizKey), scopeKeys: scope.map(quizKey), seen: previousSeen, answers: [], index: 0, mode: state.quizMode, category: state.category, skipped };
+  state.session = { keys: selected.map(quizKey), scopeKeys: scope.map(quizKey), candidateKeys: candidates.map(quizKey), seen: previousSeen, answers: [], index: 0, mode: state.quizMode, category: state.category, skipped };
   state.quizDeck = selected; state.quizIndex = 0; state.quizScope = scope; saveQuizSession(); showScreen("quiz"); renderQuestion();
 }
 function beginQuiz() {
@@ -354,13 +373,13 @@ function restoreQuiz() {
   const byKey = new Map(source.map(item => [quizKey(item), item]));
   const deck = savedSession.keys.map(key => byKey.get(key));
   if (deck.some(item => !item)) { localStorage.removeItem("greek-a1-active-quiz"); alert("Словарь обновился, часть вопросов исчезла. Выберите тему заново."); renderDashboard(); return; }
-  state.session = savedSession; state.quizDeck = deck; state.quizScope = savedSession.scopeKeys.map(key => byKey.get(key)).filter(Boolean); state.quizMode = savedSession.mode; state.quizIndex = savedSession.index;
+  state.session = savedSession; state.quizDeck = deck; state.quizScope = savedSession.scopeKeys.map(key => byKey.get(key)).filter(Boolean); state.quizCandidatePool = (savedSession.candidateKeys || savedSession.scopeKeys).map(key => byKey.get(key)).filter(Boolean); state.quizMode = savedSession.mode; state.quizIndex = savedSession.index;
   state.category = savedSession.category; state.deck = [...new Map(state.quizScope.map(item => [item.card.id, item.card])).values()]; $("quiz-mode").value = savedSession.mode; document.querySelector("#quiz .back-button").dataset.go = "dashboard"; showScreen("quiz"); renderQuestion();
 }
 function renderQuestion() {
   const item = state.quizDeck[state.quizIndex]; if (!item) return;
   const direction = quizDirectionAt(state.quizIndex);
-  const pool = eligibleQuizItems(state.quizScope);
+  const pool = state.quizCandidatePool.length ? state.quizCandidatePool : state.quizScope;
   const distractors = quizCandidates(item, pool, direction).slice(0, 3);
   const answer = item.pronoun ? (direction === "ru-el" ? item.form : item.russian) : item.card[direction === "ru-el" ? "greek" : "russian"];
   const prompt = item.pronoun ? (direction === "ru-el" ? item.russian : item.form) : item.card[direction === "ru-el" ? "russian" : "greek"];
@@ -401,7 +420,7 @@ function finishQuiz() {
     return `<article class="result-error"><strong>${escapeHTML(greek)}</strong> — ${escapeHTML(russian)}${item.card.note ? `<p>${escapeHTML(item.card.note)}</p>` : ""}</article>`;
   }).join("") || "Ошибок нет!";
   $("quiz-retry").classList.toggle("hidden", correct === answers.length);
-  $("quiz-more").classList.toggle("hidden", !eligibleQuizItems(state.quizScope).some(item => !state.session.seen.includes(quizKey(item))));
+  $("quiz-more").classList.toggle("hidden", !eligibleQuizItems(state.quizScope, state.quizCandidatePool).some(item => !state.session.seen.includes(quizKey(item))));
   localStorage.removeItem("greek-a1-active-quiz"); renderDashboard(); showScreen("quiz-result");
 }
 
@@ -590,9 +609,10 @@ document.addEventListener("click", event => {
   const situation = event.target.closest("[data-situation]")?.dataset.situation;
   if (situation) { state.selectedSituations.has(situation) ? state.selectedSituations.delete(situation) : state.selectedSituations.add(situation); renderSituations(); }
   const situationType = event.target.closest("[data-situation-type]")?.dataset.situationType;
-  if (situationType) { state.situationType = situationType; state.deck = situationDeck(); state.index = 0; state.revealed = false; renderSituationFilter(); renderCard(); }
+  if (situationType) { resetCardSelection(); state.situationType = situationType; state.deck = situationDeck(); state.index = 0; state.revealed = false; renderSituationFilter(); renderCard(); }
   const wordPos = event.target.closest("[data-word-pos]")?.dataset.wordPos;
   if (wordPos) {
+    resetCardSelection();
     state.wordPartOfSpeech = wordPos; state.deck = getSelectedWordDeck(wordPos); state.index = 0; state.revealed = false; state.listQuery = ""; $("word-list-search").value = ""; renderPartOfSpeechFilter(); renderCard();
   }
   const go = event.target.closest("[data-go]")?.dataset.go; if (go) showScreen(go);
@@ -633,8 +653,13 @@ $("favorite-button").addEventListener("click", () => { const id = state.deck[sta
 $("speak-button").addEventListener("click", () => { const text = state.deck[state.index]?.greek; if (text) speakGreek(text); });
 $("quiz-speak-button").addEventListener("click", () => { if (state.quizSpokenText) speakGreek(state.quizSpokenText); });
 $("previous-button").addEventListener("click", () => move(-1)); $("next-button").addEventListener("click", () => move(1));
-$("quiz-button").addEventListener("click", openQuizSetup);
-$("study-list-quiz").addEventListener("click", openQuizSetup);
+$("quiz-button").addEventListener("click", () => openQuizSetup());
+$("study-list-quiz").addEventListener("click", () => openQuizSetup());
+$("selection-toggle").addEventListener("click", () => { state.selectingCards = !state.selectingCards; renderWordList(); });
+$("selection-all").addEventListener("click", () => { visibleWordList().visible.forEach(card => state.selectedCards.add(card.id)); renderWordList(); });
+$("selection-clear").addEventListener("click", () => { state.selectedCards.clear(); renderWordList(); });
+$("selection-quiz").addEventListener("click", () => openQuizSetup(true));
+$("word-list").addEventListener("change", event => { const input = event.target.closest("[data-select-card]"); if (!input) return; input.checked ? state.selectedCards.add(input.dataset.selectCard) : state.selectedCards.delete(input.dataset.selectCard); renderSelectionControls(); });
 $("quiz-start").addEventListener("click", beginQuiz);
 $("quiz-next").addEventListener("click", () => { stopSpeaking(); if (state.quizIndex + 1 >= state.quizDeck.length) finishQuiz(); else { state.quizIndex += 1; state.session.index = state.quizIndex; saveQuizSession(); renderQuestion(); } });
 $("quiz-retry").addEventListener("click", () => startQuiz(state.quizDeck.filter(item => state.session.answers.some(answer => answer.key === quizKey(item) && !answer.correct)), state.quizScope, state.session.seen));

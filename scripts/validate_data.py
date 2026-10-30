@@ -76,6 +76,9 @@ def main() -> None:
     for card in themed:
         if card["partOfSpeech"] != "noun":
             assert "nounForms" not in card, f"noun forms on non-noun: {card['id']}"
+            if card["partOfSpeech"] == "numeral":
+                assert card.get("numeralKind") in {"cardinal", "ordinal"}, f"bad numeral kind: {card['id']}"
+                assert f"numbers-{card['numeralKind']}" in card["collectionIds"], f"bad numeral collection: {card['id']}"
             continue
         forms = card.get("nounForms")
         assert isinstance(forms, list) and forms, f"missing noun forms: {card['id']}"

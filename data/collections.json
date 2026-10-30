@@ -33,5 +33,7 @@
   {"id":"other-description","title":"Размеры и свойства","parent":"other"},
   {"id":"other-pronouns","title":"Местоимения","parent":"other"},
   {"id":"other-quantity","title":"Количество","parent":"other"},
-  {"id":"other-abstract","title":"Понятия и состояния","parent":"other"}
+  {"id":"other-abstract","title":"Понятия и состояния","parent":"other"},
+  {"id":"numbers-cardinal","title":"Числительные: количество","parent":"other"},
+  {"id":"numbers-ordinal","title":"Числительные: порядок","parent":"other"}
 ]

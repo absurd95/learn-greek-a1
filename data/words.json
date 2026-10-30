@@ -9959,5 +9959,2474 @@
     ],
     "note": "Связано с η ευτυχία — счастье. Οι φίλοι είναι ευτυχισμένοι — друзья счастливы.",
     "new": true
+  },
+  {
+    "id": "word-2026103101",
+    "greek": "το διαμέρισμα / τα διαμερίσματα",
+    "russian": "квартира",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "διαμέρισμα",
+        "plural": "διαμερίσματα"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103102",
+    "greek": "το ισόγειο / τα ισόγεια",
+    "russian": "первый уровень здания / этаж на уровне земли",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "ισόγειο",
+        "plural": "ισόγεια"
+      }
+    ],
+    "note": "В Греции первый этаж над землёй — ο πρώτος όροφος."
+  },
+  {
+    "id": "word-2026103103",
+    "greek": "ο ημιώροφος / οι ημιώροφοι",
+    "russian": "промежуточный этаж / мезонин",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "ημιώροφος",
+        "plural": "ημιώροφοι"
+      }
+    ],
+    "note": "Обычно между ισόγειο и первым этажом; ημι- означает «полу-»."
+  },
+  {
+    "id": "word-2026103104",
+    "greek": "το υπόγειο / τα υπόγεια",
+    "russian": "подвал / подземное помещение",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "υπόγειο",
+        "plural": "υπόγεια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103105",
+    "greek": "η γκαρσονιέρα / οι γκαρσονιέρες",
+    "russian": "однокомнатная квартира / студия",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "γκαρσονιέρα",
+        "plural": "γκαρσονιέρες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103106",
+    "greek": "το δυάρι / τα δυάρια",
+    "russian": "двухкомнатная квартира",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "δυάρι",
+        "plural": "δυάρια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103107",
+    "greek": "το τριάρι / τα τριάρια",
+    "russian": "трёхкомнатная квартира",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "τριάρι",
+        "plural": "τριάρια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103108",
+    "greek": "το τεσσάρι / τα τεσσάρια",
+    "russian": "четырёхкомнатная квартира",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "τεσσάρι",
+        "plural": "τεσσάρια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103109",
+    "greek": "η μεζονέτα / οι μεζονέτες",
+    "russian": "двухуровневое жильё / мезонет",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "μεζονέτα",
+        "plural": "μεζονέτες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103110",
+    "greek": "το μπάνιο / τα μπάνια",
+    "russian": "ванная комната / купание",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "μπάνιο",
+        "plural": "μπάνια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103111",
+    "greek": "η τραπεζαρία / οι τραπεζαρίες",
+    "russian": "столовая / обеденная зона",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "τραπεζαρία",
+        "plural": "τραπεζαρίες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103112",
+    "greek": "το καθιστικό / τα καθιστικά",
+    "russian": "гостиная / общая комната",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "καθιστικό",
+        "plural": "καθιστικά"
+      }
+    ],
+    "note": "Το σαλόνι — гостиная; слова близки по значению."
+  },
+  {
+    "id": "word-2026103113",
+    "greek": "το υπνοδωμάτιο / τα υπνοδωμάτια",
+    "russian": "спальня / спальная комната",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "υπνοδωμάτιο",
+        "plural": "υπνοδωμάτια"
+      }
+    ],
+    "note": "Η κρεβατοκάμαρα — спальня."
+  },
+  {
+    "id": "word-2026103114",
+    "greek": "η κρεβατοκάμαρα / οι κρεβατοκάμαρες",
+    "russian": "спальня",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "κρεβατοκάμαρα",
+        "plural": "κρεβατοκάμαρες"
+      }
+    ],
+    "note": "Близко по смыслу к το υπνοδωμάτιο."
+  },
+  {
+    "id": "word-2026103115",
+    "greek": "το συρτάρι / τα συρτάρια",
+    "russian": "выдвижной ящик",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "συρτάρι",
+        "plural": "συρτάρια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103116",
+    "greek": "ο νεροχύτης / οι νεροχύτες",
+    "russian": "кухонная мойка",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "νεροχύτης",
+        "plural": "νεροχύτες"
+      }
+    ],
+    "note": "Ο νιπτήρας — раковина в ванной."
+  },
+  {
+    "id": "word-2026103117",
+    "greek": "η βρύση / οι βρύσες",
+    "russian": "водопроводный кран",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "βρύση",
+        "plural": "βρύσες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103118",
+    "greek": "το κομοδίνο / τα κομοδίνα",
+    "russian": "прикроватная тумбочка",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "κομοδίνο",
+        "plural": "κομοδίνα"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103119",
+    "greek": "ο καθρέφτης / οι καθρέφτες",
+    "russian": "зеркало",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "καθρέφτης",
+        "plural": "καθρέφτες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103120",
+    "greek": "το τραπέζι / τα τραπέζια",
+    "russian": "стол",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "τραπέζι",
+        "plural": "τραπέζια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103121",
+    "greek": "η καρέκλα / οι καρέκλες",
+    "russian": "стул",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "καρέκλα",
+        "plural": "καρέκλες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103122",
+    "greek": "ο καναπές / οι καναπέδες",
+    "russian": "диван",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "καναπές",
+        "plural": "καναπέδες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103123",
+    "greek": "η πολυθρόνα / οι πολυθρόνες",
+    "russian": "кресло",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "πολυθρόνα",
+        "plural": "πολυθρόνες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103124",
+    "greek": "το χαλί / τα χαλιά",
+    "russian": "ковёр",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "χαλί",
+        "plural": "χαλιά"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103125",
+    "greek": "το φωτιστικό / τα φωτιστικά",
+    "russian": "светильник",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "φωτιστικό",
+        "plural": "φωτιστικά"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103126",
+    "greek": "η μπανιέρα / οι μπανιέρες",
+    "russian": "ванна",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "μπανιέρα",
+        "plural": "μπανιέρες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103127",
+    "greek": "ο νιπτήρας / οι νιπτήρες",
+    "russian": "умывальник / раковина в ванной",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "νιπτήρας",
+        "plural": "νιπτήρες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103128",
+    "greek": "η λεκάνη τουαλέτας / οι λεκάνες τουαλέτας",
+    "russian": "унитаз",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "λεκάνη τουαλέτας",
+        "plural": "λεκάνες τουαλέτας"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103129",
+    "greek": "η συρταριέρα / οι συρταριέρες",
+    "russian": "комод",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "συρταριέρα",
+        "plural": "συρταριέρες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103130",
+    "greek": "το πλυντήριο ρούχων / τα πλυντήρια ρούχων",
+    "russian": "стиральная машина",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "πλυντήριο ρούχων",
+        "plural": "πλυντήρια ρούχων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103131",
+    "greek": "το πλυντήριο πιάτων / τα πλυντήρια πιάτων",
+    "russian": "посудомоечная машина",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "πλυντήριο πιάτων",
+        "plural": "πλυντήρια πιάτων"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103132",
+    "greek": "το κουδούνι / τα κουδούνια",
+    "russian": "звонок / дверной звонок",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "κουδούνι",
+        "plural": "κουδούνια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103133",
+    "greek": "το πάτωμα / τα πατώματα",
+    "russian": "пол / напольное покрытие",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "πάτωμα",
+        "plural": "πατώματα"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103134",
+    "greek": "η θέρμανση / οι θερμάνσεις",
+    "russian": "отопление / обогрев",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "θέρμανση",
+        "plural": "θερμάνσεις"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103135",
+    "greek": "η οδός / οι οδοί",
+    "russian": "улица / дорога",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "οδός",
+        "plural": "οδοί"
+      }
+    ],
+    "note": "Книжное и официальное название улицы; винительный: την οδό."
+  },
+  {
+    "id": "word-2026103136",
+    "greek": "ο πεζός / οι πεζοί",
+    "russian": "пешеход",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "πεζός",
+        "plural": "πεζοί"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103137",
+    "greek": "το πεζοδρόμιο / τα πεζοδρόμια",
+    "russian": "тротуар",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "πεζοδρόμιο",
+        "plural": "πεζοδρόμια"
+      }
+    ],
+    "note": "Не путать с ο πεζόδρομος — пешеходная улица."
+  },
+  {
+    "id": "word-2026103138",
+    "greek": "ο πεζόδρομος / οι πεζόδρομοι",
+    "russian": "пешеходная улица",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "πεζόδρομος",
+        "plural": "πεζόδρομοι"
+      }
+    ],
+    "note": "Не путать с το πεζοδρόμιο — тротуар."
+  },
+  {
+    "id": "word-2026103139",
+    "greek": "η διάβαση / οι διαβάσεις",
+    "russian": "переход / переправа",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "διάβαση",
+        "plural": "διαβάσεις"
+      }
+    ],
+    "note": "Η διάβαση πεζών — пешеходный переход; η υπόγεια διάβαση — подземный переход."
+  },
+  {
+    "id": "word-2026103140",
+    "greek": "το στενό / τα στενά",
+    "russian": "переулок / узкий проход",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "στενό",
+        "plural": "στενά"
+      }
+    ],
+    "note": "Как прилагательное στενός — узкий."
+  },
+  {
+    "id": "word-2026103141",
+    "greek": "το φανάρι / τα φανάρια",
+    "russian": "светофор / фонарь",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "φανάρι",
+        "plural": "φανάρια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103142",
+    "greek": "η γωνία / οι γωνίες",
+    "russian": "угол / перекрёсток",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "γωνία",
+        "plural": "γωνίες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103143",
+    "greek": "η λεωφόρος / οι λεωφόροι",
+    "russian": "проспект",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "λεωφόρος",
+        "plural": "λεωφόροι"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103144",
+    "greek": "ο χάρτης / οι χάρτες",
+    "russian": "карта местности",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "χάρτης",
+        "plural": "χάρτες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103145",
+    "greek": "η παιδική χαρά / οι παιδικές χαρές",
+    "russian": "детская площадка",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "παιδική χαρά",
+        "plural": "παιδικές χαρές"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103146",
+    "greek": "ο ιδιοκτήτης / οι ιδιοκτήτες",
+    "russian": "владелец / собственник",
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "ιδιοκτήτης",
+        "plural": "ιδιοκτήτες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103147",
+    "greek": "η ηλικία / οι ηλικίες",
+    "russian": "возраст",
+    "topic": "time",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "ηλικία",
+        "plural": "ηλικίες"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103148",
+    "greek": "το τετραγωνικό μέτρο / τα τετραγωνικά μέτρα",
+    "russian": "квадратный метр",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-quantity"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "τετραγωνικό μέτρο",
+        "plural": "τετραγωνικά μέτρα"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103149",
+    "greek": "το σκοτάδι / τα σκοτάδια",
+    "russian": "темнота",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "σκοτάδι",
+        "plural": "σκοτάδια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103150",
+    "greek": "η γη",
+    "russian": "земля / Земля",
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "nature-weather"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "γη"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103151",
+    "greek": "το σχόλιο / τα σχόλια",
+    "russian": "комментарий",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "σχόλιο",
+        "plural": "σχόλια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103152",
+    "greek": "το κομμωτήριο / τα κομμωτήρια",
+    "russian": "парикмахерская",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "κομμωτήριο",
+        "plural": "κομμωτήρια"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103153",
+    "greek": "το ταχυδρομείο / τα ταχυδρομεία",
+    "russian": "почта / почтовое отделение",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "ταχυδρομείο",
+        "plural": "ταχυδρομεία"
+      }
+    ]
+  },
+  {
+    "id": "word-2026103154",
+    "greek": "η στροφή / οι στροφές",
+    "russian": "поворот",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "στροφή",
+        "plural": "στροφές"
+      }
+    ],
+    "note": "Связано с στρίβω — поворачивать."
+  },
+  {
+    "id": "word-2026103155",
+    "greek": "η ύπαρξη / οι υπάρξεις",
+    "russian": "существование / существо",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "new": true,
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "ύπαρξη",
+        "plural": "υπάρξεις"
+      }
+    ],
+    "note": "Связано с υπάρχω — существовать."
+  },
+  {
+    "id": "word-2026103156",
+    "greek": "ήσυχος / ήσυχη / ήσυχο",
+    "russian": "тихий / спокойный",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Тихий район: ήσυχη περιοχή.",
+    "new": true
+  },
+  {
+    "id": "word-2026103157",
+    "greek": "ίσιος / ίσια / ίσιο",
+    "russian": "ровный / прямой",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Ίσιος δρόμος — прямая дорога; ευθεία — прямо.",
+    "new": true
+  },
+  {
+    "id": "word-2026103158",
+    "greek": "υπόγειος / υπόγεια / υπόγειο",
+    "russian": "подземный / подвальный",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Η υπόγεια διάβαση — подземный переход.",
+    "new": true
+  },
+  {
+    "id": "word-2026103159",
+    "greek": "στενός / στενή / στενό",
+    "russian": "узкий",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Το στενό — переулок.",
+    "new": true
+  },
+  {
+    "id": "word-2026103160",
+    "greek": "σίγουρος / σίγουρη / σίγουρο",
+    "russian": "уверенный / несомненный",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Είμαι σίγουρος — я уверен.",
+    "new": true
+  },
+  {
+    "id": "word-2026103161",
+    "greek": "σκοτεινός / σκοτεινή / σκοτεινό",
+    "russian": "тёмный",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Το σκοτάδι — темнота.",
+    "new": true
+  },
+  {
+    "id": "word-2026103162",
+    "greek": "φωτεινός / φωτεινή / φωτεινό",
+    "russian": "светлый / хорошо освещённый",
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Φωτεινό δωμάτιο — светлая комната.",
+    "new": true
+  },
+  {
+    "id": "word-2026103198",
+    "greek": "ποιανού / ποιανής",
+    "russian": "чей / чья / чьё / чьи",
+    "topic": "other",
+    "partOfSpeech": "pronoun",
+    "collectionIds": [
+      "other-pronouns"
+    ],
+    "note": "Ποιανού είναι το σπίτι; — Чей это дом? Ποιανής — о владелице.",
+    "new": true
+  },
+  {
+    "id": "word-2026103199",
+    "greek": "το γραφείο / τα γραφεία",
+    "russian": "письменный стол / офис",
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": ["home-furniture", "work-business"],
+    "nounForms": [{"key":"main","gender":"neuter","singular":"γραφείο","plural":"γραφεία"}],
+    "new": true
+  },
+  {
+    "id": "word-2026103100",
+    "greek": "το ραντεβού / τα ραντεβού",
+    "russian": "встреча по договорённости / запись на приём",
+    "note": "Неизменяемое существительное. Κλείνω ραντεβού — назначаю встречу.",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": ["other-abstract"],
+    "nounForms": [{"key":"main","gender":"neuter","singular":"ραντεβού","plural":"ραντεβού"}],
+    "new": true
+  },
+  {
+    "id": "word-20261031100",
+    "greek": "το κλείσιμο / τα κλεισίματα",
+    "russian": "закрытие / закрывание",
+    "note": "Связано с κλείνω — закрывать.",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": ["other-abstract"],
+    "nounForms": [{"key":"main","gender":"neuter","singular":"κλείσιμο","plural":"κλεισίματα"}],
+    "new": true
+  },
+  {
+    "id": "word-20261031101",
+    "greek": "η υπόγεια διάβαση / οι υπόγειες διαβάσεις",
+    "russian": "подземный переход",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": ["transport-places"],
+    "nounForms": [{"key":"main","gender":"feminine","singular":"υπόγεια διάβαση","plural":"υπόγειες διαβάσεις"}],
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-1",
+    "greek": "ένας / μία / ένα",
+    "russian": "число 1",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: α΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-1",
+    "greek": "πρώτος / πρώτη / πρώτο",
+    "russian": "1-й / 1-я / 1-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: α΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-2",
+    "greek": "δύο",
+    "russian": "число 2",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: β΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-2",
+    "greek": "δεύτερος / δεύτερη / δεύτερο",
+    "russian": "2-й / 2-я / 2-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: β΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-3",
+    "greek": "τρεις / τρία",
+    "russian": "число 3",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: γ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-3",
+    "greek": "τρίτος / τρίτη / τρίτο",
+    "russian": "3-й / 3-я / 3-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: γ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-4",
+    "greek": "τέσσερις / τέσσερα",
+    "russian": "число 4",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: δ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-4",
+    "greek": "τέταρτος / τέταρτη / τέταρτο",
+    "russian": "4-й / 4-я / 4-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: δ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-5",
+    "greek": "πέντε",
+    "russian": "число 5",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ε΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-5",
+    "greek": "πέμπτος / πέμπτη / πέμπτο",
+    "russian": "5-й / 5-я / 5-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ε΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-6",
+    "greek": "έξι",
+    "russian": "число 6",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: στ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-6",
+    "greek": "έκτος / έκτη / έκτο",
+    "russian": "6-й / 6-я / 6-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: στ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-7",
+    "greek": "εφτά / επτά",
+    "russian": "число 7",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ζ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-7",
+    "greek": "έβδομος / έβδομη / έβδομο",
+    "russian": "7-й / 7-я / 7-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ζ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-8",
+    "greek": "οχτώ / οκτώ",
+    "russian": "число 8",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: η΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-8",
+    "greek": "όγδοος / όγδοη / όγδοο",
+    "russian": "8-й / 8-я / 8-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: η΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-9",
+    "greek": "εννιά / εννέα",
+    "russian": "число 9",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: θ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-9",
+    "greek": "ένατος / ένατη / ένατο",
+    "russian": "9-й / 9-я / 9-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: θ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-10",
+    "greek": "δέκα",
+    "russian": "число 10",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ι΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-10",
+    "greek": "δέκατος / δέκατη / δέκατο",
+    "russian": "10-й / 10-я / 10-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ι΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-11",
+    "greek": "έντεκα",
+    "russian": "число 11",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ια΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-11",
+    "greek": "ενδέκατος / ενδέκατη / ενδέκατο",
+    "russian": "11-й / 11-я / 11-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ια΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-12",
+    "greek": "δώδεκα",
+    "russian": "число 12",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιβ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-12",
+    "greek": "δωδέκατος / δωδέκατη / δωδέκατο",
+    "russian": "12-й / 12-я / 12-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιβ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-13",
+    "greek": "δεκατρείς / δεκατρία",
+    "russian": "число 13",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιγ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-13",
+    "greek": "δέκατος τρίτος / δέκατη τρίτη / δέκατο τρίτο",
+    "russian": "13-й / 13-я / 13-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιγ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-14",
+    "greek": "δεκατέσσερις / δεκατέσσερα",
+    "russian": "число 14",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιδ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-14",
+    "greek": "δέκατος τέταρτος / δέκατη τέταρτη / δέκατο τέταρτο",
+    "russian": "14-й / 14-я / 14-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιδ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-15",
+    "greek": "δεκαπέντε",
+    "russian": "число 15",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιε΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-15",
+    "greek": "δέκατος πέμπτος / δέκατη πέμπτη / δέκατο πέμπτο",
+    "russian": "15-й / 15-я / 15-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιε΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-16",
+    "greek": "δεκαέξι",
+    "russian": "число 16",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιστ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-16",
+    "greek": "δέκατος έκτος / δέκατη έκτη / δέκατο έκτο",
+    "russian": "16-й / 16-я / 16-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιστ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-17",
+    "greek": "δεκαεφτά / δεκαεπτά",
+    "russian": "число 17",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιζ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-17",
+    "greek": "δέκατος έβδομος / δέκατη έβδομη / δέκατο έβδομο",
+    "russian": "17-й / 17-я / 17-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιζ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-18",
+    "greek": "δεκαοχτώ / δεκαοκτώ",
+    "russian": "число 18",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιη΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-18",
+    "greek": "δέκατος όγδοος / δέκατη όγδοη / δέκατο όγδοο",
+    "russian": "18-й / 18-я / 18-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιη΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-19",
+    "greek": "δεκαεννιά / δεκαεννέα",
+    "russian": "число 19",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ιθ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-19",
+    "greek": "δέκατος ένατος / δέκατη ένατη / δέκατο ένατο",
+    "russian": "19-й / 19-я / 19-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ιθ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-20",
+    "greek": "είκοσι",
+    "russian": "число 20",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: κ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-20",
+    "greek": "εικοστός / εικοστή / εικοστό",
+    "russian": "20-й / 20-я / 20-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: κ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-21",
+    "greek": "είκοσι ένας / είκοσι μία / είκοσι ένα",
+    "russian": "число 21",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: κα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-21",
+    "greek": "εικοστός πρώτος / εικοστή πρώτη / εικοστό πρώτο",
+    "russian": "21-й / 21-я / 21-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: κα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-22",
+    "greek": "είκοσι δύο",
+    "russian": "число 22",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: κβ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-22",
+    "greek": "εικοστός δεύτερος / εικοστή δεύτερη / εικοστό δεύτερο",
+    "russian": "22-й / 22-я / 22-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: κβ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-30",
+    "greek": "τριάντα",
+    "russian": "число 30",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: λ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-30",
+    "greek": "τριακοστός / τριακοστή / τριακοστό",
+    "russian": "30-й / 30-я / 30-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: λ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-40",
+    "greek": "σαράντα",
+    "russian": "число 40",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: μ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-40",
+    "greek": "τεσσαρακοστός / τεσσαρακοστή / τεσσαρακοστό",
+    "russian": "40-й / 40-я / 40-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: μ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-50",
+    "greek": "πενήντα",
+    "russian": "число 50",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ν΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-50",
+    "greek": "πεντηκοστός / πεντηκοστή / πεντηκοστό",
+    "russian": "50-й / 50-я / 50-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ν΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-60",
+    "greek": "εξήντα",
+    "russian": "число 60",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ξ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-60",
+    "greek": "εξηκοστός / εξηκοστή / εξηκοστό",
+    "russian": "60-й / 60-я / 60-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ξ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-70",
+    "greek": "εβδομήντα",
+    "russian": "число 70",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ο΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-70",
+    "greek": "εβδομηκοστός / εβδομηκοστή / εβδομηκοστό",
+    "russian": "70-й / 70-я / 70-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ο΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-80",
+    "greek": "ογδόντα",
+    "russian": "число 80",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: π΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-80",
+    "greek": "ογδοηκοστός / ογδοηκοστή / ογδοηκοστό",
+    "russian": "80-й / 80-я / 80-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: π΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-90",
+    "greek": "ενενήντα",
+    "russian": "число 90",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ϟ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-90",
+    "greek": "ενενηκοστός / ενενηκοστή / ενενηκοστό",
+    "russian": "90-й / 90-я / 90-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ϟ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-100",
+    "greek": "εκατό",
+    "russian": "число 100",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ρ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-100",
+    "greek": "εκατοστός / εκατοστή / εκατοστό",
+    "russian": "100-й / 100-я / 100-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ρ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-101",
+    "greek": "εκατόν ένας / εκατόν μία / εκατόν ένα",
+    "russian": "число 101",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ρα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-101",
+    "greek": "εκατοστός πρώτος / εκατοστή πρώτη / εκατοστό πρώτο",
+    "russian": "101-й / 101-я / 101-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ρα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-102",
+    "greek": "εκατόν δύο",
+    "russian": "число 102",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ρβ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-102",
+    "greek": "εκατοστός δεύτερος / εκατοστή δεύτερη / εκατοστό δεύτερο",
+    "russian": "102-й / 102-я / 102-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ρβ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-111",
+    "greek": "εκατόν έντεκα",
+    "russian": "число 111",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ρια΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-111",
+    "greek": "εκατοστός ενδέκατος / εκατοστή ενδέκατη / εκατοστό ενδέκατο",
+    "russian": "111-й / 111-я / 111-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ρια΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-200",
+    "greek": "διακόσιοι / διακόσιες / διακόσια",
+    "russian": "число 200",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: σ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-200",
+    "greek": "διακοσιοστός / διακοσιοστή / διακοσιοστό",
+    "russian": "200-й / 200-я / 200-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: σ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-300",
+    "greek": "τριακόσιοι / τριακόσιες / τριακόσια",
+    "russian": "число 300",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: τ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-300",
+    "greek": "τριακοσιοστός / τριακοσιοστή / τριακοσιοστό",
+    "russian": "300-й / 300-я / 300-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: τ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-400",
+    "greek": "τετρακόσιοι / τετρακόσιες / τετρακόσια",
+    "russian": "число 400",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: υ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-400",
+    "greek": "τετρακοσιοστός / τετρακοσιοστή / τετρακοσιοστό",
+    "russian": "400-й / 400-я / 400-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: υ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-500",
+    "greek": "πεντακόσιοι / πεντακόσιες / πεντακόσια",
+    "russian": "число 500",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: φ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-500",
+    "greek": "πεντακοσιοστός / πεντακοσιοστή / πεντακοσιοστό",
+    "russian": "500-й / 500-я / 500-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: φ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-600",
+    "greek": "εξακόσιοι / εξακόσιες / εξακόσια",
+    "russian": "число 600",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: χ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-600",
+    "greek": "εξακοσιοστός / εξακοσιοστή / εξακοσιοστό",
+    "russian": "600-й / 600-я / 600-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: χ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-700",
+    "greek": "εφτακόσιοι / εφτακόσιες / εφτακόσια",
+    "russian": "число 700",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ψ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-700",
+    "greek": "εφτακοσιοστός / εφτακοσιοστή / εφτακοσιοστό",
+    "russian": "700-й / 700-я / 700-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ψ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-800",
+    "greek": "οχτακόσιοι / οχτακόσιες / οχτακόσια",
+    "russian": "число 800",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ω΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-800",
+    "greek": "οχτακοσιοστός / οχτακοσιοστή / οχτακοσιοστό",
+    "russian": "800-й / 800-я / 800-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ω΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-900",
+    "greek": "εννιακόσιοι / εννιακόσιες / εννιακόσια",
+    "russian": "число 900",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ϡ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-900",
+    "greek": "εννιακοσιοστός / εννιακοσιοστή / εννιακοσιοστό",
+    "russian": "900-й / 900-я / 900-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ϡ΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-1000",
+    "greek": "χίλιοι / χίλιες / χίλια",
+    "russian": "число 1000",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ͵α. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-1000",
+    "greek": "χιλιοστός / χιλιοστή / χιλιοστό",
+    "russian": "1000-й / 1000-я / 1000-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ͵α. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-1001",
+    "greek": "χίλιοι ένας / χίλιες μία / χίλια ένα",
+    "russian": "число 1001",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ͵αα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-1001",
+    "greek": "χιλιοστός πρώτος / χιλιοστή πρώτη / χιλιοστό πρώτο",
+    "russian": "1001-й / 1001-я / 1001-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ͵αα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-1101",
+    "greek": "χίλιοι εκατόν ένας / χίλιες εκατόν μία / χίλια εκατόν ένα",
+    "russian": "число 1101",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ͵αρα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-1101",
+    "greek": "χιλιοστός εκατοστός πρώτος / χιλιοστή εκατοστή πρώτη / χιλιοστό εκατοστό πρώτο",
+    "russian": "1101-й / 1101-я / 1101-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ͵αρα΄. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-2000",
+    "greek": "δύο χιλιάδες",
+    "russian": "число 2000",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ͵β. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-2000",
+    "greek": "δισχιλιοστός / δισχιλιοστή / δισχιλιοστό",
+    "russian": "2000-й / 2000-я / 2000-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ͵β. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-10000",
+    "greek": "δέκα χιλιάδες",
+    "russian": "число 10000",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ͵ι. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-10000",
+    "greek": "δεκακισχιλιοστός / δεκακισχιλιοστή / δεκακισχιλιοστό",
+    "russian": "10000-й / 10000-я / 10000-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ͵ι. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-100000",
+    "greek": "εκατό χιλιάδες",
+    "russian": "число 100000",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: ͵ρ. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-100000",
+    "greek": "εκατοντακισχιλιοστός / εκατοντακισχιλιοστή / εκατοντακισχιλιοστό",
+    "russian": "100000-й / 100000-я / 100000-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: ͵ρ. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-1000000",
+    "greek": "ένα εκατομμύριο",
+    "russian": "число 1000000",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: —. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-1000000",
+    "greek": "εκατομμυριοστός / εκατομμυριοστή / εκατομμυριοστό",
+    "russian": "1000000-й / 1000000-я / 1000000-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: —. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-cardinal-1000000000",
+    "greek": "ένα δισεκατομμύριο",
+    "russian": "число 1000000000",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "cardinal",
+    "collectionIds": [
+      "numbers-cardinal"
+    ],
+    "note": "Количественное числительное. Греческая запись числа: —. Формы через / указывают варианты и род.",
+    "new": true
+  },
+  {
+    "id": "numeral-ordinal-1000000000",
+    "greek": "δισεκατομμυριοστός / δισεκατομμυριοστή / δισεκατομμυριοστό",
+    "russian": "1000000000-й / 1000000000-я / 1000000000-е",
+    "topic": "other",
+    "partOfSpeech": "numeral",
+    "numeralKind": "ordinal",
+    "collectionIds": [
+      "numbers-ordinal"
+    ],
+    "note": "Порядковое числительное. Греческая запись числа: —. Формы через / указывают варианты и род.",
+    "new": true
   }
 ]
