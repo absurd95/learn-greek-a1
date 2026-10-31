@@ -3,6 +3,7 @@ const fs = require("node:fs"), path = require("node:path"), vm = require("node:v
 const root = path.resolve(__dirname, ".."), G = require("../game-core.js");
 const names = ["words", "professions", "verbs", "adverbs", "conjugations", "phrases", "nationalities", "months", "weekdays"];
 const data = Object.fromEntries(names.map(type => [type, JSON.parse(fs.readFileSync(path.join(root, "data", type + ".json"), "utf8"))]));
+const situations = JSON.parse(fs.readFileSync(path.join(root, "data/situations.json"), "utf8"));
 const cards = names.flatMap(type => data[type].map(card => ({ ...card, type })));
 for (const number of ["singular", "plural", "mixed"]) {
   const pool = G.nounEntries(cards, { number });
@@ -64,6 +65,13 @@ for (const entry of cases) {
 }
 const alternate = G.stressEntries([{ id: "alt", type: "words", greek: "παράθυρου / παραθύρου", russian: "окна" }]);
 assert.equal(alternate.length, 1); assert.equal(alternate[0].acceptedIndices.length, 2);
+// Future vocabulary automatically joins both games when it supplies the required data.
+const futureWord = { id: "future-word", type: "words", partOfSpeech: "noun", greek: "το κάστρο", russian: "замок",
+  nounForms: [{ key: "main", gender: "neuter", singular: "κάστρο", plural: "κάστρα" }] };
+assert.deepEqual(G.nounEntries([futureWord]).map(entry => entry.text), ["κάστρο", "κάστρα"]);
+assert.ok(G.stressEntries([futureWord]).some(entry => entry.text === "κάστρο"));
+assert.equal(G.nounEntries([{ ...futureWord, nounForms: undefined }]).length, 0);
+assert.equal(G.stressEntries([{ id: "future-phrase", type: "phrases", greek: "Πού είναι;", russian: "Где?" }]).length, 0);
 const metrics = {}, settings = { kind: "articles", mode: "single", material: "errors" };
 G.updateMetric(metrics, G.metricKey(sample[0], settings), false, "2026-10-26");
 assert.equal(G.filterPractice(sample, settings, metrics).length, 1);
@@ -93,6 +101,24 @@ const source = fs.readFileSync(path.join(root, "app.js"), "utf8");
 vm.runInContext(source.slice(0, source.indexOf('document.addEventListener("click"')), context);
 const run = code => vm.runInContext(code, context);
 run("state.data = fixture");
+run("state.situations = " + JSON.stringify(situations) + "; state.selectedSituations = new Set(['directions']);");
+assert.ok(run("situationDeck().some(card => card.id === 'phrase-2026110101')"));
+assert.ok(run("situationDeck().some(card => card.collectionIds?.includes('transport-places') && !state.situations.find(item => item.id === 'directions').cardIds.includes(card.id))"));
+assert.equal(run("new Set(situationDeck().map(card => card.id)).size"), run("situationDeck().length"));
+run("state.category = 'situations'; var lessonTest = quizItems(quizMaterialCards(situationDeck()));");
+assert.ok(run("lessonTest.some(item => item.card.type === 'words')"));
+assert.ok(run("lessonTest.some(item => item.card.type === 'verbs')"));
+assert.ok(run("lessonTest.some(item => item.card.type === 'adverbs')"));
+assert.ok(!run("lessonTest.some(item => item.card.type === 'phrases')"));
+for (const lesson of situations) {
+  run(`state.selectedSituations = new Set([${JSON.stringify(lesson.id)}]); state.category = 'situations'; var lessonItems = quizItems(quizMaterialCards(situationDeck()));`);
+  assert.ok(run("lessonItems.some(item => ['words','professions'].includes(item.card.type))"), lesson.id + " has no word questions");
+  assert.ok(run("lessonItems.some(item => item.card.type === 'verbs')"), lesson.id + " has no verb questions");
+  assert.ok(!run("lessonItems.some(item => item.card.type === 'phrases')"), lesson.id + " leaks phrases into quiz");
+}
+run("state.data.verbs.push({ id: 'future-themed-verb', greek: 'Περιγράφω', russian: 'описывать', collectionIds: ['transport-places'] });");
+assert.ok(run("situationDeck().some(card => card.id === 'future-themed-verb')"), "future themed verbs join lessons automatically");
+run("state.data.verbs.pop()");
 for (const kind of ["articles", "stress"]) {
   run(`var settings = { kind: "${kind}", mode: "single", number: "singular", type: "all", material: "all", limit: "10" };
        var pool = rawGamePool(settings); startGameUnits(settings, pool, gameUnits(settings, pool));`);

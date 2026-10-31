@@ -104,11 +104,22 @@ def main() -> None:
     for item in situations:
         assert item["cardIds"] and len(item["cardIds"]) == len(set(item["cardIds"])), f"duplicate/empty situation: {item['id']}"
         assert set(item["cardIds"]) <= active_ids, f"unknown card in situation: {item['id']}"
+        assert item.get("collectionIds") and len(item["collectionIds"]) == len(set(item["collectionIds"])), f"missing/duplicate situation collections: {item['id']}"
+        assert set(item["collectionIds"]) <= set(collection_ids), f"unknown situation collection: {item['id']}"
         assert not any(card_id.startswith("conjugation-") for card_id in item["cardIds"]), f"whole conjugation in situation: {item['id']}"
-        assert len({card_id.split("-", 1)[0] for card_id in item["cardIds"]}) >= 2, f"situation does not mix material: {item['id']}"
+        situation_cards = [card for card in cards if card["id"] in item["cardIds"] or set(card.get("collectionIds", [])) & set(item["collectionIds"])]
+        assert len({card["id"] for card in situation_cards}) == len(situation_cards), f"duplicate situation card: {item['id']}"
+        assert len({card["id"].split("-", 1)[0] for card in situation_cards}) >= 2, f"situation does not mix material: {item['id']}"
+        types = {card["id"].split("-", 1)[0] for card in situation_cards}
+        assert types & {"word", "profession"}, f"situation has no vocabulary for tests: {item['id']}"
+        assert "verb" in types, f"situation has no verbs for tests: {item['id']}"
     for card in sources["phrases.json"]:
         if "sourceId" in card:
             assert card["sourceId"] in active_ids and card["sourceId"] != card["id"], f"bad phrase source: {card['id']}"
+
+    direction_phrases = {card["id"] for card in sources["phrases.json"] if "transport-places" in card.get("collectionIds", [])}
+    directions = next(item for item in situations if item["id"] == "directions")
+    assert len(direction_phrases & set(directions["cardIds"])) >= 7, "directions lesson needs curated route phrases"
 
     themed_by_id = {card["id"]: card for card in themed}
     for card_id, expected in EXPECTED_TOPICS.items():

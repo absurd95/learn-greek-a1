@@ -40,11 +40,11 @@ function migrateProgress() {
 function allCards() { return SOURCES.flatMap(([key, label]) => (state.data[key] || []).map(card => ({ ...card, type: key, typeLabel: label }))); }
 function themedWordCards() { return allCards().filter(card => card.type === "words" || card.type === "professions"); }
 function getWordTopicDeck(topic = "all", partOfSpeech = "all") {
-  return themedWordCards().filter(card => (topic === "all" || card.topic === topic) && (partOfSpeech === "all" || card.partOfSpeech === partOfSpeech));
+  return themedWordCards().filter(card => card.partOfSpeech !== "numeral" && (topic === "all" || card.topic === topic) && (partOfSpeech === "all" || card.partOfSpeech === partOfSpeech));
 }
 function getSelectedWordDeck(partOfSpeech = "all") {
   const ids = state.selectedCollections;
-  return themedWordCards().filter(card => [...ids].some(id => card.collectionIds?.includes(id)) && (partOfSpeech === "all" || card.partOfSpeech === partOfSpeech));
+  return themedWordCards().filter(card => card.partOfSpeech !== "numeral" && [...ids].some(id => card.collectionIds?.includes(id)) && (partOfSpeech === "all" || card.partOfSpeech === partOfSpeech));
 }
 function normalizedSearch(value) { return String(value).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("ru").trim(); }
 function sortHead(card) { return card.greek.split(/\s*[/·]\s*/)[0].replace(/^(ο|η|το|οι|τα)\s+/iu, ""); }
@@ -142,6 +142,8 @@ function verbSetDeck(forms = false) {
 function getDeck(category) {
   if (category === "passive-a2" || category === "passive-a2-forms") return verbSetDeck(category.endsWith("-forms"));
   const all = allCards();
+  if (category === "numerals") return all.filter(card => card.type === "words" && card.partOfSpeech === "numeral");
+  if (category === "words") return all.filter(card => card.type === "words" && card.partOfSpeech !== "numeral");
   if (category === "all") return all;
   if (category === "dictionary") return all.filter(card => card.type === "words" || card.type === "verbs");
   if (category === "new") return all.filter(card => card.new);
@@ -159,7 +161,8 @@ function renderDashboard() {
     ["new", "Новые", "＋", getDeck("new").length],
     ["dictionary", "Словарь", "Α↔Я", getDeck("dictionary").length],
     ["passive-a2", "Глаголы на -μαι · A2", "-μαι", getDeck("passive-a2").length],
-    ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, key === "words" ? themedWordCards().length : getDeck(key).length]),
+    ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, key === "words" ? themedWordCards().filter(card => card.partOfSpeech !== "numeral").length : getDeck(key).length]),
+    ["numerals", "Числительные", "123", getDeck("numerals").length],
     ["game-articles", "Артикли и род", "ο η το", "2 режима"],
     ["game-stress", "Ударение", "ά", "игра"],
     ["grammar", "Грамматика", "§", "16 тем"]
@@ -205,11 +208,17 @@ function openSelectedCollections(label = "Выбранные подборки") 
 }
 
 function situationDeck() {
-  const ids = new Set(state.situations.filter(item => state.selectedSituations.has(item.id)).flatMap(item => item.cardIds));
-  return allCards().filter(card => ids.has(card.id) && (state.situationType === "all" || card.type === state.situationType));
+  const selected = state.situations.filter(item => state.selectedSituations.has(item.id));
+  const ids = new Set(selected.flatMap(item => item.cardIds));
+  const collections = new Set(selected.flatMap(item => item.collectionIds || []));
+  return allCards().filter(card => (ids.has(card.id) || (card.collectionIds || []).some(id => collections.has(id))) &&
+    (state.situationType === "all" || card.type === state.situationType));
 }
 function renderSituations() {
-  $("situations-grid").innerHTML = state.situations.map(item => `<button class="collection-choice" type="button" data-situation="${item.id}" aria-pressed="${state.selectedSituations.has(item.id)}"><strong>${escapeHTML(item.title)}</strong><small>${item.cardIds.length} карточек</small></button>`).join("");
+  $("situations-grid").innerHTML = state.situations.map(item => {
+    const count = new Set([...item.cardIds, ...allCards().filter(card => (card.collectionIds || []).some(id => (item.collectionIds || []).includes(id))).map(card => card.id)]).size;
+    return `<button class="collection-choice" type="button" data-situation="${item.id}" aria-pressed="${state.selectedSituations.has(item.id)}"><strong>${escapeHTML(item.title)}</strong><small>${count} карточек</small></button>`;
+  }).join("");
   $("situations-summary").textContent = state.selectedSituations.size ? `${state.selectedSituations.size} ситуаций · ${situationDeck().length} уникальных карточек` : "Выберите занятие";
   $("open-selected-situations").classList.toggle("hidden", !state.selectedSituations.size);
   showScreen("situations");
@@ -233,7 +242,7 @@ function openCategory(category) {
   stopSpeaking();
   resetCardSelection();
   state.category = category; state.wordTopic = null; state.selectedCollections.clear(); state.wordPartOfSpeech = "all"; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = ""; state.expandedConjugations.clear();
-  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
+  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", numerals: "Числительные", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
   $("study-title").textContent = title; $("study-kicker").textContent = isConjugationCategory(category) ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
   $("study-back-button").dataset.go = "dashboard"; $("word-pos-filter").classList.add("hidden"); $("situation-type-filter").classList.add("hidden");
   $("word-list-search").value = ""; showScreen("study"); renderCard();
@@ -323,6 +332,11 @@ function reveal() {
 
 function quizKey(item) { return item.pronoun ? `${item.card.id}:${item.pronoun}` : item.card.id; }
 function quizItems(cards) { return isConjugationCategory() ? cards.flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : cards.map(card => ({ card })); }
+function quizMaterialCards(cards) {
+  if (state.category === "numerals") return cards.filter(card => card.type === "words" && card.partOfSpeech === "numeral");
+  if (state.category === "situations") return cards.filter(card => ["words", "professions", "verbs", "adverbs"].includes(card.type));
+  return cards.filter(card => !(card.type === "words" && card.partOfSpeech === "numeral"));
+}
 function sameQuizKind(left, right) { return left.card.type === right.card.type && (left.card.type !== "words" && left.card.type !== "professions" || left.card.partOfSpeech === right.card.partOfSpeech && (left.card.partOfSpeech !== "numeral" || left.card.numeralKind === right.card.numeralKind)); }
 function quizCandidates(item, pool, direction) {
   const label = candidate => candidate.pronoun ? (direction === "ru-el" ? candidate.form : candidate.russian) : candidate.card[direction === "ru-el" ? "greek" : "russian"];
@@ -338,7 +352,7 @@ function quizCandidates(item, pool, direction) {
 function quizDirectionAt(index) { return state.quizMode === "mixed" ? (index % 2 ? "ru-el" : "el-ru") : state.quizMode; }
 function eligibleQuizItems(pool, candidates = pool) { return pool.filter(item => quizCandidates(item, candidates, "el-ru").length && quizCandidates(item, candidates, "ru-el").length); }
 function openQuizSetup(selectedOnly = false) {
-  stopSpeaking(); state.quizCandidatePool = quizItems(state.deck);
+  stopSpeaking(); state.quizCandidatePool = quizItems(quizMaterialCards(state.deck));
   state.quizScope = selectedOnly ? state.quizCandidatePool.filter(item => state.selectedCards.has(item.card.id)) : state.quizCandidatePool;
   $("quiz-mode").value = localStorage.getItem("greek-a1-quiz-direction") || "el-ru";
   const eligible = eligibleQuizItems(state.quizScope, state.quizCandidatePool).length;
