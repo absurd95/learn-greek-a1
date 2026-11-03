@@ -278,7 +278,13 @@
       "numeral-ordinal-1",
       "numeral-ordinal-2",
       "numeral-ordinal-3",
-      "numeral-cardinal-60"
+      "numeral-cardinal-60",
+      "word-2026110304",
+      "phrase-2026110301",
+      "phrase-2026110302",
+      "phrase-2026110303",
+      "phrase-2026110304",
+      "phrase-2026110305"
     ],
     "collectionIds": [
       "home-rooms"
@@ -319,7 +325,12 @@
       "verb-e180a75e32",
       "verb-6d65aee237",
       "verb-e00bb71422",
-      "verb-3c69f7830d"
+      "verb-3c69f7830d",
+      "phrase-2026110310",
+      "phrase-2026110311",
+      "phrase-2026110312",
+      "phrase-2026110313",
+      "phrase-2026110318"
     ],
     "collectionIds": [
       "transport-places"

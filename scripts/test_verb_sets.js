@@ -44,6 +44,24 @@ vm.runInContext(source.slice(0, source.indexOf('document.addEventListener("click
 const run = code => vm.runInContext(code, context);
 run("state.data = fixture.data; state.verbSets = fixture.sets;");
 const expectedVerbs = context.fixture.sets.find(set => set.id === "passive-a2").verbIds.length;
+run('state.category = "important-phrases"; state.deck = getDeck("important-phrases");');
+assert.ok(run("state.deck.length >= 10"));
+assert.ok(run('state.deck.some(card => card.id === "phrase-2026103115")'));
+assert.ok(run('state.deck.every(card => card.type === "phrases" && card.important === true)'));
+run(`var greeting = state.deck.find(card => card.id === "phrase-72af7a54a5");
+     var wellbeing = state.deck.find(card => card.id === "phrase-01e34a099b");`);
+for (const direction of ["el-ru", "ru-el"]) assert.equal(run('quizCandidates({card:greeting}, [{card:wellbeing}], ' + JSON.stringify(direction) + ').length'), 0);
+for (const direction of ["el-ru", "ru-el", "mixed"]) {
+  run(`openCategory("important-phrases"); state.selectedCards = new Set(["phrase-2026103115"]); openQuizSetup(true);`);
+  element("quiz-mode").value = direction;
+  run("beginQuiz()");
+  assert.equal(run("state.quizDeck.length"), 1);
+  assert.equal(run("state.quizDeck[0].card.id"), "phrase-2026103115");
+  assert.ok(element("quiz-options").innerHTML.includes('data-correct="false"'));
+  run("restoreQuiz()");
+  assert.equal(run("state.quizDeck[0].card.id"), "phrase-2026103115");
+  assert.equal(run("state.quizMode"), direction);
+}
 const numbers = context.fixture.data.words.filter(card => card.numeralKind);
 assert.equal(numbers.filter(card => card.numeralKind === "cardinal").length, 49);
 assert.equal(numbers.filter(card => card.numeralKind === "ordinal").length, 49);

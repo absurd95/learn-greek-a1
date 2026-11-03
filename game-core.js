@@ -60,6 +60,7 @@ const GreekGames = (() => {
   function stressEntries(cards, settings = {}) {
     const entries = [];
     for (const card of cards) {
+      if (card.partOfSpeech === "numeral") continue;
       if (!["words", "professions", "verbs", "adverbs"].includes(card.type)) continue;
       if (settings.type && settings.type !== "all" && card.type !== settings.type) continue;
       if (!inCollections(card, settings.collectionIds)) continue;

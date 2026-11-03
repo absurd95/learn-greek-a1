@@ -63,7 +63,10 @@ function translationsOverlap(left, right) {
   const rightParts = translationParts(right);
   return leftParts.some(leftPart => rightParts.some(rightPart => leftPart === rightPart));
 }
-const CLOSE_MEANINGS = [new Set(["adverb-b47bd7fd69", "adverb-e566258347", "adverb-016463691a"])];
+const CLOSE_MEANINGS = [
+  new Set(["adverb-b47bd7fd69", "adverb-e566258347", "adverb-016463691a"]),
+  new Set(["phrase-72af7a54a5", "phrase-01e34a099b", "phrase-5db46833f4", "phrase-9054cd06c7", "phrase-0563dec29b"]),
+];
 function linkedMeanings(left, right) { return CLOSE_MEANINGS.some(group => group.has(left.id) && group.has(right.id)); }
 
 let activeUtterance = null;
@@ -142,6 +145,7 @@ function verbSetDeck(forms = false) {
 function getDeck(category) {
   if (category === "passive-a2" || category === "passive-a2-forms") return verbSetDeck(category.endsWith("-forms"));
   const all = allCards();
+  if (category === "important-phrases") return all.filter(card => card.type === "phrases" && card.important === true);
   if (category === "numerals") return all.filter(card => card.type === "words" && card.partOfSpeech === "numeral");
   if (category === "words") return all.filter(card => card.type === "words" && card.partOfSpeech !== "numeral");
   if (category === "all") return all;
@@ -161,6 +165,7 @@ function renderDashboard() {
     ["new", "Новые", "＋", getDeck("new").length],
     ["dictionary", "Словарь", "Α↔Я", getDeck("dictionary").length],
     ["passive-a2", "Глаголы на -μαι · A2", "-μαι", getDeck("passive-a2").length],
+    ["important-phrases", "Важные выражения", "✦", getDeck("important-phrases").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, key === "words" ? themedWordCards().filter(card => card.partOfSpeech !== "numeral").length : getDeck(key).length]),
     ["numerals", "Числительные", "123", getDeck("numerals").length],
     ["game-articles", "Артикли и род", "ο η το", "2 режима"],
@@ -242,7 +247,7 @@ function openCategory(category) {
   stopSpeaking();
   resetCardSelection();
   state.category = category; state.wordTopic = null; state.selectedCollections.clear(); state.wordPartOfSpeech = "all"; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = ""; state.expandedConjugations.clear();
-  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", numerals: "Числительные", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
+  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", numerals: "Числительные", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", "important-phrases": "Важные выражения", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
   $("study-title").textContent = title; $("study-kicker").textContent = isConjugationCategory(category) ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
   $("study-back-button").dataset.go = "dashboard"; $("word-pos-filter").classList.add("hidden"); $("situation-type-filter").classList.add("hidden");
   $("word-list-search").value = ""; showScreen("study"); renderCard();

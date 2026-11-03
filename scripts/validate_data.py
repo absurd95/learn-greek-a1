@@ -114,8 +114,14 @@ def main() -> None:
         assert types & {"word", "profession"}, f"situation has no vocabulary for tests: {item['id']}"
         assert "verb" in types, f"situation has no verbs for tests: {item['id']}"
     for card in sources["phrases.json"]:
+        if "important" in card:
+            assert isinstance(card["important"], bool), f"bad important flag: {card['id']}"
         if "sourceId" in card:
             assert card["sourceId"] in active_ids and card["sourceId"] != card["id"], f"bad phrase source: {card['id']}"
+
+    important = [card for card in sources["phrases.json"] if card.get("important")]
+    assert len(important) >= 10, "important expressions trainer needs enough phrases"
+    assert any(card["id"] == "phrase-2026103115" for card in important), "missing Έχω δίκιο"
 
     direction_phrases = {card["id"] for card in sources["phrases.json"] if "transport-places" in card.get("collectionIds", [])}
     directions = next(item for item in situations if item["id"] == "directions")

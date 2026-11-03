@@ -5,6 +5,14 @@ const names = ["words", "professions", "verbs", "adverbs", "conjugations", "phra
 const data = Object.fromEntries(names.map(type => [type, JSON.parse(fs.readFileSync(path.join(root, "data", type + ".json"), "utf8"))]));
 const situations = JSON.parse(fs.readFileSync(path.join(root, "data/situations.json"), "utf8"));
 const cards = names.flatMap(type => data[type].map(card => ({ ...card, type })));
+const numeralIds = new Set(cards.filter(card => card.partOfSpeech === "numeral").map(card => card.id));
+for (const opts of [{}, { includeCases: true }, { type: "words", includeCases: true }, { collectionIds: ["numbers-ordinal"] }]) {
+  assert.ok(G.stressEntries(cards, opts).every(entry => !numeralIds.has(entry.cardId)), "numeral leaked into stress game");
+}
+assert.ok(G.nounEntries(cards, { number: "mixed" }).every(entry => !numeralIds.has(entry.cardId)));
+const fakeNumeral = { id: "test-numeral", type: "words", partOfSpeech: "numeral", greek: "τέσσερα", russian: "четыре", nounForms: [{ key: "main", gender: "neuter", singular: "τέσσερα", genitiveSingular: "τέσσερων" }] };
+assert.equal(G.stressEntries([fakeNumeral], { includeCases: true }).length, 0);
+assert.equal(G.nounEntries([fakeNumeral]).length, 0);
 for (const number of ["singular", "plural", "mixed"]) {
   const pool = G.nounEntries(cards, { number });
   assert.ok(pool.length > 100);
@@ -45,6 +53,11 @@ for (const [word, expected] of [["ενοίκιο", "το"], ["νοίκι", "το
   assert.equal(G.article(entry), expected);
 }
 for (const [word, expected] of [["ισόγειο", "το"], ["ημιώροφος", "ο"], ["πεζοδρόμιο", "το"], ["οδός", "η"], ["υπόγεια διάβαση", "η"]]) {
+  const entry = rentalNouns.find(item => item.text === word);
+  assert.ok(entry, word + " missing from article game");
+  assert.equal(G.article(entry), expected);
+}
+for (const [word, expected] of [["αυλή", "η"], ["μέση", "η"], ["φως", "το"], ["πληροφορία", "η"], ["οδηγία", "η"]]) {
   const entry = rentalNouns.find(item => item.text === word);
   assert.ok(entry, word + " missing from article game");
   assert.equal(G.article(entry), expected);
@@ -155,4 +168,11 @@ assert.match(element("game-result-score").textContent, /1 из 1 раундов/
 run("startGameUnits(settings, pool, gameUnits(settings, pool)); gameSession.units[0].keys[0]='missing'; saveGame(); resumeGame();");
 assert.equal(storage.has("greek-a1-active-game"), false);
 assert.match(element("game-setup-summary").textContent, /Словарь обновился/);
+run(`progress.games.stress['numeral-cardinal-20:stress:lemma-0'] = {answers: 2, correct: 1};
+     settings = { kind: "stress", mode: "single", number: "singular", type: "all", material: "all", limit: "10" };
+     pool = rawGamePool(settings); startGameUnits(settings, pool, gameUnits(settings, pool));
+     gameSession.units[0].keys[0] = 'numeral-cardinal-20:stress:lemma-0'; saveGame(); resumeGame();`);
+assert.match(element("game-setup-summary").textContent, /Словарь обновился/);
+assert.equal(run("progress.games.stress['numeral-cardinal-20:stress:lemma-0'].answers"), 2);
+assert.equal(storage.has("greek-a1-active-game"), false);
 console.log("OK: noun genders, plural articles, all board modes, stress/diaeresis, genitive forms, scoring, progress, restore and no repeated batches");
