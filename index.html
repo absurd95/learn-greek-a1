@@ -28,6 +28,7 @@
         <p id="progress-copy">Выберите набор и начните тренировку.</p>
       <div class="progress"><span id="progress-bar"></span></div>
       <button id="resume-quiz" type="button" class="hidden">Продолжить тест</button>
+      <button id="resume-self-quiz" type="button" class="hidden">Продолжить самооценку</button>
       <button id="resume-game" class="secondary hidden" type="button">Продолжить игру</button>
       </div>
       <div id="category-grid" class="category-grid"></div>
@@ -147,8 +148,9 @@
     <section id="quiz-setup" class="screen" aria-labelledby="quiz-setup-title">
       <div class="section-heading"><button class="back-button" type="button" data-go="study">← Карточки</button><div><p class="eyebrow">Перед тестом</p><h2 id="quiz-setup-title">Настройка занятия</h2></div></div>
       <div class="quiz-panel quiz-setup-panel">
+        <label>Режим <select id="quiz-kind"><option value="choice">Выбор перевода</option><option value="self">Знаю / Не знаю</option></select></label>
         <label>Количество вопросов <select id="quiz-limit"><option value="10">10</option><option value="20">20</option><option value="all">Все</option></select></label>
-        <label>Направление <select id="quiz-mode"><option value="el-ru">Греческий → русский</option><option value="ru-el">Русский → греческий</option><option value="mixed">Смешанное</option></select></label>
+        <label id="quiz-direction-setting">Направление <select id="quiz-mode"><option value="el-ru">Греческий → русский</option><option value="ru-el">Русский → греческий</option><option value="mixed">Смешанное</option></select></label>
         <label>Материал <select id="quiz-pool"><option value="all">Все карточки</option><option value="mistakes">Ошибки</option><option value="unpracticed">Ещё не тренировались</option></select></label>
         <p id="quiz-setup-summary" class="note"></p>
         <button id="quiz-start" type="button">Начать тест</button>
@@ -169,9 +171,11 @@
         <div class="quiz-question-row">
           <h3 id="quiz-question"></h3>
           <button id="quiz-speak-button" class="speak-button compact" type="button" aria-label="Произнести вопрос по-гречески" title="Произнести по-гречески">🔊</button>
+          <button id="quiz-favorite-button" class="quiz-favorite hidden" type="button" aria-label="Добавить в избранное">☆</button>
         </div>
         <div id="quiz-options" class="quiz-options"></div>
         <p id="quiz-feedback" class="feedback" aria-live="polite"></p>
+        <p id="quiz-note" class="card-note hidden"></p>
         <button id="quiz-next" class="hidden" type="button">Следующий вопрос</button>
       </div>
     </section>
