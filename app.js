@@ -67,6 +67,8 @@ function translationsOverlap(left, right) {
 }
 const CLOSE_MEANINGS = [
   new Set(["adverb-b47bd7fd69", "adverb-e566258347", "adverb-016463691a"]),
+  new Set(["adverb-2026103112", "adverb-2026103113"]),
+  new Set(["adverb-2026090201", "adverb-2026103105"]),
   new Set(["phrase-72af7a54a5", "phrase-01e34a099b", "phrase-5db46833f4", "phrase-9054cd06c7", "phrase-0563dec29b"]),
 ];
 function linkedMeanings(left, right) { return CLOSE_MEANINGS.some(group => group.has(left.id) && group.has(right.id)); }

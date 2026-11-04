@@ -136,6 +136,17 @@ for (const direction of ["el-ru", "ru-el"]) {
   assert.equal(run('quizCandidates({card:feels},[{card:senses}], ' + JSON.stringify(direction) + ').length'), 0);
   assert.equal(run('quizCandidates({card:rents},[{card:takes}], ' + JSON.stringify(direction) + ').length'), 0);
 }
+for (const expression of ["δίπλα σε", "κοντά σε", "μέσα σε", "πάνω σε", "ανάμεσα σε", "πίσω από", "μπροστά από", "απέναντι από", "πάνω από", "κάτω από", "μακριά από", "έξω από"]) {
+  assert.ok(context.fixture.data.adverbs.some(card => card.greek.toLowerCase() === expression), expression + " missing");
+}
+run(`var aboveOn = allCards().find(card => card.id === "adverb-2026103112");
+     var aboveOver = allCards().find(card => card.id === "adverb-2026103113");
+     var behind = allCards().find(card => card.id === "adverb-2026090201");
+     var behindFrom = allCards().find(card => card.id === "adverb-2026103105");`);
+for (const direction of ["el-ru", "ru-el"]) {
+  assert.equal(run('quizCandidates({card:aboveOn},[{card:aboveOver}], ' + JSON.stringify(direction) + ').length'), 0);
+  assert.equal(run('quizCandidates({card:behind},[{card:behindFrom}], ' + JSON.stringify(direction) + ').length'), 0);
+}
 // A single selected word draws distractors from its original section, not from the selection.
 run(`openCategory("verbs"); state.selectedCards = new Set([state.deck[0].id]); openQuizSetup(true);`);
 assert.equal(run("state.quizScope.length"), 1);
