@@ -1,5 +1,253 @@
 [
   {
+    "id": "word-20261107001",
+    "greek": "το μαξιλάρι / τα μαξιλάρια",
+    "russian": "подушка",
+    "note": "Στον καναπέ υπάρχουν μαξιλάρια.",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μαξιλάρι",
+        "plural": "μαξιλάρια"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107002",
+    "greek": "το ταβάνι / τα ταβάνια",
+    "russian": "потолок",
+    "note": "Το ταβάνι είναι χαμηλό — потолок низкий.",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ταβάνι",
+        "plural": "ταβάνια"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107003",
+    "greek": "ο κήπος / οι κήποι",
+    "russian": "сад",
+    "note": "Η μονοκατοικία έχει κήπο και αυλή.",
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "κήπος",
+        "plural": "κήποι"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107004",
+    "greek": "το φυτό / τα φυτά",
+    "russian": "растение",
+    "note": "Έχω ένα φυτό στο δωμάτιο.",
+    "new": true,
+    "topic": "nature",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "φυτό",
+        "plural": "φυτά"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107005",
+    "greek": "η θήκη / οι θήκες",
+    "russian": "чехол / футляр",
+    "note": "Η θήκη για το κινητό / για τα γυαλιά — чехол для телефона / футляр для очков.",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "θήκη",
+        "plural": "θήκες"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107006",
+    "greek": "η πινακοθήκη / οι πινακοθήκες",
+    "russian": "картинная галерея",
+    "note": "Ο πίνακας — картина; πινακοθήκη — собрание картин, галерея.",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πινακοθήκη",
+        "plural": "πινακοθήκες"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107007",
+    "greek": "ο πίνακας / οι πίνακες",
+    "russian": "картина / доска / таблица",
+    "note": "В зависимости от контекста — картина, классная доска или таблица.",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "πίνακας",
+        "plural": "πίνακες"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107008",
+    "greek": "το τραπεζάκι / τα τραπεζάκια",
+    "russian": "столик",
+    "note": "Уменьшительное от το τραπέζι — стол; η τράπεζα — банк.",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "τραπεζάκι",
+        "plural": "τραπεζάκια"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107009",
+    "greek": "ο βεσές / οι βεσέδες",
+    "russian": "туалет / уборная",
+    "note": "Разговорное название туалета; WC читается как βε-σε.",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "βεσές",
+        "plural": "βεσέδες"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107010",
+    "greek": "η θύρα / οι θύρες",
+    "russian": "дверь / вход",
+    "note": "Более официальное слово; в быту дверь обычно η πόρτα.",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "θύρα",
+        "plural": "θύρες"
+      }
+    ]
+  },
+  {
+    "id": "word-20261107011",
+    "greek": "αγαπημένος / αγαπημένη / αγαπημένο",
+    "russian": "любимый / любимая / любимое",
+    "note": "Связано с αγαπάω — любить: το αγαπημένο δωμάτιό μου — моя любимая комната.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
+  },
+  {
+    "id": "word-20261107012",
+    "greek": "άδειος / άδεια / άδειο",
+    "russian": "пустой / пустая / пустое",
+    "note": "Ένας άδειος χώρος — пустое помещение.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
+  },
+  {
+    "id": "word-20261107013",
+    "greek": "χαμηλός / χαμηλή / χαμηλό",
+    "russian": "низкий / низкая / низкое",
+    "note": "Το ταβάνι είναι χαμηλό — потолок низкий.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
+  },
+  {
+    "id": "word-20261107014",
+    "greek": "μοντέρνος / μοντέρνα / μοντέρνο",
+    "russian": "современный / современная / современное",
+    "note": "Τα μοντέρνα έπιπλα — современная мебель.",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ]
+  },
+  {
     "id": "word-1325bc6756",
     "greek": "Η άνοιξη",
     "russian": "весна",
@@ -190,6 +438,7 @@
     "id": "word-ccb23378ed",
     "greek": "η τράπεζα",
     "russian": "банк",
+    "note": "Не путать с το τραπέζι — стол и το τραπεζάκι — столик.",
     "new": false,
     "topic": "city",
     "partOfSpeech": "noun",
@@ -1572,6 +1821,7 @@
     "id": "word-2026080402",
     "greek": "το διάλειμμα",
     "russian": "перерыв / перемена",
+    "note": "Την ώρα του διαλείμματος — во время перемены; του διαλείμματος — родительный падеж.",
     "new": true,
     "topic": "education",
     "partOfSpeech": "noun",
@@ -2433,6 +2683,7 @@
     "id": "word-2026080712",
     "greek": "η γειτονιά",
     "russian": "район / окрестности",
+    "note": "Η γειτονιά του Σταύρου είναι πιο ήσυχη — район Ставроса тише.",
     "new": true,
     "topic": "city",
     "partOfSpeech": "noun",
@@ -8321,6 +8572,7 @@
     "id": "word-2026102603",
     "greek": "η κουζίνα / οι κουζίνες",
     "russian": "кухня / кухни",
+    "note": "В зависимости от контекста также кухонная плита.",
     "topic": "home",
     "partOfSpeech": "noun",
     "collectionIds": [
@@ -8791,6 +9043,7 @@
     "id": "word-2026102626",
     "greek": "ο τοίχος / οι τοίχοι",
     "russian": "стена / стены",
+    "note": "Οι τοίχοι είναι άσπροι — стены белые.",
     "topic": "home",
     "partOfSpeech": "noun",
     "collectionIds": [
@@ -10238,6 +10491,7 @@
     "id": "word-2026103115",
     "greek": "το συρτάρι / τα συρτάρια",
     "russian": "выдвижной ящик",
+    "note": "Η συρταριέρα — комод с выдвижными ящиками.",
     "topic": "home",
     "partOfSpeech": "noun",
     "collectionIds": [
@@ -10334,6 +10588,7 @@
     "id": "word-2026103120",
     "greek": "το τραπέζι / τα τραπέζια",
     "russian": "стол",
+    "note": "Το τραπεζάκι — небольшой столик; η τράπεζα — банк.",
     "topic": "home",
     "partOfSpeech": "noun",
     "collectionIds": [
@@ -11121,6 +11376,7 @@
   {
     "id": "word-2026103199",
     "greek": "το γραφείο / τα γραφεία",
+    "note": "Письменный стол, кабинет или офис: значение определяется контекстом.",
     "russian": "письменный стол / офис",
     "topic": "home",
     "partOfSpeech": "noun",

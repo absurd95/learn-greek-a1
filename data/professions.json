@@ -1,5 +1,31 @@
 [
   {
+    "id": "profession-2026110701",
+    "greek": "λογιστής / λογίστρια",
+    "russian": "бухгалтер / бухгалтер-женщина",
+    "note": "Не путать с ο υπολογιστής — компьютер.",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "λογιστής",
+        "plural": "λογιστές"
+      },
+      {
+        "key": "variant-2",
+        "gender": "feminine",
+        "singular": "λογίστρια",
+        "plural": "λογίστριες"
+      }
+    ]
+  },
+  {
     "id": "profession-dd070caf5d",
     "greek": "καθηγητής / καθηγήτρια",
     "russian": "преподаватель / преподавательница",
