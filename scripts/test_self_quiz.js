@@ -91,6 +91,53 @@ run(`state.selectedSituations = new Set(["rental"]); openSelectedSituations(); s
      state.selectedCards = new Set([state.deck.find(card => card.type === "phrases").id]); openQuizSetup(true);`);
 element("quiz-kind").value = "self"; run("updateQuizSetup(); beginQuiz()");
 assert.equal(run("state.quizDeck[0].card.type"), "phrases");
+// Reverse self-assessment hides the Greek answer and speech until either response.
+run(`openCategory("important-phrases"); state.selectedCards = new Set(["phrase-2026103115"]); openQuizSetup(true);`);
+element("quiz-kind").value = "self"; element("quiz-mode").value = "ru-el";
+run("updateQuizSetup(); beginQuiz()");
+assert.ok(!element("quiz-direction-setting").classes.has("hidden"));
+assert.match(element("quiz-question").textContent, /Я прав/);
+assert.ok(!element("quiz-feedback").textContent.includes("Έχω"));
+assert.ok(element("quiz-speak-button").classes.has("hidden"));
+assert.equal(run("state.quizSpokenText"), "");
+assert.equal(storage.get("greek-a1-self-quiz-direction"), "ru-el");
+assert.equal(storage.get("greek-a1-quiz-direction"), "el-ru");
+run("answerSelfQuiz(false)");
+assert.match(element("quiz-feedback").textContent, /Έχω δίκιο/);
+assert.ok(!element("quiz-speak-button").classes.has("hidden"));
+assert.equal(run("state.quizSpokenText"), "Έχω δίκιο.");
+const countBeforeCorrection = run('progress.practice["phrase-2026103115"].answers');
+run("answerSelfQuiz(true); restoreQuiz('self')");
+assert.equal(run('progress.practice["phrase-2026103115"].answers'), countBeforeCorrection);
+assert.equal(run("state.quizMode"), "ru-el");
+assert.match(element("quiz-feedback").textContent, /Έχω δίκιο/);
+assert.ok(!element("quiz-speak-button").classes.has("hidden"));
+// Legacy self sessions without a direction open as Greek to Russian.
+const legacy = JSON.parse(storage.get("greek-a1-active-self-quiz")); delete legacy.mode;
+storage.set("greek-a1-active-self-quiz", JSON.stringify(legacy)); run("restoreQuiz('self')");
+assert.equal(run("state.quizMode"), "el-ru");
+assert.equal(element("quiz-question").textContent, "Έχω δίκιο.");
+// Reverse form questions use the specific Russian and Greek form.
+run(`openCategory("passive-a2-forms"); state.selectedCards = new Set([state.deck[0].id]); openQuizSetup(true);`);
+element("quiz-kind").value = "self"; element("quiz-mode").value = "ru-el";
+run("updateQuizSetup(); beginQuiz()");
+assert.equal(element("quiz-question").textContent, run("state.quizDeck[0].russian"));
+assert.ok(element("quiz-speak-button").classes.has("hidden"));
+run("answerSelfQuiz(true)");
+assert.equal(run("state.quizSpokenText"), run("state.quizDeck[0].form"));
+assert.ok(element("quiz-feedback").textContent.includes(run("state.quizDeck[0].form")));
+// Mixed alternates per question; subsequent batches retain direction even if the setup changes.
+run(`openCategory("verbs"); state.deck = state.deck.slice(0, 12); openQuizSetup();`);
+element("quiz-kind").value = "self"; element("quiz-mode").value = "mixed";
+run("updateQuizSetup(); beginQuiz()");
+assert.equal(element("quiz-question").textContent, run("state.quizDeck[0].card.greek"));
+run("state.quizIndex = 1; renderQuestion()");
+assert.equal(element("quiz-question").textContent, run("state.quizDeck[1].card.russian"));
+assert.ok(element("quiz-speak-button").classes.has("hidden"));
+run("answerSelfQuiz(false)");
+element("quiz-mode").value = "el-ru";
+run("startQuiz([state.quizDeck[1]], state.quizScope, state.session.seen, state.session.mode)");
+assert.equal(run("state.quizMode"), "mixed");
 // Static UI invariant: mode selector belongs to quiz setup, not game setup.
 const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 assert.ok(html.indexOf('id="quiz-kind"') > html.indexOf('id="quiz-setup"'));

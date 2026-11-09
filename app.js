@@ -360,10 +360,12 @@ function quizCandidates(item, pool, direction) {
   }));
 }
 function quizDirectionAt(index) { return state.quizMode === "mixed" ? (index % 2 ? "ru-el" : "el-ru") : state.quizMode; }
+function quizDirectionStorage(kind) { return kind === "self" ? "greek-a1-self-quiz-direction" : "greek-a1-quiz-direction"; }
+function savedQuizDirection(kind) { const mode = localStorage.getItem(quizDirectionStorage(kind)); return ["el-ru", "ru-el", "mixed"].includes(mode) ? mode : "el-ru"; }
 function eligibleQuizItems(pool, candidates = pool) { return pool.filter(item => quizCandidates(item, candidates, "el-ru").length && quizCandidates(item, candidates, "ru-el").length); }
 function openQuizSetup(selectedOnly = false) {
   stopSpeaking(); state.quizSelectedOnly = selectedOnly; state.quizKind = "choice"; $("quiz-kind").value = "choice";
-  $("quiz-mode").value = localStorage.getItem("greek-a1-quiz-direction") || "el-ru";
+  $("quiz-mode").value = savedQuizDirection("choice");
   updateQuizSetup();
   showScreen("quiz-setup");
 }
@@ -371,12 +373,12 @@ function updateQuizSetup() {
   const self = $("quiz-kind").value === "self";
   state.quizCandidatePool = quizItems(self ? state.deck : quizMaterialCards(state.deck));
   state.quizScope = state.quizSelectedOnly ? state.quizCandidatePool.filter(item => state.selectedCards.has(item.card.id)) : state.quizCandidatePool;
-  $("quiz-direction-setting").classList.toggle("hidden", self);
+  $("quiz-direction-setting").classList.remove("hidden");
   const eligible = self ? state.quizScope.length : eligibleQuizItems(state.quizScope, state.quizCandidatePool).length;
   $("quiz-setup-summary").textContent = `${state.quizSelectedOnly ? "Выбранные карточки. " : ""}${eligible} доступных вопросов из ${state.quizScope.length}${self ? "; самооценка: перевод показывается после ответа." : `; ${state.quizScope.length - eligible} исключено: нет однозначно неверного варианта в разделе.`} Поиск в списке на тест не влияет.`;
 }
 function saveQuizSession() { localStorage.setItem(quizStorage(), JSON.stringify(state.session)); renderDashboard(); }
-function startQuiz(items, scope = state.quizScope, previousSeen = []) {
+function startQuiz(items, scope = state.quizScope, previousSeen = [], mode = $("quiz-mode").value) {
   const limit = $("quiz-limit").value === "all" ? items.length : Number($("quiz-limit").value);
   const candidates = state.quizCandidatePool.length ? state.quizCandidatePool : scope;
   const pool = state.quizKind === "self" ? scope : eligibleQuizItems(scope, candidates);
@@ -384,9 +386,9 @@ function startQuiz(items, scope = state.quizScope, previousSeen = []) {
   const selected = shuffle(items.filter(item => allowed.has(quizKey(item)))).slice(0, limit);
   const skipped = items.length - items.filter(item => allowed.has(quizKey(item))).length;
   if (!selected.length) { $("quiz-setup-summary").textContent = items.length ? `Нет однозначных вопросов. Исключено: ${skipped}. Расширьте раздел или подборку.` : "Нет карточек для выбранного фильтра. Выберите другой материал или отметьте больше слов."; showScreen("quiz-setup"); return; }
-  state.quizMode = state.quizKind === "self" ? "el-ru" : $("quiz-mode").value;
+  state.quizMode = ["el-ru", "ru-el", "mixed"].includes(mode) ? mode : "el-ru";
   document.querySelector("#quiz .back-button").dataset.go = "study";
-  if (state.quizKind !== "self") localStorage.setItem("greek-a1-quiz-direction", state.quizMode);
+  localStorage.setItem(quizDirectionStorage(state.quizKind), state.quizMode);
   state.session = { id: `${Date.now()}-${Math.random().toString(36).slice(2)}`, kind: state.quizKind, keys: selected.map(quizKey), scopeKeys: scope.map(quizKey), candidateKeys: candidates.map(quizKey), seen: previousSeen, answers: [], index: 0, mode: state.quizMode, category: state.category, skipped };
   state.quizDeck = selected; state.quizIndex = 0; state.quizScope = scope; saveQuizSession(); showScreen("quiz"); renderQuestion();
 }
@@ -405,6 +407,7 @@ function restoreQuiz(kind = "choice") {
   const byKey = new Map(source.map(item => [quizKey(item), item]));
   const deck = savedSession.keys.map(key => byKey.get(key));
   if (deck.some(item => !item)) { localStorage.removeItem(storage); alert("Словарь обновился, часть вопросов исчезла. Выберите тему заново."); renderDashboard(); return; }
+  savedSession.mode = ["el-ru", "ru-el", "mixed"].includes(savedSession.mode) ? savedSession.mode : "el-ru";
   state.session = savedSession; state.quizDeck = deck; state.quizScope = savedSession.scopeKeys.map(key => byKey.get(key)).filter(Boolean); state.quizCandidatePool = (savedSession.candidateKeys || savedSession.scopeKeys).map(key => byKey.get(key)).filter(Boolean); state.quizMode = savedSession.mode; state.quizIndex = savedSession.index;
   state.category = savedSession.category; state.deck = [...new Map(state.quizScope.map(item => [item.card.id, item.card])).values()]; $("quiz-mode").value = savedSession.mode; document.querySelector("#quiz .back-button").dataset.go = "dashboard"; showScreen("quiz"); renderQuestion();
 }
@@ -412,6 +415,7 @@ function renderQuestion() {
   const item = state.quizDeck[state.quizIndex]; if (!item) return;
   if (state.quizKind === "self") { renderSelfQuestion(); return; }
   $("quiz-favorite-button").classList.add("hidden"); $("quiz-note").classList.add("hidden");
+  $("quiz-question").classList.remove("quiz-russian-prompt");
   const direction = quizDirectionAt(state.quizIndex);
   const pool = state.quizCandidatePool.length ? state.quizCandidatePool : state.quizScope;
   const distractors = quizCandidates(item, pool, direction).slice(0, 3);
@@ -447,13 +451,16 @@ function answerQuiz(button) {
 function renderSelfQuestion() {
   const item = state.quizDeck[state.quizIndex], answer = state.session.answers[state.quizIndex];
   if (!item) return;
-  const prompt = item.pronoun ? item.form : item.card.greek;
-  const translation = item.pronoun ? item.russian : item.card.russian;
-  state.answered = Boolean(answer); state.quizSpokenText = prompt;
+  const greek = item.pronoun ? item.form : item.card.greek;
+  const russian = item.pronoun ? item.russian : item.card.russian;
+  const reverse = quizDirectionAt(state.quizIndex) === "ru-el";
+  const prompt = reverse ? russian : greek, translation = reverse ? greek : russian;
+  state.answered = Boolean(answer); state.quizSpokenText = reverse && !answer ? "" : greek;
+  $("quiz-question").classList.toggle("quiz-russian-prompt", reverse);
   $("quiz-title").textContent = "Знаю / Не знаю";
   $("quiz-direction").classList.add("hidden"); $("quiz-question").textContent = prompt;
   $("quiz-counter").textContent = `${state.quizIndex + 1} / ${state.quizDeck.length}`;
-  $("quiz-speak-button").classList.remove("hidden");
+  $("quiz-speak-button").classList.toggle("hidden", !state.quizSpokenText);
   const favorite = progress.favorites.includes(item.card.id), favoriteButton = $("quiz-favorite-button");
   favoriteButton.classList.remove("hidden"); favoriteButton.textContent = favorite ? "★" : "☆";
   favoriteButton.setAttribute("aria-label", favorite ? "Убрать из избранного" : "Добавить в избранное");
@@ -744,10 +751,11 @@ $("selection-clear").addEventListener("click", () => { state.selectedCards.clear
 $("selection-quiz").addEventListener("click", () => openQuizSetup(true));
 $("word-list").addEventListener("change", event => { const input = event.target.closest("[data-select-card]"); if (!input) return; input.checked ? state.selectedCards.add(input.dataset.selectCard) : state.selectedCards.delete(input.dataset.selectCard); renderSelectionControls(); });
 $("quiz-start").addEventListener("click", beginQuiz);
-$("quiz-kind").addEventListener("change", updateQuizSetup);
+$("quiz-kind").addEventListener("change", () => { $("quiz-mode").value = savedQuizDirection($("quiz-kind").value); updateQuizSetup(); });
+$("quiz-mode").addEventListener("change", () => localStorage.setItem(quizDirectionStorage($("quiz-kind").value), $("quiz-mode").value));
 $("quiz-next").addEventListener("click", () => { stopSpeaking(); if (state.quizIndex + 1 >= state.quizDeck.length) finishQuiz(); else { state.quizIndex += 1; state.session.index = state.quizIndex; saveQuizSession(); renderQuestion(); } });
-$("quiz-retry").addEventListener("click", () => startQuiz(state.quizDeck.filter(item => state.session.answers.some(answer => answer.key === quizKey(item) && !answer.correct)), state.quizScope, state.session.seen));
-$("quiz-more").addEventListener("click", () => { const prior = state.session.seen; const seen = new Set(prior); $("quiz-limit").value = "10"; startQuiz(state.quizScope.filter(item => !seen.has(quizKey(item))), state.quizScope, prior); });
+$("quiz-retry").addEventListener("click", () => startQuiz(state.quizDeck.filter(item => state.session.answers.some(answer => answer.key === quizKey(item) && !answer.correct)), state.quizScope, state.session.seen, state.session.mode));
+$("quiz-more").addEventListener("click", () => { const prior = state.session.seen; const seen = new Set(prior); $("quiz-limit").value = "10"; startQuiz(state.quizScope.filter(item => !seen.has(quizKey(item))), state.quizScope, prior, state.session.mode); });
 $("quiz-topics").addEventListener("click", () => state.category === "words" ? renderWordTopics() : showScreen("dashboard"));
 $("resume-quiz").addEventListener("click", () => restoreQuiz("choice"));
 $("resume-self-quiz").addEventListener("click", () => restoreQuiz("self"));
