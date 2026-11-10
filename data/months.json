@@ -1,14 +1,146 @@
 [
-  {"id":"month-january","greek":"Τον Ιανουάριο","russian":"В январе","new":true},
-  {"id":"month-february","greek":"Τον Φεβρουάριο","russian":"В феврале","new":true},
-  {"id":"month-march","greek":"Τον Μάρτιο","russian":"В марте","new":true},
-  {"id":"month-april","greek":"Τον Απρίλιο","russian":"В апреле","new":true},
-  {"id":"month-may","greek":"Τον Μάιο","russian":"В мае","new":true},
-  {"id":"month-june","greek":"Τον Ιούνιο","russian":"В июне","new":true},
-  {"id":"month-july","greek":"Τον Ιούλιο","russian":"В июле","new":true},
-  {"id":"month-august","greek":"Τον Αύγουστο","russian":"В августе","new":true},
-  {"id":"month-september","greek":"Τον Σεπτέμβριο","russian":"В сентябре","new":true},
-  {"id":"month-october","greek":"Τον Οκτώβριο","russian":"В октябре","new":true},
-  {"id":"month-november","greek":"Τον Νοέμβριο","russian":"В ноябре","new":true},
-  {"id":"month-december","greek":"Τον Δεκέμβριο","russian":"В декабре","new":true}
+  {
+    "id": "month-january",
+    "greek": "Τον Ιανουάριο",
+    "russian": "В январе",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Ιανουάριο έχουμε μάθημα ελληνικών.",
+        "russian": "В январе у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-february",
+    "greek": "Τον Φεβρουάριο",
+    "russian": "В феврале",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Φεβρουάριο έχουμε μάθημα ελληνικών.",
+        "russian": "В феврале у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-march",
+    "greek": "Τον Μάρτιο",
+    "russian": "В марте",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Μάρτιο έχουμε μάθημα ελληνικών.",
+        "russian": "В марте у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-april",
+    "greek": "Τον Απρίλιο",
+    "russian": "В апреле",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Απρίλιο έχουμε μάθημα ελληνικών.",
+        "russian": "В апреле у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-may",
+    "greek": "Τον Μάιο",
+    "russian": "В мае",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Μάιο έχουμε μάθημα ελληνικών.",
+        "russian": "В мае у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-june",
+    "greek": "Τον Ιούνιο",
+    "russian": "В июне",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Ιούνιο έχουμε μάθημα ελληνικών.",
+        "russian": "В июне у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-july",
+    "greek": "Τον Ιούλιο",
+    "russian": "В июле",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Ιούλιο έχουμε μάθημα ελληνικών.",
+        "russian": "В июле у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-august",
+    "greek": "Τον Αύγουστο",
+    "russian": "В августе",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Αύγουστο έχουμε μάθημα ελληνικών.",
+        "russian": "В августе у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-september",
+    "greek": "Τον Σεπτέμβριο",
+    "russian": "В сентябре",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Σεπτέμβριο έχουμε μάθημα ελληνικών.",
+        "russian": "В сентябре у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-october",
+    "greek": "Τον Οκτώβριο",
+    "russian": "В октябре",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Οκτώβριο έχουμε μάθημα ελληνικών.",
+        "russian": "В октябре у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-november",
+    "greek": "Τον Νοέμβριο",
+    "russian": "В ноябре",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Νοέμβριο έχουμε μάθημα ελληνικών.",
+        "russian": "В ноябре у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "month-december",
+    "greek": "Τον Δεκέμβριο",
+    "russian": "В декабре",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τον Δεκέμβριο έχουμε μάθημα ελληνικών.",
+        "russian": "В декабре у нас урок греческого."
+      }
+    ]
+  }
 ]

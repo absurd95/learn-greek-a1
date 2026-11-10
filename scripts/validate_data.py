@@ -42,6 +42,19 @@ def normalized(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def example_has_form(example: str, form: str) -> bool:
+    def plain(value: str) -> str:
+        return "".join(c for c in unicodedata.normalize("NFD", value.casefold()) if unicodedata.category(c) != "Mn")
+    text = plain(example)
+    for variant in form.split("/"):
+        # Parenthesised endings represent optional letters, e.g. ακούν(ε).
+        for candidate in (re.sub(r"\([^)]*\)", "", variant), variant.replace("(", "").replace(")", "")):
+            candidate = plain(candidate.strip())
+            if candidate and re.search(r"(?<![α-ω])" + re.escape(candidate) + r"(?![α-ω])", text):
+                return True
+    return False
+
+
 def main() -> None:
     sources = {path.name: json.loads(path.read_text()) for path in CARD_FILES}
     collections = json.loads((DATA / "collections.json").read_text())
@@ -100,6 +113,13 @@ def main() -> None:
     active_ids = set(ids)
     assert not (set(aliases) & active_ids), "retired ID still active"
     assert set(aliases.values()) <= active_ids, "missing alias target"
+    for start in aliases:
+        seen = set()
+        current = start
+        while current in aliases:
+            assert current not in seen, f"alias cycle: {start}"
+            seen.add(current)
+            current = aliases[current]
     assert len({item["id"] for item in situations}) == len(situations), "duplicate situation ID"
     for item in situations:
         assert item["cardIds"] and len(item["cardIds"]) == len(set(item["cardIds"])), f"duplicate/empty situation: {item['id']}"
@@ -114,6 +134,8 @@ def main() -> None:
         assert types & {"word", "profession"}, f"situation has no vocabulary for tests: {item['id']}"
         assert "verb" in types, f"situation has no verbs for tests: {item['id']}"
     for card in sources["phrases.json"]:
+        if "exampleOnly" in card:
+            assert isinstance(card["exampleOnly"], bool), f"bad exampleOnly flag: {card['id']}"
         if "important" in card:
             assert isinstance(card["important"], bool), f"bad important flag: {card['id']}"
         if "sourceId" in card:
@@ -139,6 +161,26 @@ def main() -> None:
     verb_sets = json.loads((DATA / "verb-sets.json").read_text())
     assert len({item["id"] for item in verb_sets}) == len(verb_sets), "duplicate verb set ID"
     verbs_by_id = {card["id"]: card for card in sources["verbs.json"]}
+    for card in cards:
+        assert "example" not in card, f"obsolete singular example field: {card['id']}"
+        examples = card.get("examples")
+        assert isinstance(examples, list) and examples, f"missing examples: {card['id']}"
+        for example in examples:
+            assert isinstance(example, dict) and example.get("greek") and example.get("russian"), f"incomplete example: {card['id']}"
+            assert not re.search(r"[А-Яа-яЁё]", example["greek"]), f"Russian leaked in Greek example: {card['id']}"
+        if card.get("forms"):
+            form_examples = card.get("formExamples", {})
+            assert set(form_examples) == set(card["forms"]), f"missing form examples: {card['id']}"
+            for pronoun, examples in form_examples.items():
+                assert isinstance(examples, list) and examples and all(e.get("greek") and e.get("russian") for e in examples), f"incomplete form example: {card['id']} {pronoun}"
+                assert all(not re.search(r"[А-Яа-яЁё]", e["greek"]) for e in examples), f"Russian leaked in form example: {card['id']} {pronoun}"
+                assert any(example_has_form(e["greek"], card["forms"][pronoun]) for e in examples), f"form missing from example: {card['id']} {pronoun}"
+    past_keys = [(card.get("verbId"), card.get("tense")) for card in sources["past-conjugations.json"]]
+    assert len(past_keys) == len(set(past_keys)), "duplicate past verb and tense"
+    for card in sources["past-conjugations.json"]:
+        assert card.get("verbId") in verbs_by_id, f"unknown past verb: {card['id']}"
+        assert card.get("tense") in {"aorist", "imperfect"}, f"bad past tense: {card['id']}"
+        assert len(card.get("forms", {})) == 6 and set(card["forms"]) == set(card.get("russianForms", {})), f"incomplete past forms: {card['id']}"
     for item in verb_sets:
         assert item.get("title") and item.get("description"), f"incomplete verb set: {item['id']}"
         assert item["verbIds"] and len(item["verbIds"]) == len(set(item["verbIds"])), f"duplicate/empty verb set: {item['id']}"

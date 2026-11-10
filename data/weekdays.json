@@ -1,10 +1,98 @@
 [
-  {"id":"weekday-monday","greek":"Τη Δευτέρα","russian":"В понедельник","new":true},
-  {"id":"weekday-tuesday","greek":"Την Τρίτη","russian":"Во вторник","new":true},
-  {"id":"weekday-wednesday","greek":"Την Τετάρτη","russian":"В среду","new":true},
-  {"id":"weekday-thursday","greek":"Την Πέμπτη","russian":"В четверг","new":true},
-  {"id":"weekday-friday","greek":"Την Παρασκευή","russian":"В пятницу","new":true},
-  {"id":"weekday-saturday","greek":"Το Σάββατο","russian":"В субботу","new":true},
-  {"id":"weekday-sunday","greek":"Την Κυριακή","russian":"В воскресенье","new":true},
-  {"id":"weekday-weekend","greek":"Το Σαββατοκύριακο","russian":"На выходных","new":true}
+  {
+    "id": "weekday-monday",
+    "greek": "Τη Δευτέρα",
+    "russian": "В понедельник",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τη Δευτέρα έχουμε μάθημα ελληνικών.",
+        "russian": "В понедельник у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "weekday-tuesday",
+    "greek": "Την Τρίτη",
+    "russian": "Во вторник",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Την Τρίτη έχουμε μάθημα ελληνικών.",
+        "russian": "Во вторник у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "weekday-wednesday",
+    "greek": "Την Τετάρτη",
+    "russian": "В среду",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Την Τετάρτη έχουμε μάθημα ελληνικών.",
+        "russian": "В среду у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "weekday-thursday",
+    "greek": "Την Πέμπτη",
+    "russian": "В четверг",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Την Πέμπτη έχουμε μάθημα ελληνικών.",
+        "russian": "В четверг у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "weekday-friday",
+    "greek": "Την Παρασκευή",
+    "russian": "В пятницу",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Την Παρασκευή έχουμε μάθημα ελληνικών.",
+        "russian": "В пятницу у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "weekday-saturday",
+    "greek": "Το Σάββατο",
+    "russian": "В субботу",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Το Σάββατο έχουμε μάθημα ελληνικών.",
+        "russian": "В субботу у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "weekday-sunday",
+    "greek": "Την Κυριακή",
+    "russian": "В воскресенье",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Την Κυριακή έχουμε μάθημα ελληνικών.",
+        "russian": "В воскресенье у нас урок греческого."
+      }
+    ]
+  },
+  {
+    "id": "weekday-weekend",
+    "greek": "Το Σαββατοκύριακο",
+    "russian": "На выходных",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Το Σαββατοκύριακο έχουμε μάθημα ελληνικών.",
+        "russian": "На выходных у нас урок греческого."
+      }
+    ]
+  }
 ]

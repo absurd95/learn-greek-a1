@@ -11,9 +11,10 @@ function element(id) {
   }
   return elements.get(id);
 }
-const files = ["words", "verbs", "adverbs", "phrases", "professions", "nationalities", "months", "weekdays", "conjugations"];
+const files = ["words", "verbs", "adverbs", "phrases", "professions", "nationalities", "months", "weekdays", "conjugations", "past-conjugations"];
 const fixture = { data: Object.fromEntries(files.map(name => [name, JSON.parse(fs.readFileSync(path.join(root, "data", name + ".json"), "utf8"))])),
   situations: JSON.parse(fs.readFileSync(path.join(root, "data/situations.json"), "utf8")), sets: JSON.parse(fs.readFileSync(path.join(root, "data/verb-sets.json"), "utf8")) };
+fixture.data.phrases.find(card => card.id === "phrase-2026103115").examples = [{ greek: "Έχω δίκιο ή κάνω λάθος;", russian: "Я прав или ошибаюсь?" }];
 const ctx = vm.createContext({ console, Date, Math, Map, Set, JSON, fixture,
   localStorage: { getItem: k => storage.get(k) ?? null, setItem: (k, v) => storage.set(k, v), removeItem: k => storage.delete(k) },
   document: { getElementById: element, querySelectorAll: () => [], querySelector: () => element("selector") }, window: { scrollTo() {} },
@@ -31,10 +32,12 @@ run("openQuizSetup(true)"); element("quiz-kind").value = "self"; run("updateQuiz
 assert.equal(run("state.quizDeck.length"), 1);
 assert.equal(element("quiz-question").textContent, "Έχω δίκιο.");
 assert.ok(!element("quiz-feedback").textContent.includes("Я прав"));
-assert.ok(element("quiz-note").classes.has("hidden"));
+assert.match(element("quiz-note").textContent, /Έχω δίκιο ή κάνω λάθος/);
+assert.doesNotMatch(element("quiz-note").textContent, /Я прав или ошибаюсь/);
 assert.equal(storage.get("greek-a1-active-quiz"), ordinary);
 run("answerSelfQuiz(false)");
 assert.match(element("quiz-feedback").textContent, /Я прав/);
+assert.match(element("quiz-note").textContent, /Я прав или ошибаюсь/);
 assert.ok(!element("quiz-note").classes.has("hidden"));
 assert.equal(run('progress.practice["phrase-2026103115"].answers'), 1);
 assert.equal(run('progress.practice["phrase-2026103115"].correct'), 0);
@@ -98,6 +101,7 @@ run("updateQuizSetup(); beginQuiz()");
 assert.ok(!element("quiz-direction-setting").classes.has("hidden"));
 assert.match(element("quiz-question").textContent, /Я прав/);
 assert.ok(!element("quiz-feedback").textContent.includes("Έχω"));
+assert.ok(element("quiz-note").classes.has("hidden"));
 assert.ok(element("quiz-speak-button").classes.has("hidden"));
 assert.equal(run("state.quizSpokenText"), "");
 assert.equal(storage.get("greek-a1-self-quiz-direction"), "ru-el");
@@ -121,11 +125,14 @@ assert.equal(element("quiz-question").textContent, "Έχω δίκιο.");
 run(`openCategory("passive-a2-forms"); state.selectedCards = new Set([state.deck[0].id]); openQuizSetup(true);`);
 element("quiz-kind").value = "self"; element("quiz-mode").value = "ru-el";
 run("updateQuizSetup(); beginQuiz()");
+run(`state.quizDeck[0].card.formExamples = { [state.quizDeck[0].pronoun]: [{greek: "Παράδειγμα με τη μορφή.", russian: "Пример с формой."}] }; renderQuestion();`);
 assert.equal(element("quiz-question").textContent, run("state.quizDeck[0].russian"));
 assert.ok(element("quiz-speak-button").classes.has("hidden"));
+assert.ok(element("quiz-note").classes.has("hidden"));
 run("answerSelfQuiz(true)");
 assert.equal(run("state.quizSpokenText"), run("state.quizDeck[0].form"));
 assert.ok(element("quiz-feedback").textContent.includes(run("state.quizDeck[0].form")));
+assert.match(element("quiz-note").textContent, /Παράδειγμα με τη μορφή.*Пример с формой/s);
 // Mixed alternates per question; subsequent batches retain direction even if the setup changes.
 run(`openCategory("verbs"); state.deck = state.deck.slice(0, 12); openQuizSetup();`);
 element("quiz-kind").value = "self"; element("quiz-mode").value = "mixed";
@@ -138,6 +145,22 @@ run("answerSelfQuiz(false)");
 element("quiz-mode").value = "el-ru";
 run("startQuiz([state.quizDeck[1]], state.quizScope, state.session.seen, state.session.mode)");
 assert.equal(run("state.quizMode"), "mixed");
+// Correction of an older migrated answer must not overwrite a later event.
+run(`var canonicalId = fixture.data.verbs[0].id; state.aliases = {"retired-test": canonicalId};
+     progress.practice = {"retired-test": {answers: 1, correct: 0, lastCorrect: false, lastAt: "2020", lastEventId: "migrated:0"},
+       [canonicalId]: {answers: 1, correct: 1, lastCorrect: true, lastAt: "2021", lastEventId: "later:0"}};
+     localStorage.setItem(SELF_QUIZ_STORAGE, JSON.stringify({id: "migrated", kind: "self", category: "verbs", mode: "el-ru", keys: ["retired-test", canonicalId], scopeKeys: ["retired-test", canonicalId], candidateKeys: [canonicalId], seen: ["retired-test"], answers: [{key:"retired-test", correct:false}], index: 0}));
+     migrateProgress(); restoreQuiz("self"); answerSelfQuiz(true);`);
+assert.equal(run("progress.practice[canonicalId].answers"), 2);
+assert.equal(run("progress.practice[canonicalId].correct"), 2);
+assert.equal(run("progress.practice[canonicalId].lastEventId"), "later:0");
+// The source dialogue is view-only; its short sourced utterances remain selectable.
+run(`openCategory("phrases"); state.selectedCards = new Set(["phrase-2026111000", state.deck.find(c => c.sourceId === "phrase-2026111000").id]); openQuizSetup(true);`);
+for (const kind of ["choice", "self"]) {
+  element("quiz-kind").value = kind; run("updateQuizSetup()");
+  assert.ok(run('state.quizScope.every(item => item.card.id !== "phrase-2026111000")'));
+  assert.ok(run('state.quizScope.some(item => item.card.sourceId === "phrase-2026111000")'));
+}
 // Static UI invariant: mode selector belongs to quiz setup, not game setup.
 const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 assert.ok(html.indexOf('id="quiz-kind"') > html.indexOf('id="quiz-setup"'));

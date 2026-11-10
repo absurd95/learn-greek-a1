@@ -3,97 +3,193 @@
     "id": "nationality-784686ebf1",
     "greek": "Έλληνας / Ελληνίδα",
     "russian": "грек / гречанка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Έλληνας.",
+        "russian": "Мой друг — грек."
+      }
+    ]
   },
   {
     "id": "nationality-63892fd9f3",
     "greek": "Ισπανός / Ισπανίδα",
     "russian": "испанец / испанка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Ισπανός.",
+        "russian": "Мой друг — испанец."
+      }
+    ]
   },
   {
     "id": "nationality-2a57ff5cc3",
     "greek": "Ρώσος / Ρωσίδα",
     "russian": "русский / русская",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Ρώσος.",
+        "russian": "Мой друг — русский."
+      }
+    ]
   },
   {
     "id": "nationality-f593327c16",
     "greek": "Ελβετός / Ελβετίδα",
     "russian": "швейцарец / швейцарка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Ελβετός.",
+        "russian": "Мой друг — швейцарец."
+      }
+    ]
   },
   {
     "id": "nationality-60a8c95a1a",
     "greek": "Αυστραλός / Αυστραλέζα",
     "russian": "австралиец / австралийка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Αυστραλός.",
+        "russian": "Мой друг — австралиец."
+      }
+    ]
   },
   {
     "id": "nationality-34e36bd259",
     "greek": "Πολωνός / Πολωνή / Πολωνέζα",
     "russian": "поляк / полька",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Πολωνός.",
+        "russian": "Мой друг — поляк."
+      }
+    ]
   },
   {
     "id": "nationality-017039052b",
     "greek": "Σουηδός / Σουηδέζα",
     "russian": "швед / шведка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Σουηδός.",
+        "russian": "Мой друг — швед."
+      }
+    ]
   },
   {
     "id": "nationality-993180dedc",
     "greek": "Κινέζος / Κινέζα",
     "russian": "китаец / китаянка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Κινέζος.",
+        "russian": "Мой друг — китаец."
+      }
+    ]
   },
   {
     "id": "nationality-1740875b4d",
     "greek": "Γιαπωνέζος / Γιαπωνέζα",
     "russian": "японец / японка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Γιαπωνέζος.",
+        "russian": "Мой друг — японец."
+      }
+    ]
   },
   {
     "id": "nationality-e418ca0160",
     "greek": "Αλβανός / Αλβανή / Αλβανίδα",
     "russian": "албанец / албанка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Αλβανός.",
+        "russian": "Мой друг — албанец."
+      }
+    ]
   },
   {
     "id": "nationality-83f07d2b16",
     "greek": "Ουκρανός / Ουκρανή",
     "russian": "украинец / украинка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Ουκρανός.",
+        "russian": "Мой друг — украинец."
+      }
+    ]
   },
   {
     "id": "nationality-4ad55d7caa",
     "greek": "Ιρακινός / Ιρακινή",
     "russian": "иракец / иракчанка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Ιρακινός.",
+        "russian": "Мой друг — иракец."
+      }
+    ]
   },
   {
     "id": "nationality-a98ee7313c",
     "greek": "Αιγύπτιος / Αιγύπτια",
     "russian": "египтянин / египтянка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Αιγύπτιος.",
+        "russian": "Мой друг — египтянин."
+      }
+    ]
   },
   {
     "id": "nationality-a4c55d669f",
     "greek": "Βούλγαρος / Βουλγάρα",
     "russian": "болгарин / болгарка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Βούλγαρος.",
+        "russian": "Мой друг — болгарин."
+      }
+    ]
   },
   {
     "id": "nationality-2598fa3409",
     "greek": "Τούρκος / Τουρκάλα",
     "russian": "турок / турчанка",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Τούρκος.",
+        "russian": "Мой друг — турок."
+      }
+    ]
   },
   {
     "id": "nationality-20261026-cy",
     "greek": "Κύπριος / Κύπρια",
     "russian": "киприот / киприотка",
     "note": "Με Κύπριους — с киприотами; Κύπρος — Кипр.",
-    "new": true
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο φίλος μου είναι Κύπριος.",
+        "russian": "Мой друг — киприот."
+      }
+    ]
   }
 ]

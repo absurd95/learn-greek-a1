@@ -27,5 +27,32 @@
       "verb-2026102601",
       "verb-2026102702"
     ]
+  },
+  {
+    "id": "irregular",
+    "title": "Особые и неправильные глаголы",
+    "description": "Особая форма настоящего времени не всегда означает неправильный аорист: ακούω → άκουσα образует аорист с -σ-. Отмечены особенности отдельно для каждого времени.",
+    "verbIds": [
+      "verb-bb495227ba",
+      "verb-2026091601",
+      "verb-2026111001",
+      "verb-75709cde5c",
+      "verb-0dba650b6f",
+      "verb-2026111002",
+      "verb-3c69f7830d",
+      "verb-4a49a34376",
+      "verb-8d84ba6d0b"
+    ],
+    "notes": {
+      "verb-bb495227ba": { "irregularPresent": true, "irregularPast": false, "note": "Особое настоящее; аорист άκουσα образуется с -σ-." },
+      "verb-2026091601": { "irregularPresent": true, "irregularPast": true, "note": "λέω → είπα" },
+      "verb-2026111001": { "irregularPresent": true, "irregularPast": true, "note": "καίω → έκαψα: особая основа сигматического аориста." },
+      "verb-75709cde5c": { "irregularPresent": true, "irregularPast": true, "note": "κλαίω → έκλαψα: особая основа сигматического аориста." },
+      "verb-0dba650b6f": { "irregularPresent": true, "irregularPast": true, "note": "τρώω → έφαγα" },
+      "verb-2026111002": { "irregularPresent": true, "irregularPast": true, "note": "φταίω → έφταιξα: особая основа сигматического аориста." },
+      "verb-3c69f7830d": { "irregularPresent": true, "irregularPast": true, "note": "πάω → πήγα" },
+      "verb-4a49a34376": { "irregularPresent": false, "irregularPast": true, "note": "πίνω → ήπια" },
+      "verb-8d84ba6d0b": { "irregularPresent": false, "irregularPast": true, "note": "βλέπω → είδα" }
+    }
   }
 ]

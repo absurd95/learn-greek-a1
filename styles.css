@@ -33,3 +33,4 @@
 .stress-word button{padding:5px 8px!important;background:var(--accent-soft)!important;color:var(--accent)!important;border:1px solid var(--line)!important}
 #game-choices button.correct{background:var(--accent)!important;color:white!important}
 #game-choices button.wrong{background:#b75c43!important;color:white!important}
+#quiz-note { white-space: pre-line; }
