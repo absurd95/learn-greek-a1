@@ -14,7 +14,9 @@
       "verb-4a49a34376",
       "verb-0dba650b6f",
       "verb-2026080801",
-      "adverb-2026103101"
+      "adverb-2026103101",
+      "verb-2026111015",
+      "verb-2026102703"
     ],
     "collectionIds": [
       "food-coffee"
@@ -87,7 +89,8 @@
       "verb-2026093001",
       "verb-76dd06ab7e",
       "adverb-5808f4da95",
-      "adverb-a127fce38d"
+      "adverb-a127fce38d",
+      "verb-2026111507"
     ],
     "collectionIds": [
       "clothes-wear"
@@ -139,7 +142,9 @@
       "verb-2026091603",
       "verb-2026091604",
       "verb-2026082803",
-      "verb-2026082401"
+      "verb-2026082401",
+      "verb-2026111523",
+      "word-20261115009"
     ],
     "collectionIds": [
       "home-cleaning"
@@ -171,7 +176,8 @@
       "verb-2026080706",
       "adverb-87cd9839fd",
       "adverb-6b03193fd1",
-      "adverb-2026081105"
+      "adverb-2026081105",
+      "phrase-20261115001"
     ],
     "collectionIds": [
       "transport-holiday"
@@ -193,7 +199,14 @@
       "verb-2026090201",
       "verb-2026090202",
       "verb-2026080406",
-      "adverb-2026080705"
+      "adverb-2026080705",
+      "phrase-20261115002",
+      "word-20261115040",
+      "word-20261115041",
+      "verb-2026111508",
+      "word-20261115011",
+      "word-20261115012",
+      "word-20261107007"
     ],
     "collectionIds": [
       "education-study"
@@ -242,7 +255,13 @@
       "verb-4efff4a56f",
       "verb-9c1657e98c",
       "verb-2026100916",
-      "adverb-2026102702"
+      "adverb-2026102702",
+      "verb-2026111516",
+      "verb-2026111517",
+      "verb-2026111504",
+      "word-20261115020",
+      "word-20261115004",
+      "word-20261115013"
     ],
     "collectionIds": [
       "people-family"
@@ -379,6 +398,43 @@
     ],
     "collectionIds": [
       "transport-places"
+    ]
+  },
+  {
+    "id": "when-it-happened",
+    "title": "Когда это было?",
+    "cardIds": [
+      "adverb-20261115001",
+      "adverb-2026111004",
+      "adverb-20261115002",
+      "adverb-20261115003",
+      "adverb-20261115004",
+      "adverb-20261115005",
+      "adverb-2026081104",
+      "adverb-20261115006",
+      "adverb-20261115007",
+      "adverb-20261115008",
+      "adverb-20261115009",
+      "adverb-2026111013",
+      "adverb-20261115010",
+      "adverb-20261115011",
+      "adverb-20261115012",
+      "adverb-20261115013",
+      "adverb-20261115014",
+      "word-2026080433",
+      "word-7a69bcc39d",
+      "word-b1d42d3648",
+      "verb-e00bb71422",
+      "verb-2026080401",
+      "verb-2026080403",
+      "verb-2026090205",
+      "verb-2026111011",
+      "verb-2026091610",
+      "word-2026080434",
+      "verb-2026111504"
+    ],
+    "collectionIds": [
+      "time-calendar"
     ]
   }
 ]

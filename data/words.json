@@ -4988,7 +4988,7 @@
   },
   {
     "id": "word-2026082408",
-    "greek": "καινούργιος / καινούργια / καινούργιο",
+    "greek": "καινούργιος / καινούργια / καινούργιο / καινούριος / καινούρια / καινούριο",
     "russian": "новый / новая / новое",
     "note": "Форма καινούργιους — мужской род, множественное число, винительный падеж.",
     "new": true,
@@ -18082,6 +18082,458 @@
       {
         "greek": "Το ενοίκιο είναι λογικό.",
         "russian": "Арендная плата приемлемая."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115001",
+    "greek": "η Αγγλία",
+    "russian": "Англия",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "Αγγλία"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η Αγγλία είναι στην Ευρώπη.",
+        "russian": "Англия находится в Европе."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115002",
+    "greek": "η βελόνα",
+    "russian": "игла / спица",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "βελόνα",
+        "plural": "βελόνες"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η βελόνα είναι μικρή.",
+        "russian": "Игла маленькая."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115003",
+    "greek": "η γιορτή",
+    "russian": "праздник",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "γιορτή",
+        "plural": "γιορτές"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η γιορτή είναι αύριο.",
+        "russian": "Праздник завтра."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115004",
+    "greek": "το διαζύγιο",
+    "russian": "развод",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "διαζύγιο",
+        "plural": "διαζύγια"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Το διαζύγιο ήταν δύσκολο.",
+        "russian": "Развод был трудным."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115005",
+    "greek": "το κλειδί",
+    "russian": "ключ",
+    "new": true,
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-daily"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "κλειδί",
+        "plural": "κλειδιά"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Το κλειδί είναι στο τραπέζι.",
+        "russian": "Ключ на столе."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115006",
+    "greek": "το λικέρ",
+    "russian": "ликёр",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-drinks"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "λικέρ",
+        "plural": "λικέρ"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Το λικέρ είναι γλυκό.",
+        "russian": "Ликёр сладкий."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115007",
+    "greek": "η μαστίχα",
+    "russian": "мастика",
+    "new": true,
+    "topic": "food",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "food-staples"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "μαστίχα",
+        "plural": "μαστίχες"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η μαστίχα έχει ωραίο άρωμα.",
+        "russian": "У мастики приятный аромат."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115008",
+    "greek": "το ποτήρι",
+    "russian": "стакан",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-rooms"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "ποτήρι",
+        "plural": "ποτήρια"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Το ποτήρι είναι γεμάτο.",
+        "russian": "Стакан полный."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115009",
+    "greek": "η ηλεκτρική σκούπα",
+    "russian": "пылесос",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-cleaning"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "ηλεκτρική σκούπα",
+        "plural": "ηλεκτρικές σκούπες"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η ηλεκτρική σκούπα είναι στο δωμάτιο.",
+        "russian": "Пылесос в комнате."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115010",
+    "greek": "το τρέξιμο",
+    "russian": "бег / пробежка",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "singular": "τρέξιμο"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Το τρέξιμο είναι καλή άσκηση.",
+        "russian": "Бег — хорошая тренировка."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115011",
+    "greek": "η ζωγραφιά",
+    "russian": "рисунок",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "ζωγραφιά",
+        "plural": "ζωγραφιές"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η ζωγραφιά είναι όμορφη.",
+        "russian": "Рисунок красивый."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115012",
+    "greek": "η ζωγραφική",
+    "russian": "рисование / живопись",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "feminine",
+        "singular": "ζωγραφική"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η ζωγραφική μου αρέσει.",
+        "russian": "Мне нравится живопись."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115013",
+    "greek": "ο χωρισμός",
+    "russian": "расставание",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "masculine",
+        "singular": "χωρισμός",
+        "plural": "χωρισμοί"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Ο χωρισμός ήταν δύσκολος.",
+        "russian": "Расставание было трудным."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115020",
+    "greek": "τα γενέθλια",
+    "russian": "день рождения",
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "plural": "γενέθλια"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Τα γενέθλια είναι αύριο.",
+        "russian": "День рождения завтра."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115021",
+    "greek": "τα Χριστούγεννα",
+    "russian": "Рождество",
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "plural": "Χριστούγεννα"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Τα Χριστούγεννα είμαστε μαζί.",
+        "russian": "На Рождество мы вместе."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115030",
+    "greek": "αθλητικός / αθλητική / αθλητικό",
+    "russian": "спортивный / спортивная / спортивное",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "examples": [
+      {
+        "greek": "Φοράω αθλητικά παπούτσια.",
+        "russian": "Я ношу спортивную обувь."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115031",
+    "greek": "καταπληκτικός / καταπληκτική / καταπληκτικό",
+    "russian": "потрясающий / потрясающая / потрясающее",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "examples": [
+      {
+        "greek": "Η ταινία είναι καταπληκτική.",
+        "russian": "Фильм потрясающий."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115040",
+    "greek": "τα αγγλικά",
+    "russian": "английский язык",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "plural": "αγγλικά"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Μαθαίνω αγγλικά.",
+        "russian": "Я изучаю английский язык."
+      }
+    ]
+  },
+  {
+    "id": "word-20261115041",
+    "greek": "τα κινεζικά",
+    "russian": "китайский язык",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "main",
+        "gender": "neuter",
+        "plural": "κινεζικά"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Μαθαίνω κινεζικά.",
+        "russian": "Я изучаю китайский язык."
       }
     ]
   }

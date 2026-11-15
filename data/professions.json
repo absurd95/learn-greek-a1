@@ -868,5 +868,36 @@
         "russian": "Сантехник чинит кран."
       }
     ]
+  },
+  {
+    "id": "profession-20261115001",
+    "greek": "ζωγράφος",
+    "russian": "художник / художница",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "masculine",
+        "gender": "masculine",
+        "singular": "ζωγράφος",
+        "plural": "ζωγράφοι"
+      },
+      {
+        "key": "feminine",
+        "gender": "feminine",
+        "singular": "ζωγράφος",
+        "plural": "ζωγράφοι"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Ο ζωγράφος ζωγραφίζει έναν πίνακα.",
+        "russian": "Художник рисует картину."
+      }
+    ]
   }
 ]

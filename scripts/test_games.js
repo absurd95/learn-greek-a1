@@ -129,7 +129,7 @@ for (const lesson of situations) {
   assert.ok(run("lessonItems.some(item => item.card.type === 'verbs')"), lesson.id + " has no verb questions");
   assert.ok(!run("lessonItems.some(item => item.card.type === 'phrases')"), lesson.id + " leaks phrases into quiz");
 }
-run("state.data.verbs.push({ id: 'future-themed-verb', greek: 'Περιγράφω', russian: 'описывать', collectionIds: ['transport-places'] });");
+run("state.selectedSituations = new Set(['directions']); state.data.verbs.push({ id: 'future-themed-verb', greek: 'Περιγράφω', russian: 'описывать', collectionIds: ['transport-places'] });");
 assert.ok(run("situationDeck().some(card => card.id === 'future-themed-verb')"), "future themed verbs join lessons automatically");
 run("state.data.verbs.pop()");
 for (const kind of ["articles", "stress"]) {
