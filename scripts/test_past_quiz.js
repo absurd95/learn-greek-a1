@@ -47,3 +47,10 @@ for (const direction of ["el-ru", "ru-el"]) for (const [name, type] of [["fatVer
   assert.equal(run(`quizCandidates({card:{...${name}[0],type:"${type}"}}, [{card:{...${name}[1],type:"${type}"}}], "${direction}").length`), 0);
 }
 console.log("OK: past forms, directions, examples, restore and independent keys");
+run('openCategory("irregular-aorist"); state.selectedCards = new Set(["past-verb-2026091601"]); openQuizSetup(true); updateQuizSetup(); beginQuiz()');
+assert.equal(run('state.quizKind'), 'self');
+assert.equal(element('quiz-question').textContent, 'Λέω');
+assert.ok(!element('quiz-note').textContent.includes('είπα'));
+run('answerSelfQuiz(false); restoreQuiz("self")');
+assert.match(element('quiz-feedback').textContent, /είπα/);
+assert.equal(run('state.quizDeck[0].card.id'), 'past-verb-2026091601');
