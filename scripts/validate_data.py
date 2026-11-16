@@ -19,7 +19,7 @@ ALLOWED_TOPICS = {
     "city", "transport", "time", "nature", "objects", "other",
 }
 ALLOWED_PARTS = {"noun", "adjective", "pronoun", "numeral", "other"}
-IMPERSONAL_VERBS = {"Βρέχει", "Χιονίζει", "Ψιχαλίζει"}
+IMPERSONAL_VERBS = {"Βρέχει", "Χιονίζει", "Ψιχαλίζει", "Συμβαίνει"}
 EXPECTED_TOPICS = {
     "word-2026080429": "other",       # η συζήτηση
     "word-2026080433": "time",        # το πρωί
@@ -180,14 +180,15 @@ def main() -> None:
     for card in sources["past-conjugations.json"]:
         assert card.get("verbId") in verbs_by_id, f"unknown past verb: {card['id']}"
         assert card.get("tense") in {"aorist", "imperfect"}, f"bad past tense: {card['id']}"
-        assert len(card.get("forms", {})) == 6 and set(card["forms"]) == set(card.get("russianForms", {})), f"incomplete past forms: {card['id']}"
+        assert len(card.get("forms", {})) == (1 if card["greek"] in IMPERSONAL_VERBS else 6) and set(card["forms"]) == set(card.get("russianForms", {})), f"incomplete past forms: {card['id']}"
     for item in verb_sets:
         assert item.get("title") and item.get("description"), f"incomplete verb set: {item['id']}"
         assert item["verbIds"] and len(item["verbIds"]) == len(set(item["verbIds"])), f"duplicate/empty verb set: {item['id']}"
         assert set(item["verbIds"]) <= set(verbs_by_id), f"unknown verb in set: {item['id']}"
         for verb_id in item["verbIds"]:
             table = conjugations[normalized(verbs_by_id[verb_id]["greek"])]
-            assert len(table.get("forms", {})) == 6 and len(table.get("russianForms", {})) == 6, f"incomplete set conjugation: {verb_id}"
+            expected = 1 if table["greek"] in IMPERSONAL_VERBS else 6
+            assert len(table.get("forms", {})) == expected and len(table.get("russianForms", {})) == expected, f"incomplete set conjugation: {verb_id}"
     for card in conjugations.values():
         expected_count = 1 if card["greek"] in IMPERSONAL_VERBS else 6
         assert len(card.get("forms", {})) == expected_count, f"bad forms: {card['id']}"

@@ -1,5 +1,154 @@
 [
   {
+    "id": "word-20261116001",
+    "greek": "η αρρώστια / οι αρρώστιες",
+    "russian": "болезнь",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "αρρώστια",
+        "plural": "αρρώστιες"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η αρρώστια κράτησε λίγες μέρες.",
+        "russian": "Болезнь длилась несколько дней."
+      }
+    ]
+  },
+  {
+    "id": "word-20261116002",
+    "greek": "η μάθηση",
+    "russian": "обучение",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μάθηση"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η μάθηση μιας γλώσσας θέλει χρόνο.",
+        "russian": "На изучение языка нужно время."
+      }
+    ]
+  },
+  {
+    "id": "word-20261116003",
+    "greek": "η είσοδος / οι είσοδοι",
+    "russian": "вход",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "είσοδος",
+        "plural": "είσοδοι"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η είσοδος είναι από τον κήπο.",
+        "russian": "Вход со стороны сада."
+      }
+    ]
+  },
+  {
+    "id": "word-20261116004",
+    "greek": "το πάθημα / τα παθήματα",
+    "russian": "неприятное происшествие / урок из опыта",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πάθημα",
+        "plural": "παθήματα"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Το πάθημα έγινε μάθημα.",
+        "russian": "Этот случай стал уроком."
+      }
+    ]
+  },
+  {
+    "id": "word-20261116005",
+    "greek": "ο θάνατος / οι θάνατοι",
+    "russian": "смерть",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "θάνατος",
+        "plural": "θάνατοι"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η είδηση του θανάτου του μας λύπησε.",
+        "russian": "Известие о его смерти нас огорчило."
+      }
+    ]
+  },
+  {
+    "id": "word-20261116006",
+    "greek": "η πτώση / οι πτώσεις",
+    "russian": "падение",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πτώση",
+        "plural": "πτώσεις"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η πτώση του ήταν ξαφνική.",
+        "russian": "Его падение было внезапным."
+      }
+    ]
+  },
+  {
     "id": "word-20261107001",
     "greek": "το μαξιλάρι / τα μαξιλάρια",
     "russian": "подушка",

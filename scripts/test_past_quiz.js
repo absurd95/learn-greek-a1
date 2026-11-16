@@ -16,7 +16,7 @@ vm.runInContext(fs.readFileSync(path.join(root, "game-core.js"), "utf8"), ctx);
 const source = fs.readFileSync(path.join(root, "app.js"), "utf8");
 vm.runInContext(source.slice(0, source.indexOf('document.addEventListener("click"')), ctx);
 const run = code => vm.runInContext(code, ctx);
-run('state.data = fixture; state.verbSets = sets; openCategory("past-conjugations"); state.selectedCards = new Set([state.deck[0].id]); openQuizSetup(true)');
+run('state.data = fixture; state.verbSets = sets; openCategory("past-conjugations"); state.selectedCards = new Set([state.deck.find(card => Object.keys(card.forms).length === 6).id]); openQuizSetup(true)');
 element("quiz-kind").value = "self";
 for (const mode of ["el-ru", "ru-el", "mixed"]) {
   element("quiz-mode").value = mode; run("updateQuizSetup(); beginQuiz()");
@@ -54,3 +54,14 @@ assert.ok(!element('quiz-note').textContent.includes('είπα'));
 run('answerSelfQuiz(false); restoreQuiz("self")');
 assert.match(element('quiz-feedback').textContent, /είπα/);
 assert.equal(run('state.quizDeck[0].card.id'), 'past-verb-2026091601');
+run('openCategory("irregular-aorist"); state.selectedCards = new Set(["past-verb-20261116008"]); openQuizSetup(true); updateQuizSetup(); beginQuiz()');
+assert.equal(element('quiz-question').textContent, 'Συμβαίνει');
+run('answerSelfQuiz(false); restoreQuiz("self")');
+assert.match(element('quiz-feedback').textContent, /συνέβη/);
+const required = 'ακούω μένω ανεβαίνω μπαίνω αρέσω παθαίνω αρρωσταίνω παίρνω βάζω παραγγέλνω βγάζω πεθαίνω βγαίνω πέφτω βλέπω πηγαίνω πάω βρίσκω πίνω δίνω πλένω καίω στέλνω κάνω συμβαίνει καταλαβαίνω τρώω κατεβαίνω υπάρχω κλαίω φέρνω λέω φεύγω μαθαίνω φταίω'.split(' ');
+const irregular = sets.find(set => set.id === 'irregular');
+for (const name of required) {
+  const verb = fixture.verbs.find(card => card.greek.toLowerCase() === name);
+  assert.ok(verb && irregular.verbIds.includes(verb.id), name);
+  assert.ok(fixture['past-conjugations'].some(card => card.verbId === verb.id), name);
+}
