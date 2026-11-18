@@ -16,8 +16,26 @@ vm.runInContext(fs.readFileSync(path.join(root, "game-core.js"), "utf8"), ctx);
 const source = fs.readFileSync(path.join(root, "app.js"), "utf8");
 vm.runInContext(source.slice(0, source.indexOf('document.addEventListener("click"')), ctx);
 const run = code => vm.runInContext(code, ctx);
-run('state.data = fixture; state.verbSets = sets; openCategory("past-conjugations"); state.selectedCards = new Set([state.deck.find(card => Object.keys(card.forms).length === 6).id]); openQuizSetup(true)');
+run('state.data = fixture; state.verbSets = sets; openCategory("past-conjugations"); openQuizSetup()');
+assert.equal(element("quiz-past-forms").value, "first");
+assert.ok(run('state.quizScope.length > 10 && state.quizScope.every(item => item.card.tense === "aorist" && item.pronoun === firstPersonOrImpersonal(item.card))'));
+assert.ok(run('state.quizScope.some(item => item.form === "συνέβη")'));
+run('beginQuiz()');
+assert.ok(run('state.quizDeck.length > 0 && state.quizDeck.every(item => item.pronoun === firstPersonOrImpersonal(item.card))'));
+run('state.selectedCards = new Set([state.deck.find(card => card.tense === "aorist" && card.forms["εγώ"]).id]); openQuizSetup(true)');
 element("quiz-kind").value = "self";
+for (const mode of ["el-ru", "ru-el", "mixed"]) {
+  element("quiz-mode").value = mode; run("updateQuizSetup(); beginQuiz()");
+  assert.equal(run("state.quizDeck.length"), 1);
+  assert.ok(!element("quiz-note").textContent.includes("Настоящее:"));
+  run('answerSelfQuiz(false); restoreQuiz("self")');
+  assert.match(element("quiz-note").textContent, /Настоящее: /);
+  const answers = run("progress.practice[quizKey(state.quizDeck[0])].answers");
+  run("answerSelfQuiz(true)");
+  assert.ok(!element("quiz-note").textContent.includes("Настоящее:"));
+  assert.equal(run("progress.practice[quizKey(state.quizDeck[0])].answers"), answers);
+}
+element("quiz-past-forms").value = "all"; run("updateQuizSetup()");
 for (const mode of ["el-ru", "ru-el", "mixed"]) {
   element("quiz-mode").value = mode; run("updateQuizSetup(); beginQuiz()");
   assert.equal(run("state.quizDeck.length"), 6);
@@ -26,6 +44,7 @@ for (const mode of ["el-ru", "ru-el", "mixed"]) {
   else { assert.ok(element("quiz-note").textContent.includes(example.greek)); assert.ok(!element("quiz-note").textContent.includes(example.russian)); }
   run("answerSelfQuiz(true); restoreQuiz('self')");
   assert.equal(run("state.quizMode"), mode); assert.ok(element("quiz-note").textContent.includes(example.russian));
+  assert.equal(run("state.quizDeck.length"), 6);
 }
 assert.ok(run('Object.keys(progress.practice).every(key => key.startsWith(state.quizDeck[0].card.id + ":"))'));
 run(`var pastKey = quizKey(state.quizDeck[0]); var pastCount = progress.practice[pastKey].answers;
@@ -47,12 +66,15 @@ for (const direction of ["el-ru", "ru-el"]) for (const [name, type] of [["fatVer
   assert.equal(run(`quizCandidates({card:{...${name}[0],type:"${type}"}}, [{card:{...${name}[1],type:"${type}"}}], "${direction}").length`), 0);
 }
 console.log("OK: past forms, directions, examples, restore and independent keys");
+storage.set("greek-a1-self-quiz-direction", "ru-el");
 run('openCategory("irregular-aorist"); state.selectedCards = new Set(["past-verb-2026091601"]); openQuizSetup(true); updateQuizSetup(); beginQuiz()');
 assert.equal(run('state.quizKind'), 'self');
 assert.equal(element('quiz-question').textContent, 'Λέω');
 assert.ok(!element('quiz-note').textContent.includes('είπα'));
 run('answerSelfQuiz(false); restoreQuiz("self")');
 assert.match(element('quiz-feedback').textContent, /είπα/);
+assert.equal(run("state.quizSpokenText"), "είπα");
+assert.equal(storage.get("greek-a1-self-quiz-direction"), "ru-el");
 assert.equal(run('state.quizDeck[0].card.id'), 'past-verb-2026091601');
 run('openCategory("irregular-aorist"); state.selectedCards = new Set(["past-verb-20261116008"]); openQuizSetup(true); updateQuizSetup(); beginQuiz()');
 assert.equal(element('quiz-question').textContent, 'Συμβαίνει');
