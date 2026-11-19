@@ -1,5 +1,36 @@
 [
   {
+    "id": "profession-20261118001",
+    "greek": "ο συνταξιούχος / η συνταξιούχος",
+    "russian": "пенсионер / пенсионерка",
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "masculine",
+        "gender": "masculine",
+        "singular": "συνταξιούχος",
+        "plural": "συνταξιούχοι"
+      },
+      {
+        "key": "feminine",
+        "gender": "feminine",
+        "singular": "συνταξιούχος",
+        "plural": "συνταξιούχοι"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η μητέρα μου είναι συνταξιούχος.",
+        "russian": "Моя мама — пенсионерка."
+      }
+    ]
+  },
+  {
     "id": "profession-2026110701",
     "greek": "λογιστής / λογίστρια",
     "russian": "бухгалтер / бухгалтер-женщина",

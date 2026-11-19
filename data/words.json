@@ -1,5 +1,803 @@
 [
   {
+    "id": "word-20261118040",
+    "greek": "αφού",
+    "russian": "после того как / поскольку",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Αφού τελείωσα τη δουλειά, πήγα σπίτι.",
+        "russian": "После того как я закончил работу, я пошёл домой."
+      }
+    ],
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other"
+  },
+  {
+    "id": "word-20261118041",
+    "greek": "γι’ αυτό",
+    "russian": "поэтому",
+    "note": "Прямой апостроф в записи: γι' αυτό.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ήμουν κουρασμένος, γι’ αυτό έμεινα σπίτι.",
+        "russian": "Я устал, поэтому остался дома."
+      }
+    ],
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other"
+  },
+  {
+    "id": "word-20261118042",
+    "greek": "και",
+    "russian": "и",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Αγόρασα ψωμί και γάλα.",
+        "russian": "Я купил хлеб и молоко."
+      }
+    ],
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other"
+  },
+  {
+    "id": "word-20261118043",
+    "greek": "όμως",
+    "russian": "однако / но",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ήθελα να πάω, όμως δεν είχα χρόνο.",
+        "russian": "Я хотел пойти, но у меня не было времени."
+      }
+    ],
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other"
+  },
+  {
+    "id": "word-20261118044",
+    "greek": "όπου",
+    "russian": "где / в котором",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Αυτό είναι το σπίτι όπου μένω.",
+        "russian": "Это дом, в котором я живу."
+      }
+    ],
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other"
+  },
+  {
+    "id": "word-20261118045",
+    "greek": "τι",
+    "russian": "что? / какой?",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Τι διαβάζεις;",
+        "russian": "Что ты читаешь?"
+      }
+    ],
+    "topic": "other",
+    "collectionIds": [
+      "other-pronouns"
+    ],
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "id": "word-20261118046",
+    "greek": "ότι",
+    "russian": "что (союз)",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ξέρω ότι δουλεύεις σήμερα.",
+        "russian": "Я знаю, что ты сегодня работаешь."
+      }
+    ],
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other",
+    "note": "ότι вводит придаточное. Не путать с ό,τι — «что угодно / всё, что»."
+  },
+  {
+    "id": "word-20261118001",
+    "greek": "η άσκηση / οι ασκήσεις",
+    "russian": "упражнение",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "άσκηση",
+        "plural": "ασκήσεις"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Κάνω την άσκηση.",
+        "russian": "Я выполняю упражнение."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118002",
+    "greek": "η Αθήνα",
+    "russian": "Афины",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Αθήνα"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Μένω στην Αθήνα.",
+        "russian": "Я живу в Афинах."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118003",
+    "greek": "η Ελλάδα",
+    "russian": "Греция",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Ελλάδα"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ταξιδεύω στην Ελλάδα.",
+        "russian": "Я путешествую по Греции."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118004",
+    "greek": "η Κεφαλονιά",
+    "russian": "Кефалония",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Κεφαλονιά"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Πήγα στην Κεφαλονιά το καλοκαίρι.",
+        "russian": "Летом я съездил на Кефалонию."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118005",
+    "greek": "η Κρήτη",
+    "russian": "Крит",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Κρήτη"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η Κρήτη είναι μεγάλο νησί.",
+        "russian": "Крит — большой остров."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118006",
+    "greek": "η μέρα / οι μέρες",
+    "russian": "день",
+    "topic": "time",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μέρα",
+        "plural": "μέρες"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Σήμερα είναι ωραία μέρα.",
+        "russian": "Сегодня хороший день."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118007",
+    "greek": "η πίτσα / οι πίτσες",
+    "russian": "пицца",
+    "topic": "food",
+    "collectionIds": [
+      "food-meals"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πίτσα",
+        "plural": "πίτσες"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Παραγγείλαμε μια πίτσα.",
+        "russian": "Мы заказали пиццу."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118008",
+    "greek": "η Ρωσία",
+    "russian": "Россия",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Ρωσία"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η φίλη μου είναι από τη Ρωσία.",
+        "russian": "Моя подруга из России."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118009",
+    "greek": "η σύνταξη / οι συντάξεις",
+    "russian": "пенсия / синтаксис",
+    "topic": "work",
+    "collectionIds": [
+      "work-business"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σύνταξη",
+        "plural": "συντάξεις"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η μητέρα μου βγήκε στη σύνταξη.",
+        "russian": "Моя мама вышла на пенсию."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118010",
+    "greek": "ο συμμαθητής / οι συμμαθητές",
+    "russian": "одноклассник",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "συμμαθητής",
+        "plural": "συμμαθητές"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο Νίκος είναι συμμαθητής μου.",
+        "russian": "Никос — мой одноклассник."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118011",
+    "greek": "ο τύπος / οι τύποι",
+    "russian": "тип / форма",
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "τύπος",
+        "plural": "τύποι"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Αυτός είναι ο σωστός τύπος του ρήματος.",
+        "russian": "Это правильная форма глагола."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118012",
+    "greek": "ο Χρυσός Φοίνικας",
+    "russian": "«Золотая пальмовая ветвь»",
+    "topic": "other",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "Χρυσός Φοίνικας"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η ταινία κέρδισε τον Χρυσό Φοίνικα.",
+        "russian": "Фильм получил «Золотую пальмовую ветвь»."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118013",
+    "greek": "το διδακτορικό / τα διδακτορικά",
+    "russian": "докторантура / докторская степень",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "διδακτορικό",
+        "plural": "διδακτορικά"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Κάνει διδακτορικό στην Αθήνα.",
+        "russian": "Она учится в докторантуре в Афинах."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118014",
+    "greek": "το κείμενο / τα κείμενα",
+    "russian": "текст",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κείμενο",
+        "plural": "κείμενα"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Διάβασα το κείμενο.",
+        "russian": "Я прочитал текст."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118015",
+    "greek": "το λύκειο / τα λύκεια",
+    "russian": "старшая школа",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "λύκειο",
+        "plural": "λύκεια"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο γιος μου πάει στο λύκειο.",
+        "russian": "Мой сын ходит в старшую школу."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118016",
+    "greek": "το μεταπτυχιακό / τα μεταπτυχιακά",
+    "russian": "магистратура / магистерская программа",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μεταπτυχιακό",
+        "plural": "μεταπτυχιακά"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Κάνω μεταπτυχιακό στα οικονομικά.",
+        "russian": "Я учусь в магистратуре по экономике."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118017",
+    "greek": "το πιάτο / τα πιάτα",
+    "russian": "тарелка / блюдо",
+    "topic": "home",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πιάτο",
+        "plural": "πιάτα"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Βάζω τα πιάτα στο τραπέζι.",
+        "russian": "Я ставлю тарелки на стол."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118018",
+    "greek": "το πλυντήριο / τα πλυντήρια",
+    "russian": "стиральная машина (обычно без уточнения)",
+    "topic": "home",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πλυντήριο",
+        "plural": "πλυντήρια"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Το πλυντήριο είναι στο μπάνιο.",
+        "russian": "Стиральная машина в ванной."
+      }
+    ],
+    "note": "το πλυντήριο ρούχων — стиральная машина; το πλυντήριο πιάτων — посудомоечная машина."
+  },
+  {
+    "id": "word-20261118019",
+    "greek": "το πτυχίο / τα πτυχία",
+    "russian": "диплом / учёная степень",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "πτυχίο",
+        "plural": "πτυχία"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Πήρε το πτυχίο του πέρσι.",
+        "russian": "Он получил диплом в прошлом году."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118020",
+    "greek": "το ρήμα / τα ρήματα",
+    "russian": "глагол",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ρήμα",
+        "plural": "ρήματα"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Βρες το ρήμα στην πρόταση.",
+        "russian": "Найди глагол в предложении."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118021",
+    "greek": "τα ελληνικά",
+    "russian": "греческий язык",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "ελληνικά"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Μαθαίνω ελληνικά.",
+        "russian": "Я учу греческий."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118022",
+    "greek": "τα οικονομικά",
+    "russian": "экономика / финансы",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "plural": "οικονομικά"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Σπουδάζει οικονομικά.",
+        "russian": "Она изучает экономику."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118023",
+    "greek": "οι σπουδές",
+    "russian": "учёба (обычно в вузе)",
+    "topic": "education",
+    "collectionIds": [
+      "education-study"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "plural": "σπουδές"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Συνεχίζω τις σπουδές μου.",
+        "russian": "Я продолжаю учёбу."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118024",
+    "greek": "οι Κάννες",
+    "russian": "Канны",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "plural": "Κάννες"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Το φεστιβάλ γίνεται στις Κάννες.",
+        "russian": "Фестиваль проходит в Каннах."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118030",
+    "greek": "γαλλικός / γαλλική / γαλλικό",
+    "russian": "французский",
+    "topic": "other",
+    "collectionIds": [
+      "other-description"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Είδα μια γαλλική ταινία.",
+        "russian": "Я посмотрел французский фильм."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118031",
+    "greek": "δύσκολος / δύσκολη / δύσκολο",
+    "russian": "трудный / сложный",
+    "topic": "other",
+    "collectionIds": [
+      "other-description"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η άσκηση είναι δύσκολη.",
+        "russian": "Упражнение сложное."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118032",
+    "greek": "σωστός / σωστή / σωστό",
+    "russian": "правильный",
+    "topic": "other",
+    "collectionIds": [
+      "other-description"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Αυτή είναι η σωστή απάντηση.",
+        "russian": "Это правильный ответ."
+      }
+    ]
+  },
+  {
+    "id": "word-20261118033",
+    "greek": "τελευταίος / τελευταία / τελευταίο",
+    "russian": "последний",
+    "topic": "other",
+    "collectionIds": [
+      "other-description"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Πότε ήρθες την τελευταία φορά;",
+        "russian": "Когда ты приходил в последний раз?"
+      }
+    ]
+  },
+  {
+    "id": "word-20261118034",
+    "greek": "ποιος / ποια / ποιο",
+    "russian": "кто? / какой? / какая? / какое?",
+    "topic": "other",
+    "collectionIds": [
+      "other-pronouns"
+    ],
+    "partOfSpeech": "pronoun",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ποιον είδες χτες;",
+        "russian": "Кого ты видел вчера?"
+      }
+    ],
+    "note": "ποιον — винительный падеж мужского рода от ποιος: Ποιον είδες; — Кого ты видел?"
+  },
+  {
     "id": "word-20261116001",
     "greek": "η αρρώστια / οι αρρώστιες",
     "russian": "болезнь",
@@ -4636,8 +5434,9 @@
   },
   {
     "id": "word-2026081407",
-    "greek": "η μπίρα",
+    "greek": "η μπίρα / η μπύρα",
     "russian": "пиво",
+    "note": "μπίρα и μπύρα — варианты написания одного слова.",
     "new": true,
     "topic": "food",
     "partOfSpeech": "noun",

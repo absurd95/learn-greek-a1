@@ -20,6 +20,20 @@ run('state.data = fixture; state.verbSets = sets; openCategory("past-conjugation
 assert.equal(element("quiz-past-forms").value, "first");
 assert.ok(run('state.quizScope.length > 10 && state.quizScope.every(item => item.card.tense === "aorist" && item.pronoun === firstPersonOrImpersonal(item.card))'));
 assert.ok(run('state.quizScope.some(item => item.form === "συνέβη")'));
+const lessonAorists = 'αγοράζω:αγόρασα απαντάω:απάντησα αρχίζω:άρχισα βάζω:έβαλα βγαίνω:βγήκα βλέπω:είδα γεννιέμαι:γεννήθηκα γνωρίζω:γνώρισα γράφω:έγραψα γυρίζω:γύρισα διαβάζω:διάβασα δουλεύω:δούλεψα θέλω:θέλησα θυμάμαι:θυμήθηκα κάνω:έκανα κατεβαίνω:κατέβηκα λέω:είπα μαθαίνω:έμαθα μεγαλώνω:μεγάλωσα μπαίνω:μπήκα παντρεύομαι:παντρεύτηκα παραγγέλνω:παράγγειλα παίρνω:πήρα πεθαίνω:πέθανα πηγαίνω:πήγα πλένω:έπλυνα ρωτάω:ρώτησα σκουπίζω:σκούπισα σπουδάζω:σπούδασα συμπληρώνω:συμπλήρωσα συνεχίζω:συνέχισα ταξιδεύω:ταξίδεψα τελειώνω:τελείωσα τρώω:έφαγα φέρνω:έφερα φτάνω:έφτασα φοράω:φόρεσα'.split(' ');
+const firstForms = run('state.quizScope.map(item => [item.card.greek, item.form])');
+assert.equal(lessonAorists.length, 37);
+for (const pair of lessonAorists) {
+  const [verb, past] = pair.split(':');
+  const forms = firstForms.find(([greek]) => greek.toLowerCase().split(/\s*\/\s*/).includes(verb))?.[1];
+  assert.ok(forms?.split(/\s*\/\s*/).includes(past), pair);
+}
+assert.ok(firstForms.every(([, form]) => !['ήμουν', 'είχα'].includes(form)));
+assert.ok(run('eligibleQuizItems(state.quizScope).every(item => item.card.tense === "aorist")'));
+assert.ok(run('state.quizScope.some(item => item.form === "γεννήθηκα" && presentHint(item.card) === "γεννιέμαι")'));
+element("quiz-past-forms").value = "all"; run("updateQuizSetup()");
+assert.ok(run('state.quizScope.some(item => item.card.tense === "imperfect" && item.form === "ήμουν") && state.quizScope.some(item => item.card.tense === "imperfect" && item.form === "είχα")'));
+element("quiz-past-forms").value = "first"; run("updateQuizSetup()");
 run('beginQuiz()');
 assert.ok(run('state.quizDeck.length > 0 && state.quizDeck.every(item => item.pronoun === firstPersonOrImpersonal(item.card))'));
 run('state.selectedCards = new Set([state.deck.find(card => card.tense === "aorist" && card.forms["εγώ"]).id]); openQuizSetup(true)');
@@ -87,3 +101,8 @@ for (const name of required) {
   assert.ok(verb && irregular.verbIds.includes(verb.id), name);
   assert.ok(fixture['past-conjugations'].some(card => card.verbId === verb.id), name);
 }
+run('openCategory("dictionary")');
+for (const query of ['ΜΠΙΡΑ', 'μπύρα']) {
+  assert.ok(run(`state.listQuery = "${query}"; visibleWordList().visible.some(card => card.id === "word-2026081407")`));
+}
+assert.ok(run('state.listQuery = "γι\' αυτό"; visibleWordList().visible.some(card => card.id === "word-20261118041")'));

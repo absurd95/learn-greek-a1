@@ -99,6 +99,8 @@ function translationsOverlap(left, right) {
   return leftParts.some(leftPart => rightParts.some(rightPart => leftPart === rightPart));
 }
 const CLOSE_MEANINGS = [
+  new Set(["word-20261118018", "word-2026103130"]),
+  new Set(["adverb-20261118002", "adverb-20261115008"]),
   new Set(["adverb-b47bd7fd69", "adverb-e566258347", "adverb-016463691a"]),
   new Set(["phrase-72af7a54a5", "phrase-01e34a099b", "phrase-5db46833f4", "phrase-9054cd06c7", "phrase-0563dec29b"]),
 ];
