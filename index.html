@@ -113,6 +113,13 @@
       <div class="section-heading"><button class="back-button" type="button" data-go="dashboard">← Назад</button><h2 id="game-setup-title">Артикли и род</h2></div>
       <p id="game-instructions" class="note"></p>
       <div class="quiz-panel quiz-setup-panel">
+        <fieldset id="quiz-aorist-patterns" class="hidden aorist-pattern-options">
+          <legend>Модели аориста</legend>
+          <label><input type="checkbox" value="aorist-a" checked> -ασα</label>
+          <label><input type="checkbox" value="aorist-e" checked> -εσα</label>
+          <label><input type="checkbox" value="aorist-ax" checked> -αξα</label>
+          <label><input type="checkbox" value="aorist-ix" checked> -ηξα</label>
+        </fieldset>
         <div id="game-article-options" class="game-settings">
           <label>Упражнение <select id="game-mode"><option value="single">Выбери артикль</option><option value="board">Найди слова заданного рода</option></select></label>
           <label>Число <select id="game-number"><option value="singular">Единственное</option><option value="plural">Множественное</option><option value="mixed">Смешанное</option></select></label>
@@ -198,6 +205,7 @@
       <label class="grammar-search"><span>Найти правило или пример</span><input id="grammar-search" type="search" placeholder="Например: артикли, από, профессии…" autocomplete="off"></label>
       <nav class="grammar-toc" aria-label="Темы грамматики">
         <a href="#grammar-gender">Род</a><a href="#grammar-pronouns">Местоимения</a><a href="#grammar-eimai">Είμαι</a><a href="#grammar-names">Знакомство</a><a href="#grammar-verbs">Глаголы</a><a href="#grammar-past">Прошедшее</a><a href="#grammar-prepositions">Предлоги</a><a href="#grammar-movement">Движение</a><a href="#grammar-calendar">Календарь</a><a href="#grammar-numbers">Числа</a><a href="#grammar-time">Время</a><a href="#grammar-frequency">Как часто</a><a href="#grammar-mood">Настроение</a><a href="#grammar-professions">Профессии</a><a href="#grammar-nationalities">Национальности</a><a href="#grammar-accents">Ударение</a><a href="#grammar-genitive">Родительный падеж</a>
+        <a href="#grammar-aorist-patterns">Модели аориста</a>
       </nav>
       <p id="grammar-no-results" class="empty hidden">Ничего не найдено. Попробуйте другое слово.</p>
 
@@ -304,6 +312,18 @@
           <p><b>Ήμουν</b> — прошедшая форма είμαι, но это παρατατικός (имперфект), не аорист: <b>Ήμουν στο σπίτι.</b> — Я был дома. Имперфект часто описывает состояние, повторение или процесс в прошлом.</p>
           <p><b>χτες / χθες</b> — вчера; <b>προχτές / προχθές</b> — позавчера; <b>πέρσι / πέρυσι</b> — в прошлом году; <b>πριν από έναν μήνα</b> — месяц назад; <b>την περασμένη εβδομάδα</b> — на прошлой неделе. Контекст, а не само наречие, определяет аспект.</p>
           <div class="example"><span>Пример</span><b>Πώς πέρασες το Σαββατοκύριακο;</b><button class="grammar-speak" data-speak="Πώς πέρασες το Σαββατοκύριακο;" type="button" aria-label="Произнести пример">🔊</button></div>
+        </article>
+        <article id="grammar-aorist-patterns" class="grammar-card" data-grammar-card>
+          <div class="grammar-number">18</div><p class="eyebrow">Аорист · первое лицо</p><h3>Модели -ασα / -εσα / -αξα / -ηξα</h3>
+          <p>Учите настоящее и аорист парой. Даже у похожих форм настоящего могут быть разные основы аориста. Обозначения моделей пишем без ударения: в слове оно может стоять раньше, как в <b>γέλασα</b>.</p>
+          <div id="grammar-aorist-groups" class="rule-stack"></div>
+          <p><b>Для сравнения: -ησα.</b> μιλώ → μίλησα, περπατώ → περπάτησα, ρωτώ → ρώτησα; αδικώ → αδίκησα, αργώ → άργησα, τηλεφωνώ → τηλεφώνησα.</p>
+          <p><b>-ίζω не всегда даёт -ισα:</b> καθαρίζω → καθάρισα, ψωνίζω → ψώνισα, но αγγίζω → άγγιξα и στηρίζω → στήριξα.</p>
+          <p><b>Прошедшее:</b> πίνω → ήπια / ήπιαμε, έρχομαι → ήρθα / ήρθαμε, βλέπω → είδα / είδαμε. είχα / είχαμε — имперфект, не аорист.</p>
+          <p><b>Приставка έ-:</b> γράφω → έγραψα, но γράψαμε. Ударное έ- помогает, когда без него не хватает слога; оно не добавляется автоматически к любому глаголу.</p>
+          <p><b>Три похожих глагола:</b> κάλεσα ταξί — вызвал такси; προσκάλεσα τη Μαρία στο πάρτι — пригласил Марию на вечеринку; προκάλεσα πρόβλημα — вызвал проблему.</p>
+          <p><b>Когда?</b> την Τρίτη, την επόμενη εβδομάδα, τον Μάρτιο — винительный без предлога. Время и даты: στις πέντε το πρωί, στις 5 Μαρτίου, στη μία. Но «первого марта» — την πρώτη Μαρτίου, а длительность «три часа» — τρεις ώρες.</p>
+          <button type="button" data-category="aorist-patterns">Открыть тренажёр</button>
         </article>
         <article id="grammar-prepositions" class="grammar-card" data-grammar-card>
           <div class="grammar-number">06</div><p class="eyebrow">Винительный падеж</p><h3>Артикли после предлогов и конечная ν</h3>

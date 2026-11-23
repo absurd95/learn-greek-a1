@@ -1,5 +1,154 @@
 [
   {
+    "id": "word-20261123101",
+    "greek": "η Κύπρος",
+    "russian": "Кипр",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Κύπρος"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Μένω στην Κύπρο.",
+        "russian": "Я живу на Кипре."
+      }
+    ]
+  },
+  {
+    "id": "word-20261123102",
+    "greek": "το ταξί / τα ταξί",
+    "russian": "такси",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-vehicles"
+    ],
+    "partOfSpeech": "noun",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ταξί",
+        "plural": "ταξί"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Πήγα με ταξί.",
+        "russian": "Я поехал на такси."
+      }
+    ]
+  },
+  {
+    "id": "word-20261123103",
+    "greek": "το κινητό / τα κινητά",
+    "russian": "мобильный телефон",
+    "topic": "objects",
+    "collectionIds": [
+      "objects-technology"
+    ],
+    "partOfSpeech": "noun",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "κινητό",
+        "plural": "κινητά"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Πού είναι το κινητό μου;",
+        "russian": "Где мой телефон?"
+      }
+    ]
+  },
+  {
+    "id": "word-20261123104",
+    "greek": "η κίνηση",
+    "russian": "движение / трафик / пробки",
+    "topic": "transport",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "partOfSpeech": "noun",
+    "new": true,
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κίνηση"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Έχει πολλή κίνηση στον δρόμο.",
+        "russian": "На дороге большие пробки."
+      }
+    ]
+  },
+  {
+    "id": "word-20261123105",
+    "greek": "κρητικός / κρητική / κρητικό",
+    "russian": "критский",
+    "topic": "other",
+    "collectionIds": [
+      "other-description"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Μου αρέσει η κρητική μουσική.",
+        "russian": "Мне нравится критская музыка."
+      }
+    ]
+  },
+  {
+    "id": "word-20261123106",
+    "greek": "κυπριακός / κυπριακή / κυπριακό",
+    "russian": "кипрский",
+    "topic": "other",
+    "collectionIds": [
+      "other-description"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Δοκίμασα κυπριακό τυρί.",
+        "russian": "Я попробовал кипрский сыр."
+      }
+    ]
+  },
+  {
+    "id": "word-20261123107",
+    "greek": "καλεσμένος / καλεσμένη / καλεσμένο",
+    "russian": "приглашённый",
+    "topic": "people",
+    "collectionIds": [
+      "people-family"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Είμαστε καλεσμένοι στο τραπέζι.",
+        "russian": "Нас пригласили на обед."
+      }
+    ]
+  },
+  {
     "id": "word-20261118040",
     "greek": "αφού",
     "russian": "после того как / поскольку",

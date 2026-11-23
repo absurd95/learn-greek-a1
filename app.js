@@ -182,6 +182,20 @@ if ("speechSynthesis" in window) {
   document.addEventListener("visibilitychange", () => { if (!document.hidden && activeUtterance) window.speechSynthesis.resume(); });
 }
 
+const AORIST_PATTERN_CATEGORY = "aorist-patterns";
+const AORIST_PATTERN_IDS = ["aorist-a", "aorist-e", "aorist-ax", "aorist-ix"];
+function isAoristRecall(category = state.category) { return category === "irregular-aorist" || category === AORIST_PATTERN_CATEGORY; }
+function aoristPatternDeck(cards, ids = AORIST_PATTERN_IDS) {
+  const verbs = new Set(state.verbSets.filter(set => ids.includes(set.id)).flatMap(set => set.verbIds));
+  return cards.filter(card => card.type === "past-conjugations" && card.tense === "aorist" && verbs.has(card.verbId));
+}
+function renderAoristGrammar() {
+  const cards = allCards(), groups = state.verbSets.filter(set => AORIST_PATTERN_IDS.includes(set.id));
+  $("grammar-aorist-groups").innerHTML = groups.map(set => {
+    const deck = aoristPatternDeck(cards, [set.id]);
+    return `<div><b>${escapeHTML(set.title)}</b><ul>${set.verbIds.map(id => deck.find(card => card.verbId === id)).filter(Boolean).map(card => `<li>${escapeHTML(card.greek)} → <strong>${escapeHTML(card.forms[FIRST_PERSON])}</strong> — ${escapeHTML(card.russian)}</li>`).join("")}</ul></div>`;
+  }).join("");
+}
 function isConjugationCategory(category = state.category) { return category === "conjugations" || category === "past-conjugations" || category === "passive-a2-forms" || category === "irregular-present" || category === "irregular-past"; }
 function verbSetDeck(forms = false) {
   const set = state.verbSets.find(item => item.id === "passive-a2");
@@ -199,6 +213,7 @@ function irregularNote(card) {
 function getDeck(category) {
   if (category === "passive-a2" || category === "passive-a2-forms") return verbSetDeck(category.endsWith("-forms"));
   const all = allCards();
+  if (category === AORIST_PATTERN_CATEGORY) return aoristPatternDeck(all);
   if (["irregular", "irregular-present", "irregular-past", "irregular-aorist"].includes(category)) {
     const ids = new Set(state.verbSets.find(item => item.id === "irregular")?.verbIds || []);
     const verbs = all.filter(card => card.type === "verbs" && ids.has(card.id));
@@ -219,6 +234,7 @@ function getDeck(category) {
 }
 
 function renderDashboard() {
+  if (!$("grammar-aorist-groups").innerHTML && state.verbSets.some(set => AORIST_PATTERN_IDS.includes(set.id))) renderAoristGrammar();
   const all = allCards();
   const learnedCount = all.filter(card => progress.learned.includes(card.id)).length;
   $("progress-copy").textContent = `${learnedCount} из ${all.length} карточек уже просмотрено`;
@@ -228,12 +244,13 @@ function renderDashboard() {
     ["dictionary", "Словарь", "Α↔Я", getDeck("dictionary").length],
     ["passive-a2", "Глаголы на -μαι · A2", "-μαι", getDeck("passive-a2").length],
     ["irregular", "Неправильные глаголы", "ρήμα", getDeck("irregular").length],
+    [AORIST_PATTERN_CATEGORY, "Аорист: -ασα / -εσα / -αξα / -ηξα", "-ξα", getDeck(AORIST_PATTERN_CATEGORY).length],
     ["important-phrases", "Важные выражения", "✦", getDeck("important-phrases").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, key === "words" ? themedWordCards().filter(card => card.partOfSpeech !== "numeral").length : getDeck(key).length]),
     ["numerals", "Числительные", "123", getDeck("numerals").length],
     ["game-articles", "Артикли и род", "ο η το", "2 режима"],
     ["game-stress", "Ударение", "ά", "игра"],
-    ["grammar", "Грамматика", "§", "17 тем"]
+    ["grammar", "Грамматика", "§", "18 тем"]
   ];
   $("category-grid").innerHTML = sections.map(([key, label, symbol, count]) => `<button class="category" data-category="${key}"><span class="symbol">${symbol}</span><strong>${label}</strong><small>${typeof count === "number" ? `${count} карточек` : count}</small></button>`).join("");
   $("resume-quiz").classList.toggle("hidden", !localStorage.getItem("greek-a1-active-quiz"));
@@ -311,7 +328,7 @@ function openCategory(category) {
   stopSpeaking();
   resetCardSelection();
   state.category = category; state.wordTopic = null; state.selectedCollections.clear(); state.wordPartOfSpeech = "all"; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = ""; state.expandedConjugations.clear();
-  const title = { new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", numerals: "Числительные", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", "important-phrases": "Важные выражения", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
+  const title = { [AORIST_PATTERN_CATEGORY]: "Аорист: -ασα / -εσα / -αξα / -ηξα", new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", numerals: "Числительные", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", "important-phrases": "Важные выражения", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
   $("study-title").textContent = title || (category === "past-conjugations" ? "Прошедшее время · Аорист" : "Неправильные глаголы"); $("study-kicker").textContent = isConjugationCategory(category) ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
   $("study-back-button").dataset.go = "dashboard"; $("word-pos-filter").classList.add("hidden"); $("situation-type-filter").classList.add("hidden");
   $("word-list-search").value = ""; showScreen("study"); renderCard();
@@ -409,7 +426,7 @@ function reveal() {
   saveProgress(); renderCard(); renderDashboard();
 }
 
-function quizKey(item) { return item.pronoun ? `${item.card.id}:${item.pronoun}` : item.card.id; }
+function quizKey(item) { return item.patternRecall ? `${item.card.id}:pattern-recall` : item.pronoun ? `${item.card.id}:${item.pronoun}` : item.card.id; }
 function quizItems(cards) { return isConjugationCategory() ? cards.flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : cards.map(card => ({ card })); }
 const FIRST_PERSON = "εγώ", IMPERSONAL = "αυτός / αυτή / αυτό";
 function firstPersonOrImpersonal(card) {
@@ -442,8 +459,13 @@ function quizDirectionStorage(kind) { return kind === "self" ? "greek-a1-self-qu
 function savedQuizDirection(kind) { const mode = localStorage.getItem(quizDirectionStorage(kind)); return ["el-ru", "ru-el", "mixed"].includes(mode) ? mode : "el-ru"; }
 function eligibleQuizItems(pool, candidates = pool) { return pool.filter(item => quizCandidates(item, candidates, "el-ru").length && quizCandidates(item, candidates, "ru-el").length); }
 function openQuizSetup(selectedOnly = false) {
-  stopSpeaking(); state.quizSelectedOnly = selectedOnly; state.quizKind = state.category === "irregular-aorist" ? "self" : "choice"; $("quiz-kind").value = state.quizKind;
-  $("quiz-mode").value = state.category === "irregular-aorist" ? "el-ru" : savedQuizDirection(state.quizKind);
+  const patterns = $("quiz-aorist-patterns");
+  const patternMode = state.category === AORIST_PATTERN_CATEGORY;
+  patterns.classList.toggle("hidden", !patternMode);
+  patterns.querySelectorAll("input").forEach(input => { input.checked = true; });
+  if (patternMode) $("quiz-limit").value = "10";
+  stopSpeaking(); state.quizSelectedOnly = selectedOnly; state.quizKind = isAoristRecall() ? "self" : "choice"; $("quiz-kind").value = state.quizKind;
+  $("quiz-mode").value = isAoristRecall() ? "el-ru" : savedQuizDirection(state.quizKind);
   $("quiz-past-forms").value = "first";
   updateQuizSetup();
   showScreen("quiz-setup");
@@ -453,12 +475,14 @@ function updateQuizSetup() {
   const past = state.category === "past-conjugations";
   const firstOnly = past && $("quiz-past-forms").value === "first";
   $("quiz-past-forms-setting").classList.toggle("hidden", !past);
-  const material = (isConjugationCategory() || state.category === "irregular-aorist" ? state.deck : state.deck.filter(card => card.type !== "past-conjugations")).filter(card => !card.exampleOnly && (!firstOnly || card.tense === "aorist"));
-  state.quizCandidatePool = quizItems(self ? material : quizMaterialCards(material));
+  const material = (isConjugationCategory() || isAoristRecall() ? state.deck : state.deck.filter(card => card.type !== "past-conjugations")).filter(card => !card.exampleOnly && (!firstOnly || card.tense === "aorist"));
+  const patternMode = state.category === AORIST_PATTERN_CATEGORY;
+  const patternIds = patternMode ? Array.from($("quiz-aorist-patterns").querySelectorAll("input:checked"), input => input.value) : [];
+  state.quizCandidatePool = patternMode ? aoristPatternDeck(material, patternIds).map(card => ({ card, patternRecall: true })) : quizItems(self ? material : quizMaterialCards(material));
   if (firstOnly) state.quizCandidatePool = state.quizCandidatePool.filter(item => item.pronoun === firstPersonOrImpersonal(item.card));
   state.quizScope = state.quizSelectedOnly ? state.quizCandidatePool.filter(item => state.selectedCards.has(item.card.id)) : state.quizCandidatePool;
-  $("quiz-direction-setting").classList.toggle("hidden", state.category === "irregular-aorist");
-  $("quiz-kind").disabled = state.category === "irregular-aorist";
+  $("quiz-direction-setting").classList.toggle("hidden", isAoristRecall());
+  $("quiz-kind").disabled = isAoristRecall();
   const eligible = self ? state.quizScope.length : eligibleQuizItems(state.quizScope, state.quizCandidatePool).length;
   $("quiz-setup-summary").textContent = `${state.quizSelectedOnly ? "Выбранные карточки. " : ""}${eligible} доступных вопросов из ${state.quizScope.length}${self ? "; самооценка: перевод показывается после ответа." : `; ${state.quizScope.length - eligible} исключено: нет однозначно неверного варианта в разделе.`} Поиск в списке на тест не влияет.`;
 }
@@ -471,7 +495,7 @@ function startQuiz(items, scope = state.quizScope, previousSeen = [], mode = $("
   const selected = shuffle(items.filter(item => allowed.has(quizKey(item)))).slice(0, limit);
   const skipped = items.length - items.filter(item => allowed.has(quizKey(item))).length;
   if (!selected.length) { $("quiz-setup-summary").textContent = items.length ? `Нет однозначных вопросов. Исключено: ${skipped}. Расширьте раздел или подборку.` : "Нет карточек для выбранного фильтра. Выберите другой материал или отметьте больше слов."; showScreen("quiz-setup"); return; }
-  const recall = state.category === "irregular-aorist";
+  const recall = isAoristRecall();
   state.quizMode = !recall && ["el-ru", "ru-el", "mixed"].includes(mode) ? mode : "el-ru";
   document.querySelector("#quiz .back-button").dataset.go = "study";
   if (!recall) localStorage.setItem(quizDirectionStorage(state.quizKind), state.quizMode);
@@ -489,11 +513,11 @@ function restoreQuiz(kind = "choice") {
   state.quizKind = kind; const storage = quizStorage();
   let savedSession; try { savedSession = JSON.parse(localStorage.getItem(storage)); } catch { return; }
   if (!savedSession?.keys?.length) return;
-  const source = isConjugationCategory(savedSession.category) ? allCards().filter(card => card.type === "conjugations" || card.type === "past-conjugations").flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : allCards().map(card => ({ card }));
+  const source = isConjugationCategory(savedSession.category) ? allCards().filter(card => card.type === "conjugations" || card.type === "past-conjugations").flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : allCards().map(card => ({ card, patternRecall: savedSession.category === AORIST_PATTERN_CATEGORY }));
   const byKey = new Map(source.map(item => [quizKey(item), item]));
   const deck = savedSession.keys.map(key => byKey.get(key));
   if (deck.some(item => !item)) { localStorage.removeItem(storage); alert("Словарь обновился, часть вопросов исчезла. Выберите тему заново."); renderDashboard(); return; }
-  savedSession.mode = savedSession.category !== "irregular-aorist" && ["el-ru", "ru-el", "mixed"].includes(savedSession.mode) ? savedSession.mode : "el-ru";
+  savedSession.mode = !isAoristRecall(savedSession.category) && ["el-ru", "ru-el", "mixed"].includes(savedSession.mode) ? savedSession.mode : "el-ru";
   state.session = savedSession; state.quizDeck = deck; state.quizScope = savedSession.scopeKeys.map(key => byKey.get(key)).filter(Boolean); state.quizCandidatePool = (savedSession.candidateKeys || savedSession.scopeKeys).map(key => byKey.get(key)).filter(Boolean); state.quizMode = savedSession.mode; state.quizIndex = savedSession.index;
   state.category = savedSession.category; state.deck = [...new Map(state.quizScope.map(item => [item.card.id, item.card])).values()]; $("quiz-mode").value = savedSession.mode; document.querySelector("#quiz .back-button").dataset.go = "dashboard"; showScreen("quiz"); renderQuestion();
 }
@@ -539,10 +563,10 @@ function renderSelfQuestion() {
   if (!item) return;
   const greek = item.pronoun ? item.form : item.card.greek;
   const russian = item.pronoun ? item.russian : item.card.russian;
-  const aoristRecall = state.category === "irregular-aorist";
+  const aoristRecall = isAoristRecall();
   const reverse = !aoristRecall && quizDirectionAt(state.quizIndex) === "ru-el";
   const recallForm = aoristRecall ? item.card.forms?.[firstPersonOrImpersonal(item.card)] || "" : "";
-  const prompt = reverse ? russian : greek, translation = aoristRecall ? `${recallForm} — ${russian}` : reverse ? greek : russian;
+  const prompt = item.patternRecall ? `${greek} — ${russian}` : reverse ? russian : greek, translation = aoristRecall ? item.patternRecall ? `${greek} → ${recallForm}` : `${recallForm} — ${russian}` : reverse ? greek : russian;
   state.answered = Boolean(answer); state.quizSpokenText = aoristRecall && answer ? recallForm : reverse && !answer ? "" : greek;
   $("quiz-question").classList.toggle("quiz-russian-prompt", reverse);
   $("quiz-title").textContent = "Знаю / Не знаю";
@@ -556,7 +580,7 @@ function renderSelfQuestion() {
   $("quiz-feedback").textContent = answer ? `${aoristRecall ? "Аорист" : "Перевод"}: ${translation} · самооценка: ${answer.correct ? "знаю" : "не знаю"}` : aoristRecall ? (item.card.forms?.["εγώ"] ? "Вспомните аорист: εγώ." : "Вспомните аорист безличного глагола.") : "Оцените себя — перевод появится после ответа.";
   // Example text is separate from notes so that a reverse prompt cannot reveal
   // the Greek answer (or an example containing it) before self-assessment.
-  const examples = item.pronoun ? item.card.formExamples?.[item.pronoun] : item.card.examples;
+  const examples = item.pronoun ? item.card.formExamples?.[item.pronoun] : item.patternRecall ? item.card.formExamples?.[FIRST_PERSON] : item.card.examples;
   const exampleText = (!aoristRecall && !reverse || answer) ? (examples || []).map(example => [example.greek, answer ? example.russian : ""].filter(Boolean).join(" — ")).join("\n") : "";
   const hint = !aoristRecall && answer?.correct === false && item.card.type === "past-conjugations" ? presentHint(item.card) : "";
   $("quiz-note").textContent = [hint ? `Настоящее: ${hint}` : "", exampleText, answer ? item.card.note || "" : ""].filter(Boolean).join("\n");
@@ -589,7 +613,7 @@ function finishQuiz() {
   $("quiz-result-score").textContent = state.quizKind === "self" ? `Самооценка: знаю ${correct}, не знаю ${answers.length - correct}` : `${correct} из ${answers.length} · ${Math.round(correct / answers.length * 100)}%${state.session.skipped ? ` · ${state.session.skipped} исключено как неоднозначные` : ""}`;
   $("quiz-result-errors").innerHTML = answers.filter(answer => !answer.correct).map(answer => {
     const item = state.quizDeck.find(candidate => quizKey(candidate) === answer.key);
-    const greek = item.pronoun ? `${item.pronoun}: ${item.form}` : state.session.category === "irregular-aorist" ? `${item.card.greek} → ${item.card.forms?.["εγώ"] || item.card.forms?.["αυτός / αυτή / αυτό"] || ""}` : item.card.greek;
+    const greek = item.pronoun ? `${item.pronoun}: ${item.form}` : isAoristRecall(state.session.category) ? `${item.card.greek} → ${item.card.forms?.["εγώ"] || item.card.forms?.["αυτός / αυτή / αυτό"] || ""}` : item.card.greek;
     const russian = item.pronoun ? item.russian : item.card.russian;
     return `<article class="result-error"><strong>${escapeHTML(greek)}</strong> — ${escapeHTML(russian)}${item.card.note ? `<p>${escapeHTML(item.card.note)}</p>` : ""}</article>`;
   }).join("") || (state.quizKind === "self" ? "Вы отметили все слова как знакомые." : "Ошибок нет!");
@@ -846,6 +870,7 @@ $("word-list").addEventListener("change", event => { const input = event.target.
 $("quiz-start").addEventListener("click", beginQuiz);
 $("quiz-kind").addEventListener("change", () => { $("quiz-mode").value = savedQuizDirection($("quiz-kind").value); updateQuizSetup(); });
 $("quiz-past-forms").addEventListener("change", updateQuizSetup);
+$("quiz-aorist-patterns").addEventListener("change", updateQuizSetup);
 $("quiz-mode").addEventListener("change", () => localStorage.setItem(quizDirectionStorage($("quiz-kind").value), $("quiz-mode").value));
 $("quiz-next").addEventListener("click", () => { stopSpeaking(); if (state.quizIndex + 1 >= state.quizDeck.length) finishQuiz(); else { state.quizIndex += 1; state.session.index = state.quizIndex; saveQuizSession(); renderQuestion(); } });
 $("quiz-retry").addEventListener("click", () => startQuiz(state.quizDeck.filter(item => state.session.answers.some(answer => answer.key === quizKey(item) && !answer.correct)), state.quizScope, state.session.seen, state.session.mode));

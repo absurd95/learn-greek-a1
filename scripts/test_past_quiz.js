@@ -106,3 +106,26 @@ for (const query of ['ΜΠΙΡΑ', 'μπύρα']) {
   assert.ok(run(`state.listQuery = "${query}"; visibleWordList().visible.some(card => card.id === "word-2026081407")`));
 }
 assert.ok(run('state.listQuery = "γι\' αυτό"; visibleWordList().visible.some(card => card.id === "word-20261118041")'));
+
+const patterns = ["aorist-a", "aorist-e", "aorist-ax", "aorist-ix"].map(value => ({ value, checked: true }));
+element("quiz-aorist-patterns").querySelectorAll = selector => selector === "input:checked" ? patterns.filter(input => input.checked) : patterns;
+run('openCategory("aorist-patterns"); openQuizSetup()');
+assert.deepEqual(patterns.map(({value}) => sets.find(set => set.id === value).verbIds.length), [10, 11, 3, 4]);
+assert.equal(run("state.quizScope.length"), 28);
+assert.equal(element("quiz-limit").value, "10");
+assert.equal(run('state.quizScope.filter(item => item.card.forms["εγώ"] === "κοίταξα").length'), 1);
+assert.ok(run('state.quizScope.some(item => item.card.forms["εγώ"] === "στενοχώρεσα / στενοχώρησα")'));
+patterns.forEach(input => input.checked = input.value === "aorist-e");
+run("updateQuizSetup()");
+assert.equal(run("state.quizScope.length"), 11);
+run('var callCard = state.quizScope.find(item => item.card.forms["εγώ"] === "κάλεσα").card; state.selectedCards = new Set([callCard.id]); state.quizSelectedOnly = true; updateQuizSetup(); beginQuiz()');
+assert.equal(run("state.quizDeck.length"), 1);
+assert.match(element("quiz-question").textContent, /Καλώ — /);
+assert.ok(!element("quiz-note").textContent.includes("Κάλεσα"));
+run('answerSelfQuiz(false); restoreQuiz("self")');
+assert.match(element("quiz-feedback").textContent, /Καλώ → κάλεσα/);
+assert.equal(run("state.quizSpokenText"), "κάλεσα");
+assert.ok(run('progress.practice[callCard.id + ":pattern-recall"].lastCorrect === false && !progress.practice[callCard.id + ":εγώ"]'));
+run('answerSelfQuiz(true)');
+assert.ok(run('progress.practice[callCard.id + ":pattern-recall"].answers === 1'));
+console.log("OK: aorist pattern groups, selected cards, hidden answer, pronunciation, restore and isolated progress");
