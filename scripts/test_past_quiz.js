@@ -132,3 +132,21 @@ assert.ok(run('progress.practice[callCard.id + ":pattern-recall"].lastCorrect ==
 run('answerSelfQuiz(true)');
 assert.ok(run('progress.practice[callCard.id + ":pattern-recall"].answers === 1'));
 console.log("OK: aorist pattern groups, selected cards, hidden answer, pronunciation, restore and isolated progress");
+
+fixture["question-forms"] = JSON.parse(fs.readFileSync(path.join(root, "data/question-forms.json"), "utf8"));
+run('openCategory("question-forms"); openQuizSetup()');
+assert.equal(run('state.deck.length'), 19);
+assert.ok(run('state.quizScope.some(item => item.card.greek === "ποιον")'));
+assert.ok(run('eligibleQuizItems(state.quizScope).some(item => item.card.greek === "πώς")'));
+run('state.selectedCards = new Set(["question-form-04"]); openQuizSetup(true)');
+element("quiz-kind").value = "self"; element("quiz-mode").value = "ru-el";
+run('updateQuizSetup(); beginQuiz()');
+assert.equal(run('state.quizDeck.length'), 1);
+assert.ok(element("quiz-speak-button").classes.has("hidden"));
+run('answerSelfQuiz(false); restoreQuiz("self")');
+assert.match(element("quiz-feedback").textContent, /ποιον/);
+assert.ok(run('progress.practice["question-form-04"].lastCorrect === false'));
+assert.ok(run('getDeck("mistakes").some(card => card.id === "question-form-04")'));
+run('state.listQuery = "ποιον"');
+assert.ok(run('visibleWordList().visible.some(card => card.id === "question-form-04")'));
+console.log("OK: question forms, selected word, translation choices, reverse self-assessment, search and restore");

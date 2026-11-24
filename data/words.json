@@ -1,5 +1,121 @@
 [
   {
+    "id": "word-20261125d01",
+    "new": true,
+    "greek": "το ιατρείο / τα ιατρεία",
+    "russian": "врачебный кабинет / медицинская практика",
+    "topic": "work",
+    "collectionIds": [
+      "work-business"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ιατρείο",
+        "plural": "ιατρεία"
+      }
+    ],
+    "note": "Помещение или практика врача; не то же самое, что το νοσοκομείο — больница.",
+    "examples": [
+      {
+        "greek": "Έφτασα στο ιατρείο στις επτά.",
+        "russian": "Я пришёл в кабинет врача в семь."
+      }
+    ]
+  },
+  {
+    "id": "word-20261125d02",
+    "new": true,
+    "greek": "απλός / απλή / απλό",
+    "russian": "простой",
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "adjective",
+    "note": "Κάτι απλό — что-то простое: прилагательное в среднем роде.",
+    "examples": [
+      {
+        "greek": "Η άσκηση είναι απλή.",
+        "russian": "Упражнение простое."
+      }
+    ]
+  },
+  {
+    "id": "word-20261125d03",
+    "new": true,
+    "greek": "σημαντικός / σημαντική / σημαντικό",
+    "russian": "важный / значительный",
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "adjective",
+    "note": "Τίποτα σημαντικό — ничего важного; прилагательное стоит в среднем роде.",
+    "examples": [
+      {
+        "greek": "Δεν έγινε τίποτα σημαντικό.",
+        "russian": "Ничего важного не произошло."
+      }
+    ]
+  },
+  {
+    "id": "word-20261125d04",
+    "new": true,
+    "greek": "βαρετός / βαρετή / βαρετό",
+    "russian": "скучный",
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "adjective",
+    "note": "Не путать с κουρασμένος — уставший.",
+    "examples": [
+      {
+        "greek": "Η μέρα ήταν λίγο βαρετή.",
+        "russian": "День был немного скучным."
+      }
+    ]
+  },
+  {
+    "id": "word-20261125d05",
+    "new": true,
+    "greek": "ούτε",
+    "russian": "даже не / ни",
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other",
+    "note": "Ούτε ένα λάθος — ни одной ошибки; с отрицанием: δεν έκανε ούτε ένα λάθος.",
+    "examples": [
+      {
+        "greek": "Ούτε ένα λάθος!",
+        "russian": "Ни одной ошибки!"
+      }
+    ]
+  },
+  {
+    "id": "word-20261125d06",
+    "new": true,
+    "greek": "όπως",
+    "russian": "как / так же как",
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "other",
+    "note": "Σравните πώς — как? (прямой или косвенный вопрос).",
+    "examples": [
+      {
+        "greek": "Δουλεύω όπως πάντα.",
+        "russian": "Я работаю как всегда."
+      }
+    ]
+  },
+  {
     "id": "word-20261124p1",
     "greek": "η καμπίνα / οι καμπίνες",
     "russian": "каюта / кабина",

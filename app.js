@@ -73,6 +73,7 @@ function migrateProgress() {
   saveProgress();
 }
 function allCards() { return SOURCES.flatMap(([key, label]) => (state.data[key] || []).map(card => ({ ...card, ...(key === "past-conjugations" ? { group: card.tense === "imperfect" ? "Παρατατικός · имперфект" : "Αόριστος · аорист" } : {}), type: key, typeLabel: key === "past-conjugations" ? "Прошедшее время" : label }))); }
+function questionFormCards() { return (state.data["question-forms"] || []).map(card => ({ ...card, type: "question-forms", typeLabel: "Вопросительные слова" })); }
 function themedWordCards() { return allCards().filter(card => card.type === "words" || card.type === "professions"); }
 function getWordTopicDeck(topic = "all", partOfSpeech = "all") {
   return themedWordCards().filter(card => card.partOfSpeech !== "numeral" && (topic === "all" || card.topic === topic) && (partOfSpeech === "all" || card.partOfSpeech === partOfSpeech));
@@ -213,6 +214,7 @@ function irregularNote(card) {
 function getDeck(category) {
   if (category === "passive-a2" || category === "passive-a2-forms") return verbSetDeck(category.endsWith("-forms"));
   const all = allCards();
+  if (category === "question-forms") return questionFormCards();
   if (category === AORIST_PATTERN_CATEGORY) return aoristPatternDeck(all);
   if (["irregular", "irregular-present", "irregular-past", "irregular-aorist"].includes(category)) {
     const ids = new Set(state.verbSets.find(item => item.id === "irregular")?.verbIds || []);
@@ -228,8 +230,8 @@ function getDeck(category) {
   if (category === "all") return all;
   if (category === "dictionary") return all.filter(card => card.type === "words" || card.type === "verbs");
   if (category === "new") return all.filter(card => card.new);
-  if (category === "favorites") return all.filter(card => progress.favorites.includes(card.id));
-  if (category === "mistakes") return all.filter(card => progress.mistakes.includes(card.id));
+  if (category === "favorites") return [...all, ...questionFormCards()].filter(card => progress.favorites.includes(card.id));
+  if (category === "mistakes") return [...all, ...questionFormCards()].filter(card => progress.mistakes.includes(card.id));
   return all.filter(card => card.type === category);
 }
 
@@ -246,6 +248,7 @@ function renderDashboard() {
     ["irregular", "Неправильные глаголы", "ρήμα", getDeck("irregular").length],
     [AORIST_PATTERN_CATEGORY, "Аорист: -ασα / -εσα / -αξα / -ηξα", "-ξα", getDeck(AORIST_PATTERN_CATEGORY).length],
     ["important-phrases", "Важные выражения", "✦", getDeck("important-phrases").length],
+    ["question-forms", "Вопросительные слова", "ποιος;", getDeck("question-forms").length],
     ...SOURCES.map(([key, label, symbol]) => [key, label, symbol, key === "words" ? themedWordCards().filter(card => card.partOfSpeech !== "numeral").length : getDeck(key).length]),
     ["numerals", "Числительные", "123", getDeck("numerals").length],
     ["game-articles", "Артикли и род", "ο η το", "2 режима"],
@@ -328,7 +331,7 @@ function openCategory(category) {
   stopSpeaking();
   resetCardSelection();
   state.category = category; state.wordTopic = null; state.selectedCollections.clear(); state.wordPartOfSpeech = "all"; state.deck = getDeck(category); state.index = 0; state.revealed = false; state.listMode = category === "dictionary"; state.listQuery = ""; state.expandedConjugations.clear();
-  const title = { [AORIST_PATTERN_CATEGORY]: "Аорист: -ασα / -εσα / -αξα / -ηξα", new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", numerals: "Числительные", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", "important-phrases": "Важные выражения", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
+  const title = { "question-forms": "Вопросительные слова", [AORIST_PATTERN_CATEGORY]: "Аорист: -ασα / -εσα / -αξα / -ηξα", new: "Новые", all: "Все слова", dictionary: "Словарь", favorites: "Избранное", mistakes: "Ошибки", words: "Слова", numerals: "Числительные", verbs: "Глаголы", adverbs: "Наречия", phrases: "Фразы", "important-phrases": "Важные выражения", professions: "Профессии", nationalities: "Национальности", months: "Месяцы", weekdays: "Дни недели", conjugations: "Спряжения", "passive-a2": "Глаголы на -μαι · A2", "passive-a2-forms": "Глаголы на -μαι · A2" }[category];
   $("study-title").textContent = title || (category === "past-conjugations" ? "Прошедшее время · Аорист" : "Неправильные глаголы"); $("study-kicker").textContent = isConjugationCategory(category) ? "Таблицы форм" : category === "dictionary" ? "Быстрый поиск" : "Карточки";
   $("study-back-button").dataset.go = "dashboard"; $("word-pos-filter").classList.add("hidden"); $("situation-type-filter").classList.add("hidden");
   $("word-list-search").value = ""; showScreen("study"); renderCard();
@@ -513,7 +516,7 @@ function restoreQuiz(kind = "choice") {
   state.quizKind = kind; const storage = quizStorage();
   let savedSession; try { savedSession = JSON.parse(localStorage.getItem(storage)); } catch { return; }
   if (!savedSession?.keys?.length) return;
-  const source = isConjugationCategory(savedSession.category) ? allCards().filter(card => card.type === "conjugations" || card.type === "past-conjugations").flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : allCards().map(card => ({ card, patternRecall: savedSession.category === AORIST_PATTERN_CATEGORY }));
+  const source = isConjugationCategory(savedSession.category) ? allCards().filter(card => card.type === "conjugations" || card.type === "past-conjugations").flatMap(card => Object.entries(card.forms || {}).map(([pronoun, form]) => ({ card, pronoun, form, russian: card.russianForms?.[pronoun] })).filter(item => item.russian)) : [...allCards(), ...questionFormCards()].map(card => ({ card, patternRecall: savedSession.category === AORIST_PATTERN_CATEGORY }));
   const byKey = new Map(source.map(item => [quizKey(item), item]));
   const deck = savedSession.keys.map(key => byKey.get(key));
   if (deck.some(item => !item)) { localStorage.removeItem(storage); alert("Словарь обновился, часть вопросов исчезла. Выберите тему заново."); renderDashboard(); return; }
@@ -955,4 +958,4 @@ $("game-settings").addEventListener("click", () => openGameSetup(gameKind));
 
 if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
 
-Promise.all([...SOURCES.map(async ([key,,, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })]), ...[["collections", "./data/collections.json"], ["aliases", "./data/id-aliases.json"], ["situations", "./data/situations.json"], ["verbSets", "./data/verb-sets.json"]].map(async ([key, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })])]).then(entries => { const data = Object.fromEntries(entries); state.collections = data.collections; state.aliases = data.aliases; state.situations = data.situations; state.verbSets = data.verbSets; delete data.verbSets; delete data.collections; delete data.aliases; delete data.situations; state.data = data; migrateProgress(); renderDashboard(); }).catch(() => { $("category-grid").innerHTML = '<div class="empty">Не удалось загрузить словарь. Обновите страницу.</div>'; });
+Promise.all([...SOURCES.map(async ([key,,, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })]), ...[["question-forms", "./data/question-forms.json"], ["collections", "./data/collections.json"], ["aliases", "./data/id-aliases.json"], ["situations", "./data/situations.json"], ["verbSets", "./data/verb-sets.json"]].map(async ([key, path]) => [key, await fetch(path).then(response => { if (!response.ok) throw new Error(path); return response.json(); })])]).then(entries => { const data = Object.fromEntries(entries); state.collections = data.collections; state.aliases = data.aliases; state.situations = data.situations; state.verbSets = data.verbSets; delete data.verbSets; delete data.collections; delete data.aliases; delete data.situations; state.data = data; migrateProgress(); renderDashboard(); }).catch(() => { $("category-grid").innerHTML = '<div class="empty">Не удалось загрузить словарь. Обновите страницу.</div>'; });
