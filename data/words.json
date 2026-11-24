@@ -1,5 +1,210 @@
 [
   {
+    "id": "word-20261124p1",
+    "greek": "η καμπίνα / οι καμπίνες",
+    "russian": "каюта / кабина",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "καμπίνα",
+        "plural": "καμπίνες"
+      }
+    ],
+    "note": "На корабле καμπίνα — каюта.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η καμπίνα μας είναι στο πλοίο.",
+        "russian": "Наша каюта находится на корабле."
+      }
+    ]
+  },
+  {
+    "id": "word-20261124p2",
+    "greek": "το μεγάφωνο / τα μεγάφωνα",
+    "russian": "громкоговоритель",
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "μεγάφωνο",
+        "plural": "μεγάφωνα"
+      }
+    ],
+    "note": "μέγας — большой; φωνή — голос.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ακούσαμε μια ανακοίνωση από τα μεγάφωνα.",
+        "russian": "Мы услышали объявление по громкоговорителям."
+      }
+    ]
+  },
+  {
+    "id": "word-20261124p3",
+    "greek": "η εξέταση / οι εξετάσεις",
+    "russian": "экзамен / обследование",
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εξέταση",
+        "plural": "εξετάσεις"
+      }
+    ],
+    "note": "В зависимости от контекста также медицинское обследование.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Έχω εξετάσεις στο πανεπιστήμιο.",
+        "russian": "У меня экзамены в университете."
+      }
+    ]
+  },
+  {
+    "id": "word-20261124p4",
+    "greek": "το καφενείο / τα καφενεία",
+    "russian": "традиционная кофейня / кафе",
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "city-shops"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καφενείο",
+        "plural": "καφενεία"
+      }
+    ],
+    "note": "Традиционное греческое заведение для встреч; не обязательно то же самое, что современная καφετέρια.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Συναντιόμαστε στο καφενείο.",
+        "russian": "Мы встречаемся в кофейне."
+      }
+    ]
+  },
+  {
+    "id": "word-20261124p5",
+    "greek": "η μηχανή / οι μηχανές",
+    "russian": "машина / двигатель / механизм",
+    "topic": "objects",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "objects-technology"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "μηχανή",
+        "plural": "μηχανές"
+      }
+    ],
+    "note": "η μηχανή πλοίου — судовой двигатель; η φωτογραφική μηχανή — фотоаппарат.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Το πλοίο έσβησε τις μηχανές του.",
+        "russian": "Корабль заглушил двигатели."
+      }
+    ]
+  },
+  {
+    "id": "word-20261124p6",
+    "greek": "η Ρόδος",
+    "russian": "Родос",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Ρόδος"
+      }
+    ],
+    "note": "Остров и город Родос; στη Ρόδο — на Родосе / на Родос.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Πήγαμε στη Ρόδο με πλοίο.",
+        "russian": "Мы поехали на Родос на корабле."
+      }
+    ]
+  },
+  {
+    "id": "word-20261124p7",
+    "greek": "η Σύρος",
+    "russian": "Сирос",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-holiday"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Σύρος"
+      }
+    ],
+    "note": "Греческий остров; στη Σύρο — на Сиросе / на Сирос.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Το πλοίο έφτασε στη Σύρο.",
+        "russian": "Корабль прибыл на Сирос."
+      }
+    ]
+  },
+  {
+    "id": "word-20261124p8",
+    "greek": "η Τουρκία",
+    "russian": "Турция",
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "Τουρκία"
+      }
+    ],
+    "note": "Страна; не путать с прилагательным τουρκικός — турецкий.",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η Μελέκ πήγε στην Τουρκία.",
+        "russian": "Мелек поехала в Турцию."
+      }
+    ]
+  },
+  {
     "id": "word-2026112401",
     "greek": "το δαχτυλίδι / τα δαχτυλίδια",
     "russian": "кольцо",
