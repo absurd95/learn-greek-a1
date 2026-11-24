@@ -31,6 +31,9 @@ for (const pair of lessonAorists) {
 assert.ok(firstForms.every(([, form]) => !['ήμουν', 'είχα'].includes(form)));
 assert.ok(run('eligibleQuizItems(state.quizScope).every(item => item.card.tense === "aorist")'));
 assert.ok(run('state.quizScope.some(item => item.form === "γεννήθηκα" && presentHint(item.card) === "γεννιέμαι")'));
+for (const form of ["έπιασα", "έσωσα", "έσβησα", "έσπασα", "φόρεσα"]) {
+  assert.ok(firstForms.some(([, past]) => past.split(/\s*\/\s*/).includes(form)), form);
+}
 element("quiz-past-forms").value = "all"; run("updateQuizSetup()");
 assert.ok(run('state.quizScope.some(item => item.card.tense === "imperfect" && item.form === "ήμουν") && state.quizScope.some(item => item.card.tense === "imperfect" && item.form === "είχα")'));
 element("quiz-past-forms").value = "first"; run("updateQuizSetup()");

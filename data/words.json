@@ -1,5 +1,157 @@
 [
   {
+    "id": "word-2026112401",
+    "greek": "το δαχτυλίδι / τα δαχτυλίδια",
+    "russian": "кольцо",
+    "topic": "objects",
+    "collectionIds": [
+      "objects-daily"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δαχτυλίδι",
+        "plural": "δαχτυλίδια"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Βρήκα ένα δαχτυλίδι.",
+        "russian": "Я нашёл кольцо."
+      }
+    ]
+  },
+  {
+    "id": "word-2026112402",
+    "greek": "η γρίπη",
+    "russian": "грипп",
+    "topic": "people",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γρίπη"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Ο Γιώργος έπαθε γρίπη.",
+        "russian": "Георгий заболел гриппом."
+      }
+    ]
+  },
+  {
+    "id": "word-2026112403",
+    "greek": "το ατύχημα / τα ατυχήματα",
+    "russian": "авария / несчастный случай",
+    "topic": "other",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ατύχημα",
+        "plural": "ατυχήματα"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Είχε ένα ατύχημα.",
+        "russian": "С ним произошёл несчастный случай."
+      }
+    ]
+  },
+  {
+    "id": "word-2026112404",
+    "greek": "το γλέντι / τα γλέντια",
+    "russian": "праздник / гулянье / застолье",
+    "topic": "other",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "partOfSpeech": "noun",
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "γλέντι",
+        "plural": "γλέντια"
+      }
+    ],
+    "new": true,
+    "examples": [
+      {
+        "greek": "Το γλέντι κράτησε ως αργά.",
+        "russian": "Праздник продолжался допоздна."
+      }
+    ],
+    "note": "γλέντι — весёлое празднование или застолье; πάρτι — вечеринка. Не во всех контекстах взаимозаменяемы."
+  },
+  {
+    "id": "word-2026112405",
+    "greek": "ολόκληρος / ολόκληρη / ολόκληρο",
+    "russian": "целый / весь",
+    "topic": "other",
+    "collectionIds": [
+      "other-description"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Περιμέναμε σαράντα λεπτά ολόκληρα.",
+        "russian": "Мы ждали целых сорок минут."
+      }
+    ]
+  },
+  {
+    "id": "word-2026112406",
+    "greek": "χτεσινός / χτεσινή / χτεσινό",
+    "russian": "вчерашний",
+    "topic": "time",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "partOfSpeech": "adjective",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Η χτεσινή μέρα ήταν κουραστική.",
+        "russian": "Вчерашний день был утомительным."
+      }
+    ]
+  },
+  {
+    "id": "word-2026112407",
+    "greek": "δικός / δική / δικό",
+    "russian": "свой / собственный",
+    "topic": "other",
+    "collectionIds": [
+      "other-pronouns"
+    ],
+    "partOfSpeech": "pronoun",
+    "new": true,
+    "examples": [
+      {
+        "greek": "Αυτό είναι το δικό μου σπίτι.",
+        "russian": "Это мой собственный дом."
+      }
+    ],
+    "note": "Согласуется с предметом: ο δικός μου φίλος, η δική μου τσάντα, το δικό μου σπίτι. Οι δικοί μου — мои родные."
+  },
+  {
     "id": "word-20261123101",
     "greek": "η Κύπρος",
     "russian": "Кипр",
@@ -18551,6 +18703,7 @@
     "id": "word-20261110014",
     "greek": "το σωσίβιο",
     "russian": "спасательный жилет / спасательный круг",
+    "note": "Связанный глагол: σώζω — спасать, έσωσα — спас(ла).",
     "topic": "transport",
     "partOfSpeech": "noun",
     "collectionIds": [
