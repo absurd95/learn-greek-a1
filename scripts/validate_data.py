@@ -64,6 +64,11 @@ def main() -> None:
     assert len(collection_ids) == len(set(collection_ids)), "duplicate collection IDs"
     assert all(item["parent"] in ALLOWED_TOPICS for item in collections), "bad collection parent"
     cards = [card for rows in sources.values() for card in rows]
+    for item in sources.get("quantity-drills.json", []):
+        assert item["greek"].count("___") == 1, f"quantity drill needs one blank: {item['id']}"
+        choices = item.get("choices", [])
+        assert len(choices) >= 2 and len(choices) == len(set(choices)) and choices.count(item["russian"]) == 1, f"invalid quantity drill choices: {item['id']}"
+        assert item.get("note"), f"missing quantity explanation: {item['id']}"
 
     ids = [card["id"] for card in cards]
     duplicate_ids = [key for key, count in Counter(ids).items() if count > 1]

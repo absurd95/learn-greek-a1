@@ -150,3 +150,17 @@ assert.ok(run('getDeck("mistakes").some(card => card.id === "question-form-04")'
 run('state.listQuery = "ποιον"');
 assert.ok(run('visibleWordList().visible.some(card => card.id === "question-form-04")'));
 console.log("OK: question forms, selected word, translation choices, reverse self-assessment, search and restore");
+
+fixture["quantity-drills"] = JSON.parse(fs.readFileSync(path.join(root, "data/quantity-drills.json"), "utf8"));
+run('openCategory("quantity-drills"); state.selectedCards = new Set(["quantity-drill-02"]); openQuizSetup(true); beginQuiz()');
+assert.equal(run('state.quizDeck.length'), 1);
+assert.match(element("quiz-question").textContent, /___ δουλειά/);
+assert.ok(element("quiz-note").classes.has("hidden"));
+assert.ok(element("quiz-speak-button").classes.has("hidden"));
+assert.match(element("quiz-options").innerHTML, /πολλή/);
+run('answerQuiz({dataset:{correct:"false"},classList:{add(){}}}); restoreQuiz("choice")');
+assert.match(element("quiz-note").textContent, /πολλή δουλειά/);
+assert.equal(run('state.quizSpokenText'), "Έχω πολλή δουλειά.");
+assert.ok(run('getDeck("mistakes").some(card => card.id === "quantity-drill-02")'));
+assert.ok(run('progress.practice["quantity-drill-02"].lastCorrect === false'));
+console.log("OK: quantity cloze, one selected item, answer explanation, audio and restore");
