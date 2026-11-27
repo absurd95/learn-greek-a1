@@ -1,5 +1,37 @@
 [
   {
+    "id": "profession-20261127l01",
+    "greek": "ο δημοσιογράφος / η δημοσιογράφος",
+    "russian": "журналист / журналистка",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-professions"
+    ],
+    "nounForms": [
+      {
+        "key": "masculine",
+        "gender": "masculine",
+        "singular": "δημοσιογράφος",
+        "plural": "δημοσιογράφοι"
+      },
+      {
+        "key": "feminine",
+        "gender": "feminine",
+        "singular": "δημοσιογράφος",
+        "plural": "δημοσιογράφοι"
+      }
+    ],
+    "note": "Общий род: ο / η δημοσιογράφος. Форма без артикля сама по себе не показывает род.",
+    "examples": [
+      {
+        "greek": "Η δημοσιογράφος γράφει ένα άρθρο.",
+        "russian": "Журналистка пишет статью."
+      }
+    ]
+  },
+  {
     "id": "profession-20261118001",
     "greek": "ο συνταξιούχος / η συνταξιούχος",
     "russian": "пенсионер / пенсионерка",

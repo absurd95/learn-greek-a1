@@ -1,5 +1,832 @@
 [
   {
+    "id": "word-20261127related1",
+    "greek": "η γέννηση / οι γεννήσεις",
+    "russian": "рождение",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "γέννηση",
+        "plural": "γεννήσεις"
+      }
+    ],
+    "new": true,
+    "note": "γεννάω — рожать; γεννιέμαι — рождаться.",
+    "examples": [
+      {
+        "greek": "Η γέννηση του παιδιού ήταν τον Μάιο.",
+        "russian": "Ребёнок родился в мае."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127related2",
+    "greek": "η επίσκεψη / οι επισκέψεις",
+    "russian": "визит / посещение",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "επίσκεψη",
+        "plural": "επισκέψεις"
+      }
+    ],
+    "new": true,
+    "note": "επισκέπτομαι — посещать.",
+    "examples": [
+      {
+        "greek": "Η επίσκεψη στο μουσείο ήταν ενδιαφέρουσα.",
+        "russian": "Посещение музея было интересным."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127related3",
+    "greek": "το χειροκρότημα / τα χειροκροτήματα",
+    "russian": "аплодисменты",
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "χειροκρότημα",
+        "plural": "χειροκροτήματα"
+      }
+    ],
+    "new": true,
+    "note": "χειροκροτώ — аплодировать.",
+    "examples": [
+      {
+        "greek": "Το χειροκρότημα ήταν δυνατό.",
+        "russian": "Аплодисменты были громкими."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l01",
+    "greek": "το στρώμα / τα στρώματα",
+    "russian": "матрас",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "στρώμα",
+        "plural": "στρώματα"
+      }
+    ],
+    "note": "το κατάστρωμα — палуба; не путать со словом το στρώμα.",
+    "examples": [
+      {
+        "greek": "Το στρώμα είναι άνετο.",
+        "russian": "Матрас удобный."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l02",
+    "greek": "η πρακτική άσκηση / οι πρακτικές ασκήσεις",
+    "russian": "практика / практическое занятие",
+    "new": true,
+    "topic": "education",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "education-study"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "πρακτική άσκηση",
+        "plural": "πρακτικές ασκήσεις"
+      }
+    ],
+    "note": "В университете может означать практику; также практическое упражнение.",
+    "examples": [
+      {
+        "greek": "Κάνω πρακτική άσκηση σε μια εταιρεία.",
+        "russian": "Я прохожу практику в компании."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l03",
+    "greek": "το εργοστάσιο / τα εργοστάσια",
+    "russian": "завод / фабрика",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "εργοστάσιο",
+        "plural": "εργοστάσια"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Ο πατέρας μου δουλεύει σε ένα εργοστάσιο.",
+        "russian": "Мой отец работает на заводе."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l04",
+    "greek": "ο πόλεμος / οι πόλεμοι",
+    "russian": "война",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "πόλεμος",
+        "plural": "πόλεμοι"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Ο πόλεμος τελείωσε.",
+        "russian": "Война закончилась."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l05",
+    "greek": "η ουρά / οι ουρές",
+    "russian": "очередь / хвост",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ουρά",
+        "plural": "ουρές"
+      }
+    ],
+    "note": "η ουρά του σκύλου — хвост собаки; στην ουρά — в очереди.",
+    "examples": [
+      {
+        "greek": "Περιμένω στην ουρά.",
+        "russian": "Я жду в очереди."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l06",
+    "greek": "το σύνορο / τα σύνορα",
+    "russian": "граница / границы",
+    "new": true,
+    "topic": "transport",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "σύνορο",
+        "plural": "σύνορα"
+      }
+    ],
+    "note": "Во множественном τα σύνορα часто означает государственную границу.",
+    "examples": [
+      {
+        "greek": "Περάσαμε τα σύνορα.",
+        "russian": "Мы пересекли границу."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l07",
+    "greek": "το άσυλο",
+    "russian": "убежище",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "άσυλο"
+      }
+    ],
+    "note": "το πολιτικό άσυλο — политическое убежище.",
+    "examples": [
+      {
+        "greek": "Ζητά πολιτικό άσυλο.",
+        "russian": "Он просит политическое убежище."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l08",
+    "greek": "το ηλεκτρικό ρεύμα",
+    "russian": "электрический ток / электричество",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ηλεκτρικό ρεύμα"
+      }
+    ],
+    "note": "ο λογαριασμός του ηλεκτρικού ρεύματος — счёт за электричество.",
+    "examples": [
+      {
+        "greek": "Πληρώνω τον λογαριασμό του ηλεκτρικού ρεύματος.",
+        "russian": "Я оплачиваю счёт за электричество."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l09",
+    "greek": "το καλοριφέρ / τα καλοριφέρ",
+    "russian": "радиатор отопления / отопление",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "καλοριφέρ",
+        "plural": "καλοριφέρ"
+      }
+    ],
+    "note": "Неизменяемое существительное.",
+    "examples": [
+      {
+        "greek": "Το καλοριφέρ είναι ζεστό.",
+        "russian": "Батарея отопления тёплая."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l10",
+    "greek": "η εξωτερική πολιτική",
+    "russian": "внешняя политика",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "εξωτερική πολιτική"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η εξωτερική πολιτική αφορά τις διεθνείς σχέσεις.",
+        "russian": "Внешняя политика касается международных отношений."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l11",
+    "greek": "το δικαστήριο / τα δικαστήρια",
+    "russian": "суд / здание суда",
+    "new": true,
+    "topic": "city",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "transport-places"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "δικαστήριο",
+        "plural": "δικαστήρια"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Το δικαστήριο βρίσκεται στο κέντρο.",
+        "russian": "Суд находится в центре."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l12",
+    "greek": "η συναυλία / οι συναυλίες",
+    "russian": "концерт",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "συναυλία",
+        "plural": "συναυλίες"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Πήγαμε σε μια συναυλία.",
+        "russian": "Мы сходили на концерт."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l13",
+    "greek": "το ξυπνητήρι / τα ξυπνητήρια",
+    "russian": "будильник",
+    "new": true,
+    "topic": "home",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "home-furniture"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ξυπνητήρι",
+        "plural": "ξυπνητήρια"
+      }
+    ],
+    "note": "ξυπνάω — просыпаться.",
+    "examples": [
+      {
+        "greek": "Το ξυπνητήρι χτυπάει στις έξι.",
+        "russian": "Будильник звонит в шесть."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l14",
+    "greek": "η απεργία / οι απεργίες",
+    "russian": "забастовка",
+    "new": true,
+    "topic": "work",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "work-business"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "απεργία",
+        "plural": "απεργίες"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Σήμερα έχει απεργία.",
+        "russian": "Сегодня забастовка."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l15",
+    "greek": "ο ύμνος / οι ύμνοι",
+    "russian": "гимн",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "ύμνος",
+        "plural": "ύμνοι"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Ακούσαμε τον εθνικό ύμνο.",
+        "russian": "Мы послушали национальный гимн."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l16",
+    "greek": "το έθνος / τα έθνη",
+    "russian": "нация",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "έθνος",
+        "plural": "έθνη"
+      }
+    ],
+    "note": "εθνικός — национальный.",
+    "examples": [
+      {
+        "greek": "Κάθε έθνος έχει την ιστορία του.",
+        "russian": "У каждой нации есть своя история."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l17",
+    "greek": "ο στίχος / οι στίχοι",
+    "russian": "стихотворная строка / строка песни",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "στίχος",
+        "plural": "στίχοι"
+      }
+    ],
+    "note": "στίχος — строка; το ποίημα — стихотворение.",
+    "examples": [
+      {
+        "greek": "Μου αρέσουν οι στίχοι του τραγουδιού.",
+        "russian": "Мне нравятся слова песни."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l18",
+    "greek": "το ποίημα / τα ποιήματα",
+    "russian": "стихотворение",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "ποίημα",
+        "plural": "ποιήματα"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Διαβάζω ένα ποίημα.",
+        "russian": "Я читаю стихотворение."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l19",
+    "greek": "η καταγωγή",
+    "russian": "происхождение",
+    "new": true,
+    "topic": "people",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "people-family"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "καταγωγή"
+      }
+    ],
+    "note": "από πού είναι η καταγωγή σου; — откуда ты родом?",
+    "examples": [
+      {
+        "greek": "Η καταγωγή της είναι από την Κρήτη.",
+        "russian": "Она родом с Крита."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l20",
+    "greek": "το διάστημα / τα διαστήματα",
+    "russian": "промежуток / период / космос",
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "neuter",
+        "singular": "διάστημα",
+        "plural": "διαστήματα"
+      }
+    ],
+    "note": "Также «космос»: το διάστημα.",
+    "examples": [
+      {
+        "greek": "Έμεινα εκεί για μεγάλο διάστημα.",
+        "russian": "Я пробыл там долгое время."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l21",
+    "greek": "η κυβέρνηση / οι κυβερνήσεις",
+    "russian": "правительство",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "κυβέρνηση",
+        "plural": "κυβερνήσεις"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Η κυβέρνηση ανακοίνωσε την απόφαση.",
+        "russian": "Правительство объявило о решении."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l22",
+    "greek": "η λογοτεχνία",
+    "russian": "литература",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "λογοτεχνία"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Μου αρέσει η ελληνική λογοτεχνία.",
+        "russian": "Мне нравится греческая литература."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l23",
+    "greek": "η δήλωση / οι δηλώσεις",
+    "russian": "заявление / декларация",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "δήλωση",
+        "plural": "δηλώσεις"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Έκανε μια δήλωση.",
+        "russian": "Он сделал заявление."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l24",
+    "greek": "ο κίνδυνος / οι κίνδυνοι",
+    "russian": "опасность / риск",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-abstract"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "masculine",
+        "singular": "κίνδυνος",
+        "plural": "κίνδυνοι"
+      }
+    ],
+    "note": "κινδυνεύω — быть в опасности.",
+    "examples": [
+      {
+        "greek": "Το παιδί είναι σε κίνδυνο.",
+        "russian": "Ребёнок в опасности."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l25",
+    "greek": "η σκηνή / οι σκηνές",
+    "russian": "сцена / палатка",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "other-leisure"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "σκηνή",
+        "plural": "σκηνές"
+      }
+    ],
+    "note": "В зависимости от контекста также палатка.",
+    "examples": [
+      {
+        "greek": "Οι μουσικοί είναι στη σκηνή.",
+        "russian": "Музыканты на сцене."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127l26",
+    "greek": "η ημερομηνία / οι ημερομηνίες",
+    "russian": "дата",
+    "new": true,
+    "topic": "time",
+    "partOfSpeech": "noun",
+    "collectionIds": [
+      "time-calendar"
+    ],
+    "nounForms": [
+      {
+        "key": "variant-1",
+        "gender": "feminine",
+        "singular": "ημερομηνία",
+        "plural": "ημερομηνίες"
+      }
+    ],
+    "examples": [
+      {
+        "greek": "Ποια είναι η ημερομηνία σήμερα;",
+        "russian": "Какое сегодня число?"
+      }
+    ]
+  },
+  {
+    "id": "word-20261127a1",
+    "greek": "μοναδικός / μοναδική / μοναδικό",
+    "russian": "единственный / уникальный",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Значение зависит от контекста: единственный или неповторимый.",
+    "examples": [
+      {
+        "greek": "Αυτό είναι ένα μοναδικό δώρο.",
+        "russian": "Это уникальный подарок."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127a2",
+    "greek": "άρρωστος / άρρωστη / άρρωστο",
+    "russian": "больной / заболевший",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Также ο άρρωστος / η άρρωστη — больной / больная как человек.",
+    "examples": [
+      {
+        "greek": "Η μητέρα μου είναι άρρωστη.",
+        "russian": "Моя мама больна."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127a3",
+    "greek": "θαυμάσιος / θαυμάσια / θαυμάσιο",
+    "russian": "замечательный / восхитительный",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "Близко к καταπληκτικός, но это отдельное слово.",
+    "examples": [
+      {
+        "greek": "Η συναυλία ήταν θαυμάσια.",
+        "russian": "Концерт был замечательным."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127a4",
+    "greek": "εθνικός / εθνική / εθνικό",
+    "russian": "национальный",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-description"
+    ],
+    "note": "το έθνος — нация.",
+    "examples": [
+      {
+        "greek": "Ακούσαμε τον εθνικό ύμνο.",
+        "russian": "Мы послушали национальный гимн."
+      }
+    ]
+  },
+  {
+    "id": "word-20261127a5",
+    "greek": "μόνος / μόνη / μόνο",
+    "russian": "один / одна / одно; сам / сама",
+    "new": true,
+    "topic": "other",
+    "partOfSpeech": "adjective",
+    "collectionIds": [
+      "other-pronouns"
+    ],
+    "note": "μόνο — только; μόνος μου — сам / один, μόνη μου — сама / одна. Местоимение зависит от лица: μόνος σου, μόνη της.",
+    "examples": [
+      {
+        "greek": "Έμεινα μόνος μου στο σπίτι.",
+        "russian": "Я остался дома один."
+      }
+    ]
+  },
+  {
     "id": "word-20261125-many",
     "greek": "πολύς / πολλή / πολύ · πολλοί / πολλές / πολλά",
     "russian": "много / многочисленный",
@@ -19035,6 +19862,7 @@
     "id": "word-20261110013",
     "greek": "το κατάστρωμα",
     "russian": "палуба",
+    "note": "Не путать с το στρώμα — матрас.",
     "topic": "transport",
     "partOfSpeech": "noun",
     "collectionIds": [
@@ -20018,6 +20846,7 @@
     "id": "word-20261115020",
     "greek": "τα γενέθλια",
     "russian": "день рождения",
+    "note": "Обычное поздравление: Χρόνια πολλά! Также говорят Χαρούμενα γενέθλια! Πότε έχεις γενέθλια; — Когда у тебя день рождения?",
     "new": true,
     "topic": "time",
     "partOfSpeech": "noun",
